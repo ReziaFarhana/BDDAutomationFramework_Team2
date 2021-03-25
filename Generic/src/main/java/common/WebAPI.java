@@ -5,6 +5,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -17,6 +18,7 @@ import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import org.testng.annotations.Optional;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 
@@ -30,13 +32,64 @@ import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class WebAPI {
+    public JavascriptExecutor jscript;
+
+    public void windowsFullPageScrollDown() {
+        jscript = (JavascriptExecutor) driver;
+        jscript.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+    }
+
+    public void windowsFullPageScrollUp() {
+        jscript = (JavascriptExecutor) driver;
+        jscript.executeScript("window.scrollTo(0, -document.body.scrollHeight);");
+    }
+
+    public void windowsFullPageScrollSideBar(WebElement element) {
+        jscript = (JavascriptExecutor) driver;
+        jscript.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+    public void windowsPageScrollToLocator(By locator) {
+        jscript = (JavascriptExecutor) driver;
+        jscript.executeScript("arguments[0].scrollIntoView(true);", locator);
+    }
+
+    public void windowTwoThirdPageScroll() {
+        jscript = (JavascriptExecutor) driver;
+        jscript.executeScript("window.scrollBy(0,950)", "");
+    }
+
+    public void windowHalfPageScroll() {
+        jscript = (JavascriptExecutor) driver;
+        jscript.executeScript("window.scrollBy(0,350)", "");
+
+    }
+
+    public void windowHalfPageScrollUp() {
+        jscript = (JavascriptExecutor) driver;
+        jscript.executeScript("window.scrollBy(0,-350)", "");
+    }
+
+    public void hoverAndClick(WebElement elementHover, WebElement elementClick) {
+        Actions selecrMenu = new Actions(driver);
+        selecrMenu.moveToElement(elementHover).click(elementClick).build().perform();
+    }
+
+    public static synchronized Map<String, String> TableDictionaryConverter(List<List<String>> data) {
+        Map<String, String> mapTable = new HashMap<>();
+        for (List<String> rows : data) {
+            mapTable.put(rows.get(0), rows.get(1));
+        }
+        return mapTable;
+    }
+
+
+
+
+
     // Config class :
 
     //ExtentReport

@@ -270,19 +270,14 @@
                         <testFailureIgnore>true</testFailureIgnore>
                         <!--Test Runner Files-->
                         <includes>
-                            <!--                            <include>**/AmazonTestRunner.java</include>-->
+
                         </includes>
                         <suiteXmlFiles>
-                            <!--                            <suiteXmlFile>target/test-classes/AmazonTestRunner.xml</suiteXmlFile>-->
-                            <!--                        <suiteXmlFile>target/test-classes/CNNTestRunner.xml</suiteXmlFile>-->
-                            <!--                        <suiteXmlFile>target/test-classes/CignaTestRunner.xml</suiteXmlFile>-->
 
                         </suiteXmlFiles>
 
-
                     </configuration>
                 </plugin>
-
 
                 <plugin>
                     <groupId>net.masterthought</groupId>
@@ -304,7 +299,8 @@
                                 <jsonFiles>
                                     <param>**/*.json</param>
                                 </jsonFiles>
-                                <classificationDirectory>${project.build.directory}/cucumber-reports</classificationDirectory>
+                                <classificationDirectory>${project.build.directory}/cucumber-reports
+                                </classificationDirectory>
                                 <checkBuildResult>false</checkBuildResult>
                             </configuration>
                         </execution>
