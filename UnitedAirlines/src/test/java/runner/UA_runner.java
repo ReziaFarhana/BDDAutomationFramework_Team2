@@ -12,14 +12,12 @@ import org.junit.runner.RunWith;
                 "html:target/cucumber-reports/index.html",
                 "pretty:target/cucumber-reports/cucumber-pretty.txt",
                 "usage:target/cucumber-reports/cucumber-usage.json",
-                "junit:target/cucumber-reports/cucumber-results.xml"
-        },
+                "junit:target/cucumber-reports/cucumber-results.xml"  },
 
         monochrome = true,
-//        dryRun = false,
-        dryRun = true,
-        publish = true
-//        tags = "(@run) and (not @stop)"
+        dryRun = false,
+        publish = true,
+        tags = "(@run) and (not @stop)"
 
 
 )

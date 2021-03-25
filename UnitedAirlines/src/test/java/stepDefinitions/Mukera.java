@@ -36,16 +36,5 @@ public class Mukera extends WebAPI {
         cleanUp();
     }
 
-    @Given("I righy click on current offers")
-    public void i_righy_click_on_current_offers() {
-       act.rightClick(redeemCertLocator,"");
-    }
-    @Given("click on open on new page")
-    public void click_on_open_on_new_page() {
 
-    }
-    @Then("I should see a new windows opened wth")
-    public void i_should_see_a_new_windows_opened_wth() {
-
-    }
 }

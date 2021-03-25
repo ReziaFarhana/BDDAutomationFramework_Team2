@@ -23,8 +23,3 @@ Feature: Working on United Airlines OFFERS section under Deals
   Scenario: Redeem eCertificate
     And I clicked On Redeem eCertificate link
     Then I should see Redeem eCertificate displayed on the front page
-
-  Scenario: context click
-    And I righy click on current offers
-    And click on open on new page
-    Then I should see a new windows opened wth
