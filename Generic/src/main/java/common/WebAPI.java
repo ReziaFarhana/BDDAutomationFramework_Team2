@@ -2,6 +2,9 @@ package common;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
+import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
+import io.cucumber.java.Scenario;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.*;
@@ -12,6 +15,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.*;
 import org.testng.Assert;
 import org.testng.ITestContext;
@@ -125,12 +129,12 @@ public class WebAPI {
     public static String sauceLabs_accessKey = "";
 
     public void openBrowser(String url) throws IOException {
-        setUp(false,"browserStack","windows","10","chrome","89",url);
+        setUp(false,"browserStack","windows","10","firefox","86",url);
     }
 
 
-    @Parameters({"useCloudEnv", "cloudEnvName", "OS", "os_version", "browserName", "browserVersion", "url"})
-    @BeforeMethod
+//    @Parameters({"useCloudEnv", "cloudEnvName", "OS", "os_version", "browserName", "browserVersion", "url"})
+//    @BeforeMethod
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("sauceLabs") String cloudEnvName, @Optional("windows") String OS, @Optional("10") String os_version, @Optional("firefox") String browserName, @Optional("86") String browserVersion, @Optional("https://www.google.com/") String url) throws IOException {
         // Platform: Local Machine/ Cloud Machine
         if (useCloudEnv == true) {
@@ -435,7 +439,7 @@ public class WebAPI {
         try {
             WebElement element = driver.findElement(By.cssSelector(locator));
             Actions action = new Actions(driver);
-            Actions hover = action.moveToElement(element);
+            Actions hover = action.moveToElement(element);  // need fix
         } catch (Exception ex) {
             System.out.println("First attempt has been done, This is second try");
             WebElement element = driver.findElement(By.cssSelector(locator));
@@ -758,6 +762,14 @@ public class WebAPI {
         String url = driver.getCurrentUrl();
         return url;
     }
+
+    public void rightClick(String loc, String loc1){
+        WebElement element = driver.findElement(By.xpath(loc));
+        WebElement element2 = driver.findElement(By.xpath(loc1));
+        Actions use = new Actions(driver);
+        use.contextClick(element).moveToElement(element2).build().perform();
+    }
+
 
 
 }

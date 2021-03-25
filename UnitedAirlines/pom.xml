@@ -48,13 +48,6 @@
                     <includes>
                         <!--                            <include>**/AmazonTestRunner.java</include>-->
                     </includes>
-                    <suiteXmlFiles>
-                        <!--                            <suiteXmlFile>target/test-classes/AmazonTestRunner.xml</suiteXmlFile>-->
-                        <!--                        <suiteXmlFile>target/test-classes/CNNTestRunner.xml</suiteXmlFile>-->
-                        <!--                        <suiteXmlFile>target/test-classes/CignaTestRunner.xml</suiteXmlFile>-->
-
-                    </suiteXmlFiles>
-
 
                 </configuration>
             </plugin>

@@ -2,22 +2,9 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Aetna/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Aetna/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/BBC/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/BBC/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Geico/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Geico/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Generic/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Generic/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/TDBank/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/TDBank/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/TripAdvisor/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/TripAdvisor/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/UnitedAirlines/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/UnitedAirlines/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Verizon/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Verizon/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/WalMart/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/WalMart/src/main/resources" charset="UTF-8" />
   </component>
 </project>

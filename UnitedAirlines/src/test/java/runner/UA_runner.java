@@ -6,28 +6,26 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-
         features = {"src/test/java/features"},
         glue = "stepDefinitions",
-        plugin = {"pretty","json:target/cucumber-reports/cucumber.json",
+        plugin = {"pretty", "json:target/cucumber-reports/cucumber.json",
                 "html:target/cucumber-reports/index.html",
                 "pretty:target/cucumber-reports/cucumber-pretty.txt",
                 "usage:target/cucumber-reports/cucumber-usage.json",
                 "junit:target/cucumber-reports/cucumber-results.xml"
         },
 
-        strict = true,
         monochrome = true,
-        dryRun = false,
-        publish = true,
-        tags = "(@mahmud) and (not @pending)"
-//         tags = "(@smokeTest or @RegressionTest or @IntegrationTest ) and (not @pending)"
+//        dryRun = false,
+        dryRun = true,
+        publish = true
+//        tags = "(@run) and (not @stop)"
 
 
 )
 
 
-public class AmazonTestRunner {
+public class UA_runner {
 
 
 }

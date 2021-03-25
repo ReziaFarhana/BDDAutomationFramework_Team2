@@ -1,9 +1,15 @@
 package homepage;
 
-public class HomePage {
+import common.WebAPI;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-// Action Method class
+import static homepage.HomePageWebElement.*;
 
-    // Find By Annotation:
+public class HomePage extends WebAPI {
+
+    HomePageWebElement element;
+    @FindBy(id = productName) public WebElement x;
+
 
 }

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="0.485">
+    <testcase classname="Test United Airlines deals features on https://www.united.com/en/us/" name="Current offers and promos" time="0.072">
+        <system-out>
+            <![CDATA[Given I am on United Airlines Home page.....................................passed
+And I click on the DEALS option.............................................passed
+Then I should see the OFFERS option.........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Current offers and promos" time="0.013">
+        <system-out>
+            <![CDATA[Given I am on United Airlines Home page.....................................passed
+And I click on the DEALS option.............................................passed
+And I click on the Current offers and promos link...........................passed
+Then I should see Deals & offers on the front page..........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Working on United Airlines OFFERS section under Deals" name="MileagePlus news and offers" time="0.006">
+        <system-out>
+            <![CDATA[Given I am on United Airlines Home page.....................................passed
+And I click on the DEALS option.............................................passed
+And I click on MileagePlus news and offers link.............................passed
+Then I should see MileagePlus deals & offers on the front page..............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Discounts for 18 to 22 year olds" time="0.01">
+        <system-out>
+            <![CDATA[Given I am on United Airlines Home page.....................................passed
+And I click on the DEALS option.............................................passed
+When I click on Discounts for 18 to 22 year olds link.......................passed
+Then I should see Discounts for 18 to 22 year olds on the front page........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Veterans Advantage discount" time="0.006">
+        <system-out>
+            <![CDATA[Given I am on United Airlines Home page.....................................passed
+And I click on the DEALS option.............................................passed
+And I click on Veterans Advantage discount link.............................passed
+Then I should see Veterans Advantage discount on the front page.............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Redeem eCertificate" time="0.009">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given I am on United Airlines Home page.....................................passed
+And I click on the DEALS option.............................................passed
+* I clicked On Redeem eCertificate link.....................................undefined
+* I should see Redeem eCertificate displayed on the front page..............skipped
+]]>
+        </failure>
+    </testcase>
+</testsuite>

@@ -1,25 +1,22 @@
 package stepDefinitions;
 
 import common.WebAPI;
-import homepage.HomePage;
+import homepage.UAActionHome;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.BeforeStep;
 import io.cucumber.java.Scenario;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import io.cucumber.java.en.*;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.PageFactory;
 
-import java.io.IOException;
+import static homepage.UAWebElement.*;
 
-public class HomePageStepDefinition  extends WebAPI {
-    static HomePage homePage;
+public class Mukera extends WebAPI {
 
-    // Cucumber Hook
+    UAActionHome act;
+
     @AfterStep
     public void tearDown(Scenario scenario) {
         if (scenario.isFailed()) {
@@ -30,8 +27,8 @@ public class HomePageStepDefinition  extends WebAPI {
     }
 
     @BeforeStep
-    public static void getInit() {
-        homePage = PageFactory.initElements(driver, HomePage.class);
+    public void getInit() {
+        act = PageFactory.initElements(driver, UAActionHome.class);
     }
 
     @After
@@ -39,4 +36,16 @@ public class HomePageStepDefinition  extends WebAPI {
         cleanUp();
     }
 
+    @Given("I righy click on current offers")
+    public void i_righy_click_on_current_offers() {
+       act.rightClick(redeemCertLocator,"");
+    }
+    @Given("click on open on new page")
+    public void click_on_open_on_new_page() {
+
+    }
+    @Then("I should see a new windows opened wth")
+    public void i_should_see_a_new_windows_opened_wth() {
+
+    }
 }
