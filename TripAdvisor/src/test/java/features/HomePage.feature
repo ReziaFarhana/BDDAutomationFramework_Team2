@@ -18,7 +18,7 @@ Feature: SearchBox Functionality check
     But I should not see "mobile" is appear
     And I verify "Amazon.com : Mask" in product title
 
-   @IntegrationTest
+  @IntegrationTest
   Scenario: Amazon searchBox functionality check with valid product2
     Given I am on amazon homePage
     And I enter "MacBook" in searchBox

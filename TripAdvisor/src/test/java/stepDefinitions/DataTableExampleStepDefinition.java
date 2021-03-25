@@ -7,7 +7,6 @@ import io.cucumber.java.BeforeStep;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.java.it.Ma;
 import org.openqa.selenium.support.PageFactory;
 
 import java.util.HashMap;
@@ -18,15 +17,22 @@ public class DataTableExampleStepDefinition extends WebAPI {
     static HomePage homePage;
 
     @BeforeStep
-    public static void getInit(){
-        homePage= PageFactory.initElements(driver,HomePage.class);
+    public static void getInit() {
+        homePage = PageFactory.initElements(driver, HomePage.class);
+    }
+
+    public static synchronized Map<String, String> TableDictionaryConverter(List<List<String>> data) {
+        Map<String, String> mapTable = new HashMap<>();
+        for (List<String> rows : data) {
+            mapTable.put(rows.get(0), rows.get(1));
+        }
+        return mapTable;
     }
 
     @Given("I click on Account & Lists")
     public void i_click_on_account_lists() {
         homePage.clickOnHelloSignIn();
     }
-
 
     @Given("I enter Email or mobile phone number")
     public void i_enter_email_or_mobile_phone_number(DataTable dataTable) throws InterruptedException {
@@ -55,7 +61,7 @@ public class DataTableExampleStepDefinition extends WebAPI {
         String password = data.get(1).get(0);
         homePage.enterPasswordForSignIn(data.get(1).get(0));
         //homePage.enterPasswordForSignIn(password);
-       // System.out.println(password);
+        // System.out.println(password);
 
     }
 
@@ -79,7 +85,6 @@ public class DataTableExampleStepDefinition extends WebAPI {
         homePage.verifyErrorMessage(user);
     }
 
-
     @Given("I enter Email or mobile phone number from table")
     public void i_enter_email_or_mobile_phone_number_from_table(DataTable dataTable) {
         List<List<String>> data = dataTable.asLists(String.class);
@@ -87,7 +92,6 @@ public class DataTableExampleStepDefinition extends WebAPI {
         //System.out.println(email);
         homePage.enterEmailPhone(email);
     }
-
 
     @Given("I enter user information")
     public void i_enter_user_information(DataTable dataTable) {
@@ -102,20 +106,19 @@ public class DataTableExampleStepDefinition extends WebAPI {
         System.out.println(password);
         System.out.println(rePassword);
 
-      homePage.enterCustomerName(name);
+        homePage.enterCustomerName(name);
 
     }
 
     @When("I click on Create your Amazon account")
     public void i_click_on_create_your_amazon_account() {
-    homePage.clickOnCreateYourAmazonAccount();
+        homePage.clickOnCreateYourAmazonAccount();
     }
 
     @Then("I verify amazon account created successfully")
     public void i_verify_amazon_account_created_successfully() {
 
     }
-
 
     @Given("I enter user information from table")
     public void i_enter_user_information_from_table(List<List<String>> table) {
@@ -127,14 +130,6 @@ public class DataTableExampleStepDefinition extends WebAPI {
 
         homePage.enterCustomerName(map.get("YourName"));
 
-    }
-
-    public static synchronized Map<String, String> TableDictionaryConverter(List<List<String>> data) {
-        Map<String, String> mapTable = new HashMap<>();
-        for (List<String> rows : data) {
-            mapTable.put(rows.get(0), rows.get(1));
-        }
-        return mapTable;
     }
 
     @Then("I enter user information from table using multiple column")

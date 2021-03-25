@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>BDDAutomationFramework_Team2</artifactId>
@@ -46,7 +46,7 @@
                     <testFailureIgnore>true</testFailureIgnore>
                     <!--Test Runner Files-->
                     <includes>
-                        <!--                            <include>**/AmazonTestRunner.java</include>-->
+                        <!--                            <include>**/TDBankTestRunner.java</include>-->
                     </includes>
                     <suiteXmlFiles>
                         <!--                            <suiteXmlFile>target/test-classes/AmazonTestRunner.xml</suiteXmlFile>-->
@@ -80,7 +80,8 @@
                             <jsonFiles>
                                 <param>**/*.json</param>
                             </jsonFiles>
-                            <classificationDirectory>${project.build.directory}/cucumber-reports</classificationDirectory>
+                            <classificationDirectory>${project.build.directory}/cucumber-reports
+                            </classificationDirectory>
                             <checkBuildResult>false</checkBuildResult>
                         </configuration>
                     </execution>

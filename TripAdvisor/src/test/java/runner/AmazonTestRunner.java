@@ -13,8 +13,8 @@ import org.junit.runner.RunWith;
         //  glue = "src/test/java/stepDefinitions",
         glue = "stepDefinitions",
         /// to generate different type of reporting
-        plugin = {"pretty","json:target/cucumber-reports/cucumber.json", "html:target/cucumber-reports/index.html",
-        "pretty:target/cucumber-reports/cucumber-pretty.txt","usage:target/cucumber-reports/cucumber-usage.json",
+        plugin = {"pretty", "json:target/cucumber-reports/cucumber.json", "html:target/cucumber-reports/index.html",
+                "pretty:target/cucumber-reports/cucumber-pretty.txt", "usage:target/cucumber-reports/cucumber-usage.json",
                 "junit:target/cucumber-reports/cucumber-results.xml"
         },
         // it will check if any step is not defined in step definition file
@@ -26,7 +26,6 @@ import org.junit.runner.RunWith;
         publish = true,
         tags = "(@mahmud) and (not @pending)"
 //         tags = "(@smokeTest or @RegressionTest or @IntegrationTest ) and (not @pending)"
-
 
 
 )

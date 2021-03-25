@@ -41,12 +41,145 @@ public class WebAPI {
 
     //ExtentReport
     public static ExtentReports extent;
+    // Browser Setup
+    public static WebDriver driver = null;
+    public static String browserStack_userName = "demo579";
+    public static String browserStack_accessKey = "s8gx9NYyS3zW9kLcbmcH";
+    public static String sauceLabs_userName = "";
+    public static String sauceLabs_accessKey = "";
+
+    public static void captureScreenshot(WebDriver driver, String screenshotName) {
+        DateFormat df = new SimpleDateFormat("(yyMMddHHmmssZ)");
+        //DateFormat df = new SimpleDateFormat("(MM.dd.yyyy-HH:mma)");
+        Date date = new Date();
+        df.format(date);
+        File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        try {
+            FileUtils.copyFile(file,
+                    new File(System.getProperty("user.dir") + "/Screenshots/" + screenshotName + " " + df.format(date) + ".png"));
+            System.out.println("Screenshot captured");
+        } catch (Exception e) {
+            System.out.println("Exception while taking screenshot " + e.getMessage());
+        }
+    }
+
+    public static String convertToString(String st) {
+        String splitString = "";
+        splitString = StringUtils.join(StringUtils.splitByCharacterTypeCamelCase(st), ' ');
+        return splitString;
+    }
+
+    public static void sleepFor(int seconds) throws InterruptedException {
+        Thread.sleep(seconds * 1000);
+    }
+
+    public static void typeOnElementNEnter(String locator, String value) {
+        try {
+            driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
+        } catch (Exception ex1) {
+            try {
+                System.out.println("First Attempt was not successful");
+                driver.findElement(By.name(locator)).sendKeys(value, Keys.ENTER);
+            } catch (Exception ex2) {
+                try {
+                    System.out.println("Second Attempt was not successful");
+                    driver.findElement(By.xpath(locator)).sendKeys(value, Keys.ENTER);
+                } catch (Exception ex3) {
+                    System.out.println("Third Attempt was not successful");
+                    driver.findElement(By.id(locator)).sendKeys(value, Keys.ENTER);
+                }
+            }
+        }
+    }
+
+    public static void typeOnElementNEnter(String locator, String value, WebDriver driver1) {
+        try {
+            driver1.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
+        } catch (Exception ex1) {
+            try {
+                System.out.println("First Attempt was not successful");
+                driver1.findElement(By.id(locator)).sendKeys(value, Keys.ENTER);
+            } catch (Exception ex2) {
+                try {
+                    System.out.println("Second Attempt was not successful");
+                    driver1.findElement(By.name(locator)).sendKeys(value, Keys.ENTER);
+                } catch (Exception ex3) {
+                    System.out.println("Third Attempt was not successful");
+                    driver1.findElement(By.xpath(locator)).sendKeys(value, Keys.ENTER);
+                }
+            }
+        }
+    }
+
+    public static void clickOnElement(String locator, WebDriver driver1) {
+        try {
+            driver1.findElement(By.cssSelector(locator)).click();
+        } catch (Exception ex1) {
+            try {
+                driver1.findElement(By.xpath(locator)).click();
+            } catch (Exception ex2) {
+                driver1.findElement(By.id(locator)).click();
+            }
+        }
+    }
+
+    public static List<String> getTextFromWebElements(String locator) {
+        List<WebElement> element = new ArrayList<WebElement>();
+        List<String> text = new ArrayList<String>();
+        element = driver.findElements(By.cssSelector(locator));
+        for (WebElement web : element) {
+            String st = web.getText();
+            text.add(st);
+        }
+        return text;
+    }
+
+    public static List<String> getTextFromWebElements(String locator, WebDriver driver1) {
+        List<WebElement> element = new ArrayList<WebElement>();
+        List<String> text = new ArrayList<String>();
+        element = driver1.findElements(By.cssSelector(locator));
+        for (WebElement web : element) {
+            String st = web.getText();
+            text.add(st);
+        }
+        return text;
+    }
+
+    public static List<WebElement> getListOfWebElementsByCss(String locator) {
+        List<WebElement> list = new ArrayList<WebElement>();
+        list = driver.findElements(By.cssSelector(locator));
+        return list;
+    }
+
+    public static List<WebElement> getListOfWebElementsByCss(String locator, WebDriver driver1) {
+        List<WebElement> list = new ArrayList<WebElement>();
+        list = driver1.findElements(By.cssSelector(locator));
+        return list;
+    }
+
+    //Handling New Tabs
+    public static WebDriver handleNewTab(WebDriver driver1) {
+        String oldTab = driver1.getWindowHandle();
+        List<String> newTabs = new ArrayList<String>(driver1.getWindowHandles());
+        newTabs.remove(oldTab);
+        driver1.switchTo().window(newTabs.get(0));
+        return driver1;
+    }
+
+    public static boolean isPopUpWindowDisplayed(WebDriver driver1, String locator) {
+        boolean value = driver1.findElement(By.cssSelector(locator)).isDisplayed();
+        return value;
+    }
 
     @BeforeSuite
     public void extentSetup(ITestContext context) {
         ExtentManager.setOutputDirectory(context);
         extent = ExtentManager.getInstance();
     }
+
+
+// Helper Method
+    // Our code should be dynamic and reusable
 
     @BeforeMethod
     public void startExtent(Method method) {
@@ -96,38 +229,9 @@ public class WebAPI {
         return calendar.getTime();
     }
 
-    public static void captureScreenshot(WebDriver driver, String screenshotName) {
-        DateFormat df = new SimpleDateFormat("(yyMMddHHmmssZ)");
-        //DateFormat df = new SimpleDateFormat("(MM.dd.yyyy-HH:mma)");
-        Date date = new Date();
-        df.format(date);
-        File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        try {
-            FileUtils.copyFile(file,
-                    new File(System.getProperty("user.dir") + "/Screenshots/" + screenshotName + " " + df.format(date) + ".png"));
-            System.out.println("Screenshot captured");
-        } catch (Exception e) {
-            System.out.println("Exception while taking screenshot " + e.getMessage());
-        }
-    }
-
-    public static String convertToString(String st) {
-        String splitString = "";
-        splitString = StringUtils.join(StringUtils.splitByCharacterTypeCamelCase(st), ' ');
-        return splitString;
-    }
-
-    // Browser Setup
-    public static WebDriver driver = null;
-    public static String browserStack_userName = "demo579";
-    public static String browserStack_accessKey = "s8gx9NYyS3zW9kLcbmcH";
-    public static String sauceLabs_userName = "";
-    public static String sauceLabs_accessKey = "";
-
     public void openBrowser(String url) throws IOException {
-        setUp(false,"browserStack","windows","10","chrome","89",url);
+        setUp(false, "browserStack", "windows", "10", "chrome", "89", url);
     }
-
 
     @Parameters({"useCloudEnv", "cloudEnvName", "OS", "os_version", "browserName", "browserVersion", "url"})
     @BeforeMethod
@@ -203,18 +307,10 @@ public class WebAPI {
         return driver;
     }
 
-//    @AfterMethod(alwaysRun = true)
+    //    @AfterMethod(alwaysRun = true)
     public void cleanUp() {
         //driver.close();
         driver.quit();
-    }
-
-
-// Helper Method
-    // Our code should be dynamic and reusable
-
-    public static void sleepFor(int seconds) throws InterruptedException {
-        Thread.sleep(seconds * 1000);
     }
 
     public void clickOnElement(String locator) {
@@ -250,62 +346,12 @@ public class WebAPI {
         }
     }
 
-    public static void typeOnElementNEnter(String locator, String value) {
-        try {
-            driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
-        } catch (Exception ex1) {
-            try {
-                System.out.println("First Attempt was not successful");
-                driver.findElement(By.name(locator)).sendKeys(value, Keys.ENTER);
-            } catch (Exception ex2) {
-                try {
-                    System.out.println("Second Attempt was not successful");
-                    driver.findElement(By.xpath(locator)).sendKeys(value, Keys.ENTER);
-                } catch (Exception ex3) {
-                    System.out.println("Third Attempt was not successful");
-                    driver.findElement(By.id(locator)).sendKeys(value, Keys.ENTER);
-                }
-            }
-        }
-    }
-
-    public static void typeOnElementNEnter(String locator, String value, WebDriver driver1) {
-        try {
-            driver1.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
-        } catch (Exception ex1) {
-            try {
-                System.out.println("First Attempt was not successful");
-                driver1.findElement(By.id(locator)).sendKeys(value, Keys.ENTER);
-            } catch (Exception ex2) {
-                try {
-                    System.out.println("Second Attempt was not successful");
-                    driver1.findElement(By.name(locator)).sendKeys(value, Keys.ENTER);
-                } catch (Exception ex3) {
-                    System.out.println("Third Attempt was not successful");
-                    driver1.findElement(By.xpath(locator)).sendKeys(value, Keys.ENTER);
-                }
-            }
-        }
-    }
-
     public void clearField(String locator) {
         driver.findElement(By.id(locator)).clear();
     }
 
     public void navigateBack() {
         driver.navigate().back();
-    }
-
-    public static void clickOnElement(String locator, WebDriver driver1) {
-        try {
-            driver1.findElement(By.cssSelector(locator)).click();
-        } catch (Exception ex1) {
-            try {
-                driver1.findElement(By.xpath(locator)).click();
-            } catch (Exception ex2) {
-                driver1.findElement(By.id(locator)).click();
-            }
-        }
     }
 
     public void typeOnInputField(String locator, String value) {
@@ -347,47 +393,11 @@ public class WebAPI {
         return list;
     }
 
-    public static List<String> getTextFromWebElements(String locator) {
-        List<WebElement> element = new ArrayList<WebElement>();
-        List<String> text = new ArrayList<String>();
-        element = driver.findElements(By.cssSelector(locator));
-        for (WebElement web : element) {
-            String st = web.getText();
-            text.add(st);
-        }
-        return text;
-    }
-
-    public static List<String> getTextFromWebElements(String locator, WebDriver driver1) {
-        List<WebElement> element = new ArrayList<WebElement>();
-        List<String> text = new ArrayList<String>();
-        element = driver1.findElements(By.cssSelector(locator));
-        for (WebElement web : element) {
-            String st = web.getText();
-            text.add(st);
-        }
-        return text;
-    }
-
-    public static List<WebElement> getListOfWebElementsByCss(String locator) {
-        List<WebElement> list = new ArrayList<WebElement>();
-        list = driver.findElements(By.cssSelector(locator));
-        return list;
-    }
-
-    public static List<WebElement> getListOfWebElementsByCss(String locator, WebDriver driver1) {
-        List<WebElement> list = new ArrayList<WebElement>();
-        list = driver1.findElements(By.cssSelector(locator));
-        return list;
-    }
-
     public List<WebElement> getListOfWebElementsByXpath(String locator) {
         List<WebElement> list = new ArrayList<WebElement>();
         list = driver.findElements(By.xpath(locator));
         return list;
     }
-
-
 
     public String getCurrentPageUrl() {
         String url = driver.getCurrentUrl();
@@ -416,7 +426,6 @@ public class WebAPI {
         String st = driver.findElement(By.name(locator)).getText();
         return st;
     }
-
 
     public List<String> getListOfString(List<WebElement> list) {
         List<String> items = new ArrayList<String>();
@@ -519,20 +528,6 @@ public class WebAPI {
         driver.findElement(By.cssSelector(locator)).sendKeys(Keys.ENTER);
     }
 
-    //Handling New Tabs
-    public static WebDriver handleNewTab(WebDriver driver1) {
-        String oldTab = driver1.getWindowHandle();
-        List<String> newTabs = new ArrayList<String>(driver1.getWindowHandles());
-        newTabs.remove(oldTab);
-        driver1.switchTo().window(newTabs.get(0));
-        return driver1;
-    }
-
-    public static boolean isPopUpWindowDisplayed(WebDriver driver1, String locator) {
-        boolean value = driver1.findElement(By.cssSelector(locator)).isDisplayed();
-        return value;
-    }
-
     public void typeOnInputBox(String locator, String value) {
         try {
             driver.findElement(By.id(locator)).sendKeys(value, Keys.ENTER);
@@ -563,7 +558,7 @@ public class WebAPI {
         //Step:2-->Iterate linksList: exclude all links/images which does not have any href attribute
         List<WebElement> activeLinks = new ArrayList<WebElement>();
         for (int i = 0; i < linksList.size(); i++) {
-           // System.out.println(linksList.get(i).getAttribute("href"));
+            // System.out.println(linksList.get(i).getAttribute("href"));
             if (linksList.get(i).getAttribute("href") != null && (!linksList.get(i).getAttribute("href").contains("javascript") && (!linksList.get(i).getAttribute("href").contains("mailto")))) {
                 activeLinks.add(linksList.get(i));
             }

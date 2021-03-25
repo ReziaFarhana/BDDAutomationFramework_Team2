@@ -16,33 +16,33 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.io.IOException;
 
-public class HomePageStepDefinition  extends WebAPI {
+public class HomePageStepDefinition extends WebAPI {
     static HomePage homePage;
+
+    @BeforeStep
+    public static void getInit() {
+        homePage = PageFactory.initElements(driver, HomePage.class);
+    }
 
     // Cucumber Hook
     @AfterStep
-    public void tearDown(Scenario scenario){
-        if (scenario.isFailed()){
+    public void tearDown(Scenario scenario) {
+        if (scenario.isFailed()) {
             // Take a screenshot
-            final byte[] screenShot= ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
-            scenario.attach(screenShot,"image/png","demo1");  // embed it in the report
+            final byte[] screenShot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+            scenario.attach(screenShot, "image/png", "demo1");  // embed it in the report
         }
     }
 
-    @BeforeStep
-    public static void getInit(){
-        homePage= PageFactory.initElements(driver,HomePage.class);
-    }
-
     @After
-    public void closeBrowser(){
+    public void closeBrowser() {
         cleanUp();
     }
 
 
     @Given("I am on amazon homePage")
     public void i_am_on_amazon_home_page() throws IOException {
-    // Call Action method
+        // Call Action method
         openBrowser("https://www.amazon.com/");
 
     }
@@ -56,17 +56,17 @@ public class HomePageStepDefinition  extends WebAPI {
 
     @When("I click on search Button")
     public void i_click_on_search_button() {
-    homePage.clickOnSearchButton();
+        homePage.clickOnSearchButton();
     }
 
     @Then("I should see {string} is properly appear")
     public void i_should_see_is_properly_appear(String expectedText) {
-    homePage.verifySearchResult("\""+expectedText+"\"");
+        homePage.verifySearchResult("\"" + expectedText + "\"");
     }
 
     @Then("I should not see {string} is appear")
     public void i_should_not_see_is_appear(String expectedText) {
-        homePage.verifySearchResultNotMatch("\""+expectedText+"\"");
+        homePage.verifySearchResultNotMatch("\"" + expectedText + "\"");
     }
 
     @Then("I verify {string} in product title")
@@ -74,11 +74,6 @@ public class HomePageStepDefinition  extends WebAPI {
         // Amazon.com : hand sanitizer
         homePage.verifyPageTitle(expectedText);
     }
-
-
-
-
-
 
 
 }

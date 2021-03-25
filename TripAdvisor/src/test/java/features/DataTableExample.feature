@@ -43,7 +43,7 @@ Feature: Learn Data Tables
     And I click on Account & Lists
     And I click on Create your Amazon account
     And I enter user information from table
-      | YourName        | Mahmud1              |
+      | YourName        | Mahmud1             |
       | Email           | mh.shahib@gmail.com |
       | Password        | test123             |
       | ReEnterPassword | test123             |

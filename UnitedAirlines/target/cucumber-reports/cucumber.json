@@ -1,0 +1,270 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 43969400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UnitedAirRegistrationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 4996200,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UnitedAirStepDefinition.getInIt()"
+                }
+              }
+            ],
+            "line": 4,
+            "name": "I am on amazon homePage",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-23T17:02:33.171Z",
+        "line": 20,
+        "name": "Data Table Example without header",
+        "description": "",
+        "id": "learn-data-tables;data-table-example-without-header",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat common.WebAPI.cleanUp(WebAPI.java:209)\r\n\tat stepDefinitions.UnitedAirStepDefinition.tearDown(UnitedAirStepDefinition.java:29)\r\n",
+              "duration": 2996400,
+              "status": "failed"
+            },
+            "match": {
+              "location": "stepDefinitions.UnitedAirStepDefinition.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepDefinitions.UnitedAirRegistrationStepDefinition.tearDown(UnitedAirRegistrationStepDefinition.java:25)\r\n",
+              "duration": 999400,
+              "status": "failed"
+            },
+            "match": {
+              "location": "stepDefinitions.UnitedAirRegistrationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000200,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 999900,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UnitedAirRegistrationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 998800,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UnitedAirStepDefinition.getInIt()"
+                }
+              }
+            ],
+            "line": 21,
+            "name": "I click on Account \u0026 Lists",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UnitedAirRegistrationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 999700,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UnitedAirStepDefinition.getInIt()"
+                }
+              }
+            ],
+            "line": 22,
+            "name": "I enter Email or mobile phone number from table",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "demo1@gmail.com"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UnitedAirRegistrationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UnitedAirStepDefinition.getInIt()"
+                }
+              }
+            ],
+            "line": 24,
+            "name": "I click on continue button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UnitedAirRegistrationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UnitedAirStepDefinition.getInIt()"
+                }
+              }
+            ],
+            "line": 25,
+            "name": "I enter password from table",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "test123"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UnitedAirRegistrationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UnitedAirStepDefinition.getInIt()"
+                }
+              }
+            ],
+            "line": 27,
+            "name": "I click on signIn Button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8994100,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UnitedAirRegistrationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UnitedAirStepDefinition.getInIt()"
+                }
+              }
+            ],
+            "line": 28,
+            "name": "I should see \"There was a problem\"",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mahmud"
+          }
+        ]
+      }
+    ],
+    "name": "Learn Data Tables",
+    "description": "",
+    "id": "learn-data-tables",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/DataTableExample.feature",
+    "tags": []
+  }
+]
