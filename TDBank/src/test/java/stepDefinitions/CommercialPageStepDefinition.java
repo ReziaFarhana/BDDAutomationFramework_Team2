@@ -2,6 +2,7 @@ package stepDefinitions;
 
 import common.WebAPI;
 import homepageheader.CommercialPage;
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.BeforeStep;
@@ -87,6 +88,146 @@ public class CommercialPageStepDefinition extends WebAPI {
         commercialPage.verifyHeaderOnTheScheduleAppointmentPage(expectedText);
 
     }
+
+    //3rd
+
+    @When("I click on the Learn More button")
+    public void i_click_on_the_learn_more_button() throws InterruptedException {
+        commercialPage.learnMoreButton();
+    }
+
+    @Then("I verify that it scrolls down to {string} on the page")
+    public void i_verify_that_it_scrolls_down_to_on_the_page(String expectedText) {
+        commercialPage.verifyFlexibleLendingOptions(expectedText);
+    }
+
+    //4th
+    @When("I scrolled down to click TD Global Trade Finance Get details button")
+    public void i_scrolled_down_to_click_td_global_trade_finance_get_details_button() {
+        commercialPage.tdGlobalTradeFinanceGetDetailsButton();
+    }
+
+    @Then("I clicked on the Visit TD Investor Relations link")
+    public void i_clicked_on_the_visit_td_investor_relations_link() {
+        commercialPage.tdInvestorRelationsLink();
+    }
+
+    @Then("I verify the {string} title on the page")
+    public void i_verify_the_title_on_the_page(String expectedTitle) {
+        commercialPage.verifyTheInvestorRelationsPageTitle(expectedTitle);
+    }
+
+    //5th
+    @Then("I clicked on sign up for alerts")
+    public void i_clicked_on_sign_up_for_alerts() {
+        commercialPage.signUpForALerts();
+    }
+
+    @Then("I entered all the personal information fields for Get News Alerts By Email")
+    public void i_entered_all_the_personal_information_fields_for_get_news_alerts_by_email(DataTable dataTable) {
+        List<List<String>> data = dataTable.asLists(String.class);
+        String firstName = data.get(1).get(0);
+        String lastName = data.get(1).get(1);
+        String email = data.get(1).get(2);
+        String company = data.get(1).get(3);
+        String phone = data.get(1).get(4);
+        commercialPage.personalInfoFieldOnGetNewsAlerts(firstName, lastName, email, company, phone);
+
+    }
+
+    @Then("I used the Sector dropdown to select {string}")
+    public void i_used_the_sector_dropdown_to_select(String sectorOption) {
+        commercialPage.sectorDropDown(sectorOption);
+    }
+
+    @Then("I verify {string} title on the page")
+    public void i_verify_title_on_the_page(String expectedText) {
+        commercialPage.verifyGetNewsAlertsTitle(expectedText);
+    }
+
+    //6th
+    @When("I scrolled down to click the Award Winning button")
+    public void i_scrolled_down_to_click_the_award_winning_button() {
+        commercialPage.awardWinningButton();
+
+    }
+
+    @Then("I verify the {string} section title of the page")
+    public void i_verify_the_section_title_of_the_page(String expectedText) {
+        commercialPage.verifySectionTitle(expectedText);
+    }
+
+//7th
+    @Then("I hover over the Treasury Services and I select the Payables option")
+    public void i_hover_over_the_treasury_services_and_i_select_the_payables_option() {
+        commercialPage.hoverOverTreasuryServices();
+    }
+    @When("I click on the TD Information Services Get details Button")
+    public void i_click_on_the_td_information_services_get_details_button() {
+        commercialPage.tdInformationServicesGetDetailsButton();
+    }
+    @Then("I click on the TD eTreasury link to play the video")
+    public void i_click_on_the_td_e_treasury_link_to_play_the_video() {
+        commercialPage.tdeTreasuryLink();
+    }
+    @When("I click on transcript")
+    public void i_click_on_transcript() throws InterruptedException {
+        commercialPage.clickTranscript();
+    }
+    @Then("I verify the {string} transcript on the video page")
+    public void i_verify_the_transcript_on_the_video_page(String expectedText) {
+        commercialPage.verifyTranscript(expectedText);
+    }
+
+    //8th
+    @When("I hover over the Industries and I select the Education option")
+    public void i_hover_over_the_industries_and_i_select_the_education_option() {
+      commercialPage.hoverOverIndustries();
+    }
+    @Then("I verify {string} in the page title")
+    public void i_verify_in_the_page_title(String expectedTitle) {
+        commercialPage.verifyPageTitle(expectedTitle);
+    }
+
+    //9th
+    @Then("I scrolled down to click on the Asset Based lending icon")
+    public void i_scrolled_down_to_click_on_the_asset_based_lending_icon() {
+        commercialPage.assetBasedLendingIcon();
+    }
+
+    @Then("I verify that it scrolls down to {string} title on the page")
+    public void i_verify_that_it_scrolls_down_to_title_on_the_page(String expectedTitle) {
+    commercialPage.verifyTitle(expectedTitle);
+    }
+
+    //10th
+    @Then("I scrolled down to click on the Loans And Lines of Credit icon")
+    public void i_scrolled_down_to_click_on_the_loans_and_lines_of_credit_icon() {
+       commercialPage.loansAndCreditsIcon();
+    }
+    @When("I scroll down to click on Commercial mortgages to open a new window")
+    public void i_scroll_down_to_click_on_commercial_mortgages_to_open_a_new_window() throws InterruptedException {
+        commercialPage.commercialMortgageLink();
+    }
+    @Then("I navigate back to the TD Commercial & Corporate Lending page window")
+    public void i_navigate_back_to_the_td_commercial_corporate_lending_page_window() throws InterruptedException {
+        commercialPage.navigateBackToTDCommericalAndCorporateLendingWindow();
+    }
+
+    //11th
+    @When("I scrolled down to click on the Fraud Control icon")
+    public void i_scrolled_down_to_click_on_the_fraud_control_icon() {
+
+    }
+    @Then("I click on the Fraud Items You Might Not Know link")
+    public void i_click_on_the_fraud_items_you_might_not_know_link() {
+
+    }
+    @Then("I verify {string} on the page title")
+    public void i_verify_on_the_page_title(String string) {
+
+    }
+
 
 
 }

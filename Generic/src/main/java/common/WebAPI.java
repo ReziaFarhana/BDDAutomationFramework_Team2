@@ -85,9 +85,51 @@ public class WebAPI {
         }
         return mapTable;
     }
+    //new window handle
+    public void windowHandle() {
+        String parentHandle = driver.getWindowHandle();
+        for (String winHandle : driver.getWindowHandles()) {
+            driver.switchTo().window(winHandle); // switch focus of WebDriver to the next found window handle (that's your newly opened window)
+        }
+    }
 
+    public void changeToOldWindow(){
+        //Store the current window handle
+        String winHandleBefore = driver.getWindowHandle();
+// Perform the click operation that opens new window
+        // Switch to new window opened
+        for(String winHandle : driver.getWindowHandles()){ driver.switchTo().window(winHandle); }
+        // Close the new window, if that window no more required\
+        driver.close();
+// Switch back to original browser (first window)
+        driver.switchTo().window(winHandleBefore);
+        // Continue with original browser (first window)
+    }
+    public void typeOnElementNew(String locator, String value) {
+        driver.findElement(By.id(locator)).sendKeys(value);
+    }
 
+    public void typeOnElementByIdNTab(String locator, String value) {
+        driver.findElement(By.id(locator)).sendKeys(value,Keys.TAB);
+    }
 
+    public void typeOnElementByLinkTextNTab(String locator, String value) {
+        driver.findElement(By.linkText(locator)).sendKeys(value,Keys.TAB);
+    }
+
+    public void typeOnElementByIdNEnter(String locator, String value) {
+        driver.findElement(By.id(locator)).sendKeys(value,Keys.ENTER);
+    }
+
+    public void typeOnElementByXpathNTab(String locator, String value) {
+        driver.findElement(By.xpath(locator)).sendKeys(value,Keys.TAB);
+    }
+    public void typeOnElementByXpathNEnter(String locator, String value) {
+        driver.findElement(By.xpath(locator)).sendKeys(value,Keys.ENTER);
+    }
+    public void typeOnElementByXpath(String locator, String value) {
+        driver.findElement(By.xpath(locator)).sendKeys(value);
+    }
 
 
     // Config class :
