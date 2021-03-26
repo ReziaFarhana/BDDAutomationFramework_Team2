@@ -105,6 +105,15 @@ public class WebAPI {
         driver.switchTo().window(winHandleBefore);
         // Continue with original browser (first window)
     }
+
+    public void closeTheOldWindow(){
+        String winHandleBefore = driver.getWindowHandle();
+        driver.switchTo().window(winHandleBefore);
+        driver.close();
+        for(String winHandle : driver.getWindowHandles()){ driver.switchTo().window(winHandle); }
+    }
+
+
     public void typeOnElementNew(String locator, String value) {
         driver.findElement(By.id(locator)).sendKeys(value);
     }

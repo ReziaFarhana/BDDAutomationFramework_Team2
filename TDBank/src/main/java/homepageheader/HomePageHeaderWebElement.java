@@ -72,26 +72,26 @@ public class HomePageHeaderWebElement {
     public static final String watchVideoButton = "//span[normalize-space()='Watch video']";
     public static final String transcipt = "//span[contains(@class,'td-click-heading')]";
     public static final String transcriptFirstText = "//p[contains(text(),'A recent report by Bloomberg shows 76% of American')]";
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-
+    public static final String tDAmericanIcon = "//div[@class='td-tabs-carousel-tab-content icon-link']//p[contains(text(),'TD Ameritrade')]";
+    public static final String tDAmeritradeEducationPage = "//a[@href='https://www.tdameritrade.com/education.page']";
+    public static final String continueToSiteButton = "//button[normalize-space()='Continue to site']";
+    public static final String tDAmeritradeHeader = "//li[@class='main-header-nav-item expandable']//a[@title='Why TD Ameritrade?'][normalize-space()='Why TD Ameritrade?']";
+    public static final String solutionsLocator = "/html/body/div[2]/div[2]/header[1]/div[3]/div/div[1]/nav/ul/li[2]";
+    public static final String corporateAndNotForProfitOption = "//ul[@class='td-dropdown-content']//a[normalize-space()='Corporate & Not-for-Profit']";
+    public static final String corporateTrustTab = "//h4[normalize-space()='Corporate Trust']";
+    public static final String corporateTrustTitle = "//h2[normalize-space()='Corporate trust']";
+    public static final String insightsLocator = "//div[@class='td-section-left']//a[normalize-space()='Insights']";
+    public static final String retirement101Page = "//a[normalize-space()='Retirement 101']";
+    public static final String zipCodeButton = "//a[@class='activity-link btn-secondary active']//span[contains(text(),'Zip Code?')]";
+    public static final String iframeWindowButton = "//button[@class='iframe__window-button']";
+    public static final String zipCodeInputField = "//input[@type='text']";
+    public static final String confirmationMessage = "//div[@class='freebirdFormviewerViewResponseConfirmationMessage']";
+    public static final String zipCodeInput = "08096";
+    public static final String submitButton = "//div[@class='freebirdFormviewerViewNavigationLeftButtons']";
+    public static final String exploreYourOptionsButton = "//button[normalize-space()='Explore your options']";
+    public static final String successfulPlanningLearnMoreButton = "//a[@href='/us/en/investing/wealth-succession-planning/'][normalize-space()='Learn more']";
+    public static final String businessSuccessionPlanningTitle = "//h1[normalize-space()='Business Succession Planning']";
+    public static final String regBIDisclosureBrochurePDFLocator = "//a[normalize-space()='Reg BI Disclosure Brochure (PDF)']";
 
 
 

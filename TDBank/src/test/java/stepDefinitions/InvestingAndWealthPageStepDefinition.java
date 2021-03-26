@@ -114,4 +114,91 @@ public class InvestingAndWealthPageStepDefinition extends WebAPI {
         investingAndWealthPage.verifyFirstSenenteceOfTheTranscript(expectedText);
     }
 
+    @Then("I click on the TD Ameritrade icon")
+    public void i_click_on_the_td_ameritrade_icon() throws InterruptedException {
+    investingAndWealthPage.tdAmeritradeIcon();
+    }
+    @Then("I click on the TD Ameritrade education Start Learning button")
+    public void i_click_on_the_td_ameritrade_education_start_learning_button() {
+        investingAndWealthPage.tdAmeritradeEducationStartLearningButton();
+    }
+    @When("I click on the Continue to site button on the pop-up")
+    public void i_click_on_the_continue_to_site_button_on_the_pop_up() {
+      investingAndWealthPage.continueToSiteButton();
+    }
+    @Then("I should see the TD Ameritrade Page open in a new window and close the old window")
+    public void i_should_see_a_new_window_open_and_close_the_old_window() throws InterruptedException {
+        investingAndWealthPage.tDAmeritradePageInANewWindow();
+    }
+    @Then("I should see {string} as a header on the page")
+    public void i_should_see_as_a_header_on_the_page(String expectedHeader) {
+     investingAndWealthPage.verifyTheTDAmeritradeLogo(expectedHeader);
+    }
+
+    @Then("I hover over the Solutions link and I select the Corporate & Not-for-Profit")
+    public void i_hover_over_the_solutions_link_and_i_select_the_corporate_not_for_profit() throws InterruptedException {
+        investingAndWealthPage.hoverOverSolutionsLink();
+    }
+    @When("I click on the Corporate rate Trust")
+    public void i_click_on_the_corporate_rate_trust() throws InterruptedException {
+       investingAndWealthPage.corporateRateTrustTab();
+    }
+    @Then("I verify the title as {string}")
+    public void i_verify_the_title_as(String expectedTitle) {
+       investingAndWealthPage.verifyCoporateTrustTitle(expectedTitle);
+    }
+
+    @Then("I click on the Insights link")
+    public void i_click_on_the_insights_link() {
+        investingAndWealthPage.insightsLink();
+    }
+    @Then("I click on the Retirement101 link which takes me to a new window and I close the old window")
+    public void i_click_on_the_retirement_link_which_takes_me_to_a_new_window() {
+        investingAndWealthPage.retirementLink();
+    }
+    @Then("I click on the Zip Code? box located on the left bar")
+    public void i_click_on_the_zip_code_box_located_on_the_left_bar() throws InterruptedException {
+investingAndWealthPage.zipCodeBox();
+    }
+    @When("I click on the openInNewWindow button")
+    public void i_click_on_the_open_in_new_window_button() {
+   investingAndWealthPage.openInNewWindowButton();
+    }
+    @Then("A new window opens and I enter the zipcode")
+    public void a_new_window_opens_and_i_enter_the_zipcode() {
+        investingAndWealthPage.enterZipCode();
+    }
+
+    @Then("I click submit")
+    public void i_click_submit() {
+     investingAndWealthPage.submitButton();
+    }
+    @Then("I should see {string}")
+    public void i_should_see(String expectedSubmissionResponse) {
+        investingAndWealthPage.verifySubmissionResult(expectedSubmissionResponse);
+    }
+
+    @Then("I scrolled down to click the exploreYourOption button")
+    public void i_scrolled_down_to_click_the_explore_your_option_button() {
+       investingAndWealthPage.exploreYourOptionButton();
+    }
+    @When("I scrolled down to click the Success Planning learnMore button")
+    public void i_scrolled_down_to_click_the_success_planning_learn_more_button() throws InterruptedException {
+        investingAndWealthPage.successPlanningLearnMoreButton();
+    }
+    @Then("I verify the {string} title")
+    public void i_verify_the_title(String expectedTitle) {
+        investingAndWealthPage.verifyBusinessSuccessionPlanningTitle(expectedTitle);
+    }
+
+    @When("I click on the Reg BI Disclosure Brochure\\(PDF)")
+    public void i_click_on_the_reg_bi_disclosure_brochure_pdf() {
+      investingAndWealthPage.regBIDisclosureBrochurePDF();
+    }
+    @Then("I verify {string} title in the new window")
+    public void i_verify_title_in_the_new_window(String expectedTitle) {
+       investingAndWealthPage.verifyThePdfTitle(expectedTitle);
+    }
+
+
 }
