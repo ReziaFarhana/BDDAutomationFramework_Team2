@@ -7,29 +7,40 @@ Scenario: Current offers and promos       # src/test/java/features/UADealsLink.f
 Scenario: Current offers and promos                  # src/test/java/features/UAOffersSection.feature:7
   Given I am on United Airlines Home page            # stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()
   And I click on the DEALS option                    # stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()
-  And I click on the Current offers and promos link  # stepDefinitions.UAOffersSection.i_click_on_the_current_offers_and_promos_link()
-  Then I should see Deals & offers on the front page # stepDefinitions.UAOffersSection.i_should_see_deals_offers_on_the_front_page()
+  And I click on the Current offers and promos link  # stepDefinitions.UAOffersSectionStepDefinition.i_click_on_the_current_offers_and_promos_link()
+  Then I should see Deals & offers on the front page # stepDefinitions.UAOffersSectionStepDefinition.i_should_see_deals_offers_on_the_front_page()
 
 Scenario: MileagePlus news and offers                            # src/test/java/features/UAOffersSection.feature:11
   Given I am on United Airlines Home page                        # stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()
   And I click on the DEALS option                                # stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()
-  And I click on MileagePlus news and offers link                # stepDefinitions.UAOffersSection.i_click_on_mileage_plus_news_and_offers_link()
-  Then I should see MileagePlus deals & offers on the front page # stepDefinitions.UAOffersSection.i_should_see_mileage_plus_deals_offers_on_the_front_page()
+  And I click on MileagePlus news and offers link                # stepDefinitions.UAOffersSectionStepDefinition.i_click_on_mileage_plus_news_and_offers_link()
+  Then I should see MileagePlus deals & offers on the front page # stepDefinitions.UAOffersSectionStepDefinition.i_should_see_mileage_plus_deals_offers_on_the_front_page()
 
 Scenario: Discounts for 18 to 22 year olds                             # src/test/java/features/UAOffersSection.feature:15
   Given I am on United Airlines Home page                              # stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()
   And I click on the DEALS option                                      # stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()
-  When I click on Discounts for 18 to 22 year olds link                # stepDefinitions.UAOffersSection.i_click_on_discounts_for_to_year_olds_link()
-  Then I should see Discounts for 18 to 22 year olds on the front page # stepDefinitions.UAOffersSection.i_should_see_discounts_for_to_year_olds_on_the_front_page()
+  When I click on Discounts for 18 to 22 year olds link                # stepDefinitions.UAOffersSectionStepDefinition.i_click_on_discounts_for_to_year_olds_link()
+  Then I should see Discounts for 18 to 22 year olds on the front page # stepDefinitions.UAOffersSectionStepDefinition.i_should_see_discounts_for_to_year_olds_on_the_front_page()
 
 Scenario: Veterans Advantage discount                             # src/test/java/features/UAOffersSection.feature:19
   Given I am on United Airlines Home page                         # stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()
   And I click on the DEALS option                                 # stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()
-  And I click on Veterans Advantage discount link                 # stepDefinitions.UAOffersSection.i_click_on_veterans_advantage_discount_link()
-  Then I should see Veterans Advantage discount on the front page # stepDefinitions.UAOffersSection.i_should_see_veterans_advantage_discount_on_the_front_page()
+  And I click on Veterans Advantage discount link                 # stepDefinitions.UAOffersSectionStepDefinition.i_click_on_veterans_advantage_discount_link()
+  Then I should see Veterans Advantage discount on the front page # stepDefinitions.UAOffersSectionStepDefinition.i_should_see_veterans_advantage_discount_on_the_front_page()
 
-Scenario: Redeem eCertificate                                    # src/test/java/features/UAOffersSection.feature:23
-  Given I am on United Airlines Home page                        # stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()
-  And I click on the DEALS option                                # stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()
-  * I clicked On Redeem eCertificate link                        # null
-  * I should see Redeem eCertificate displayed on the front page # null
+Scenario: Redeem eCertificate                                       # src/test/java/features/UAOffersSection.feature:23
+  Given I am on United Airlines Home page                           # stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()
+  And I click on the DEALS option                                   # stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()
+  And I clicked On Redeem eCertificate link                         # stepDefinitions.UAOffersSectionStepDefinition.i_clicked_on_redeem_e_certificate_link()
+  Then I should see Redeem eCertificate displayed on the front page # stepDefinitions.UAOffersSectionStepDefinition.i_should_see_redeem_e_certificate_displayed_on_the_front_page()
+
+Scenario: Getting Electronic travel certificate Under Redeem eCert                   # src/test/java/features/UAOffersSection.feature:27
+  Given I am on United Airlines Home page                                            # stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()
+  And I click on the DEALS option                                                    # stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()
+  When I clicked On Redeem eCertificate link                                         # stepDefinitions.UAOffersSectionStepDefinition.i_clicked_on_redeem_e_certificate_link()
+  And scroll to Electronic travel certificate Section                                # null
+  And Select Year "2019" Under Year Issued                                           # null
+  And entered "1234567891" in PIN Options                                            # null
+  And enter " Selam " in the last name field                                         # null
+  When I clicked on confirm button                                                   # null
+  Then I should have get "Please make sure you entered valid information " in return # null

@@ -23,3 +23,16 @@ Feature: Working on United Airlines OFFERS section under Deals
   Scenario: Redeem eCertificate
     And I clicked On Redeem eCertificate link
     Then I should see Redeem eCertificate displayed on the front page
+
+  Scenario: Getting Electronic travel certificate Under Redeem eCert
+    When I clicked On Redeem eCertificate link
+    And scroll to Electronic travel certificate Section
+    And Select Year "2019" Under Year Issued
+    And entered "1234567891" in PIN Options
+    And enter "Selam" in the last name field
+    When I clicked on confirm button
+    Then I should have get "Please make sure you entered valid information." in return
+
+
+
+

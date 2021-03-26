@@ -12,6 +12,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.PageFactory;
 
+import static homepage.UAWebElement.*;
+
 
 public class UAOffersSectionStepDefinition extends WebAPI {
     UAActionHome act;
@@ -77,14 +79,40 @@ public class UAOffersSectionStepDefinition extends WebAPI {
     }
 
     @And("I clicked On Redeem eCertificate link")
-    public void i_clicked_on_redeem_e_certificate_link() {
-
+    public void i_clicked_on_redeem_e_certificate_link() throws InterruptedException {
+        act.clickOnRedeemeCert();
+        sleepFor(3);
     }
 
     @Then("I should see Redeem eCertificate displayed on the front page")
     public void i_should_see_redeem_e_certificate_displayed_on_the_front_page() {
-
+        act.verifyRedeemeCertIsClicked();
     }
 
+    @When("scroll to Electronic travel certificate Section")
+    public void scroll_to_electronic_travel_certificate_section() {
+        act.scrollToElectronicTravel();
+    }
+
+    @When("Select Year {string} Under Year Issued")
+    public void select_year_under_year_issued(String string) {
+        act.enterInWebElement(toEnterYearInfoLocator,string);
+    }
+    @When("entered {string} in PIN Options")
+    public void entered_in_pin_options(String string) {
+        act.enterInWebElement(enterPONLocator,string);
+    }
+    @When("enter {string} in the last name field")
+    public void enter_in_the_last_name_field(String string) {
+        act.enterInWebElement(enterLastNameLocator,string);
+    }
+    @When("I clicked on confirm button")
+    public void i_clicked_on_confirm_button() {
+        clickByCss(clickOnConfirmButtonLocator);
+    }
+    @Then("I should have get {string} in return")
+    public void i_should_have_get_in_return(String string) {
+        act.verifyeCeritificate();
+    }
 
 }

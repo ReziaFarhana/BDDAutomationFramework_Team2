@@ -37,7 +37,7 @@ public class UADealsStepDefinition extends WebAPI {
         action= PageFactory.initElements(driver,UAActionHome.class);
     }
 
-    @After
+ //   @After
     public void closeBrowser(){
         cleanUp();
     }
@@ -64,7 +64,7 @@ public class UADealsStepDefinition extends WebAPI {
 
     @Then("I should see the OFFERS option")
     public void i_should_see_the_offers_option() {
-        action.verfiyOffer();
+        action.verifiyOffer();
 
     }
 

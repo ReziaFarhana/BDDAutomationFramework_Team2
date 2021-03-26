@@ -18,7 +18,7 @@ public class UAActionHome extends WebAPI{
         clickByXpath(dealsLocator);
     }
 
-    public void verfiyOffer(){
+    public void verifiyOffer(){
         String expected = "OFFERS";
         String actual = getTextByXpath(offerTextLocator);
         Assert.assertEquals("Test failed",expected,actual);
@@ -74,8 +74,19 @@ public class UAActionHome extends WebAPI{
         Assert.assertEquals("Test failed",expected,actual);
     }
 
-    public void locat(){
+    @FindBy(xpath= scrollToElectronicTravelLocator) public WebElement electronicTravel;
+    public void scrollToElectronicTravel(){
+        scrollTo(electronicTravel);
+    }
 
+    public void enterInWebElement(String loc,String element){
+        typeOnElementNEnter(loc,element);
+    }
+
+    public void verifyeCeritificate(){
+        String expected = "Please make sure you entered valid information.";
+        String actual = getTextByCss(verifyeCeritificateLocator);
+        Assert.assertEquals("Test failed",expected,actual);
     }
 
 

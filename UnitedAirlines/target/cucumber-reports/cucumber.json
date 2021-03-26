@@ -3,41 +3,31 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-03-25T17:20:42.529Z",
+        "start_timestamp": "2021-03-25T22:26:57.895Z",
         "line": 3,
         "name": "Current offers and promos",
         "description": "",
         "id": "test-united-airlines-deals-features-on-https://www.united.com/en/us/;current-offers-and-promos",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.UAOffersSection.closeBrowser()"
-            }
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.UADealsStepDefinition.closeBrowser()"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1049800,
+              "duration": 997100,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 1966400,
+                  "duration": 1994600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
+              {
+                "result": {
                   "status": "passed"
                 },
                 "match": {
@@ -46,11 +36,10 @@
               },
               {
                 "result": {
-                  "duration": 997600,
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.getInit()"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
                 }
               }
             ],
@@ -62,11 +51,10 @@
             "after": [
               {
                 "result": {
-                  "duration": 995900,
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.tearDown(io.cucumber.java.Scenario)"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
                 }
               },
               {
@@ -82,10 +70,17 @@
           },
           {
             "result": {
-              "duration": 997300,
               "status": "passed"
             },
             "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
               {
                 "result": {
                   "status": "passed"
@@ -99,7 +94,7 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.getInit()"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
                 }
               }
             ],
@@ -114,11 +109,12 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.tearDown(io.cucumber.java.Scenario)"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
                 }
               },
               {
                 "result": {
+                  "duration": 1202200,
                   "status": "passed"
                 },
                 "match": {
@@ -130,9 +126,18 @@
           },
           {
             "result": {
+              "duration": 86700,
               "status": "passed"
             },
             "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
               {
                 "result": {
                   "status": "passed"
@@ -146,7 +151,7 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.getInit()"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
                 }
               }
             ],
@@ -161,7 +166,7 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.tearDown(io.cucumber.java.Scenario)"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
                 }
               },
               {
@@ -197,9 +202,196 @@
         "steps": [
           {
             "result": {
+              "duration": 1000900,
               "status": "passed"
             },
             "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 4,
+            "name": "I am on United Airlines Home page",
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1129500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "I click on the DEALS option",
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-25T22:26:57.994Z",
+        "line": 7,
+        "name": "Current offers and promos",
+        "description": "",
+        "id": "working-on-united-airlines-offers-section-under-deals;current-offers-and-promos",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "I click on the Current offers and promos link",
+            "match": {
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.i_click_on_the_current_offers_and_promos_link()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 5009900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
               {
                 "result": {
                   "status": "passed"
@@ -214,188 +406,14 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.getInit()"
-                }
-              }
-            ],
-            "line": 4,
-            "name": "I am on United Airlines Home page",
-            "match": {
-              "location": "stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()"
-            },
-            "after": [
-              {
-                "result": {
-                  "duration": 997200,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "stepDefinitions.UAOffersSection.tearDown(io.cucumber.java.Scenario)"
-                }
-              },
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
-                }
-              },
-              {
-                "result": {
-                  "duration": 997300,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "stepDefinitions.UAOffersSection.getInit()"
-                }
-              }
-            ],
-            "line": 5,
-            "name": "I click on the DEALS option",
-            "match": {
-              "location": "stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "stepDefinitions.UAOffersSection.tearDown(io.cucumber.java.Scenario)"
-                }
-              },
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-03-25T17:20:42.618Z",
-        "line": 7,
-        "name": "Current offers and promos",
-        "description": "",
-        "id": "working-on-united-airlines-offers-section-under-deals;current-offers-and-promos",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.UAOffersSection.closeBrowser()"
-            }
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.UADealsStepDefinition.closeBrowser()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
-                }
-              },
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "stepDefinitions.UAOffersSection.getInit()"
-                }
-              }
-            ],
-            "line": 8,
-            "name": "I click on the Current offers and promos link",
-            "match": {
-              "location": "stepDefinitions.UAOffersSection.i_click_on_the_current_offers_and_promos_link()"
-            },
-            "after": [
-              {
-                "result": {
-                  "duration": 996700,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "stepDefinitions.UAOffersSection.tearDown(io.cucumber.java.Scenario)"
-                }
-              },
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
-                }
-              },
-              {
-                "result": {
-                  "duration": 997100,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "stepDefinitions.UAOffersSection.getInit()"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
                 }
               }
             ],
             "line": 9,
             "name": "I should see Deals \u0026 offers on the front page",
             "match": {
-              "location": "stepDefinitions.UAOffersSection.i_should_see_deals_offers_on_the_front_page()"
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.i_should_see_deals_offers_on_the_front_page()"
             },
             "after": [
               {
@@ -403,12 +421,12 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.tearDown(io.cucumber.java.Scenario)"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
                 }
               },
               {
                 "result": {
-                  "duration": 997500,
+                  "duration": 999500,
                   "status": "passed"
                 },
                 "match": {
@@ -429,9 +447,18 @@
         "steps": [
           {
             "result": {
+              "duration": 1207600,
               "status": "passed"
             },
             "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
               {
                 "result": {
                   "status": "passed"
@@ -442,11 +469,10 @@
               },
               {
                 "result": {
-                  "duration": 998100,
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.getInit()"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
                 }
               }
             ],
@@ -461,7 +487,7 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.tearDown(io.cucumber.java.Scenario)"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
                 }
               },
               {
@@ -485,6 +511,14 @@
                   "status": "passed"
                 },
                 "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
                   "location": "stepDefinitions.UADealsStepDefinition.getInit()"
                 }
               },
@@ -493,7 +527,7 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.getInit()"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
                 }
               }
             ],
@@ -508,11 +542,12 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.tearDown(io.cucumber.java.Scenario)"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
                 }
               },
               {
                 "result": {
+                  "duration": 997200,
                   "status": "passed"
                 },
                 "match": {
@@ -525,37 +560,29 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-25T17:20:42.642Z",
+        "start_timestamp": "2021-03-25T22:26:58.053Z",
         "line": 11,
         "name": "MileagePlus news and offers",
         "description": "",
         "id": "working-on-united-airlines-offers-section-under-deals;mileageplus-news-and-offers",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.UAOffersSection.closeBrowser()"
-            }
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.UADealsStepDefinition.closeBrowser()"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
+              "duration": 995500,
               "status": "passed"
             },
             "before": [
+              {
+                "result": {
+                  "duration": 491800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
               {
                 "result": {
                   "status": "passed"
@@ -569,22 +596,23 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.getInit()"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
                 }
               }
             ],
             "line": 12,
             "name": "I click on MileagePlus news and offers link",
             "match": {
-              "location": "stepDefinitions.UAOffersSection.i_click_on_mileage_plus_news_and_offers_link()"
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.i_click_on_mileage_plus_news_and_offers_link()"
             },
             "after": [
               {
                 "result": {
+                  "duration": 758100,
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.tearDown(io.cucumber.java.Scenario)"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
                 }
               },
               {
@@ -600,11 +628,22 @@
           },
           {
             "result": {
+              "duration": 1000700,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
+                  "duration": 1029100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 480700,
                   "status": "passed"
                 },
                 "match": {
@@ -616,14 +655,14 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.getInit()"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
                 }
               }
             ],
             "line": 13,
             "name": "I should see MileagePlus deals \u0026 offers on the front page",
             "match": {
-              "location": "stepDefinitions.UAOffersSection.i_should_see_mileage_plus_deals_offers_on_the_front_page()"
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.i_should_see_mileage_plus_deals_offers_on_the_front_page()"
             },
             "after": [
               {
@@ -631,7 +670,7 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.tearDown(io.cucumber.java.Scenario)"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
                 }
               },
               {
@@ -656,10 +695,17 @@
         "steps": [
           {
             "result": {
-              "duration": 998700,
               "status": "passed"
             },
             "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
               {
                 "result": {
                   "status": "passed"
@@ -673,7 +719,7 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.getInit()"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
                 }
               }
             ],
@@ -688,7 +734,7 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.tearDown(io.cucumber.java.Scenario)"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
                 }
               },
               {
@@ -704,12 +750,20 @@
           },
           {
             "result": {
-              "duration": 998500,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 1001500,
                   "status": "passed"
                 },
                 "match": {
@@ -721,7 +775,7 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.getInit()"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
                 }
               }
             ],
@@ -736,7 +790,7 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.tearDown(io.cucumber.java.Scenario)"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
                 }
               },
               {
@@ -753,40 +807,30 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-25T17:20:42.655Z",
+        "start_timestamp": "2021-03-25T22:26:58.084Z",
         "line": 15,
         "name": "Discounts for 18 to 22 year olds",
         "description": "",
         "id": "working-on-united-airlines-offers-section-under-deals;discounts-for-18-to-22-year-olds",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.UAOffersSection.closeBrowser()"
-            }
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.UADealsStepDefinition.closeBrowser()"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1025900,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 1022400,
                   "status": "passed"
                 },
                 "match": {
@@ -798,14 +842,14 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.getInit()"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
                 }
               }
             ],
             "line": 16,
             "name": "I click on Discounts for 18 to 22 year olds link",
             "match": {
-              "location": "stepDefinitions.UAOffersSection.i_click_on_discounts_for_to_year_olds_link()"
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.i_click_on_discounts_for_to_year_olds_link()"
             },
             "after": [
               {
@@ -813,7 +857,7 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.tearDown(io.cucumber.java.Scenario)"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
                 }
               },
               {
@@ -837,7 +881,7 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                  "location": "stepDefinitions.Mukera.getInit()"
                 }
               },
               {
@@ -845,14 +889,23 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.getInit()"
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 1032600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
                 }
               }
             ],
             "line": 17,
             "name": "I should see Discounts for 18 to 22 year olds on the front page",
             "match": {
-              "location": "stepDefinitions.UAOffersSection.i_should_see_discounts_for_to_year_olds_on_the_front_page()"
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.i_should_see_discounts_for_to_year_olds_on_the_front_page()"
             },
             "after": [
               {
@@ -860,7 +913,7 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.tearDown(io.cucumber.java.Scenario)"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
                 }
               },
               {
@@ -893,6 +946,14 @@
                   "status": "passed"
                 },
                 "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
                   "location": "stepDefinitions.UADealsStepDefinition.getInit()"
                 }
               },
@@ -901,7 +962,7 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.getInit()"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
                 }
               }
             ],
@@ -913,15 +974,15 @@
             "after": [
               {
                 "result": {
+                  "duration": 996500,
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.tearDown(io.cucumber.java.Scenario)"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
                 }
               },
               {
                 "result": {
-                  "duration": 997700,
                   "status": "passed"
                 },
                 "match": {
@@ -941,6 +1002,14 @@
                   "status": "passed"
                 },
                 "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
                   "location": "stepDefinitions.UADealsStepDefinition.getInit()"
                 }
               },
@@ -949,7 +1018,7 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.getInit()"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
                 }
               }
             ],
@@ -964,12 +1033,11 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.tearDown(io.cucumber.java.Scenario)"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
                 }
               },
               {
                 "result": {
-                  "duration": 996900,
                   "status": "passed"
                 },
                 "match": {
@@ -982,29 +1050,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-25T17:20:42.672Z",
+        "start_timestamp": "2021-03-25T22:26:58.103Z",
         "line": 19,
         "name": "Veterans Advantage discount",
         "description": "",
         "id": "working-on-united-airlines-offers-section-under-deals;veterans-advantage-discount",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.UAOffersSection.closeBrowser()"
-            }
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.UADealsStepDefinition.closeBrowser()"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
@@ -1018,6 +1068,14 @@
                   "status": "passed"
                 },
                 "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
                   "location": "stepDefinitions.UADealsStepDefinition.getInit()"
                 }
               },
@@ -1026,14 +1084,14 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.getInit()"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
                 }
               }
             ],
             "line": 20,
             "name": "I click on Veterans Advantage discount link",
             "match": {
-              "location": "stepDefinitions.UAOffersSection.i_click_on_veterans_advantage_discount_link()"
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.i_click_on_veterans_advantage_discount_link()"
             },
             "after": [
               {
@@ -1041,12 +1099,255 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.tearDown(io.cucumber.java.Scenario)"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
                 }
               },
               {
                 "result": {
-                  "duration": 997000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1301700,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 21,
+            "name": "I should see Veterans Advantage discount on the front page",
+            "match": {
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.i_should_see_veterans_advantage_discount_on_the_front_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 997500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 995600,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 695300,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 4,
+            "name": "I am on United Airlines Home page",
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "I click on the DEALS option",
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-25T22:26:58.118Z",
+        "line": 23,
+        "name": "Redeem eCertificate",
+        "description": "",
+        "id": "working-on-united-airlines-offers-section-under-deals;redeem-ecertificate",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 24,
+            "name": "I clicked On Redeem eCertificate link",
+            "match": {
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.i_clicked_on_redeem_e_certificate_link()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
                   "status": "passed"
                 },
                 "match": {
@@ -1066,6 +1367,14 @@
                   "status": "passed"
                 },
                 "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
                   "location": "stepDefinitions.UADealsStepDefinition.getInit()"
                 }
               },
@@ -1074,14 +1383,14 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.getInit()"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
                 }
               }
             ],
-            "line": 21,
-            "name": "I should see Veterans Advantage discount on the front page",
+            "line": 25,
+            "name": "I should see Redeem eCertificate displayed on the front page",
             "match": {
-              "location": "stepDefinitions.UAOffersSection.i_should_see_veterans_advantage_discount_on_the_front_page()"
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.i_should_see_redeem_e_certificate_displayed_on_the_front_page()"
             },
             "after": [
               {
@@ -1089,7 +1398,7 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.tearDown(io.cucumber.java.Scenario)"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
                 }
               },
               {
@@ -1122,6 +1431,15 @@
                   "status": "passed"
                 },
                 "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 535400,
+                  "status": "passed"
+                },
+                "match": {
                   "location": "stepDefinitions.UADealsStepDefinition.getInit()"
                 }
               },
@@ -1130,7 +1448,7 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.getInit()"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
                 }
               }
             ],
@@ -1142,10 +1460,11 @@
             "after": [
               {
                 "result": {
+                  "duration": 997300,
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.tearDown(io.cucumber.java.Scenario)"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
                 }
               },
               {
@@ -1166,7 +1485,14 @@
             "before": [
               {
                 "result": {
-                  "duration": 998200,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
+              {
+                "result": {
                   "status": "passed"
                 },
                 "match": {
@@ -1178,7 +1504,7 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.getInit()"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
                 }
               }
             ],
@@ -1193,7 +1519,7 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.tearDown(io.cucumber.java.Scenario)"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
                 }
               },
               {
@@ -1210,32 +1536,71 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-25T17:20:42.717Z",
-        "line": 23,
-        "name": "Redeem eCertificate",
+        "start_timestamp": "2021-03-25T22:26:58.194Z",
+        "line": 27,
+        "name": "Getting Electronic travel certificate Under Redeem eCert",
         "description": "",
-        "id": "working-on-united-airlines-offers-section-under-deals;redeem-ecertificate",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.UAOffersSection.closeBrowser()"
-            }
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.UADealsStepDefinition.closeBrowser()"
-            }
-          }
-        ],
+        "id": "working-on-united-airlines-offers-section-under-deals;getting-electronic-travel-certificate-under-redeem-ecert",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 1031000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 246000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 28,
+            "name": "I clicked On Redeem eCertificate link",
+            "match": {
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.i_clicked_on_redeem_e_certificate_link()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
           {
             "result": {
               "status": "undefined"
@@ -1246,6 +1611,14 @@
                   "status": "passed"
                 },
                 "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
                   "location": "stepDefinitions.UADealsStepDefinition.getInit()"
                 }
               },
@@ -1254,12 +1627,12 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.getInit()"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
                 }
               }
             ],
-            "line": 24,
-            "name": "I clicked On Redeem eCertificate link",
+            "line": 29,
+            "name": "scroll to Electronic travel certificate Section",
             "match": {},
             "after": [
               {
@@ -1267,7 +1640,7 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.tearDown(io.cucumber.java.Scenario)"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
                 }
               },
               {
@@ -1279,7 +1652,7 @@
                 }
               }
             ],
-            "keyword": "* "
+            "keyword": "And "
           },
           {
             "result": {
@@ -1291,6 +1664,14 @@
                   "status": "skipped"
                 },
                 "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
                   "location": "stepDefinitions.UADealsStepDefinition.getInit()"
                 }
               },
@@ -1299,12 +1680,12 @@
                   "status": "skipped"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.getInit()"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
                 }
               }
             ],
-            "line": 25,
-            "name": "I should see Redeem eCertificate displayed on the front page",
+            "line": 30,
+            "name": "Select Year \"2019\" Under Year Issued",
             "match": {},
             "after": [
               {
@@ -1312,7 +1693,7 @@
                   "status": "skipped"
                 },
                 "match": {
-                  "location": "stepDefinitions.UAOffersSection.tearDown(io.cucumber.java.Scenario)"
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
                 }
               },
               {
@@ -1324,7 +1705,222 @@
                 }
               }
             ],
-            "keyword": "* "
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 31,
+            "name": "entered \"1234567891\" in PIN Options",
+            "match": {},
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 32,
+            "name": "enter \" Selam \" in the last name field",
+            "match": {},
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 337700,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1018800,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 33,
+            "name": "I clicked on confirm button",
+            "match": {},
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 999100,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 34,
+            "name": "I should have get \"Please make sure you entered valid information \" in return",
+            "match": {},
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
           }
         ]
       }

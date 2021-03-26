@@ -763,13 +763,16 @@ public class WebAPI {
         return url;
     }
 
-    public void rightClick(String loc, String loc1){
+    public void rightClick(String loc){
         WebElement element = driver.findElement(By.xpath(loc));
-        WebElement element2 = driver.findElement(By.xpath(loc1));
         Actions use = new Actions(driver);
-        use.contextClick(element).moveToElement(element2).build().perform();
-    }
+        use.moveToElement(element).contextClick(element).sendKeys(Keys.ARROW_DOWN).build().perform();
 
+    }
+    public void scrollTo(WebElement element){
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("arguments[0].scrollIntoView(true)",element);
+    }
 
 
 }

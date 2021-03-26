@@ -5,16 +5,20 @@
       {
         "name": "I am on United Airlines Home page",
         "aggregatedDurations": {
-          "median": 0.0,
-          "average": 3.41416E-4
+          "median": 9.956E-4,
+          "average": 6.00171E-4
         },
         "durations": [
           {
-            "duration": 0.0010498,
+            "duration": 9.971E-4,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UADealsLink.feature:4"
           },
           {
-            "duration": 0.0,
+            "duration": 0.0010009,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:4"
+          },
+          {
+            "duration": 0.0012076,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:4"
           },
           {
@@ -22,11 +26,11 @@
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:4"
           },
           {
-            "duration": 9.987E-4,
+            "duration": 0.0,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:4"
           },
           {
-            "duration": 0.0,
+            "duration": 9.956E-4,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:4"
           },
           {
@@ -44,11 +48,11 @@
         "name": "I click on the DEALS option",
         "aggregatedDurations": {
           "median": 0.0,
-          "average": 3.32633E-4
+          "average": 0.0
         },
         "durations": [
           {
-            "duration": 9.973E-4,
+            "duration": 0.0,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UADealsLink.feature:5"
           },
           {
@@ -60,7 +64,11 @@
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:5"
           },
           {
-            "duration": 9.985E-4,
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:5"
+          },
+          {
+            "duration": 0.0,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:5"
           },
           {
@@ -81,12 +89,12 @@
       {
         "name": "I should see the OFFERS option",
         "aggregatedDurations": {
-          "median": 0.0,
-          "average": 0.0
+          "median": 8.67E-5,
+          "average": 8.67E-5
         },
         "durations": [
           {
-            "duration": 0.0,
+            "duration": 8.67E-5,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UADealsLink.feature:6"
           }
         ]
@@ -135,12 +143,12 @@
       {
         "name": "I click on MileagePlus news and offers link",
         "aggregatedDurations": {
-          "median": 0.0,
-          "average": 0.0
+          "median": 9.955E-4,
+          "average": 9.955E-4
         },
         "durations": [
           {
-            "duration": 0.0,
+            "duration": 9.955E-4,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:12"
           }
         ]
@@ -153,12 +161,12 @@
       {
         "name": "I should see MileagePlus deals \u0026 offers on the front page",
         "aggregatedDurations": {
-          "median": 0.0,
-          "average": 0.0
+          "median": 0.0010007,
+          "average": 0.0010007
         },
         "durations": [
           {
-            "duration": 0.0,
+            "duration": 0.0010007,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:13"
           }
         ]
@@ -171,12 +179,12 @@
       {
         "name": "I click on Discounts for 18 to 22 year olds link",
         "aggregatedDurations": {
-          "median": 0.0010259,
-          "average": 0.0010259
+          "median": 0.0,
+          "average": 0.0
         },
         "durations": [
           {
-            "duration": 0.0010259,
+            "duration": 0.0,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:16"
           }
         ]
@@ -232,6 +240,46 @@
           {
             "duration": 0.0,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:21"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I clicked On Redeem eCertificate link",
+    "steps": [
+      {
+        "name": "I clicked On Redeem eCertificate link",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:24"
+          },
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:28"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should see Redeem eCertificate displayed on the front page",
+    "steps": [
+      {
+        "name": "I should see Redeem eCertificate displayed on the front page",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:25"
           }
         ]
       }

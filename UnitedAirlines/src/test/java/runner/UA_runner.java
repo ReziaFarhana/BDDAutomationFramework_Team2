@@ -15,9 +15,9 @@ import org.junit.runner.RunWith;
                 "junit:target/cucumber-reports/cucumber-results.xml"  },
 
         monochrome = true,
-        dryRun = false,
-        publish = true,
-        tags = "(@run) and (not @stop)"
+        dryRun = true,
+        publish = true
+    //    tags = "(@run) and (not @stop)"
 
 
 )
