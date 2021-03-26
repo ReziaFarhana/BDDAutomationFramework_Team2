@@ -22,13 +22,22 @@ public class UAWebElement {
     public static final String verifyeCeritificateLocator ="div.atm-l-linelength-container:nth-child(1) > div";
 //    public static final String Locator ="";
 
-    //~
+    //~ ~~ Destination Section of UA deals
 
-    public static final String currentOfferLocator ="//p[contains(text(),'Find our current offers and promotions.')]";
-    public static final String clickOnHotelLocator ="#bookHotelTab > h3:nth-child(1) > span";
-    public static final String Locator ="#headerNav1 > span:nth-child(1)";
-//    public static final String Locator ="";
-//    public static final String Locator ="";
+    public static final String getPopularDestinationsLocator ="//h3[.='DESTINATION DEALS']";
+    public static final String popularDestinationsLocator ="//span[contains(.,'Flights to popular destinations')]";
+    public static final String flightToNationalParksLocator ="//span[.='Flights to national parks']";
+    public static final String toSanFranciscoLocator ="//span[contains(.,'Flights to San Francisco')]";
+    public static final String toNewYorkLocator ="//span[contains(.,'Flights to New York/Newark')]";
+    public static final String toHoustonLocator ="//span[contains(.,'Flights to Houston')]";
+    public static final String toChicagoLocator ="//span[contains(.,'Flights to Chicago')]";
+    public static final String toLosAngelesLocator ="//span[contains(.,'Flights to Los Angeles')]";
+    public static final String toFloaridaLocator ="//span[contains(.,'Flights to Orlando')]";
+    public static final String Locator ="";
+
+        // /html/body/div[2]/div[1]/div/div/ol/li[4]/a/span
+
+    public static final String destinationDealsNewPageTextLocator ="//div[contains(@class,'module-row module-row--breadcrumbs')]//li[4]";
 
 
 

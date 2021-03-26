@@ -48,6 +48,9 @@
                     <includes>
                         <!--                            <include>**/AmazonTestRunner.java</include>-->
                     </includes>
+                    <suiteXmlFiles>
+
+                    </suiteXmlFiles>
 
                 </configuration>
             </plugin>

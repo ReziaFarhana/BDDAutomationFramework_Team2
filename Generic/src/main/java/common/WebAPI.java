@@ -8,6 +8,7 @@ import io.cucumber.java.Scenario;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -21,6 +22,7 @@ import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import org.testng.annotations.Optional;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 
@@ -34,10 +36,7 @@ import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class WebAPI {
@@ -129,6 +128,10 @@ public class WebAPI {
     public static String sauceLabs_accessKey = "";
 
     public void openBrowser(String url) throws IOException {
+        setUp(false,"browserStack","windows","10","firefox","86",url);
+    }
+
+    public void openBrowserUsingMultiBrowser(String url, String browserName, String browserVersion) throws IOException {
         setUp(false,"browserStack","windows","10","firefox","86",url);
     }
 
@@ -772,6 +775,21 @@ public class WebAPI {
     public void scrollTo(WebElement element){
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("arguments[0].scrollIntoView(true)",element);
+    }
+
+    public void windoSwitchHandler2(int index) {
+        Set<String> tab = driver.getWindowHandles();
+        List<String> hold = new ArrayList<>(tab);
+        hold.addAll(hold);
+        try {
+//            driver.switchTo().window((hold.get(index - 1))).close();
+            driver.switchTo().window((hold.get(index)));
+//            driver.switchTo().window(getCurrentUrl());
+        }catch (IndexOutOfBoundsException e){
+            System.out.println("Expected index out of bound ");
+        }
+
+
     }
 
 
