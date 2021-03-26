@@ -41,7 +41,10 @@ public class CommercialPage extends WebAPI {
     public WebElement companyInput;
     @FindBy(how = How.ID, using = phoneInputField)
     public WebElement phoneInput;
-@FindBy(how = How.XPATH,using = sectorDropDown)public WebElement sector;
+    @FindBy(how = How.XPATH, using = sectorDropDown)
+    public WebElement sector;
+    @FindBy(how = How.ID, using = questionInputField)
+    public WebElement questionSearchBox;
 
     public void adsChoicesAndPersonalizationpopUp() {
         clickByXpath(adChoicesAndPersonalizationXButton);
@@ -109,15 +112,15 @@ public class CommercialPage extends WebAPI {
     }
 
     public void personalInfoFieldOnGetNewsAlerts(String firstName, String lastName, String companyName, String emailAddress, String phoneNumber) {
-    firstNameInput.sendKeys(firstName);
-    lastNameInput.sendKeys(lastName);
-    emailInput.sendKeys(emailAddress);
-    companyInput.sendKeys(companyName);
-    phoneInput.sendKeys(phoneNumber);
+        firstNameInput.sendKeys(firstName);
+        lastNameInput.sendKeys(lastName);
+        emailInput.sendKeys(emailAddress);
+        companyInput.sendKeys(companyName);
+        phoneInput.sendKeys(phoneNumber);
     }
 
     public void sectorDropDown(String sectorOption) {
-        selectOptionByVisibleText(sector,sectorOption);
+        selectOptionByVisibleText(sector, sectorOption);
     }
 
     public void verifyGetNewsAlertsTitle(String expectedTitle) {
@@ -125,24 +128,24 @@ public class CommercialPage extends WebAPI {
         Assert.assertEquals(actualText, expectedTitle, "Title does not match");
     }
 
-    public void awardWinningButton(){
+    public void awardWinningButton() {
         clickByXpath(awardWinningButton);
     }
 
-    public void verifySectionTitle(String expectedTitle){
+    public void verifySectionTitle(String expectedTitle) {
         String actualText = getTextByXpath(pageSectionTitlePresentationEvents);
         Assert.assertEquals(actualText, expectedTitle, "Title does not match");
     }
 
-    public void hoverOverTreasuryServices(){
-        hoverAndClick(treasuryServices,payables);
+    public void hoverOverTreasuryServices() {
+        hoverAndClick(treasuryServices, payables);
     }
 
-    public void tdInformationServicesGetDetailsButton(){
+    public void tdInformationServicesGetDetailsButton() {
         clickByXpath(tdInformationServicesGetDetailsButton);
     }
 
-    public void tdeTreasuryLink(){
+    public void tdeTreasuryLink() {
         clickByXpath(learMoreAboutTDeTreasuryLink);
     }
 
@@ -151,31 +154,31 @@ public class CommercialPage extends WebAPI {
         sleepFor(3);
     }
 
-    public void verifyTranscript(String expectedText){
+    public void verifyTranscript(String expectedText) {
         String actualText = getTextByXpath(transcriptText);
         Assert.assertEquals(actualText, expectedText, "Text does not match");
     }
 
-    public void hoverOverIndustries(){
-        hoverAndClick(industries,education);
+    public void hoverOverIndustries() {
+        hoverAndClick(industries, education);
     }
 
-    public void verifyPageTitle(String expectedTitle){
+    public void verifyPageTitle(String expectedTitle) {
         String actualText = driver.getTitle();
         Assert.assertEquals(actualText, expectedTitle, "Text does not match");
 
     }
 
-    public void assetBasedLendingIcon(){
+    public void assetBasedLendingIcon() {
         clickByXpath(assetBasedLendingIcon);
     }
 
-    public void verifyTitle(String expectedTitle){
+    public void verifyTitle(String expectedTitle) {
         String actualText = getTextByXpath(assetBasedLendingLearnMoreText);
         Assert.assertEquals(actualText, expectedTitle, "Title does not match");
     }
 
-    public void loansAndCreditsIcon(){
+    public void loansAndCreditsIcon() {
         clickByXpath(loansOfCreditIcon);
     }
 
@@ -189,20 +192,62 @@ public class CommercialPage extends WebAPI {
         sleepFor(3);
     }
 
-    public void fraudControlIcon(){
+    public void fraudControlIcon() {
         clickByXpath(fraudControlIcon);
     }
 
-    public void fraudItemsYouMightNotKnowLink(){
-        clickByXpath(fraudItemsYouMightNotKnowLink);
+    public void fraudItemsYouMightNotKnowLink() {
+        clickByLinkText(fraudItemsYouMightNotKnowLink);
     }
 
-    public void verifyThePageTitleOfTheLink(String expectedTitle){
+    public void verifyThePageTitleOfTheLink(String expectedTitle) {
         String actualText = getTextByXpath(fraudItemsYouMightNotKnowPageTitle);
         Assert.assertEquals(actualText, expectedTitle, "Title does not match");
     }
 
+    public void equipmentFinanceIcon() {
+        clickByXpath(equipmentFinanceIcon);
+    }
 
+    public void verifyTheFinancePageTitle(String expectedTitle) {
+        String actualText = driver.getTitle();
+        Assert.assertEquals(actualText, expectedTitle, "Title does not match");
+    }
+
+    public void exploreTDBankingOfferingsByIndustryLink() {
+        clickByXpath(tdBankOfferingLinkLocator);
+        windowTwoThirdPageScroll();
+    }
+
+    public void growingBusinessLink() {
+
+        clickByXpath(growingBusinessLink);
+    }
+
+    public void verifyGrowingBusinessPageTitle(String expectedTitle) {
+        String actualText = getTextByXpath(growingBusinessLinkPageTitle);
+        Assert.assertEquals(actualText, expectedTitle, "Title does not match");
+    }
+
+    public void enterAQuestion(String question) throws InterruptedException {
+        questionSearchBox.sendKeys(question);
+        sleepFor(3);
+    }
+
+    public void askNowButton() throws InterruptedException {
+        clickByXpath(askNowButton);
+        sleepFor(3);
+    }
+
+    public void verifySearchResult(String expectedQuestion){
+    String actualQuestion = getTextByCss(searchedQuestionLocator);
+    Assert.assertEquals(actualQuestion,expectedQuestion, "Question is not a match");
+    }
+
+    public void verifySearchResultIsNotAMatch(String expectedQuestion){
+        String actualQuestion = getTextByCss(searchedQuestionLocator);
+        Assert.assertNotEquals(actualQuestion,expectedQuestion,"Product does match");
+    }
 
 
 }

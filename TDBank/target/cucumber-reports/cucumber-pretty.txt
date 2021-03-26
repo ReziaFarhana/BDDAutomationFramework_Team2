@@ -1,0 +1,83 @@
+
+@Israt
+Scenario Outline: TD Bank Type your question searchBox functionality check in the Commercial page with valid questions # src/test/java/features/CommercialPage.feature:16
+  Given I am on the TD Bank homePage                                                                                   # stepDefinitions.CommercialPageStepDefinition.i_am_on_the_td_bank_home_page()
+  When I close the Ads Choices & Personalization popUp                                                                 # stepDefinitions.CommercialPageStepDefinition.i_close_the_ads_choices_personalization_pop_up()
+  Then I click on the Commercial tab                                                                                   # stepDefinitions.CommercialPageStepDefinition.i_click_on_the_commerical_tab()
+  And I enter "What is a voiceprint?" in the searchBox                                                                 # stepDefinitions.CommercialPageStepDefinition.i_enter_in_the_search_box(java.lang.String)
+  When I click on the askNow Button                                                                                    # stepDefinitions.CommercialPageStepDefinition.i_click_on_the_ask_now_button()
+  Then I should see "What is a voiceprint?" properly appear below the searchBox                                        # stepDefinitions.CommercialPageStepDefinition.i_should_see_properly_appear_below_the_search_box(java.lang.String)
+  But I should not see "What is a account?" appear below the searchBox                                                 # stepDefinitions.CommercialPageStepDefinition.i_should_not_see_appear_below_the_search_box(java.lang.String)
+
+@Israt
+Scenario Outline: TD Bank Type your question searchBox functionality check in the Commercial page with valid questions # src/test/java/features/CommercialPage.feature:17
+  Given I am on the TD Bank homePage                                                                                   # stepDefinitions.CommercialPageStepDefinition.i_am_on_the_td_bank_home_page()
+  When I close the Ads Choices & Personalization popUp                                                                 # stepDefinitions.CommercialPageStepDefinition.i_close_the_ads_choices_personalization_pop_up()
+  Then I click on the Commercial tab                                                                                   # stepDefinitions.CommercialPageStepDefinition.i_click_on_the_commerical_tab()
+  And I enter "When should I use a wire transfer?" in the searchBox                                                    # stepDefinitions.CommercialPageStepDefinition.i_enter_in_the_search_box(java.lang.String)
+  When I click on the askNow Button                                                                                    # stepDefinitions.CommercialPageStepDefinition.i_click_on_the_ask_now_button()
+  Then I should see "When should I use a wire transfer?" properly appear below the searchBox                           # stepDefinitions.CommercialPageStepDefinition.i_should_see_properly_appear_below_the_search_box(java.lang.String)
+  But I should not see "How do I close my account?" appear below the searchBox                                         # stepDefinitions.CommercialPageStepDefinition.i_should_not_see_appear_below_the_search_box(java.lang.String)
+
+@Israt
+Scenario Outline: TD Bank Type your question searchBox functionality check in the Commercial page with valid questions # src/test/java/features/CommercialPage.feature:18
+  Given I am on the TD Bank homePage                                                                                   # stepDefinitions.CommercialPageStepDefinition.i_am_on_the_td_bank_home_page()
+  When I close the Ads Choices & Personalization popUp                                                                 # stepDefinitions.CommercialPageStepDefinition.i_close_the_ads_choices_personalization_pop_up()
+      org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=89.0.4389.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-TILJLKS', ip: '192.168.124.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\israt\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50690}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3d032eb770b9095daf310bb614aed4cf
+*** Element info: {Using=xpath, value=//*[@id="ensCall"]/span[2]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at common.WebAPI.clickByXpath(WebAPI.java:416)
+	at homepageheader.CommercialPage.adsChoicesAndPersonalizationpopUp(CommercialPage.java:50)
+	at stepDefinitions.CommercialPageStepDefinition.i_close_the_ads_choices_personalization_pop_up(CommercialPageStepDefinition.java:50)
+	at ✽.I close the Ads Choices & Personalization popUp(file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/CommercialPage.feature:5)
+
+      org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=89.0.4389.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-TILJLKS', ip: '192.168.124.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\israt\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50690}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3d032eb770b9095daf310bb614aed4cf
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at stepDefinitions.CommercialPageStepDefinition.tearDown(CommercialPageStepDefinition.java:28)
+
+  Then I click on the Commercial tab                                                                                   # stepDefinitions.CommercialPageStepDefinition.i_click_on_the_commerical_tab()
+  And I enter "How do I cancel my TD debit card?" in the searchBox                                                     # stepDefinitions.CommercialPageStepDefinition.i_enter_in_the_search_box(java.lang.String)
+  When I click on the askNow Button                                                                                    # stepDefinitions.CommercialPageStepDefinition.i_click_on_the_ask_now_button()
+  Then I should see "How do I cancel my TD debit card?" properly appear below the searchBox                            # stepDefinitions.CommercialPageStepDefinition.i_should_see_properly_appear_below_the_search_box(java.lang.String)
+  But I should not see "When should I use a wire transfer?" appear below the searchBox                                 # stepDefinitions.CommercialPageStepDefinition.i_should_not_see_appear_below_the_search_box(java.lang.String)
+
+@Israt
+Scenario: Verify the commercial page                                                             # src/test/java/features/CommercialPage.feature:21

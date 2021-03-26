@@ -45,7 +45,33 @@ public class HomePageHeaderWebElement {
     public static final String fraudControlIcon = "//li[@role='link']//p[contains(text(),'Fraud Control')]";
     public static final String fraudItemsYouMightNotKnowLink ="Click here for fraud terms you might not know";//linkText
     public static final String fraudItemsYouMightNotKnowPageTitle ="//h1[normalize-space()='Cyber fraud terms you should know']";
-//    public static final String
+    public static final String equipmentFinanceIcon = "//li[@role='link']//p[contains(text(),'Equipment Finance')]";
+    public static final String tdBankOfferingLinkLocator = "//p[contains(text(),'TD also offers deep industry-specific expertise th')]//a[@class='td-link-standalone td-link-standalone-secondary']";
+    public static final String growingBusinessLink = "//ul[@class='td-list-group article']//li[1]//div[2]//h3[1]//a[1]";
+    public static final String growingBusinessLinkPageTitle = "//h1[contains(text(),'Growing Business, Growing Risk: Fraud Events Risin')]";
+    public static final String questionInputField = "question"; //id
+    public static final String askNowButton = "//button[normalize-space()='Ask now']";
+    public static final String searchedQuestionLocator = "h1[class='td-rte-margin-none ng-binding']";
+
+        public static final String investingAndWealthTabLocator = "Investing & Wealth";
+    public static final String financialGoalsLocator = "//a[normalize-space()='Financial Goals']";
+    public static final String preserveYourWealthOption = "//ul[@class='td-dropdown-content']//a[normalize-space()='Preserve Your Wealth']";
+    public static final String investmentAndManagementfindOutMoreLink= "//a[@href='/us/en/investing/investment-management/']";
+    public static final String ourProcesTab = "//li[@class='td-tabs-carousel-tab slick-slide slick-active']//div[@class='td-tabs-carousel-tab-content']";
+    public static final String ourProcessTitle = "//h2[normalize-space()='Our investment management process']";
+    public static final String individualAndFamiliesIcon = "//div[@class='td-tabs-carousel-tab-content icon-link']//p[contains(text(),'Individuals & Families')]";
+    public static final String findATDBankButton = "//button[normalize-space()='Find a TD Bank']";
+    public static final String findAStoreSearchBox = "//input[@title='Please specify a location']";
+    public static final String resultSummaryText = "//span[@class='ResultSummary-query']";
+    public static final String businessOwnersIcon = "//div[@class='td-tabs-carousel-tab-content icon-link']//p[contains(text(),'Business Owners')]";
+    public static final String privateBankingLink = "//a[@href='/us/en/investing/private-banking-solution/']";
+    public static final String paymentSolutionsTab = "//h4[normalize-space()='Payment Solutions']";
+    public static final String paymentSolutionsTitle = "//h2[normalize-space()='Payment solutions']";
+    public static final String retirementPlanningIcon = "//div[@class='td-tabs-carousel-tab-content icon-link']//p[contains(text(),'Retirement Planning')]";
+    public static final String legacyAndPhilanthropicPlanningLink = "//section[@class='td-single-product td-bg-white']//li[4]";
+    public static final String watchVideoButton = "//span[normalize-space()='Watch video']";
+    public static final String transcipt = "//span[contains(@class,'td-click-heading')]";
+    public static final String transcriptFirstText = "//p[contains(text(),'A recent report by Bloomberg shows 76% of American')]";
 //    public static final String
 //    public static final String
 //    public static final String
