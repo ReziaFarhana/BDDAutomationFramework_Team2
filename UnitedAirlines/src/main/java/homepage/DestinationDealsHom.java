@@ -96,5 +96,47 @@ public class DestinationDealsHom extends WebAPI {
         sleepFor(5);
     }
 
+    public void enterFromCity( String city){
+      typeOnElementNEnter(bookFromLocator,city);
+
+    }
+
+    @FindBy(css = bookFromLocator)
+    public WebElement found;
+    public void enterToCity( String city){
+      scrollTo(found);
+      typeOnElementNEnter(bookFromLocator,city);
+    }
+
+    public void selectDepartureDate(){
+        clickByCss(bookDepartureDateLocator);
+        clickByXpath(leftCalenderClickLocator);
+        clickByXpath(march30Locator);
+    }
+
+    public void selectDestinationDate(){
+        clickByCss(bookReturnDateLocator);
+        clickByXpath(april24Locator);
+    }
+
+    public void selectTravelerInfo(){
+        clickByCss(travelersInfoLocator);
+        boolean resutl = driver.findElement(By.cssSelector(inputAdultNumberLocator)).isDisplayed();
+        while (resutl == false){
+            clickByXpath(decreaseAdultLocator);
+            driver.findElement(By.cssSelector(inputAdultNumberLocator)).isDisplayed();
+        }
+        clickByXpath(doneButtonLocator);
+    }
+
+    public void enterPromoCode(String promoCode){
+        clickByCss(promotionalCodeLocator);
+    }
+
+    public void clickOnSearchFlightBox(){
+        clickByXpath(searchButtonLocator);
+    }
+
+
 
 }

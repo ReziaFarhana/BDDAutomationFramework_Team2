@@ -1,1 +1,4565 @@
-[]
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-26T21:12:32.217Z",
+        "line": 8,
+        "name": "Flights to popular destinations",
+        "description": "",
+        "id": "working-on-destination-deals;flights-to-popular-destinations",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1994700,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 998500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "I clicked on Flights to popular destinations",
+            "match": {
+              "location": "stepDefinitions.UADestinationStepDefinition.i_clicked_on_flights_to_popular_destinations()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 997500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 999300,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 999100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "I should land on a new tab \"United Cheap Flights to 300+ Destinations Worldwide | United Airlines\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"United Cheap Flights to 300+ Destinations Worldwide | United Airlines\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepDefinitions.UADestinationStepDefinition.i_should_land_on_a_new_tab(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 995400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@run"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T21:12:32.322Z",
+        "line": 13,
+        "name": "Flights to national parks",
+        "description": "",
+        "id": "working-on-destination-deals;flights-to-national-parks",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 997500,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 14,
+            "name": "I click on national parks",
+            "match": {
+              "location": "stepDefinitions.UADestinationStepDefinition.i_click_on_national_parks()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 15,
+            "name": "I should land on a new page with \"Flights to USA National Parks - Find the Best Fare for Your Next Trip - United Airlines\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Flights to USA National Parks - Find the Best Fare for Your Next Trip - United Airlines\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.UADestinationStepDefinition.i_should_land_on_a_new_page_with(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@run"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T21:12:32.339Z",
+        "line": 18,
+        "name": "Flights to San Francisco",
+        "description": "",
+        "id": "working-on-destination-deals;flights-to-san-francisco",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 19,
+            "name": "I clicked on Flights to San Francisco link",
+            "match": {
+              "location": "stepDefinitions.UADestinationStepDefinition.i_clicked_on_flights_to_san_francisco_link()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 20,
+            "name": "I should have a new windows tab with a title \"Flights to San Francisco\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Flights to San Francisco\"",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinitions.UADestinationStepDefinition.i_should_have_a_new_windows_tab_with_a_title(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@run"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T21:12:32.355Z",
+        "line": 23,
+        "name": "Flights to New York Newark",
+        "description": "",
+        "id": "working-on-destination-deals;flights-to-new-york-newark",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 995400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 24,
+            "name": "I clicked on the Flights to New York Newark link",
+            "match": {
+              "location": "stepDefinitions.UADestinationStepDefinition.i_clicked_on_the_flights_to_new_york_newark_link()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 25,
+            "name": "I should be found a new page with a bread cramp end with \"Flights to New York/Newark\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Flights to New York/Newark\"",
+                  "offset": 57
+                }
+              ],
+              "location": "stepDefinitions.UADestinationStepDefinition.i_should_be_found_a_new_page_with_a_bread_cramp_end_with(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 995900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@run"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T21:12:32.377Z",
+        "line": 28,
+        "name": "Flights to Houston",
+        "description": "",
+        "id": "working-on-destination-deals;flights-to-houston",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 988600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 29,
+            "name": "I clicked on the link on Flights to Houston",
+            "match": {
+              "location": "stepDefinitions.UADestinationStepDefinition.i_clicked_on_the_link_on_flights_to_houston()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 30,
+            "name": "I should land to a new windows tab with bread cramp end with  \"Flights to Houston\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Flights to Houston\"",
+                  "offset": 62
+                }
+              ],
+              "location": "stepDefinitions.UADestinationStepDefinition.i_should_land_to_a_new_windows_tab_with_bread_cramp_end_with(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 997100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@run"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T21:12:32.392Z",
+        "line": 33,
+        "name": "Flights to Chicago",
+        "description": "",
+        "id": "working-on-destination-deals;flights-to-chicago",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 998000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 34,
+            "name": "I clicked on Flights to Chicago link",
+            "match": {
+              "location": "stepDefinitions.UADestinationStepDefinition.i_clicked_on_flights_to_chicago_link()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 996900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 35,
+            "name": "I should land to a new windows tab with bread cramp end with  \"Flights to Chicago\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Flights to Chicago\"",
+                  "offset": 62
+                }
+              ],
+              "location": "stepDefinitions.UADestinationStepDefinition.i_should_land_to_a_new_windows_tab_with_bread_cramp_end_with(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 997000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@run"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T21:12:32.407Z",
+        "line": 38,
+        "name": "Flights to Los Angeles",
+        "description": "",
+        "id": "working-on-destination-deals;flights-to-los-angeles",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 998000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 39,
+            "name": "I clicked on Flights to Los Angeles link",
+            "match": {
+              "location": "stepDefinitions.UADestinationStepDefinition.i_clicked_on_flights_to_los_angeles_link()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 997600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 40,
+            "name": "I should land to a new windows tab with bread cramp end with  \"Flights to Los Angeles\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Flights to Los Angeles\"",
+                  "offset": 62
+                }
+              ],
+              "location": "stepDefinitions.UADestinationStepDefinition.i_should_land_to_a_new_windows_tab_with_bread_cramp_end_with(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@run"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T21:12:32.424Z",
+        "line": 43,
+        "name": "Flights to Orlando",
+        "description": "",
+        "id": "working-on-destination-deals;flights-to-orlando",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 44,
+            "name": "I clicked on Flights to Orlando link",
+            "match": {
+              "location": "stepDefinitions.UADestinationStepDefinition.i_clicked_on_flights_to_orlando_link()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 45,
+            "name": "I should land to a new windows tab with bread cramp end with  \"Flights to Orlando\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Flights to Orlando\"",
+                  "offset": 62
+                }
+              ],
+              "location": "stepDefinitions.UADestinationStepDefinition.i_should_land_to_a_new_windows_tab_with_bread_cramp_end_with(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@run"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T21:12:32.468Z",
+        "line": 58,
+        "name": "",
+        "description": "",
+        "id": "working-on-destination-deals;;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 48,
+            "name": "I clicked on Flights to popular destinations",
+            "match": {
+              "location": "stepDefinitions.UADestinationStepDefinition.i_clicked_on_flights_to_popular_destinations()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 49,
+            "name": "enter \"Departure\" and \" Destination\" into the From and To fields",
+            "match": {},
+            "after": [
+              {
+                "result": {
+                  "duration": 997400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 50,
+            "name": "select a departure date form the calendar",
+            "match": {},
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 998100,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 51,
+            "name": "Select a return date from the given calendar",
+            "match": {},
+            "after": [
+              {
+                "result": {
+                  "duration": 996600,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 52,
+            "name": "Select travelers class, traveler type and amount and click on done",
+            "match": {},
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 998700,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 53,
+            "name": "enter \"Promotion\" in the promo field",
+            "match": {},
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 54,
+            "name": "I click on search flights",
+            "match": {},
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 55,
+            "name": "I should have",
+            "match": {},
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "working on DESTINATION DEALS",
+    "description": "",
+    "id": "working-on-destination-deals",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Destinations.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-26T21:12:32.510Z",
+        "line": 3,
+        "name": "Current offers and promos",
+        "description": "",
+        "id": "test-united-airlines-deals-features-on-https://www.united.com/en/us/;current-offers-and-promos",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 4,
+            "name": "I am on United Airlines Home page",
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 997600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "I click on the DEALS option",
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 996400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "I should see the OFFERS option",
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.i_should_see_the_offers_option()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test United Airlines deals features on https://www.united.com/en/us/",
+    "description": "",
+    "id": "test-united-airlines-deals-features-on-https://www.united.com/en/us/",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/UADealsLink.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 997300,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 4,
+            "name": "I am on United Airlines Home page",
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "I click on the DEALS option",
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T21:12:32.532Z",
+        "line": 8,
+        "name": "Current offers and promos",
+        "description": "",
+        "id": "working-on-united-airlines-offers-section-under-deals;current-offers-and-promos",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "I click on the Current offers and promos link",
+            "match": {
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.i_click_on_the_current_offers_and_promos_link()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "I should see Deals \u0026 offers on the front page",
+            "match": {
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.i_should_see_deals_offers_on_the_front_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@rund"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 998300,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 4,
+            "name": "I am on United Airlines Home page",
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 997800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "I click on the DEALS option",
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 997200,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T21:12:32.552Z",
+        "line": 12,
+        "name": "MileagePlus news and offers",
+        "description": "",
+        "id": "working-on-united-airlines-offers-section-under-deals;mileageplus-news-and-offers",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 997500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "I click on MileagePlus news and offers link",
+            "match": {
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.i_click_on_mileage_plus_news_and_offers_link()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 997300,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 14,
+            "name": "I should see MileagePlus deals \u0026 offers on the front page",
+            "match": {
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.i_should_see_mileage_plus_deals_offers_on_the_front_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@rund"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 4,
+            "name": "I am on United Airlines Home page",
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "I click on the DEALS option",
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T21:12:32.572Z",
+        "line": 16,
+        "name": "Discounts for 18 to 22 year olds",
+        "description": "",
+        "id": "working-on-united-airlines-offers-section-under-deals;discounts-for-18-to-22-year-olds",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 17,
+            "name": "I click on Discounts for 18 to 22 year olds link",
+            "match": {
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.i_click_on_discounts_for_to_year_olds_link()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 18,
+            "name": "I should see Discounts for 18 to 22 year olds on the front page",
+            "match": {
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.i_should_see_discounts_for_to_year_olds_on_the_front_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@rund"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 1001900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 4,
+            "name": "I am on United Airlines Home page",
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 991800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "I click on the DEALS option",
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T21:12:32.584Z",
+        "line": 20,
+        "name": "Veterans Advantage discount",
+        "description": "",
+        "id": "working-on-united-airlines-offers-section-under-deals;veterans-advantage-discount",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 21,
+            "name": "I click on Veterans Advantage discount link",
+            "match": {
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.i_click_on_veterans_advantage_discount_link()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 22,
+            "name": "I should see Veterans Advantage discount on the front page",
+            "match": {
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.i_should_see_veterans_advantage_discount_on_the_front_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 998000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@rund"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 4,
+            "name": "I am on United Airlines Home page",
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "I click on the DEALS option",
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T21:12:32.596Z",
+        "line": 24,
+        "name": "Redeem eCertificate",
+        "description": "",
+        "id": "working-on-united-airlines-offers-section-under-deals;redeem-ecertificate",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 25,
+            "name": "I clicked On Redeem eCertificate link",
+            "match": {
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.i_clicked_on_redeem_e_certificate_link()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 26,
+            "name": "I should see Redeem eCertificate displayed on the front page",
+            "match": {
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.i_should_see_redeem_e_certificate_displayed_on_the_front_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@rund"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 997700,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 4,
+            "name": "I am on United Airlines Home page",
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 996400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "I click on the DEALS option",
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T21:12:32.610Z",
+        "line": 28,
+        "name": "Getting Electronic travel certificate Under Redeem eCert",
+        "description": "",
+        "id": "working-on-united-airlines-offers-section-under-deals;getting-electronic-travel-certificate-under-redeem-ecert",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.UADealsStepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 29,
+            "name": "I clicked On Redeem eCertificate link",
+            "match": {
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.i_clicked_on_redeem_e_certificate_link()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 30,
+            "name": "scroll to Electronic travel certificate Section",
+            "match": {
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.scroll_to_electronic_travel_certificate_section()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 998300,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 31,
+            "name": "Select Year \"2019\" Under Year Issued",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2019\"",
+                  "offset": 12
+                }
+              ],
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.select_year_under_year_issued(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 996800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 32,
+            "name": "entered \"1234567891\" in PIN Options",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234567891\"",
+                  "offset": 8
+                }
+              ],
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.entered_in_pin_options(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 33,
+            "name": "enter \"Selam\" in the last name field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Selam\"",
+                  "offset": 6
+                }
+              ],
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.enter_in_the_last_name_field(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 34,
+            "name": "I clicked on confirm button",
+            "match": {
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.i_clicked_on_confirm_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 997100,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.getInIt()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UAOffersSectionStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 35,
+            "name": "I should have get \"Please make sure you entered valid information.\" in return",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please make sure you entered valid information.\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDefinitions.UAOffersSectionStepDefinition.i_should_have_get_in_return(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADestinationStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.UADealsStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Mukera.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@rund"
+          }
+        ]
+      }
+    ],
+    "name": "Working on United Airlines OFFERS section under Deals",
+    "description": "",
+    "id": "working-on-united-airlines-offers-section-under-deals",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/UAOffersSection.feature",
+    "tags": []
+  }
+]

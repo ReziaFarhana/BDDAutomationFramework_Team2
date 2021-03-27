@@ -2,9 +2,13 @@ package stepDefinitions;
 
 import common.WebAPI;
 import homepage.DestinationDealsHom;
+import io.cucumber.java.AfterStep;
 import io.cucumber.java.BeforeStep;
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.*;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.PageFactory;
 
 import static homepage.UAWebElement.*;
@@ -16,6 +20,15 @@ public class UADestinationStepDefinition  extends WebAPI {
     @BeforeStep
     public void getInIt(){
         act = PageFactory.initElements(driver,DestinationDealsHom.class);
+    }
+
+    @AfterStep
+    public void tearDown(Scenario scenario){
+        if (scenario.isFailed()){
+            // Take a screenshot
+            final byte[] screenShot= ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+            scenario.attach(screenShot,"image/png","demo1");  // embed it in the report
+        }
     }
 
 
@@ -78,6 +91,45 @@ public class UADestinationStepDefinition  extends WebAPI {
     @When("I clicked on Flights to Orlando link")
     public void i_clicked_on_flights_to_orlando_link() throws InterruptedException {
         act.clickOnFlightsToFloarida();
+    }
+
+    @And("enter {string} From city")
+    public void enterDepartureCity(String string) throws InterruptedException {
+        act.enterFromCity(string);
+        sleepFor(2);
+    }
+
+    @And("enter {string} To city")
+    public void enterDestinationCity(String string) throws InterruptedException {
+        act.enterToCity(string);
+        sleepFor(2);
+    }
+
+    @Given("select a departure date form the calendar")
+    public void select_a_departure_date_form_the_calendar() throws InterruptedException {
+        act.selectDepartureDate();
+        sleepFor(2);
+
+    }
+    @Given("Select a return date from the given calendar")
+    public void select_a_return_date_from_the_given_calendar() {
+        act.selectDestinationDate();
+    }
+    @Given("Select travelers class, traveler type and amount and click on done")
+    public void select_travelers_class_traveler_type_and_amount_and_click_on_done() {
+        act.selectTravelerInfo();
+    }
+    @Given("enter {string} in the promo field")
+    public void enter_in_the_promo_field(String string) {
+        act.enterPromoCode(string);
+    }
+    @When("I click on search flights")
+    public void i_click_on_search_flights() {
+        act.clickOnSearchFlightBox();
+    }
+    @Then("I should have {string}")
+    public void i_should_have(String string) {
+
     }
 
 

@@ -1,0 +1,102 @@
+
+@run
+Scenario: Flights to popular destinations                                                                 # src/test/java/features/Destinations.feature:8
+  When I clicked on Flights to popular destinations                                                       # stepDefinitions.UADestinationStepDefinition.i_clicked_on_flights_to_popular_destinations()
+  Then I should land on a new tab "United Cheap Flights to 300+ Destinations Worldwide | United Airlines" # stepDefinitions.UADestinationStepDefinition.i_should_land_on_a_new_tab(java.lang.String)
+
+@run
+Scenario: Flights to national parks                                                                                               # src/test/java/features/Destinations.feature:13
+  When I click on national parks                                                                                                  # stepDefinitions.UADestinationStepDefinition.i_click_on_national_parks()
+  Then I should land on a new page with "Flights to USA National Parks - Find the Best Fare for Your Next Trip - United Airlines" # stepDefinitions.UADestinationStepDefinition.i_should_land_on_a_new_page_with(java.lang.String)
+
+@run
+Scenario: Flights to San Francisco                                             # src/test/java/features/Destinations.feature:18
+  When I clicked on Flights to San Francisco link                              # stepDefinitions.UADestinationStepDefinition.i_clicked_on_flights_to_san_francisco_link()
+  Then I should have a new windows tab with a title "Flights to San Francisco" # stepDefinitions.UADestinationStepDefinition.i_should_have_a_new_windows_tab_with_a_title(java.lang.String)
+
+@run
+Scenario: Flights to New York Newark                                                         # src/test/java/features/Destinations.feature:23
+  When I clicked on the Flights to New York Newark link                                      # stepDefinitions.UADestinationStepDefinition.i_clicked_on_the_flights_to_new_york_newark_link()
+  Then I should be found a new page with a bread cramp end with "Flights to New York/Newark" # stepDefinitions.UADestinationStepDefinition.i_should_be_found_a_new_page_with_a_bread_cramp_end_with(java.lang.String)
+
+@run
+Scenario: Flights to Houston                                                              # src/test/java/features/Destinations.feature:28
+  When I clicked on the link on Flights to Houston                                        # stepDefinitions.UADestinationStepDefinition.i_clicked_on_the_link_on_flights_to_houston()
+  Then I should land to a new windows tab with bread cramp end with  "Flights to Houston" # stepDefinitions.UADestinationStepDefinition.i_should_land_to_a_new_windows_tab_with_bread_cramp_end_with(java.lang.String)
+
+@run
+Scenario: Flights to Chicago                                                              # src/test/java/features/Destinations.feature:33
+  When I clicked on Flights to Chicago link                                               # stepDefinitions.UADestinationStepDefinition.i_clicked_on_flights_to_chicago_link()
+  Then I should land to a new windows tab with bread cramp end with  "Flights to Chicago" # stepDefinitions.UADestinationStepDefinition.i_should_land_to_a_new_windows_tab_with_bread_cramp_end_with(java.lang.String)
+
+@run
+Scenario: Flights to Los Angeles                                                              # src/test/java/features/Destinations.feature:38
+  When I clicked on Flights to Los Angeles link                                               # stepDefinitions.UADestinationStepDefinition.i_clicked_on_flights_to_los_angeles_link()
+  Then I should land to a new windows tab with bread cramp end with  "Flights to Los Angeles" # stepDefinitions.UADestinationStepDefinition.i_should_land_to_a_new_windows_tab_with_bread_cramp_end_with(java.lang.String)
+
+@run
+Scenario: Flights to Orlando                                                              # src/test/java/features/Destinations.feature:43
+  When I clicked on Flights to Orlando link                                               # stepDefinitions.UADestinationStepDefinition.i_clicked_on_flights_to_orlando_link()
+  Then I should land to a new windows tab with bread cramp end with  "Flights to Orlando" # stepDefinitions.UADestinationStepDefinition.i_should_land_to_a_new_windows_tab_with_bread_cramp_end_with(java.lang.String)
+
+Scenario Outline:                                                        # src/test/java/features/Destinations.feature:58
+  Given I clicked on Flights to popular destinations                     # stepDefinitions.UADestinationStepDefinition.i_clicked_on_flights_to_popular_destinations()
+  And enter "Departure" and " Destination" into the From and To fields   # null
+  And select a departure date form the calendar                          # null
+  And Select a return date from the given calendar                       # null
+  And Select travelers class, traveler type and amount and click on done # null
+  And enter "Promotion" in the promo field                               # null
+  When I click on search flights                                         # null
+  Then I should have                                                     # null
+
+Scenario: Current offers and promos       # src/test/java/features/UADealsLink.feature:3
+  Given I am on United Airlines Home page # stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()
+  And I click on the DEALS option         # stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()
+  Then I should see the OFFERS option     # stepDefinitions.UADealsStepDefinition.i_should_see_the_offers_option()
+
+@rund
+Scenario: Current offers and promos                  # src/test/java/features/UAOffersSection.feature:8
+  Given I am on United Airlines Home page            # stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()
+  And I click on the DEALS option                    # stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()
+  And I click on the Current offers and promos link  # stepDefinitions.UAOffersSectionStepDefinition.i_click_on_the_current_offers_and_promos_link()
+  Then I should see Deals & offers on the front page # stepDefinitions.UAOffersSectionStepDefinition.i_should_see_deals_offers_on_the_front_page()
+
+@rund
+Scenario: MileagePlus news and offers                            # src/test/java/features/UAOffersSection.feature:12
+  Given I am on United Airlines Home page                        # stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()
+  And I click on the DEALS option                                # stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()
+  And I click on MileagePlus news and offers link                # stepDefinitions.UAOffersSectionStepDefinition.i_click_on_mileage_plus_news_and_offers_link()
+  Then I should see MileagePlus deals & offers on the front page # stepDefinitions.UAOffersSectionStepDefinition.i_should_see_mileage_plus_deals_offers_on_the_front_page()
+
+@rund
+Scenario: Discounts for 18 to 22 year olds                             # src/test/java/features/UAOffersSection.feature:16
+  Given I am on United Airlines Home page                              # stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()
+  And I click on the DEALS option                                      # stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()
+  When I click on Discounts for 18 to 22 year olds link                # stepDefinitions.UAOffersSectionStepDefinition.i_click_on_discounts_for_to_year_olds_link()
+  Then I should see Discounts for 18 to 22 year olds on the front page # stepDefinitions.UAOffersSectionStepDefinition.i_should_see_discounts_for_to_year_olds_on_the_front_page()
+
+@rund
+Scenario: Veterans Advantage discount                             # src/test/java/features/UAOffersSection.feature:20
+  Given I am on United Airlines Home page                         # stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()
+  And I click on the DEALS option                                 # stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()
+  And I click on Veterans Advantage discount link                 # stepDefinitions.UAOffersSectionStepDefinition.i_click_on_veterans_advantage_discount_link()
+  Then I should see Veterans Advantage discount on the front page # stepDefinitions.UAOffersSectionStepDefinition.i_should_see_veterans_advantage_discount_on_the_front_page()
+
+@rund
+Scenario: Redeem eCertificate                                       # src/test/java/features/UAOffersSection.feature:24
+  Given I am on United Airlines Home page                           # stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()
+  And I click on the DEALS option                                   # stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()
+  And I clicked On Redeem eCertificate link                         # stepDefinitions.UAOffersSectionStepDefinition.i_clicked_on_redeem_e_certificate_link()
+  Then I should see Redeem eCertificate displayed on the front page # stepDefinitions.UAOffersSectionStepDefinition.i_should_see_redeem_e_certificate_displayed_on_the_front_page()
+
+@rund
+Scenario: Getting Electronic travel certificate Under Redeem eCert                   # src/test/java/features/UAOffersSection.feature:28
+  Given I am on United Airlines Home page                                            # stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()
+  And I click on the DEALS option                                                    # stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()
+  When I clicked On Redeem eCertificate link                                         # stepDefinitions.UAOffersSectionStepDefinition.i_clicked_on_redeem_e_certificate_link()
+  And scroll to Electronic travel certificate Section                                # stepDefinitions.UAOffersSectionStepDefinition.scroll_to_electronic_travel_certificate_section()
+  And Select Year "2019" Under Year Issued                                           # stepDefinitions.UAOffersSectionStepDefinition.select_year_under_year_issued(java.lang.String)
+  And entered "1234567891" in PIN Options                                            # stepDefinitions.UAOffersSectionStepDefinition.entered_in_pin_options(java.lang.String)
+  And enter "Selam" in the last name field                                           # stepDefinitions.UAOffersSectionStepDefinition.enter_in_the_last_name_field(java.lang.String)
+  When I clicked on confirm button                                                   # stepDefinitions.UAOffersSectionStepDefinition.i_clicked_on_confirm_button()
+  Then I should have get "Please make sure you entered valid information." in return # stepDefinitions.UAOffersSectionStepDefinition.i_should_have_get_in_return(java.lang.String)

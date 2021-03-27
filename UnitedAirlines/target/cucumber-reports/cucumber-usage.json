@@ -1,1 +1,673 @@
-[]
+[
+  {
+    "source": "I clicked on Flights to popular destinations",
+    "steps": [
+      {
+        "name": "I clicked on Flights to popular destinations",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:9"
+          },
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:48"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should land on a new tab {string}",
+    "steps": [
+      {
+        "name": "I should land on a new tab \"United Cheap Flights to 300+ Destinations Worldwide | United Airlines\"",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on national parks",
+    "steps": [
+      {
+        "name": "I click on national parks",
+        "aggregatedDurations": {
+          "median": 9.975E-4,
+          "average": 9.975E-4
+        },
+        "durations": [
+          {
+            "duration": 9.975E-4,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should land on a new page with {string}",
+    "steps": [
+      {
+        "name": "I should land on a new page with \"Flights to USA National Parks - Find the Best Fare for Your Next Trip - United Airlines\"",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:15"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I clicked on Flights to San Francisco link",
+    "steps": [
+      {
+        "name": "I clicked on Flights to San Francisco link",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should have a new windows tab with a title {string}",
+    "steps": [
+      {
+        "name": "I should have a new windows tab with a title \"Flights to San Francisco\"",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I clicked on the Flights to New York Newark link",
+    "steps": [
+      {
+        "name": "I clicked on the Flights to New York Newark link",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:24"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should be found a new page with a bread cramp end with {string}",
+    "steps": [
+      {
+        "name": "I should be found a new page with a bread cramp end with \"Flights to New York/Newark\"",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I clicked on the link on Flights to Houston",
+    "steps": [
+      {
+        "name": "I clicked on the link on Flights to Houston",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:29"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should land to a new windows tab with bread cramp end with  {string}",
+    "steps": [
+      {
+        "name": "I should land to a new windows tab with bread cramp end with  \"Flights to Houston\"",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:30"
+          }
+        ]
+      },
+      {
+        "name": "I should land to a new windows tab with bread cramp end with  \"Flights to Chicago\"",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:35"
+          }
+        ]
+      },
+      {
+        "name": "I should land to a new windows tab with bread cramp end with  \"Flights to Los Angeles\"",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:40"
+          }
+        ]
+      },
+      {
+        "name": "I should land to a new windows tab with bread cramp end with  \"Flights to Orlando\"",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:45"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I clicked on Flights to Chicago link",
+    "steps": [
+      {
+        "name": "I clicked on Flights to Chicago link",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I clicked on Flights to Los Angeles link",
+    "steps": [
+      {
+        "name": "I clicked on Flights to Los Angeles link",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:39"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I clicked on Flights to Orlando link",
+    "steps": [
+      {
+        "name": "I clicked on Flights to Orlando link",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:44"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I am on United Airlines Home page",
+    "steps": [
+      {
+        "name": "I am on United Airlines Home page",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UADealsLink.feature:4"
+          },
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:4"
+          },
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:4"
+          },
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:4"
+          },
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:4"
+          },
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:4"
+          },
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the DEALS option",
+    "steps": [
+      {
+        "name": "I click on the DEALS option",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UADealsLink.feature:5"
+          },
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:5"
+          },
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:5"
+          },
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:5"
+          },
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:5"
+          },
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:5"
+          },
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should see the OFFERS option",
+    "steps": [
+      {
+        "name": "I should see the OFFERS option",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UADealsLink.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the Current offers and promos link",
+    "steps": [
+      {
+        "name": "I click on the Current offers and promos link",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should see Deals \u0026 offers on the front page",
+    "steps": [
+      {
+        "name": "I should see Deals \u0026 offers on the front page",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on MileagePlus news and offers link",
+    "steps": [
+      {
+        "name": "I click on MileagePlus news and offers link",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should see MileagePlus deals \u0026 offers on the front page",
+    "steps": [
+      {
+        "name": "I should see MileagePlus deals \u0026 offers on the front page",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on Discounts for 18 to 22 year olds link",
+    "steps": [
+      {
+        "name": "I click on Discounts for 18 to 22 year olds link",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should see Discounts for 18 to 22 year olds on the front page",
+    "steps": [
+      {
+        "name": "I should see Discounts for 18 to 22 year olds on the front page",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on Veterans Advantage discount link",
+    "steps": [
+      {
+        "name": "I click on Veterans Advantage discount link",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:21"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should see Veterans Advantage discount on the front page",
+    "steps": [
+      {
+        "name": "I should see Veterans Advantage discount on the front page",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I clicked On Redeem eCertificate link",
+    "steps": [
+      {
+        "name": "I clicked On Redeem eCertificate link",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:25"
+          },
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:29"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should see Redeem eCertificate displayed on the front page",
+    "steps": [
+      {
+        "name": "I should see Redeem eCertificate displayed on the front page",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "scroll to Electronic travel certificate Section",
+    "steps": [
+      {
+        "name": "scroll to Electronic travel certificate Section",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:30"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Select Year {string} Under Year Issued",
+    "steps": [
+      {
+        "name": "Select Year \"2019\" Under Year Issued",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:31"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "entered {string} in PIN Options",
+    "steps": [
+      {
+        "name": "entered \"1234567891\" in PIN Options",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:32"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "enter {string} in the last name field",
+    "steps": [
+      {
+        "name": "enter \"Selam\" in the last name field",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:33"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I clicked on confirm button",
+    "steps": [
+      {
+        "name": "I clicked on confirm button",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should have get {string} in return",
+    "steps": [
+      {
+        "name": "I should have get \"Please make sure you entered valid information.\" in return",
+        "aggregatedDurations": {
+          "median": 9.971E-4,
+          "average": 9.971E-4
+        },
+        "durations": [
+          {
+            "duration": 9.971E-4,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:35"
+          }
+        ]
+      }
+    ]
+  }
+]
