@@ -195,8 +195,8 @@ investingAndWealthPage.zipCodeBox();
     public void i_click_on_the_reg_bi_disclosure_brochure_pdf() {
       investingAndWealthPage.regBIDisclosureBrochurePDF();
     }
-    @Then("I verify {string} title in the new window")
-    public void i_verify_title_in_the_new_window(String expectedTitle) {
+    @Then("I verify {string} title")
+    public void i_verify_title(String expectedTitle) {
        investingAndWealthPage.verifyThePdfTitle(expectedTitle);
     }
 
