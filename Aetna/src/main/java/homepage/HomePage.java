@@ -12,10 +12,10 @@ import static homepage.HomePageWebElement.*;
 
 
 public class HomePage extends WebAPI {
+    @FindBy(how = How.XPATH, using =employersPageTextXp ) public WebElement employersPageText;
 
 // Action Method class
 
-    @FindBy(how = How.XPATH, using =employersPageTextXp ) public WebElement employersPageText;
 
     // Find By Annotation:
 
@@ -37,5 +37,6 @@ public class HomePage extends WebAPI {
         String actualText =driver.getTitle();
         Assert.assertEquals("Page title doesnt match", expectedText, actualText);
     }
+
 
 }
