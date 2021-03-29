@@ -430,6 +430,11 @@ public class WebAPI {
         Select select = new Select(element);
         select.selectByVisibleText(value);
     }
+    public void hoverOver(WebDriver drive, WebElement elementHover) throws InterruptedException {
+        Actions selectToHover = new Actions(drive);
+        selectToHover.moveToElement(elementHover).build().perform();
+        Thread.sleep(3000);
+    }
 
     public void mouseHoverByCSS(String locator) {
         try {
@@ -556,6 +561,7 @@ public class WebAPI {
         element.click();
     }
 
+
     public void typeOnInputBox(String locator, String value) {
         try {
             driver.findElement(By.id(locator)).sendKeys(value, Keys.ENTER);
@@ -573,6 +579,8 @@ public class WebAPI {
             System.out.println("CSS locator didn't work");
         }
     }
+
+
 
 
     // Customer Made Helper Methods for Amex.com

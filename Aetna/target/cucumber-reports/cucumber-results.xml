@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.334">
-    <testcase classname="Aetna Homepage Employers Link" name="Employers Link functionality Check" time="0.074">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
-            <![CDATA[Given user is on Aetna homepage.............................................undefined
-When user clicks on Employers link..........................................skipped
-Then user should see "Products and Services" appear.........................skipped
-And user verify page title is "Employer Group Health Insurance Plans & Benefits | Aetna".skipped
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="27.353">
+    <testcase classname="Employers Page Header Functionality" name="Products and Services Options" time="26.529">
+        <system-out>
+            <![CDATA[Given user is on employers page.............................................passed
+Then user clicks on Products and services...................................passed
+And user hovers over Health Plans...........................................passed
+And user clicks All Health Plans............................................passed
+Then user verifies page title is "Group Medical, Medicare & Ancillary Insurance Plans | Aetna".passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>

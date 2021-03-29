@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         features = {"src/test/java/features"},
         // the path of the step definition files
         //  glue = "src/test/java/stepDefinitions",
-        glue = "stepDefinitions",
+        glue = "stepDefinition",
         /// to generate different type of reporting
         plugin = {"pretty","json:target/cucumber-reports/cucumber.json", "html:target/cucumber-reports/index.html",
         "pretty:target/cucumber-reports/cucumber-pretty.txt","usage:target/cucumber-reports/cucumber-usage.json",
@@ -24,7 +24,7 @@ import org.junit.runner.RunWith;
         // to check the mapping is proper between feature file and step definition file
         dryRun = false,
         publish = true,
-        tags = "(@smokeTest)"
+        tags = "(@monkeyTest) and(not @smokeTest)"
 
 
 

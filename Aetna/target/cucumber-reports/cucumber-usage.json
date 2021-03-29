@@ -1,1 +1,92 @@
-[]
+[
+  {
+    "source": "user is on employers page",
+    "steps": [
+      {
+        "name": "user is on employers page",
+        "aggregatedDurations": {
+          "median": 13.9031723,
+          "average": 13.9031723
+        },
+        "durations": [
+          {
+            "duration": 13.9031723,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user clicks on Products and services",
+    "steps": [
+      {
+        "name": "user clicks on Products and services",
+        "aggregatedDurations": {
+          "median": 3.1601509,
+          "average": 3.1601509
+        },
+        "durations": [
+          {
+            "duration": 3.1601509,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user hovers over Health Plans",
+    "steps": [
+      {
+        "name": "user hovers over Health Plans",
+        "aggregatedDurations": {
+          "median": 3.3551889,
+          "average": 3.3551889
+        },
+        "durations": [
+          {
+            "duration": 3.3551889,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:15"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user clicks All Health Plans",
+    "steps": [
+      {
+        "name": "user clicks All Health Plans",
+        "aggregatedDurations": {
+          "median": 5.8199256,
+          "average": 5.8199256
+        },
+        "durations": [
+          {
+            "duration": 5.8199256,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user verifies page title is {string}",
+    "steps": [
+      {
+        "name": "user verifies page title is \"Group Medical, Medicare \u0026 Ancillary Insurance Plans | Aetna\"",
+        "aggregatedDurations": {
+          "median": 0.020706,
+          "average": 0.020706
+        },
+        "durations": [
+          {
+            "duration": 0.020706,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:17"
+          }
+        ]
+      }
+    ]
+  }
+]

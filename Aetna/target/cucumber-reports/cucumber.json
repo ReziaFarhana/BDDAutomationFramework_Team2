@@ -3,65 +3,299 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-03-29T01:48:40.985Z",
-        "line": 4,
-        "name": "Employers Link functionality Check",
+        "line": 3,
+        "name": "",
         "description": "",
-        "id": "aetna-homepage-employers-link;employers-link-functionality-check",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13903172300,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 51826400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinition.EmployersPageStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 5475600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinition.HomePageStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 4,
+            "name": "user is on employers page",
+            "match": {
+              "location": "stepDefinition.EmployersPageStepDefinition.user_is_on_employers_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 6493700,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinition.HomePageStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 497600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinition.EmployersPageStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-29T19:28:53.762Z",
+        "line": 13,
+        "name": "Products and Services Options",
+        "description": "",
+        "id": "employers-page-header-functionality;products-and-services-options",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 3160150900,
+              "status": "passed"
             },
-            "line": 5,
-            "name": "user is on Aetna homepage",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
+            "before": [
+              {
+                "result": {
+                  "duration": 2832600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinition.EmployersPageStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 190900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinition.HomePageStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 14,
+            "name": "user clicks on Products and services",
+            "match": {
+              "location": "stepDefinition.EmployersPageStepDefinition.userClicksOnProductsAndServices()"
             },
-            "line": 6,
-            "name": "user clicks on Employers link",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 807300,
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "user should see \"Products and Services\" appear",
-            "match": {},
+            "after": [
+              {
+                "result": {
+                  "duration": 496600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinition.HomePageStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 497500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinition.EmployersPageStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 993200,
-              "status": "skipped"
+              "duration": 3355188900,
+              "status": "passed"
             },
-            "line": 8,
-            "name": "user verify page title is \"Employer Group Health Insurance Plans \u0026 Benefits | Aetna\"",
-            "match": {},
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinition.EmployersPageStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinition.HomePageStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 15,
+            "name": "user hovers over Health Plans",
+            "match": {
+              "location": "stepDefinition.EmployersPageStepDefinition.userHoversOverHealthPlans()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 954800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinition.HomePageStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 496900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinition.EmployersPageStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5819925600,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1010500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinition.EmployersPageStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 1505700,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinition.HomePageStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 16,
+            "name": "user clicks All Health Plans",
+            "match": {
+              "location": "stepDefinition.EmployersPageStepDefinition.userClicksAllHealthPlans()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 993100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinition.HomePageStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 697600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinition.EmployersPageStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20706000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 862000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinition.EmployersPageStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 994200,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinition.HomePageStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 17,
+            "name": "user verifies page title is \"Group Medical, Medicare \u0026 Ancillary Insurance Plans | Aetna\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Group Medical, Medicare \u0026 Ancillary Insurance Plans | Aetna\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinition.EmployersPageStepDefinition.userVerifiesPageTitleIs(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 154000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinition.HomePageStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinition.EmployersPageStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@smokeTest"
+            "name": "@monkeyTest"
           }
         ]
       }
     ],
-    "name": "Aetna Homepage Employers Link",
+    "name": "Employers Page Header Functionality",
     "description": "",
-    "id": "aetna-homepage-employers-link",
+    "id": "employers-page-header-functionality",
     "keyword": "Feature",
-    "uri": "file:src/test/java/features/HomePage.feature",
+    "uri": "file:src/test/java/features/EmployersPage.feature",
     "tags": []
   }
 ]

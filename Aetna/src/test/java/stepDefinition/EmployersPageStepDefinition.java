@@ -14,7 +14,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.io.IOException;
 
-public class EmployersPageStepDefintion extends WebAPI {
+public class EmployersPageStepDefinition extends WebAPI {
 
     static EmployersPage employersPage;
 
@@ -32,15 +32,17 @@ public class EmployersPageStepDefintion extends WebAPI {
         employersPage= PageFactory.initElements(driver, EmployersPage.class);
     }
 
-    @After
-    public void closeBrowser(){
-        cleanUp();
-    }
+//    @After
+//    public void closeBrowser(){
+//        cleanUp();
+//    }
 
     @Given("user is on employers page")
     public void user_is_on_employers_page() throws IOException {
         openBrowser("https://www.aetna.com/employers-organizations.html");
     }
+
+    //*****************************************
     @When("user clicks on Explore Aetna Sites")
     public void user_clicks_on_Aetna_Sites() {
        employersPage.clickDropDown();
@@ -54,4 +56,28 @@ public class EmployersPageStepDefintion extends WebAPI {
     public void user_verify_appears_properly(String expectedText) {
         employersPage.verifyAboutUsPage(expectedText);
     }
+
+    //*****************************************
+
+    @Then("user clicks on Products and services")
+    public void userClicksOnProductsAndServices() throws InterruptedException {
+        employersPage.clickProductsandServices();
+    }
+
+    @When("user hovers over Health Plans")
+    public void userHoversOverHealthPlans() throws InterruptedException {
+        employersPage.hoverOverHealthPlans();
+    }
+
+    @When("user clicks All Health Plans")
+    public void userClicksAllHealthPlans() {
+        employersPage.clickAllHealthPlans();
+    }
+
+    @Then("user verifies page title is {string}")
+    public void userVerifiesPageTitleIs(String expectedText) {
+        employersPage.verifyAllHealthPlanPage(expectedText);
+    }
+    //*****************************************
+
 }

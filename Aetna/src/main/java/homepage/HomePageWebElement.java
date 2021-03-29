@@ -5,12 +5,20 @@ public class HomePageWebElement {
 
    public static final String employersXp="//span[normalize-space()='Employers']";
    public static final String employersPageTextXp="//a[@class='link--localeselector']";
+
+
+   //EmployersPageElements
    public static final String exploreDropDownToggleClass="//button[@type='button'][normalize-space()='Explore Aetna sites']";
    public static final String aboutUsPageTextClass = "greenText";
    public static final String aboutUsLinkXp="//span[normalize-space()='About Us']";
-//   public static final=;
-//   public static final=;
-//   public static final=;
+   public static final String productsAndServicesXp="/html/body/div[2]/div/nav/div/ul[1]/li[1]/div[1]/button";
+   public static final String healthPlansXp="/html/body/div[2]/div/nav/div/ul[1]/li[1]/div[2]/div/div/section/ul/li[1]/div[1]/button";
+   public static final String allHealthPlansXp="//ul[@class='megamenu__tertiary--main']//a[@class='megamenu__tertiary" +
+           "--link link__text--inline--tertiary'][normalize-space()='All health plans']";
+//   public static final String =;
+//   public static final String =;
+//   public static final String =;
+//   public static final String =;
 
 
 

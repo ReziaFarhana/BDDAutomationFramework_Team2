@@ -30,10 +30,10 @@ public class HomePageStepDefinition extends WebAPI {
         homePage= PageFactory.initElements(driver,HomePage.class);
     }
 
-    @After
-    public void closeBrowser(){
-        cleanUp();
-    }
+//    @After
+//    public void closeBrowser(){
+//        cleanUp();
+//    }
 
     @Given("user is on Aetna homepage")
     public void user_is_on_aetna_homepage() throws IOException {

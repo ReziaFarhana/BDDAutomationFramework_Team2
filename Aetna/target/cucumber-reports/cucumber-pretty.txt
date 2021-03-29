@@ -1,7 +1,8 @@
 
-@smokeTest
-Scenario: Employers Link functionality Check                                               # src/test/java/features/HomePage.feature:4
-  Given user is on Aetna homepage                                                          # null
-  When user clicks on Employers link                                                       # null
-  Then user should see "Products and Services" appear                                      # null
-  And user verify page title is "Employer Group Health Insurance Plans & Benefits | Aetna" # null
+@monkeyTest
+Scenario: Products and Services Options                                                          # src/test/java/features/EmployersPage.feature:13
+  Given user is on employers page                                                                # stepDefinition.EmployersPageStepDefinition.user_is_on_employers_page()
+  Then user clicks on Products and services                                                      # stepDefinition.EmployersPageStepDefinition.userClicksOnProductsAndServices()
+  And user hovers over Health Plans                                                              # stepDefinition.EmployersPageStepDefinition.userHoversOverHealthPlans()
+  And user clicks All Health Plans                                                               # stepDefinition.EmployersPageStepDefinition.userClicksAllHealthPlans()
+  Then user verifies page title is "Group Medical, Medicare & Ancillary Insurance Plans | Aetna" # stepDefinition.EmployersPageStepDefinition.userVerifiesPageTitleIs(java.lang.String)
