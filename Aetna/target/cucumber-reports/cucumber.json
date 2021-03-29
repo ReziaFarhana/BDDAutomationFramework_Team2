@@ -1,0 +1,67 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-29T01:48:40.985Z",
+        "line": 4,
+        "name": "Employers Link functionality Check",
+        "description": "",
+        "id": "aetna-homepage-employers-link;employers-link-functionality-check",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "user is on Aetna homepage",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user clicks on Employers link",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 807300,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user should see \"Products and Services\" appear",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 993200,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user verify page title is \"Employer Group Health Insurance Plans \u0026 Benefits | Aetna\"",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Aetna Homepage Employers Link",
+    "description": "",
+    "id": "aetna-homepage-employers-link",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/HomePage.feature",
+    "tags": []
+  }
+]

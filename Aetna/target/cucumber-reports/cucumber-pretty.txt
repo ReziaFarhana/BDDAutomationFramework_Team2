@@ -1,0 +1,7 @@
+
+@smokeTest
+Scenario: Employers Link functionality Check                                               # src/test/java/features/HomePage.feature:4
+  Given user is on Aetna homepage                                                          # null
+  When user clicks on Employers link                                                       # null
+  Then user should see "Products and Services" appear                                      # null
+  And user verify page title is "Employer Group Health Insurance Plans & Benefits | Aetna" # null

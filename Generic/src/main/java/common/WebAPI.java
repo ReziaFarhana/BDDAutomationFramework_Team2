@@ -532,6 +532,29 @@ public class WebAPI {
         boolean value = driver1.findElement(By.cssSelector(locator)).isDisplayed();
         return value;
     }
+    //SCROLL && Click METHODS - by easha
+    public void scrollByID(String locator){
+        JavascriptExecutor executor=(JavascriptExecutor) driver;
+        WebElement element=driver.findElement(By.id(locator));
+        executor.executeScript("arguments[0].scrollIntoView(true);",element);
+        element.click();
+    }public void scrollByXPATH(String locator){
+        JavascriptExecutor executor=(JavascriptExecutor) driver;
+        WebElement element=driver.findElement(By.xpath(locator));
+        executor.executeScript("arguments[0].scrollIntoView(true);",element);
+        element.click();
+    }public void scrollbyCSS(String locator){
+        JavascriptExecutor executor=(JavascriptExecutor) driver;
+        WebElement element=driver.findElement(By.cssSelector(locator));
+        executor.executeScript("arguments[0].scrollIntoView(true);",element);
+        element.click();
+    }
+    public void scrollbyClass(String locator){
+        JavascriptExecutor executor=(JavascriptExecutor) driver;
+        WebElement element=driver.findElement(By.className(locator));
+        executor.executeScript("arguments[0].scrollIntoView(true);",element);
+        element.click();
+    }
 
     public void typeOnInputBox(String locator, String value) {
         try {
