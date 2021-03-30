@@ -138,3 +138,9 @@ Feature: Employers Page Header Functionality
     Examples:
     |Zipcode|
     |12534|
+
+  Scenario:Solutions Options Checking Small Business
+    And user clicks on Solutions
+    And user hovers over By company size
+    When user clicks Small Business
+    Then user verifies page title is "Telehealth Services from Aetna | Telemedicine Benefits"

@@ -233,4 +233,20 @@ public class EmployersPageStepDefinition extends WebAPI {
     public void userClicksGetAFreeQuote() {
         employersPage.clickGetAFreeQuote();
     }
+    //*************************************************************************
+
+    @And("user clicks on Solutions")
+    public void userClicksOnSolutions() {
+        employersPage.clickSolutions();
+    }
+
+    @And("user hovers over By company size")
+    public void userHoversOverByCompanySize() throws InterruptedException {
+        employersPage.hoverOverByCompanySize();
+    }
+
+    @When("user clicks Small Business")
+    public void userClicksSmallBusiness() throws InterruptedException {
+        employersPage.clickSmallBusiness();
+    }
 }

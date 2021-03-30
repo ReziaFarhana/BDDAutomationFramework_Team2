@@ -42,6 +42,9 @@ public class HomePageWebElement {
    public static final String individualQuoteXp ="//span[contains(text(),'Go to the individual dental Distribution Partner P')]";
    public static final String zipcodeBoxXp ="//div[@class='col-sm-8 col-sm-offset-2']//input[@placeholder='ZIP Code']";
    public static final String getAFreeQuote="//div[@class='col-sm-8 col-sm-offset-2']//a[@type='button'][normalize-space()='Get a free quote']";
+   public static final String solutionsxP="//button[@aria-expanded='true'][normalize-space()='Solutions']";
+   public static final String byCompSizeXp ="//ul[@class='megamenu__block--main megamenu__secondarylink--hover']//button[@aria-expanded='false'][normalize-space()='By company size']";
+   public static final String smallBusinessXp="//ul[@class='megamenu__tertiary--main']//a[@class='megamenu__tertiary--link link__text--inline--tertiary'][normalize-space()='Small business (100 or less employees)']";
 //   public static final String =;
 //   public static final String =;
 
