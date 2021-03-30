@@ -52,4 +52,10 @@ public class TravelForumStepDefinitions extends WebAPI {
     public void userShouldSeeAppearProperly(String expectedText) throws InterruptedException {
         travelforumpage.verifySearchText(expectedText);
     }
+    //*****************************************************
+
+    @Then("user gets all links from Travel Page")
+    public void userGetsAllLinksFromTravelPage() {
+        travelforumpage.getlinksFromTravelForumPage();
+    }
 }

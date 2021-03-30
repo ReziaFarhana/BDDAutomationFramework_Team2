@@ -8,6 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
 import static homepage.TravelForumPageWebElements.*;
 
 public class TravelForumPage extends WebAPI {
@@ -26,5 +30,11 @@ public class TravelForumPage extends WebAPI {
         String actualText = searchText.getText();
         sleepFor(3);
         Assert.assertEquals("Text doesnt match", expectedText, actualText);
+
     }
+    //**************************************************************
+    public void getlinksFromTravelForumPage(){
+        getListofWebElementsbyTag("a");
+    }
+
 }
