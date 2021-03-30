@@ -5,16 +5,12 @@
       {
         "name": "user is on employers page",
         "aggregatedDurations": {
-          "median": 10.0584699,
-          "average": 10.0584699
+          "median": 9.9754295,
+          "average": 9.9754295
         },
         "durations": [
           {
-            "duration": 10.1944606,
-            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:4"
-          },
-          {
-            "duration": 9.9224792,
+            "duration": 9.9754295,
             "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:4"
           }
         ]
@@ -27,17 +23,13 @@
       {
         "name": "user clicks on Products and services",
         "aggregatedDurations": {
-          "median": 3.29136165,
-          "average": 3.29136165
+          "median": 3.2913128,
+          "average": 3.2913128
         },
         "durations": [
           {
-            "duration": 3.2830233,
+            "duration": 3.2913128,
             "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:28"
-          },
-          {
-            "duration": 3.2997,
-            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:35"
           }
         ]
       }
@@ -49,35 +41,31 @@
       {
         "name": "user hovers over Health Plans",
         "aggregatedDurations": {
-          "median": 3.18963895,
-          "average": 3.18963895
+          "median": 3.1619885,
+          "average": 3.1619885
         },
         "durations": [
           {
-            "duration": 3.1858664,
+            "duration": 3.1619885,
             "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:29"
-          },
-          {
-            "duration": 3.1934115,
-            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:36"
           }
         ]
       }
     ]
   },
   {
-    "source": "user clicks on Vision",
+    "source": "user clicks on Dental",
     "steps": [
       {
-        "name": "user clicks on Vision",
+        "name": "user clicks on Dental",
         "aggregatedDurations": {
-          "median": 4.5541085,
-          "average": 4.5541085
+          "median": 5.3791788,
+          "average": 5.3791788
         },
         "durations": [
           {
-            "duration": 4.5541085,
-            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:37"
+            "duration": 5.3791788,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:30"
           }
         ]
       }
@@ -87,15 +75,15 @@
     "source": "user verifies page title is {string}",
     "steps": [
       {
-        "name": "user verifies page title is \"Group Vision Insurance from Aetna | Plans for Employers \u0026 Employees\"",
+        "name": "user verifies page title is \"Group Dental Insurance Plans from Aetna | DMO, PPO, \u0026 Indemnity Plans \u0026 Coverage for Employers\"",
         "aggregatedDurations": {
-          "median": 0.009083,
-          "average": 0.009083
+          "median": 0.0102805,
+          "average": 0.0102805
         },
         "durations": [
           {
-            "duration": 0.009083,
-            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:38"
+            "duration": 0.0102805,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:31"
           }
         ]
       }

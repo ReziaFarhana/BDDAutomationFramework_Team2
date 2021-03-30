@@ -5,41 +5,4 @@ Scenario: Products and Services Options Checking Dental                         
   And user clicks on Products and services                                                                                          # stepDefinition.EmployersPageStepDefinition.userClicksOnProductsAndServices()
   And user hovers over Health Plans                                                                                                 # stepDefinition.EmployersPageStepDefinition.userHoversOverHealthPlans()
   When user clicks on Dental                                                                                                        # stepDefinition.EmployersPageStepDefinition.userClicksOnDental()
-      org.openqa.selenium.ElementNotInteractableException: Element <a class="megamenu__tertiary--link link__text--inline--tertiary" href="/solutions/segment/national-accounts.html"> could not be scrolled into view
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-P1DOK11', ip: '192.168.0.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 86.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210310152336, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 19936, moz:profile: C:\Users\Easha\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 6de0c616-7460-402f-a533-4aa985549720
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at common.WebAPI.clickByXpath(WebAPI.java:323)
-	at homepage.EmployersPage.clickDental(EmployersPage.java:52)
-	at stepDefinition.EmployersPageStepDefinition.userClicksOnDental(EmployersPageStepDefinition.java:92)
-	at ✽.user clicks on Dental(file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:30)
-
-
-    Embedding demo1 [image/png 839370 bytes]
-
-
-    Embedding demo1 [image/png 839370 bytes]
-
   Then user verifies page title is "Group Dental Insurance Plans from Aetna | DMO, PPO, & Indemnity Plans & Coverage for Employers" # stepDefinition.EmployersPageStepDefinition.userVerifiesPageTitleIs(java.lang.String)
-
-@sanityTest
-Scenario: Products and Services Options Checking Vision                                                  # src/test/java/features/EmployersPage.feature:34
-  Given user is on employers page                                                                        # stepDefinition.EmployersPageStepDefinition.user_is_on_employers_page()
-  And user clicks on Products and services                                                               # stepDefinition.EmployersPageStepDefinition.userClicksOnProductsAndServices()
-  And user hovers over Health Plans                                                                      # stepDefinition.EmployersPageStepDefinition.userHoversOverHealthPlans()
-  When user clicks on Vision                                                                             # stepDefinition.EmployersPageStepDefinition.userClicksOnVision()
-  Then user verifies page title is "Group Vision Insurance from Aetna | Plans for Employers & Employees" # stepDefinition.EmployersPageStepDefinition.userVerifiesPageTitleIs(java.lang.String)

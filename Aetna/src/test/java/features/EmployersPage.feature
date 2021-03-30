@@ -30,7 +30,7 @@ Feature: Employers Page Header Functionality
     When user clicks on Dental
     Then user verifies page title is "Group Dental Insurance Plans from Aetna | DMO, PPO, & Indemnity Plans & Coverage for Employers"
 
-  @sanityTest
+
   Scenario:Products and Services Options Checking Vision
     And user clicks on Products and services
     And user hovers over Health Plans

@@ -49,7 +49,7 @@ public class EmployersPage extends WebAPI {
         sleepFor(3);
     }
     public void clickDental() throws InterruptedException {
-        clickByXpath(dentalXp);
+        scrollByXPATH(dentalXp);
         sleepFor(3);
     }
     public void clickVision() throws InterruptedException {
