@@ -1,0 +1,98 @@
+[
+  {
+    "source": "user is on Travel Forum page",
+    "steps": [
+      {
+        "name": "user is on Travel Forum page",
+        "aggregatedDurations": {
+          "median": 6.9213241,
+          "average": 7.416053966
+        },
+        "durations": [
+          {
+            "duration": 8.5779795,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/TravelForumsPage.feature:4"
+          },
+          {
+            "duration": 6.9213241,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/TravelForumsPage.feature:4"
+          },
+          {
+            "duration": 6.7488583,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/TravelForumsPage.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user clicks on searchbox",
+    "steps": [
+      {
+        "name": "user clicks on searchbox",
+        "aggregatedDurations": {
+          "median": 0.0397853,
+          "average": 0.045676533
+        },
+        "durations": [
+          {
+            "duration": 0.0397853,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/TravelForumsPage.feature:23"
+          },
+          {
+            "duration": 0.0601056,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/TravelForumsPage.feature:23"
+          },
+          {
+            "duration": 0.0371387,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/TravelForumsPage.feature:23"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user enters {string} in searchbox",
+    "steps": [
+      {
+        "name": "user enters \"Mexico\" in searchbox",
+        "aggregatedDurations": {
+          "median": 3.2028904,
+          "average": 3.2028904
+        },
+        "durations": [
+          {
+            "duration": 3.2028904,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/TravelForumsPage.feature:24"
+          }
+        ]
+      },
+      {
+        "name": "user enters \"Thailand\" in searchbox",
+        "aggregatedDurations": {
+          "median": 3.1351453,
+          "average": 3.1351453
+        },
+        "durations": [
+          {
+            "duration": 3.1351453,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/TravelForumsPage.feature:24"
+          }
+        ]
+      },
+      {
+        "name": "user enters \"Japan\" in searchbox",
+        "aggregatedDurations": {
+          "median": 3.1296592,
+          "average": 3.1296592
+        },
+        "durations": [
+          {
+            "duration": 3.1296592,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/TravelForumsPage.feature:24"
+          }
+        ]
+      }
+    ]
+  }
+]
