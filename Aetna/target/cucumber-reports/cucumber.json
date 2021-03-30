@@ -11,13 +11,13 @@
         "steps": [
           {
             "result": {
-              "duration": 9869544300,
+              "duration": 11633293000,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 24613900,
+                  "duration": 26846500,
                   "status": "passed"
                 },
                 "match": {
@@ -26,6 +26,7 @@
               },
               {
                 "result": {
+                  "duration": 418000,
                   "status": "passed"
                 },
                 "match": {
@@ -41,7 +42,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 4155000,
+                  "duration": 4925900,
                   "status": "passed"
                 },
                 "match": {
@@ -62,23 +63,22 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-30T02:57:31.945Z",
-        "line": 48,
-        "name": "Products and Services Options Checking Supplemental",
+        "start_timestamp": "2021-03-30T03:07:25.932Z",
+        "line": 55,
+        "name": "Products and Services Options Checking All Member Programs",
         "description": "",
-        "id": "employers-page-header-functionality;products-and-services-options-checking-supplemental",
+        "id": "employers-page-header-functionality;products-and-services-options-checking-all-member-programs",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3285145000,
+              "duration": 3266721100,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 499600,
                   "status": "passed"
                 },
                 "match": {
@@ -87,7 +87,6 @@
               },
               {
                 "result": {
-                  "duration": 500500,
                   "status": "passed"
                 },
                 "match": {
@@ -95,7 +94,7 @@
                 }
               }
             ],
-            "line": 49,
+            "line": 56,
             "name": "user clicks on Products and services",
             "match": {
               "location": "stepDefinition.EmployersPageStepDefinition.userClicksOnProductsAndServices()"
@@ -122,12 +121,13 @@
           },
           {
             "result": {
-              "duration": 3170289300,
+              "duration": 3183742900,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
+                  "duration": 1029200,
                   "status": "passed"
                 },
                 "match": {
@@ -143,10 +143,10 @@
                 }
               }
             ],
-            "line": 50,
-            "name": "user hovers over Health Plans",
+            "line": 57,
+            "name": "user hovers over Member Programs",
             "match": {
-              "location": "stepDefinition.EmployersPageStepDefinition.userHoversOverHealthPlans()"
+              "location": "stepDefinition.EmployersPageStepDefinition.userHoversOverMemberPrograms()"
             },
             "after": [
               {
@@ -170,7 +170,7 @@
           },
           {
             "result": {
-              "duration": 4147213400,
+              "duration": 3911863500,
               "status": "passed"
             },
             "before": [
@@ -191,10 +191,10 @@
                 }
               }
             ],
-            "line": 51,
-            "name": "user clicks on Supplemental",
+            "line": 58,
+            "name": "user clicks All Member Programs",
             "match": {
-              "location": "stepDefinition.EmployersPageStepDefinition.userClicksOnSupplemental()"
+              "location": "stepDefinition.EmployersPageStepDefinition.userClicksAllMemberPrograms()"
             },
             "after": [
               {
@@ -218,7 +218,7 @@
           },
           {
             "result": {
-              "duration": 5547700,
+              "duration": 8582900,
               "status": "passed"
             },
             "before": [
@@ -239,12 +239,12 @@
                 }
               }
             ],
-            "line": 52,
-            "name": "user verifies page title is \"Group Supplemental Medical Insurance Plans from Aetna | Voluntary Employee Benefits\"",
+            "line": 59,
+            "name": "user verifies page title is \"Services to Support Member Health for Employers | Aetna\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Group Supplemental Medical Insurance Plans from Aetna | Voluntary Employee Benefits\"",
+                  "val": "\"Services to Support Member Health for Employers | Aetna\"",
                   "offset": 28
                 }
               ],

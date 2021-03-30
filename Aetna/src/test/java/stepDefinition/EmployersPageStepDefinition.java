@@ -106,5 +106,15 @@ public class EmployersPageStepDefinition extends WebAPI {
     public void userClicksOnSupplemental() throws InterruptedException {
         employersPage.clickSupplemental();
     }
+    //*****************************************
+    @And("user hovers over Member Programs")
+    public void userHoversOverMemberPrograms() throws InterruptedException {
+        employersPage.hoverOverMemberPrograms();
+    }
 
+
+    @When("user clicks All Member Programs")
+    public void userClicksAllMemberPrograms() throws InterruptedException {
+        employersPage.clickAllMemberPrograms();
+    }
 }

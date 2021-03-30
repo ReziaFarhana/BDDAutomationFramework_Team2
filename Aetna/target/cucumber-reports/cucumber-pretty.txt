@@ -1,8 +1,8 @@
 
 @integrationTest
-Scenario: Products and Services Options Checking Supplemental                                                            # src/test/java/features/EmployersPage.feature:48
-  Given user is on employers page                                                                                        # stepDefinition.EmployersPageStepDefinition.user_is_on_employers_page()
-  And user clicks on Products and services                                                                               # stepDefinition.EmployersPageStepDefinition.userClicksOnProductsAndServices()
-  And user hovers over Health Plans                                                                                      # stepDefinition.EmployersPageStepDefinition.userHoversOverHealthPlans()
-  When user clicks on Supplemental                                                                                       # stepDefinition.EmployersPageStepDefinition.userClicksOnSupplemental()
-  Then user verifies page title is "Group Supplemental Medical Insurance Plans from Aetna | Voluntary Employee Benefits" # stepDefinition.EmployersPageStepDefinition.userVerifiesPageTitleIs(java.lang.String)
+Scenario: Products and Services Options Checking All Member Programs                         # src/test/java/features/EmployersPage.feature:55
+  Given user is on employers page                                                            # stepDefinition.EmployersPageStepDefinition.user_is_on_employers_page()
+  And user clicks on Products and services                                                   # stepDefinition.EmployersPageStepDefinition.userClicksOnProductsAndServices()
+  And user hovers over Member Programs                                                       # stepDefinition.EmployersPageStepDefinition.userHoversOverMemberPrograms()
+  When user clicks All Member Programs                                                       # stepDefinition.EmployersPageStepDefinition.userClicksAllMemberPrograms()
+  Then user verifies page title is "Services to Support Member Health for Employers | Aetna" # stepDefinition.EmployersPageStepDefinition.userVerifiesPageTitleIs(java.lang.String)

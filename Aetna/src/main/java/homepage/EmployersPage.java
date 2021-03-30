@@ -12,6 +12,7 @@ public class EmployersPage extends WebAPI {
 
     @FindBy(how = How.CLASS_NAME, using =aboutUsPageTextClass ) public WebElement aboutUsText;
     @FindBy(how = How.XPATH, using =healthPlansXp) public WebElement healthPlans;
+    @FindBy(how = How.XPATH, using =memberProgramsxP) public WebElement memberPrograms;
 
 
     public void clickDropDown(){
@@ -62,6 +63,16 @@ public class EmployersPage extends WebAPI {
     }
     public void clickSupplemental() throws InterruptedException {
         clickByXpath(supplementalxP);
+        sleepFor(2);
+    }
+    //***********************************************************
+
+    public void hoverOverMemberPrograms() throws InterruptedException {
+        hoverOver(driver,memberPrograms );
+    }
+
+    public void clickAllMemberPrograms() throws InterruptedException {
+        scrollByXPATH(allmemberProgramsxP);
         sleepFor(2);
     }
 

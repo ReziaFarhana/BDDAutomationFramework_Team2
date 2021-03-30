@@ -44,9 +44,17 @@ Feature: Employers Page Header Functionality
     When user clicks on Pharmacy
     Then user verifies page title is "Group Pharmacy Insurance Plans from Aetna | Prescription Drug Plans & Coverage for Employers & Brokers"
 
-  @integrationTest
+
   Scenario:Products and Services Options Checking Supplemental
     And user clicks on Products and services
     And user hovers over Health Plans
     When user clicks on Supplemental
     Then user verifies page title is "Group Supplemental Medical Insurance Plans from Aetna | Voluntary Employee Benefits"
+
+  @integrationTest
+  Scenario:Products and Services Options Checking All Member Programs
+    And user clicks on Products and services
+    And user hovers over Member Programs
+    When user clicks All Member Programs
+    Then user verifies page title is "Services to Support Member Health for Employers | Aetna"
+
