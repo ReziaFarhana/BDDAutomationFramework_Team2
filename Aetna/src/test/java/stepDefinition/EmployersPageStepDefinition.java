@@ -169,7 +169,13 @@ public class EmployersPageStepDefinition extends WebAPI {
     public void userClicksTelehealth() {
         employersPage.clickTelehealth();
     }
+
+
     //*****************************************
+    @When("user clicks Womens Health")
+    public void userClicksWomensHealth() {
+        employersPage.clickWomensHealth();
+    }
 
 
 
