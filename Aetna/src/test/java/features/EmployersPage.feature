@@ -84,4 +84,34 @@ Feature: Employers Page Header Functionality
     When user clicks Customer Service
     Then user verifies page title is "Personalized Customer Service Programs & Support | Aetna"
 
+  Scenario:Products and Services Options Checking Diabetes
+    And user clicks on Products and services
+    And user hovers over Member Programs
+    When user clicks Diabetes
+    Then user verifies page title is "Diabetes Management | Plans & Programs from Aetna"
+
+  Scenario:Products and Services Options Checking Diabetes
+    And user clicks on Products and services
+    And user hovers over Member Programs
+    When user clicks Diabetes
+    Then user verifies page title is "Personalized Customer Service Programs & Support | Aetna"
+
+  Scenario:Products and Services Options Checking Customer Service
+    And user clicks on Products and services
+    And user hovers over Member Programs
+    When user clicks Customer Service
+    Then user verifies page title is "Personalized Customer Service Programs & Support | Aetna"
+
+  Scenario:Products and Services Options Checking Customer Service
+    And user clicks on Products and services
+    And user hovers over Member Programs
+    When user clicks Customer Service
+    Then user verifies page title is "Personalized Customer Service Programs & Support | Aetna"
+
+  Scenario:Products and Services Options Checking Customer Service
+    And user clicks on Products and services
+    And user hovers over Member Programs
+    When user clicks Customer Service
+    Then user verifies page title is "Personalized Customer Service Programs & Support | Aetna"
+
 

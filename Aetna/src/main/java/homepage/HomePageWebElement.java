@@ -30,11 +30,10 @@ public class HomePageWebElement {
    public static final String behavioralHealthxp="//ul[@class='megamenu__tertiary--main']//a[@class='megamenu__tertiary--link link__text--inline--tertiary'][normalize-space()='Behavioral health']";
    public static final String careManagxP ="//ul[@class='megamenu__tertiary--main']//a[@class='megamenu__tertiary--link link__text--inline--tertiary'][normalize-space()='Care management']";
    public static final String customerServicexP="//ul[@class='megamenu__tertiary--main']//a[@class='megamenu__tertiary--link link__text--inline--tertiary'][normalize-space()='Customer service']";
-//   public static final String =;
-//   public static final String =;
-//   public static final String =;
-//   public static final String =;
-//   public static final String =;
+   public static final String diabetesXp ="/html/body/div[2]/div/nav/div/ul[1]/li[1]/div[2]/div/div/section/ul/li[2]/div[2]/ul/li[6]/a";
+   public static final String memberManagmentPlatformxP ="/html/body/div[2]/div/nav/div/ul[1]/li[1]/div[2]/div/div/section/ul/li[2]/div[2]/ul/li[7]/a";
+    public static final String teleHealthXp="/html/body/div[2]/div/nav/div/ul[1]/li[1]/div[2]/div/div/section/ul/li[2]/div[2]/ul/li[8]/a";
+   public static final String womensHealthXp="/html/body/div[2]/div/nav/div/ul[1]/li[1]/div[2]/div/div/section/ul/li[2]/div[2]/ul/li[9]/a";
 //   public static final String =;
 
 

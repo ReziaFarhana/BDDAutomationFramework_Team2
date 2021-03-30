@@ -147,9 +147,21 @@ public class EmployersPageStepDefinition extends WebAPI {
 
     @When("user clicks Customer Service")
     public void userClicksCustomerService() {
-        employersPage.customerService();
+        employersPage.clickCustomerService();
     }
+
+
     //*****************************************
+    @When("user clicks Diabetes")
+    public void userClicksDiabetes() {
+        employersPage.clickDiabetes();
+    }
+
+    //*****************************************
+
+    //*****************************************
+    //*****************************************
+
 
 
 }
