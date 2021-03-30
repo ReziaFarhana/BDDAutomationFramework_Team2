@@ -15,3 +15,5 @@ Feature: Employers Page Header Functionality
     And user hovers over Health Plans
     And user clicks All Health Plans
     Then user verifies page title is "Group Medical, Medicare & Ancillary Insurance Plans | Aetna"
+
+    Scenario: Login functionality

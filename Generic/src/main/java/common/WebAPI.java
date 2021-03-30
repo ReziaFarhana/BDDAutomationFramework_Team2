@@ -124,8 +124,10 @@ public class WebAPI {
     public static String sauceLabs_userName = "";
     public static String sauceLabs_accessKey = "";
 
+
+
     public void openBrowser(String url) throws IOException {
-        setUp(false,"browserStack","windows","10","chrome","89",url);
+        setUp(false,"browserStack","windows","10","firefox","86",url);
     }
 
 

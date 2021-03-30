@@ -32,7 +32,7 @@ import org.junit.runner.RunWith;
 )
 
 
-public class AmazonTestRunner {
+public class TripAdvisorTestRunner {
 
 
 }
