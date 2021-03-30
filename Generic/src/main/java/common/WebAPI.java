@@ -392,6 +392,7 @@ public class WebAPI {
         }
     }
 
+
     public void clearField(String locator) {
         driver.findElement(By.id(locator)).clear();
     }
@@ -451,7 +452,7 @@ public class WebAPI {
         return list;
     }
 
-    public static List<String> getTextFromWebElements(String locator) {
+    public static List<String> getTextFromWebElementsByCss(String locator) {
         List<WebElement> element = new ArrayList<WebElement>();
         List<String> text = new ArrayList<String>();
         element = driver.findElements(By.cssSelector(locator));
@@ -459,6 +460,28 @@ public class WebAPI {
             String st = web.getText();
             text.add(st);
         }
+        return text;
+    }
+    public static List<String> getTextFromWebElementsByXpath(String locator) {
+        List<WebElement> element = new ArrayList<WebElement>();
+        List<String> text = new ArrayList<String>();
+        element = driver.findElements(By.xpath(locator));
+        for (WebElement web : element) {
+            String st = web.getText();
+            text.add(st);
+        }
+        System.out.println(text);
+        return text;
+    }
+    public static List<String> getTextFromWebElementsById(String locator) {
+        List<WebElement> element = new ArrayList<WebElement>();
+        List<String> text = new ArrayList<String>();
+        element = driver.findElements(By.id(locator));
+        for (WebElement web : element) {
+            String st = web.getText();
+            text.add(st);
+        }
+        System.out.println(text);
         return text;
     }
 

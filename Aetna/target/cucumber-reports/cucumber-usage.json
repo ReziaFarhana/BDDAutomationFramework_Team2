@@ -1,0 +1,1771 @@
+[
+  {
+    "source": "I am on the Aetna Homepage",
+    "steps": [
+      {
+        "name": "I am on the Aetna Homepage",
+        "aggregatedDurations": {
+          "median": 7.7779287,
+          "average": 9.591111638
+        },
+        "durations": [
+          {
+            "duration": 7.5576499,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:4"
+          },
+          {
+            "duration": 9.2431936,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:4"
+          },
+          {
+            "duration": 16.6105009,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:4"
+          },
+          {
+            "duration": 7.9153523,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:4"
+          },
+          {
+            "duration": 8.3398356,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:4"
+          },
+          {
+            "duration": 7.0412344,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:4"
+          },
+          {
+            "duration": 7.2123857,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:4"
+          },
+          {
+            "duration": 6.6437437,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ProvidersHomePage.feature:4"
+          },
+          {
+            "duration": 6.9303333,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ProvidersHomePage.feature:4"
+          },
+          {
+            "duration": 8.9886987,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ProvidersHomePage.feature:4"
+          },
+          {
+            "duration": 6.8043585,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ProvidersHomePage.feature:4"
+          },
+          {
+            "duration": 7.7779287,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ProvidersHomePage.feature:4"
+          },
+          {
+            "duration": 8.4352045,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ProvidersHomePage.feature:4"
+          },
+          {
+            "duration": 6.9342856,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:4"
+          },
+          {
+            "duration": 10.0676472,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:4"
+          },
+          {
+            "duration": 23.5147708,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:4"
+          },
+          {
+            "duration": 21.2532009,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:4"
+          },
+          {
+            "duration": 6.495854,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:4"
+          },
+          {
+            "duration": 7.372442,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:4"
+          },
+          {
+            "duration": 9.3195897,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:4"
+          },
+          {
+            "duration": 6.9551344,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the Providers link",
+    "steps": [
+      {
+        "name": "I click on the Providers link",
+        "aggregatedDurations": {
+          "median": 6.55169,
+          "average": 9.042958323
+        },
+        "durations": [
+          {
+            "duration": 6.55169,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:5"
+          },
+          {
+            "duration": 22.215352,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:5"
+          },
+          {
+            "duration": 8.4691956,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:5"
+          },
+          {
+            "duration": 6.4889143,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:5"
+          },
+          {
+            "duration": 7.1867938,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:5"
+          },
+          {
+            "duration": 6.0743285,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:5"
+          },
+          {
+            "duration": 23.0398521,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:5"
+          },
+          {
+            "duration": 7.9276134,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ProvidersHomePage.feature:5"
+          },
+          {
+            "duration": 5.6680174,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ProvidersHomePage.feature:5"
+          },
+          {
+            "duration": 5.7920476,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ProvidersHomePage.feature:5"
+          },
+          {
+            "duration": 6.2906585,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ProvidersHomePage.feature:5"
+          },
+          {
+            "duration": 6.1351403,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ProvidersHomePage.feature:5"
+          },
+          {
+            "duration": 6.9453439,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ProvidersHomePage.feature:5"
+          },
+          {
+            "duration": 5.9759262,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:5"
+          },
+          {
+            "duration": 5.6002265,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:5"
+          },
+          {
+            "duration": 7.3497727,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:5"
+          },
+          {
+            "duration": 5.1123932,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:5"
+          },
+          {
+            "duration": 24.9288584,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:5"
+          },
+          {
+            "duration": 6.8414997,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:5"
+          },
+          {
+            "duration": 6.4906665,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:5"
+          },
+          {
+            "duration": 8.8178342,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I close the Partnering with providers alert",
+    "steps": [
+      {
+        "name": "I close the Partnering with providers alert",
+        "aggregatedDurations": {
+          "median": 3.29141275,
+          "average": 3.30001705
+        },
+        "durations": [
+          {
+            "duration": 3.2734152,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:6"
+          },
+          {
+            "duration": 3.1451974,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:6"
+          },
+          {
+            "duration": 3.2942798,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:6"
+          },
+          {
+            "duration": 3.1258674,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:6"
+          },
+          {
+            "duration": 3.2719426,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:6"
+          },
+          {
+            "duration": 3.2885457,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:6"
+          },
+          {
+            "duration": 3.3818745,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:6"
+          },
+          {
+            "duration": 3.258545,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ProvidersHomePage.feature:15"
+          },
+          {
+            "duration": 3.2992454,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:6"
+          },
+          {
+            "duration": 3.323991,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:6"
+          },
+          {
+            "duration": 3.1729597,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:6"
+          },
+          {
+            "duration": 3.2996646,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:6"
+          },
+          {
+            "duration": 3.2976784,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:6"
+          },
+          {
+            "duration": 3.3020808,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:6"
+          },
+          {
+            "duration": 3.242065,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:6"
+          },
+          {
+            "duration": 3.8229203,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "i click on the COVID FAQs on the Providers page",
+    "steps": [
+      {
+        "name": "i click on the COVID FAQs on the Providers page",
+        "aggregatedDurations": {
+          "median": 3.064627,
+          "average": 3.547346742
+        },
+        "durations": [
+          {
+            "duration": 1.8122278,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:7"
+          },
+          {
+            "duration": 1.9600288,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:7"
+          },
+          {
+            "duration": 3.986461,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:7"
+          },
+          {
+            "duration": 4.4243374,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:7"
+          },
+          {
+            "duration": 7.0392057,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:7"
+          },
+          {
+            "duration": 3.064627,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:7"
+          },
+          {
+            "duration": 2.5445395,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the VaccineFAQs button",
+    "steps": [
+      {
+        "name": "I click on the VaccineFAQs button",
+        "aggregatedDurations": {
+          "median": 2.7320438,
+          "average": 2.745112133
+        },
+        "durations": [
+          {
+            "duration": 2.3280586,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:11"
+          },
+          {
+            "duration": 3.175234,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:17"
+          },
+          {
+            "duration": 2.7320438,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:29"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on Which COVID vaccinations will Aetna cover? tab",
+    "steps": [
+      {
+        "name": "I click on Which COVID vaccinations will Aetna cover? tab",
+        "aggregatedDurations": {
+          "median": 3.367062,
+          "average": 3.367062
+        },
+        "durations": [
+          {
+            "duration": 3.367062,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I verify the first sentence {string}",
+    "steps": [
+      {
+        "name": "I verify the first sentence \"Aetna will cover any COVID-19 vaccine that has received FDA authorization, at no added cost to members.\"",
+        "aggregatedDurations": {
+          "median": 0.0448712,
+          "average": 0.0448712
+        },
+        "durations": [
+          {
+            "duration": 0.0448712,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the Availity link on the Vaccine Updates pop-up",
+    "steps": [
+      {
+        "name": "I click on the Availity link on the Vaccine Updates pop-up",
+        "aggregatedDurations": {
+          "median": 0.4517917,
+          "average": 0.4517917
+        },
+        "durations": [
+          {
+            "duration": 0.4517917,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click the continue button to open the Availity page on another window and I close the old window",
+    "steps": [
+      {
+        "name": "I click the continue button to open the Availity page on another window and I close the old window",
+        "aggregatedDurations": {
+          "median": 3.3303716,
+          "average": 3.3303716
+        },
+        "durations": [
+          {
+            "duration": 3.3303716,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I enter invalid UserID and Password",
+    "steps": [
+      {
+        "name": "I enter invalid UserID and Password",
+        "aggregatedDurations": {
+          "median": 5.9383596,
+          "average": 5.9383596
+        },
+        "durations": [
+          {
+            "duration": 5.9383596,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the showPassword checkbox",
+    "steps": [
+      {
+        "name": "I click on the showPassword checkbox",
+        "aggregatedDurations": {
+          "median": 3.095034,
+          "average": 3.095034
+        },
+        "durations": [
+          {
+            "duration": 3.095034,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:23"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the LogIn button",
+    "steps": [
+      {
+        "name": "I click on the LogIn button",
+        "aggregatedDurations": {
+          "median": 0.0727757,
+          "average": 0.0727757
+        },
+        "durations": [
+          {
+            "duration": 0.0727757,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:24"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I verify the error message {string}",
+    "steps": [
+      {
+        "name": "I verify the error message \"Problem accessing /availity/web/public.elegant.login/public.elegant.login. Reason:\"",
+        "aggregatedDurations": {
+          "median": 0.8038602,
+          "average": 0.8038602
+        },
+        "durations": [
+          {
+            "duration": 0.8038602,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the CAQH link on the Vaccine Updates pop-up",
+    "steps": [
+      {
+        "name": "I click on the CAQH link on the Vaccine Updates pop-up",
+        "aggregatedDurations": {
+          "median": 0.4607682,
+          "average": 0.4607682
+        },
+        "durations": [
+          {
+            "duration": 0.4607682,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:30"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click the continue button to open the CAQH page on another window and I close the old window",
+    "steps": [
+      {
+        "name": "I click the continue button to open the CAQH page on another window and I close the old window",
+        "aggregatedDurations": {
+          "median": 3.3258101,
+          "average": 3.3258101
+        },
+        "durations": [
+          {
+            "duration": 3.3258101,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:31"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I enter invalid UserName",
+    "steps": [
+      {
+        "name": "I enter invalid UserName",
+        "aggregatedDurations": {
+          "median": 0.3284718,
+          "average": 0.3284718
+        },
+        "durations": [
+          {
+            "duration": 0.1595732,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:32"
+          },
+          {
+            "duration": 0.4973704,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:35"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on Forgot Password",
+    "steps": [
+      {
+        "name": "I click on Forgot Password",
+        "aggregatedDurations": {
+          "median": 1.1255125,
+          "average": 1.1255125
+        },
+        "durations": [
+          {
+            "duration": 1.1255125,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the TermsOfService checkbox",
+    "steps": [
+      {
+        "name": "I click on the TermsOfService checkbox",
+        "aggregatedDurations": {
+          "median": 0.4841578,
+          "average": 0.4841578
+        },
+        "durations": [
+          {
+            "duration": 0.4841578,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:37"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I hit continue",
+    "steps": [
+      {
+        "name": "I hit continue",
+        "aggregatedDurations": {
+          "median": 0.4001709,
+          "average": 0.4001709
+        },
+        "durations": [
+          {
+            "duration": 0.4001709,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:38"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I verify the page title {string}",
+    "steps": [
+      {
+        "name": "I verify the page title \"CAQH ProView - Self Service Forgot Password\"",
+        "aggregatedDurations": {
+          "median": 0.0069814,
+          "average": 0.0069814
+        },
+        "durations": [
+          {
+            "duration": 0.0069814,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:39"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the BillingAndCodingFAQs button",
+    "steps": [
+      {
+        "name": "I click on the BillingAndCodingFAQs button",
+        "aggregatedDurations": {
+          "median": 2.2593241,
+          "average": 2.2593241
+        },
+        "durations": [
+          {
+            "duration": 2.2593241,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:43"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on Where can providers access the telemedicine policy and related codes? tab",
+    "steps": [
+      {
+        "name": "I click on Where can providers access the telemedicine policy and related codes? tab",
+        "aggregatedDurations": {
+          "median": 3.2968981,
+          "average": 3.2968981
+        },
+        "durations": [
+          {
+            "duration": 3.2968981,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:44"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I verify the answer {string}",
+    "steps": [
+      {
+        "name": "I verify the answer \"Aetna’s telemedicine policy is available to providers on the Availity provider portal.\"",
+        "aggregatedDurations": {
+          "median": 0.0560182,
+          "average": 0.0560182
+        },
+        "durations": [
+          {
+            "duration": 0.0560182,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:45"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the TelemedicineFAQs button",
+    "steps": [
+      {
+        "name": "I click on the TelemedicineFAQs button",
+        "aggregatedDurations": {
+          "median": 3.0431532,
+          "average": 3.0431532
+        },
+        "durations": [
+          {
+            "duration": 3.0431532,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:49"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on How can members access services without going to a provider\u0027s office? tab",
+    "steps": [
+      {
+        "name": "I click on How can members access services without going to a provider\u0027s office? tab",
+        "aggregatedDurations": {
+          "median": 0.3396076,
+          "average": 0.3396076
+        },
+        "durations": [
+          {
+            "duration": 0.3396076,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:50"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the Coronavirus resource page",
+    "steps": [
+      {
+        "name": "I click on the Coronavirus resource page",
+        "aggregatedDurations": {
+          "median": 12.2444389,
+          "average": 12.2444389
+        },
+        "durations": [
+          {
+            "duration": 12.2444389,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:51"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on ViewUpToDateVaccineDataFromTheCDC link",
+    "steps": [
+      {
+        "name": "I click on ViewUpToDateVaccineDataFromTheCDC link",
+        "aggregatedDurations": {
+          "median": 0.230384,
+          "average": 0.230384
+        },
+        "durations": [
+          {
+            "duration": 0.230384,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:52"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click the continue button to open the CDC site page on another window and I close the old window",
+    "steps": [
+      {
+        "name": "I click the continue button to open the CDC site page on another window and I close the old window",
+        "aggregatedDurations": {
+          "median": 3.5147214,
+          "average": 3.5147214
+        },
+        "durations": [
+          {
+            "duration": 3.5147214,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:53"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should see {string} as the page title",
+    "steps": [
+      {
+        "name": "I should see \"CDC COVID Data Tracker\" as the page title",
+        "aggregatedDurations": {
+          "median": 0.0259265,
+          "average": 0.0259265
+        },
+        "durations": [
+          {
+            "duration": 0.0259265,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:54"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the PatientCOverageFAQs button",
+    "steps": [
+      {
+        "name": "I click on the PatientCOverageFAQs button",
+        "aggregatedDurations": {
+          "median": 1.8429448,
+          "average": 1.8429448
+        },
+        "durations": [
+          {
+            "duration": 1.8429448,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:58"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the covidStateResources button",
+    "steps": [
+      {
+        "name": "I click on the covidStateResources button",
+        "aggregatedDurations": {
+          "median": 1.7269517,
+          "average": 1.7269517
+        },
+        "durations": [
+          {
+            "duration": 1.7269517,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:59"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the StateInputBox dropdown to select {string}",
+    "steps": [
+      {
+        "name": "I click on the StateInputBox dropdown to select \"Wisconsin\"",
+        "aggregatedDurations": {
+          "median": 0.4398272,
+          "average": 0.4398272
+        },
+        "durations": [
+          {
+            "duration": 0.4398272,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:60"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the WisconsinVaccineInformaton link",
+    "steps": [
+      {
+        "name": "I click on the WisconsinVaccineInformaton link",
+        "aggregatedDurations": {
+          "median": 0.3437696,
+          "average": 0.3437696
+        },
+        "durations": [
+          {
+            "duration": 0.3437696,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:61"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click the continue button to open the WisconsinVaccineInformation page on another window and I close the old window",
+    "steps": [
+      {
+        "name": "I click the continue button to open the WisconsinVaccineInformation page on another window and I close the old window",
+        "aggregatedDurations": {
+          "median": 5.7704845,
+          "average": 5.7704845
+        },
+        "durations": [
+          {
+            "duration": 5.7704845,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:62"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should see {string} as the title",
+    "steps": [
+      {
+        "name": "I should see \"COVID-19: Vaccine\" as the title",
+        "aggregatedDurations": {
+          "median": 0.067763,
+          "average": 0.067763
+        },
+        "durations": [
+          {
+            "duration": 0.067763,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:63"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the ManagementResourcesFAQs button",
+    "steps": [
+      {
+        "name": "I click on the ManagementResourcesFAQs button",
+        "aggregatedDurations": {
+          "median": 2.2704283,
+          "average": 2.2704283
+        },
+        "durations": [
+          {
+            "duration": 2.2704283,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:67"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the CARES Act information for providers tab",
+    "steps": [
+      {
+        "name": "I click on the CARES Act information for providers tab",
+        "aggregatedDurations": {
+          "median": 3.2741219,
+          "average": 3.2741219
+        },
+        "durations": [
+          {
+            "duration": 3.2741219,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:68"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the CARESActInformationForProvidersPDF",
+    "steps": [
+      {
+        "name": "I click on the CARESActInformationForProvidersPDF",
+        "aggregatedDurations": {
+          "median": 0.1545828,
+          "average": 0.1545828
+        },
+        "durations": [
+          {
+            "duration": 0.1545828,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:69"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I verify {string} as the title",
+    "steps": [
+      {
+        "name": "I verify \"COVID-19 Policy Updates \u0026 Liberalizations for Aetna Providers\" as the title",
+        "aggregatedDurations": {
+          "median": 0.0079761,
+          "average": 0.0079761
+        },
+        "durations": [
+          {
+            "duration": 0.0079761,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/CovidProviderFAQ.feature:70"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the viewProviderUpdateVideo on the Partnering with providers pop-up",
+    "steps": [
+      {
+        "name": "I click on the viewProviderUpdateVideo on the Partnering with providers pop-up",
+        "aggregatedDurations": {
+          "median": 0.3341048,
+          "average": 0.3341048
+        },
+        "durations": [
+          {
+            "duration": 0.3341048,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ProvidersHomePage.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the continue button",
+    "steps": [
+      {
+        "name": "I click on the continue button",
+        "aggregatedDurations": {
+          "median": 0.3769915,
+          "average": 0.3769915
+        },
+        "durations": [
+          {
+            "duration": 0.3769915,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ProvidersHomePage.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I verify {string} as the title of the video on YouTube",
+    "steps": [
+      {
+        "name": "I verify \"COVID-19 Vaccines: Provider Update - YouTube\" as the title of the video on YouTube",
+        "aggregatedDurations": {
+          "median": 2.0448936,
+          "average": 2.0448936
+        },
+        "durations": [
+          {
+            "duration": 2.0448936,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ProvidersHomePage.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I verify the Providers page title as {string}",
+    "steps": [
+      {
+        "name": "I verify the Providers page title as \"Aetna for Health Care Providers | Resources \u0026 Support for Health Care Professionals\"",
+        "aggregatedDurations": {
+          "median": 0.0109711,
+          "average": 0.0109711
+        },
+        "durations": [
+          {
+            "duration": 0.0109711,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ProvidersHomePage.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on explore health care resources",
+    "steps": [
+      {
+        "name": "I click on explore health care resources",
+        "aggregatedDurations": {
+          "median": 4.3428396,
+          "average": 4.3428396
+        },
+        "durations": [
+          {
+            "duration": 4.3428396,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ProvidersHomePage.feature:20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should see {string}",
+    "steps": [
+      {
+        "name": "I should see \"Provider Education \u0026 Manuals\"",
+        "aggregatedDurations": {
+          "median": 0.0777921,
+          "average": 0.0777921
+        },
+        "durations": [
+          {
+            "duration": 0.0777921,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ProvidersHomePage.feature:21"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on read provider newsletters",
+    "steps": [
+      {
+        "name": "I click on read provider newsletters",
+        "aggregatedDurations": {
+          "median": 1.7370358,
+          "average": 1.7370358
+        },
+        "durations": [
+          {
+            "duration": 1.7370358,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ProvidersHomePage.feature:25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I verify page {string}",
+    "steps": [
+      {
+        "name": "I verify page \"OfficeLink Updates Newsletter Archive | Aetna\"",
+        "aggregatedDurations": {
+          "median": 0.0109712,
+          "average": 0.0109712
+        },
+        "durations": [
+          {
+            "duration": 0.0109712,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ProvidersHomePage.feature:26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on find regulations by state link",
+    "steps": [
+      {
+        "name": "I click on find regulations by state link",
+        "aggregatedDurations": {
+          "median": 2.3502434,
+          "average": 2.3502434
+        },
+        "durations": [
+          {
+            "duration": 2.3502434,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ProvidersHomePage.feature:30"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The title is {string}",
+    "steps": [
+      {
+        "name": "The title is \"Insurance regulations by state\"",
+        "aggregatedDurations": {
+          "median": 0.0647615,
+          "average": 0.0647615
+        },
+        "durations": [
+          {
+            "duration": 0.0647615,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ProvidersHomePage.feature:31"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on learn about disputes and appeals",
+    "steps": [
+      {
+        "name": "I click on learn about disputes and appeals",
+        "aggregatedDurations": {
+          "median": 3.4085402,
+          "average": 3.4085402
+        },
+        "durations": [
+          {
+            "duration": 3.4085402,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ProvidersHomePage.feature:35"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I verify the text {string}",
+    "steps": [
+      {
+        "name": "I verify the text \"Disputes \u0026 Appeals\"",
+        "aggregatedDurations": {
+          "median": 0.0438802,
+          "average": 0.0438802
+        },
+        "durations": [
+          {
+            "duration": 0.0438802,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ProvidersHomePage.feature:36"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "i click on the ResourcesForYou on the Providers page",
+    "steps": [
+      {
+        "name": "i click on the ResourcesForYou on the Providers page",
+        "aggregatedDurations": {
+          "median": 2.76298465,
+          "average": 4.582916237
+        },
+        "durations": [
+          {
+            "duration": 2.4116343,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:7"
+          },
+          {
+            "duration": 2.0460309,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:7"
+          },
+          {
+            "duration": 4.543426,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:7"
+          },
+          {
+            "duration": 2.1930616,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:7"
+          },
+          {
+            "duration": 3.9330769,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:7"
+          },
+          {
+            "duration": 2.4569015,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:7"
+          },
+          {
+            "duration": 3.0690678,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:7"
+          },
+          {
+            "duration": 16.0101309,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the CDC issues guidelines for vaccinated individuals link",
+    "steps": [
+      {
+        "name": "I click on the CDC issues guidelines for vaccinated individuals link",
+        "aggregatedDurations": {
+          "median": 3.21686575,
+          "average": 3.230355116
+        },
+        "durations": [
+          {
+            "duration": 3.1645753,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:10"
+          },
+          {
+            "duration": 3.3056732,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:15"
+          },
+          {
+            "duration": 3.1705947,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:23"
+          },
+          {
+            "duration": 3.2537681,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:37"
+          },
+          {
+            "duration": 3.307556,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:44"
+          },
+          {
+            "duration": 3.1799634,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:54"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on continue to site and close the old window",
+    "steps": [
+      {
+        "name": "I click on continue to site and close the old window",
+        "aggregatedDurations": {
+          "median": 3.4044345,
+          "average": 3.433761883
+        },
+        "durations": [
+          {
+            "duration": 3.4885494,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:11"
+          },
+          {
+            "duration": 3.3346617,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:16"
+          },
+          {
+            "duration": 3.4173978,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:24"
+          },
+          {
+            "duration": 3.3092869,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:38"
+          },
+          {
+            "duration": 3.3914712,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:45"
+          },
+          {
+            "duration": 3.6612043,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:55"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I verify the title {string}",
+    "steps": [
+      {
+        "name": "I verify the title \"CDC Issues First Set of Guidelines on How Fully Vaccinated People Can Visit Safely with Others | CDC Online Newsroom | CDC\"",
+        "aggregatedDurations": {
+          "median": 0.0299186,
+          "average": 0.0299186
+        },
+        "durations": [
+          {
+            "duration": 0.0299186,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I enter {string} in the search box and hit enter",
+    "steps": [
+      {
+        "name": "I enter \"Vaccine\" in the search box and hit enter",
+        "aggregatedDurations": {
+          "median": 0.9816721,
+          "average": 0.9816721
+        },
+        "durations": [
+          {
+            "duration": 0.9816721,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should see {string} results are returned",
+    "steps": [
+      {
+        "name": "I should see \"Vaccine\" results are returned",
+        "aggregatedDurations": {
+          "median": 0.0963583,
+          "average": 0.0963583
+        },
+        "durations": [
+          {
+            "duration": 0.144612,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:18"
+          },
+          {
+            "duration": 0.0481046,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should not see {string} related results are returned",
+    "steps": [
+      {
+        "name": "I should not see \"CDC Guideline\" related results are returned",
+        "aggregatedDurations": {
+          "median": 0.0428852,
+          "average": 0.0428852
+        },
+        "durations": [
+          {
+            "duration": 0.0428852,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the AdvancedSearch button",
+    "steps": [
+      {
+        "name": "I click on the AdvancedSearch button",
+        "aggregatedDurations": {
+          "median": 4.3877996,
+          "average": 4.683364875
+        },
+        "durations": [
+          {
+            "duration": 4.1001272,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:25"
+          },
+          {
+            "duration": 3.8834682,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:39"
+          },
+          {
+            "duration": 6.0743921,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:46"
+          },
+          {
+            "duration": 4.675472,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:56"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I enter {string} in the searchBox",
+    "steps": [
+      {
+        "name": "I enter \"Vaccine\" in the searchBox",
+        "aggregatedDurations": {
+          "median": 0.2692781,
+          "average": 0.2692781
+        },
+        "durations": [
+          {
+            "duration": 0.2692781,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I enter {string} in allTheseWords inputBox",
+    "steps": [
+      {
+        "name": "I enter \"Vaccine\" in allTheseWords inputBox",
+        "aggregatedDurations": {
+          "median": 0.1557013,
+          "average": 0.1557013
+        },
+        "durations": [
+          {
+            "duration": 0.1557013,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:27"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I enter {string} in thisExactWordOrPhase inputBox",
+    "steps": [
+      {
+        "name": "I enter \"Immunization\" in thisExactWordOrPhase inputBox",
+        "aggregatedDurations": {
+          "median": 0.1847136,
+          "average": 0.1847136
+        },
+        "durations": [
+          {
+            "duration": 0.1847136,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:28"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I enter {string} in anyOfTheseWords inputBox",
+    "steps": [
+      {
+        "name": "I enter \"Provider\" in anyOfTheseWords inputBox",
+        "aggregatedDurations": {
+          "median": 0.1836207,
+          "average": 0.1836207
+        },
+        "durations": [
+          {
+            "duration": 0.1836207,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:29"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I enter {string} in noneOfTheseWords inputBox",
+    "steps": [
+      {
+        "name": "I enter \"Vac\" in noneOfTheseWords inputBox",
+        "aggregatedDurations": {
+          "median": 0.0897582,
+          "average": 0.0897582
+        },
+        "durations": [
+          {
+            "duration": 0.0897582,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:30"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I select {string} from the Language dropdown",
+    "steps": [
+      {
+        "name": "I select \"English\" from the Language dropdown",
+        "aggregatedDurations": {
+          "median": 0.1865599,
+          "average": 0.1865599
+        },
+        "durations": [
+          {
+            "duration": 0.1865599,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:31"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I enter {string} in the FromDate inputBox and I enter {string} in the TODate inputBox",
+    "steps": [
+      {
+        "name": "I enter \"3/21/2021\" in the FromDate inputBox and I enter \"3/24/2021\" in the TODate inputBox",
+        "aggregatedDurations": {
+          "median": 3.3764406,
+          "average": 3.3764406
+        },
+        "durations": [
+          {
+            "duration": 3.3764406,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:32"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I hit search",
+    "steps": [
+      {
+        "name": "I hit search",
+        "aggregatedDurations": {
+          "median": 5.187213,
+          "average": 5.187213
+        },
+        "durations": [
+          {
+            "duration": 5.187213,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:33"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the other languages link at the top of the homepage",
+    "steps": [
+      {
+        "name": "I click on the other languages link at the top of the homepage",
+        "aggregatedDurations": {
+          "median": 4.9580211,
+          "average": 4.528925766
+        },
+        "durations": [
+          {
+            "duration": 6.0265092,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:40"
+          },
+          {
+            "duration": 4.9580211,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:47"
+          },
+          {
+            "duration": 2.602247,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:57"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I verify the other languages page title {string}",
+    "steps": [
+      {
+        "name": "I verify the other languages page title \"CDC Resources in Languages Other than English\"",
+        "aggregatedDurations": {
+          "median": 0.0095795,
+          "average": 0.0095795
+        },
+        "durations": [
+          {
+            "duration": 0.0095795,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:41"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the filterByLanguage dropdown",
+    "steps": [
+      {
+        "name": "I click on the filterByLanguage dropdown",
+        "aggregatedDurations": {
+          "median": 0.8776532,
+          "average": 0.8776532
+        },
+        "durations": [
+          {
+            "duration": 0.8776532,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:48"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I connect to the database and store all the language options in the mySql database",
+    "steps": [
+      {
+        "name": "I connect to the database and store all the language options in the mySql database",
+        "aggregatedDurations": {
+          "median": 2.4134091,
+          "average": 2.4134091
+        },
+        "durations": [
+          {
+            "duration": 2.4134091,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:49"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I select Bengali from the filterByLanguage dropdown",
+    "steps": [
+      {
+        "name": "I select Bengali from the filterByLanguage dropdown",
+        "aggregatedDurations": {
+          "median": 6.2257128,
+          "average": 6.2257128
+        },
+        "durations": [
+          {
+            "duration": 6.2257128,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:58"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I enter {string} in the languagePageSearchBox",
+    "steps": [
+      {
+        "name": "I enter \"Vaccine\" in the languagePageSearchBox",
+        "aggregatedDurations": {
+          "median": 0.1773037,
+          "average": 0.1773037
+        },
+        "durations": [
+          {
+            "duration": 0.1773037,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:59"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I verify the message {string}",
+    "steps": [
+      {
+        "name": "I verify the message \"No results available for the selected criteria. Please adjust the filter options above.\"",
+        "aggregatedDurations": {
+          "median": 0.0409025,
+          "average": 0.0409025
+        },
+        "durations": [
+          {
+            "duration": 0.0409025,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:60"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the Community strategy to address inequities link",
+    "steps": [
+      {
+        "name": "I click on the Community strategy to address inequities link",
+        "aggregatedDurations": {
+          "median": 0.2732695,
+          "average": 0.2732695
+        },
+        "durations": [
+          {
+            "duration": 0.2732695,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:63"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on continue and close the old window",
+    "steps": [
+      {
+        "name": "I click on continue and close the old window",
+        "aggregatedDurations": {
+          "median": 3.6238624,
+          "average": 3.6238624
+        },
+        "durations": [
+          {
+            "duration": 3.7016867,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:64"
+          },
+          {
+            "duration": 3.5460381,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:69"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I verify the page {string}",
+    "steps": [
+      {
+        "name": "I verify the page \"CVS Health builds on community-based strategy to address COVID-19 vaccine education and equity | CVS Health\"",
+        "aggregatedDurations": {
+          "median": 0.3623942,
+          "average": 0.3623942
+        },
+        "durations": [
+          {
+            "duration": 0.3623942,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:65"
+          }
+        ]
+      },
+      {
+        "name": "I verify the page \"CVS Health now offering COVID-19 vaccines in 29 states | CVS Health\"",
+        "aggregatedDurations": {
+          "median": 0.0678179,
+          "average": 0.0678179
+        },
+        "durations": [
+          {
+            "duration": 0.0678179,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:70"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the CVS Health expands access to vaccines link",
+    "steps": [
+      {
+        "name": "I click on the CVS Health expands access to vaccines link",
+        "aggregatedDurations": {
+          "median": 0.383973,
+          "average": 0.383973
+        },
+        "durations": [
+          {
+            "duration": 0.383973,
+            "location": "file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:68"
+          }
+        ]
+      }
+    ]
+  }
+]

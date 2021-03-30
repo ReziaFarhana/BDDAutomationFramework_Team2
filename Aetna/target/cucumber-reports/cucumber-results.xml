@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="21" time="716.781">
+    <testcase classname="Check the  FAQs page" name="Verifying the VaccineFAQs Information page" time="26.038">
+        <system-out>
+            <![CDATA[Given I am on the Aetna Homepage............................................passed
+When I click on the Providers link..........................................passed
+And I close the Partnering with providers alert.............................passed
+Then i click on the COVID FAQs on the Providers page........................passed
+Then I click on the VaccineFAQs button......................................passed
+When I click on Which COVID vaccinations will Aetna cover? tab..............passed
+Then I verify the first sentence "Aetna will cover any COVID-19 vaccine that has received FDA authorization, at no added cost to members.".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Check the  FAQs page" name="Verify the functionality of the Availity signIn page with invalid user Information" time="54.319">
+        <system-out>
+            <![CDATA[Given I am on the Aetna Homepage............................................passed
+When I click on the Providers link..........................................passed
+And I close the Partnering with providers alert.............................passed
+Then i click on the COVID FAQs on the Providers page........................passed
+Then I click on the VaccineFAQs button......................................passed
+And I click on the Availity link on the Vaccine Updates pop-up..............passed
+Then I click the continue button to open the Availity page on another window and I close the old window.passed
+When I enter invalid UserID and Password....................................passed
+Then I click on the showPassword checkbox...................................passed
+Then I click on the LogIn button............................................passed
+Then I verify the error message "Problem accessing /availity/web/public.elegant.login/public.elegant.login. Reason:".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Check the  FAQs page" name="Verify the Forgot Password Functionality of the CAQH solution signIn page with invalid UserName" time="42.471">
+        <system-out>
+            <![CDATA[Given I am on the Aetna Homepage............................................passed
+When I click on the Providers link..........................................passed
+And I close the Partnering with providers alert.............................passed
+Then i click on the COVID FAQs on the Providers page........................passed
+Then I click on the VaccineFAQs button......................................passed
+And I click on the CAQH link on the Vaccine Updates pop-up..................passed
+Then I click the continue button to open the CAQH page on another window and I close the old window.passed
+And I enter invalid UserName................................................passed
+When I click on Forgot Password.............................................passed
+Then I enter invalid UserName...............................................passed
+And I click on the TermsOfService checkbox..................................passed
+When I hit continue.........................................................passed
+Then I verify the page title "CAQH ProView - Self Service Forgot Password"..passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Check the  FAQs page" name="Verify the BillingAndCodingFAQs Information page" time="28.491">
+        <system-out>
+            <![CDATA[Given I am on the Aetna Homepage............................................passed
+When I click on the Providers link..........................................passed
+And I close the Partnering with providers alert.............................passed
+Then i click on the COVID FAQs on the Providers page........................passed
+Then I click on the BillingAndCodingFAQs button.............................passed
+When I click on Where can providers access the telemedicine policy and related codes? tab.passed
+Then I verify the answer "Aetna’s telemedicine policy is available to providers on the Availity provider portal.".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Check the  FAQs page" name="Verify the ViewUpToDateVaccineDataFromTheCDC Information page" time="46.169">
+        <system-out>
+            <![CDATA[Given I am on the Aetna Homepage............................................passed
+When I click on the Providers link..........................................passed
+And I close the Partnering with providers alert.............................passed
+Then i click on the COVID FAQs on the Providers page........................passed
+Then I click on the TelemedicineFAQs button.................................passed
+When I click on How can members access services without going to a provider's office? tab.passed
+Then I click on the Coronavirus resource page...............................passed
+Then I click on ViewUpToDateVaccineDataFromTheCDC link......................passed
+Then I click the continue button to open the CDC site page on another window and I close the old window.passed
+Then I should see "CDC COVID Data Tracker" as the page title................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Check the  FAQs page" name="Verify the WisconsinVaccineInformaton page" time="30.59">
+        <system-out>
+            <![CDATA[Given I am on the Aetna Homepage............................................passed
+When I click on the Providers link..........................................passed
+And I close the Partnering with providers alert.............................passed
+Then i click on the COVID FAQs on the Providers page........................passed
+And I click on the PatientCOverageFAQs button...............................passed
+And I click on the covidStateResources button...............................passed
+And I click on the StateInputBox dropdown to select "Wisconsin".............passed
+When I click on the WisconsinVaccineInformaton link.........................passed
+And I click the continue button to open the WisconsinVaccineInformation page on another window and I close the old window.passed
+Then I should see "COVID-19: Vaccine" as the title..........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Check the  FAQs page" name="Verify the CARES Act information for providers PDF page" time="42.729">
+        <system-out>
+            <![CDATA[Given I am on the Aetna Homepage............................................passed
+When I click on the Providers link..........................................passed
+And I close the Partnering with providers alert.............................passed
+Then i click on the COVID FAQs on the Providers page........................passed
+And I click on the ManagementResourcesFAQs button...........................passed
+And I click on the CARES Act information for providers tab..................passed
+When I click on the CARESActInformationForProvidersPDF......................passed
+Then I verify "COVID-19 Policy Updates & Liberalizations for Aetna Providers" as the title.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Verify the Providers page" name="Navigate to the View provider update video" time="18.295">
+        <system-out>
+            <![CDATA[Given I am on the Aetna Homepage............................................passed
+When I click on the Providers link..........................................passed
+And I click on the viewProviderUpdateVideo on the Partnering with providers pop-up.passed
+When I click on the continue button.........................................passed
+Then I verify "COVID-19 Vaccines: Provider Update - YouTube" as the title of the video on YouTube.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Verify the Providers page" name="close the alert on the Providers homepage" time="16.971">
+        <system-out>
+            <![CDATA[Given I am on the Aetna Homepage............................................passed
+When I click on the Providers link..........................................passed
+When I close the Partnering with providers alert............................passed
+Then I verify the Providers page title as "Aetna for Health Care Providers | Resources & Support for Health Care Professionals".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Verify the Providers page" name="Check the Manuals, webinars and more link" time="20.133">
+        <system-out>
+            <![CDATA[Given I am on the Aetna Homepage............................................passed
+When I click on the Providers link..........................................passed
+When I click on explore health care resources...............................passed
+Then I should see "Provider Education & Manuals"............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Verify the Providers page" name="Check the Newsletters link" time="15.831">
+        <system-out>
+            <![CDATA[Given I am on the Aetna Homepage............................................passed
+When I click on the Providers link..........................................passed
+When I click on read provider newsletters...................................passed
+Then I verify page "OfficeLink Updates Newsletter Archive | Aetna"..........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Verify the Providers page" name="Check the State regulations link" time="17.402">
+        <system-out>
+            <![CDATA[Given I am on the Aetna Homepage............................................passed
+When I click on the Providers link..........................................passed
+When I click on find regulations by state link..............................passed
+Then The title is "Insurance regulations by state"..........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Verify the Providers page" name="Check the Disputes and appeals link" time="19.799">
+        <system-out>
+            <![CDATA[Given I am on the Aetna Homepage............................................passed
+When I click on the Providers link..........................................passed
+When I click on learn about disputes and appeals............................passed
+Then I verify the text "Disputes & Appeals".................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Check the Resources For You page" name="Navigate to the CDC website" time="26.193">
+        <system-out>
+            <![CDATA[Given I am on the Aetna Homepage............................................passed
+When I click on the Providers link..........................................passed
+And I close the Partnering with providers alert.............................passed
+Then i click on the ResourcesForYou on the Providers page...................passed
+And I click on the CDC issues guidelines for vaccinated individuals link....passed
+When I click on continue to site and close the old window...................passed
+Then I verify the title "CDC Issues First Set of Guidelines on How Fully Vaccinated People Can Visit Safely with Others | CDC Online Newsroom | CDC".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Check the Resources For You page" name="Check the searchBox functionality on the Centers for Disease Control and Prevention(CDC) page" time="31.016">
+        <failure message="Title is not a match did not expect [Search Results | CDC] but found [Search Results | CDC]" type="java.lang.AssertionError">
+            <![CDATA[Given I am on the Aetna Homepage............................................passed
+When I click on the Providers link..........................................passed
+And I close the Partnering with providers alert.............................passed
+Then i click on the ResourcesForYou on the Providers page...................passed
+And I click on the CDC issues guidelines for vaccinated individuals link....passed
+And I click on continue to site and close the old window....................passed
+When I enter "Vaccine" in the search box and hit enter......................passed
+Then I should see "Vaccine" results are returned............................passed
+But I should not see "CDC Guideline" related results are returned...........passed
+And I verify "Search Results | CDC" as the page title.......................failed
+
+StackTrace:
+java.lang.AssertionError: Title is not a match did not expect [Search Results | CDC] but found [Search Results | CDC]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertNotEquals(Assert.java:1399)
+	at aetnahomepage_Provider.ResourcesForYouPage.verifySearchPageTitle(ResourcesForYouPage.java:56)
+	at stepDefinitions.ResourcesForYouPageStepDefinition.i_verify_as_the_page_title(ResourcesForYouPageStepDefinition.java:65)
+	at ✽.I verify "Search Results | CDC" as the page title(file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/ResourcesForYou.feature:20)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Check the Resources For You page" name="Check the functionality of the AdvancedSearch link on the CDC page" time="59.857">
+        <system-out>
+            <![CDATA[Given I am on the Aetna Homepage............................................passed
+When I click on the Providers link..........................................passed
+And I close the Partnering with providers alert.............................passed
+Then i click on the ResourcesForYou on the Providers page...................passed
+And I click on the CDC issues guidelines for vaccinated individuals link....passed
+And I click on continue to site and close the old window....................passed
+And I click on the AdvancedSearch button....................................passed
+And I enter "Vaccine" in the searchBox......................................passed
+And I enter "Vaccine" in allTheseWords inputBox.............................passed
+And I enter "Immunization" in thisExactWordOrPhase inputBox.................passed
+And I enter "Provider" in anyOfTheseWords inputBox..........................passed
+And I enter "Vac" in noneOfTheseWords inputBox..............................passed
+And I select "English" from the Language dropdown...........................passed
+And I enter "3/21/2021" in the FromDate inputBox and I enter "3/24/2021" in the TODate inputBox.passed
+When I hit search...........................................................passed
+Then I should see "Vaccine" results are returned............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Check the Resources For You page" name="Verify the other languages option page on the CDC advancedSearch page" time="49.249">
+        <system-out>
+            <![CDATA[Given I am on the Aetna Homepage............................................passed
+When I click on the Providers link..........................................passed
+And I close the Partnering with providers alert.............................passed
+Then i click on the ResourcesForYou on the Providers page...................passed
+And I click on the CDC issues guidelines for vaccinated individuals link....passed
+And I click on continue to site and close the old window....................passed
+And I click on the AdvancedSearch button....................................passed
+When I click on the other languages link at the top of the homepage.........passed
+Then I verify the other languages page title "CDC Resources in Languages Other than English".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Check the Resources For You page" name="Store all the Filter by Languages options in the database" time="60.729">
+        <system-out>
+            <![CDATA[Given I am on the Aetna Homepage............................................passed
+When I click on the Providers link..........................................passed
+And I close the Partnering with providers alert.............................passed
+Then i click on the ResourcesForYou on the Providers page...................passed
+And I click on the CDC issues guidelines for vaccinated individuals link....passed
+And I click on continue to site and close the old window....................passed
+And I click on the AdvancedSearch button....................................passed
+And I click on the other languages link at the top of the homepage..........passed
+When I click on the filterByLanguage dropdown...............................passed
+And I connect to the database and store all the language options in the mySql database.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Check the Resources For You page" name="verify the Filter by Language option in the other languages option page" time="41.381">
+        <system-out>
+            <![CDATA[Given I am on the Aetna Homepage............................................passed
+When I click on the Providers link..........................................passed
+And I close the Partnering with providers alert.............................passed
+Then i click on the ResourcesForYou on the Providers page...................passed
+And I click on the CDC issues guidelines for vaccinated individuals link....passed
+And I click on continue to site and close the old window....................passed
+And I click on the AdvancedSearch button....................................passed
+When I click on the other languages link at the top of the homepage.........passed
+And I select Bengali from the filterByLanguage dropdown.....................passed
+And I enter "Vaccine" in the languagePageSearchBox..........................passed
+Then I verify the message "No results available for the selected criteria. Please adjust the filter options above.".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Check the Resources For You page" name="Navigate to the CVS Health Family site" time="27.245">
+        <system-out>
+            <![CDATA[Given I am on the Aetna Homepage............................................passed
+When I click on the Providers link..........................................passed
+And I close the Partnering with providers alert.............................passed
+Then i click on the ResourcesForYou on the Providers page...................passed
+And I click on the Community strategy to address inequities link............passed
+When I click on continue and close the old window...........................passed
+Then I verify the page "CVS Health builds on community-based strategy to address COVID-19 vaccine education and equity | CVS Health".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Check the Resources For You page" name="Navigate to the CVS Health expands access to vaccines link" time="40.397">
+        <system-out>
+            <![CDATA[Given I am on the Aetna Homepage............................................passed
+When I click on the Providers link..........................................passed
+And I close the Partnering with providers alert.............................passed
+Then i click on the ResourcesForYou on the Providers page...................passed
+And I click on the CVS Health expands access to vaccines link...............passed
+When I click on continue and close the old window...........................passed
+Then I verify the page "CVS Health now offering COVID-19 vaccines in 29 states | CVS Health".passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

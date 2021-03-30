@@ -38,8 +38,8 @@ public class ProvidersStepDefinition extends WebAPI {
 
     @Given("I am on the Aetna Homepage")
     public void i_am_on_the_aetna_homepage() throws IOException, InterruptedException {
-        openBrowser("https://www.aetna.com/");
-        sleepFor(5);
+        openBrowser("https://www.aetna.com");
+
     }
 
     @When("I click on the Providers link")
@@ -63,9 +63,51 @@ public class ProvidersStepDefinition extends WebAPI {
     }
 
     @When("I close the Partnering with providers alert")
-    public void i_close_the_Partnering_with_providers_alert() {
+    public void i_close_the_Partnering_with_providers_alert() throws InterruptedException {
         providers.closeAlert();
     }
+
+    @Then("I verify the Providers page title as {string}")
+    public void i_verify_the_providers_page_title_as(String expectedTitle) {
+      providers.verifyProvidersPageTitle(expectedTitle);
+    }
+
+    @When("I click on explore health care resources")
+    public void i_click_on_explore_health_care_resources() {
+       providers.exploreHealthCareResourcesLink();
+    }
+    @Then("I should see {string}")
+    public void i_should_see(String expectedTitle) {
+       providers.verifyManualsAndWebinarsPageTitle(expectedTitle);
+    }
+
+    @When("I click on read provider newsletters")
+    public void i_click_on_read_provider_newsletters() {
+        providers.readProviderNewslettersLink();
+    }
+    @Then("I verify page {string}")
+    public void i_verify_page(String expectedTitle) {
+      providers.verifyNewslettersLink(expectedTitle);
+    }
+
+    @When("I click on find regulations by state link")
+    public void i_click_on_find_regulations_by_state_link() {
+        providers.findRegulationsByStateLink();
+    }
+    @Then("The title is {string}")
+    public void the_title_is(String expectedTitle) {
+        providers.verifyStateRegulationsTitle(expectedTitle);
+    }
+
+    @When("I click on learn about disputes and appeals")
+    public void i_click_on_learn_about_disputes_and_appeals() {
+       providers.learnAboutDisputesAndAppealsLink();
+    }
+    @Then("I verify the text {string}")
+    public void i_verify_the_text(String expectedTitle) {
+       providers.verifydisputesAndAppealsPageTitle(expectedTitle);
+    }
+
 
 
 
