@@ -246,7 +246,13 @@ public class EmployersPageStepDefinition extends WebAPI {
     }
 
     @When("user clicks Small Business")
-    public void userClicksSmallBusiness() throws InterruptedException {
+    public void userClicksSmallBusiness()  {
         employersPage.clickSmallBusiness();
+    }
+    //***********************************************************
+
+    @When("user clicks Mid-size Business")
+    public void userClicksMidSizeBusiness() {
+        employersPage.clickMidSizeCompany();
     }
 }

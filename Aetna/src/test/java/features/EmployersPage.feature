@@ -143,4 +143,17 @@ Feature: Employers Page Header Functionality
     And user clicks on Solutions
     And user hovers over By company size
     When user clicks Small Business
-    Then user verifies page title is "Telehealth Services from Aetna | Telemedicine Benefits"
+    Then user verifies page title is "Small Business Health Insurance Plans from Aetna | Group Medical Insurance Options for Small Business Owners / Employers"
+
+  Scenario:Solutions Options Checking Mid-size Business
+    And user clicks on Solutions
+    And user hovers over By company size
+    When user clicks Mid-size Business
+    Then user verifies page title is "Mid-Sized Business Health Insurance from Aetna | Plans for Mid-Market / Medium-Sized Business Employers"
+
+
+  Scenario:Solutions Options Checking Mid-size Business
+    And user clicks on Solutions
+    And user hovers over By company size
+    When user clicks Mid-size Business
+    Then user verifies page title is "Mid-Sized Business Health Insurance from Aetna | Plans for Mid-Market / Medium-Sized Business Employers"

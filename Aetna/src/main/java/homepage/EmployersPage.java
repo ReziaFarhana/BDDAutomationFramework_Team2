@@ -160,7 +160,11 @@ public class EmployersPage extends WebAPI {
     public void hoverOverByCompanySize() throws InterruptedException {
         hoverOver(driver,companySize);
     }
-    public void clickSmallBusiness() throws InterruptedException {
+    public void clickSmallBusiness() {
         clickByXpath(smallBusinessXp);
+    }
+    //*************************************************************
+    public void clickMidSizeCompany(){
+
     }
 }
