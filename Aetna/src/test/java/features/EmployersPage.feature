@@ -108,10 +108,10 @@ Feature: Employers Page Header Functionality
     When user clicks Womens Health
     Then user verifies page title is "Women's Health Services & Support Plans for Employers | Aetna"
 
-  Scenario:Products and Services Options Checking Customer Service
+  Scenario:Products and Services Options Checking All Administration Tools
     And user clicks on Products and services
-    And user hovers over Member Programs
-    When user clicks Customer Service
-    Then user verifies page title is "Personalized Customer Service Programs & Support | Aetna"
+    And user hovers over Administration Offerings
+    When user clicks All Administration Tools
+    Then user verifies page title is "Health Plan & Benefits Administration for Employers | Aetna"
 
 

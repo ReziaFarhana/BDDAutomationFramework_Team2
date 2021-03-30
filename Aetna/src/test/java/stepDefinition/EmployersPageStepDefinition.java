@@ -177,6 +177,16 @@ public class EmployersPageStepDefinition extends WebAPI {
         employersPage.clickWomensHealth();
     }
 
+    //***********************************************
 
 
+    @And("user hovers over Administration Offerings")
+    public void userHoversOverAdministrationOfferings() throws InterruptedException {
+        employersPage.hoverOverAdminOfferings();
+    }
+
+    @When("user clicks All Administration Tools")
+    public void userClicksAllAdministrationTools() {
+        employersPage.clickAllAdminTools();
+    }
 }

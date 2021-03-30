@@ -14,6 +14,7 @@ public class EmployersPage extends WebAPI {
     @FindBy(how = How.XPATH, using =healthPlansXp) public WebElement healthPlans;
     @FindBy(how = How.XPATH, using =memberProgramsxP) public WebElement memberPrograms;
     @FindBy(how = How.XPATH, using =aetnaHelpAppPagetxtSp) public WebElement aetnaHelpapp;
+    @FindBy(how = How.XPATH, using =administrationOfferingXp) public WebElement administrationOffering;
 
 
     public void clickDropDown(){
@@ -114,6 +115,13 @@ public class EmployersPage extends WebAPI {
     public void clickWomensHealth(){
         clickByXpath(womensHealthXp);
     }
+    //**********************************************************
 
+    public void hoverOverAdminOfferings() throws InterruptedException {
+        hoverOver(driver, administrationOffering);
+    }
+    public void clickAllAdminTools() {
+        clickByXpath(allAdminToolsxP);
+    }
 
 }
