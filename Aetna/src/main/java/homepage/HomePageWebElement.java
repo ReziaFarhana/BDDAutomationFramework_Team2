@@ -38,7 +38,7 @@ public class HomePageWebElement {
    public static final String allAdminToolsxP="/html/body/div[2]/div/nav/div/ul[1]/li[1]/div[2]/div/div/section/ul/li[3]/div[2]/ul/li[1]/a";
    public static final String payFlexXp= "//ul[@class='megamenu__tertiary--main']//a[@class='megamenu__tertiary--link" +
            " link__text--inline--tertiary'][normalize-space()='PayFlex']";
-//   public static final String =;
+   public static final String getAQuoteXp ="/html/body/div[2]/div/nav/div/ul[1]/li[1]/div[2]/div/div/section/ul/li[4]/div/a";
 //   public static final String =;
 
 

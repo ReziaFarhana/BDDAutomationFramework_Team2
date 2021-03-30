@@ -195,4 +195,14 @@ public class EmployersPageStepDefinition extends WebAPI {
     public void userClicksAllPayflex() {
         employersPage.clickPayFlex();
     }
+//******************************************************
+    @And("user clicks on Get A Quote")
+    public void userClicksOnGetAQuote() throws InterruptedException {
+        employersPage.clickGetAQuote();
+    }
+
+    @And("user gets all links on Quotes Page")
+    public void userGetsAllLinksOnQuotesPage() {
+        employersPage.getAllLinksFromQuotePage();
+    }
 }

@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="22.459">
-    <testcase classname="Employers Page Header Functionality" name="Products and Services Options Checking All Member Programs" time="22.122">
-        <system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="47.967">
+    <testcase classname="Employers Page Header Functionality" name="Products and Services Options Checking Get" time="47.524">
+        <failure message="Title doesnt match expected:&lt;[Get a Health Insurance Quote from Aetna for Your Clients]&gt; but was:&lt;[Sales Contact Tool for Insurance Agents/Brokers | Aetna]&gt;" type="org.junit.ComparisonFailure">
             <![CDATA[Given user is on employers page.............................................passed
 And user clicks on Products and services....................................passed
-And user hovers over Member Programs........................................passed
-When user clicks All Member Programs........................................passed
-Then user verifies page title is "Services to Support Member Health for Employers | Aetna".passed
+And user clicks on Get A Quote..............................................passed
+And user gets all links on Quotes Page......................................passed
+Then user verifies page title is "Get a Health Insurance Quote from Aetna for Your Clients".failed
+
+StackTrace:
+org.junit.ComparisonFailure: Title doesnt match expected:<[Get a Health Insurance Quote from Aetna for Your Clients]> but was:<[Sales Contact Tool for Insurance Agents/Brokers | Aetna]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at homepage.EmployersPage.verifyAllHealthPlanPage(EmployersPage.java:46)
+	at stepDefinition.EmployersPageStepDefinition.userVerifiesPageTitleIs(EmployersPageStepDefinition.java:79)
+	at ✽.user verifies page title is "Get a Health Insurance Quote from Aetna for Your Clients"(file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:128)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>

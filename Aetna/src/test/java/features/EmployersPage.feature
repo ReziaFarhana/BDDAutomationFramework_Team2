@@ -120,4 +120,9 @@ Feature: Employers Page Header Functionality
     When user clicks All Payflex
     Then user verifies page title is "PayFlex Integration for Employers & Employees | Aetna"
 
-
+    @linkTest
+  Scenario:Products and Services Options Checking Get
+    And user clicks on Products and services
+    And user clicks on Get A Quote
+    And user gets all links on Quotes Page
+    Then user verifies page title is "Get a Health Insurance Quote from Aetna for Your Clients"

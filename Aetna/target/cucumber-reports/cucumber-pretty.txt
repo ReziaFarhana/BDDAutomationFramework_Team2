@@ -1,8 +1,20 @@
 
-@integrationTest
-Scenario: Products and Services Options Checking All Member Programs                         # src/test/java/features/EmployersPage.feature:55
-  Given user is on employers page                                                            # stepDefinition.EmployersPageStepDefinition.user_is_on_employers_page()
-  And user clicks on Products and services                                                   # stepDefinition.EmployersPageStepDefinition.userClicksOnProductsAndServices()
-  And user hovers over Member Programs                                                       # stepDefinition.EmployersPageStepDefinition.userHoversOverMemberPrograms()
-  When user clicks All Member Programs                                                       # stepDefinition.EmployersPageStepDefinition.userClicksAllMemberPrograms()
-  Then user verifies page title is "Services to Support Member Health for Employers | Aetna" # stepDefinition.EmployersPageStepDefinition.userVerifiesPageTitleIs(java.lang.String)
+@linkTest
+Scenario: Products and Services Options Checking Get                                          # src/test/java/features/EmployersPage.feature:124
+  Given user is on employers page                                                             # stepDefinition.EmployersPageStepDefinition.user_is_on_employers_page()
+  And user clicks on Products and services                                                    # stepDefinition.EmployersPageStepDefinition.userClicksOnProductsAndServices()
+  And user clicks on Get A Quote                                                              # stepDefinition.EmployersPageStepDefinition.userClicksOnGetAQuote()
+  And user gets all links on Quotes Page                                                      # stepDefinition.EmployersPageStepDefinition.userGetsAllLinksOnQuotesPage()
+  Then user verifies page title is "Get a Health Insurance Quote from Aetna for Your Clients" # stepDefinition.EmployersPageStepDefinition.userVerifiesPageTitleIs(java.lang.String)
+      org.junit.ComparisonFailure: Title doesnt match expected:<[Get a Health Insurance Quote from Aetna for Your Clients]> but was:<[Sales Contact Tool for Insurance Agents/Brokers | Aetna]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at homepage.EmployersPage.verifyAllHealthPlanPage(EmployersPage.java:46)
+	at stepDefinition.EmployersPageStepDefinition.userVerifiesPageTitleIs(EmployersPageStepDefinition.java:79)
+	at ✽.user verifies page title is "Get a Health Insurance Quote from Aetna for Your Clients"(file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:128)
+
+
+    Embedding demo1 [image/png 959684 bytes]
+
+
+    Embedding demo1 [image/png 959684 bytes]
+

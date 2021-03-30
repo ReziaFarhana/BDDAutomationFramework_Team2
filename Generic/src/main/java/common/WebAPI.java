@@ -388,6 +388,17 @@ public class WebAPI {
         list = driver.findElements(By.xpath(locator));
         return list;
     }
+    //method by Easha
+    public List<WebElement> getListofWebElementsbyTag(String tagName){
+        List<WebElement> list = new ArrayList<WebElement>();
+        list = driver.findElements(By.tagName(tagName));//list of webelements
+
+        //iterating and printing each link
+        for(WebElement eachLink: list){
+            System.out.println(eachLink.getAttribute("textContent"));
+        }
+        return list;
+    }
 
 
 

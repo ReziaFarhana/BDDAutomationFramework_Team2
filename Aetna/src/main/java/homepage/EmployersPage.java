@@ -127,5 +127,14 @@ public class EmployersPage extends WebAPI {
     public void clickPayFlex(){
         clickByXpath(payFlexXp);
     }
+    //******************************************************************
+    public void clickGetAQuote() throws InterruptedException {
+        scrollByXPATH(getAQuoteXp);
+        sleepFor(3);
+    }
+    public void getAllLinksFromQuotePage(){
+        getListofWebElementsbyTag("a");
+    }
+
 
 }

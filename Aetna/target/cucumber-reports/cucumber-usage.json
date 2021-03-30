@@ -5,12 +5,12 @@
       {
         "name": "user is on employers page",
         "aggregatedDurations": {
-          "median": 11.633293,
-          "average": 11.633293
+          "median": 13.8787725,
+          "average": 13.8787725
         },
         "durations": [
           {
-            "duration": 11.633293,
+            "duration": 13.8787725,
             "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:4"
           }
         ]
@@ -23,67 +23,49 @@
       {
         "name": "user clicks on Products and services",
         "aggregatedDurations": {
-          "median": 3.2667211,
-          "average": 3.2667211
+          "median": 3.2803412,
+          "average": 3.2803412
         },
         "durations": [
           {
-            "duration": 3.2667211,
-            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:56"
+            "duration": 3.2803412,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:125"
           }
         ]
       }
     ]
   },
   {
-    "source": "user hovers over Member Programs",
+    "source": "user clicks on Get A Quote",
     "steps": [
       {
-        "name": "user hovers over Member Programs",
+        "name": "user clicks on Get A Quote",
         "aggregatedDurations": {
-          "median": 3.1837429,
-          "average": 3.1837429
+          "median": 26.3271008,
+          "average": 26.3271008
         },
         "durations": [
           {
-            "duration": 3.1837429,
-            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:57"
+            "duration": 26.3271008,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:126"
           }
         ]
       }
     ]
   },
   {
-    "source": "user clicks All Member Programs",
+    "source": "user gets all links on Quotes Page",
     "steps": [
       {
-        "name": "user clicks All Member Programs",
+        "name": "user gets all links on Quotes Page",
         "aggregatedDurations": {
-          "median": 3.9118635,
-          "average": 3.9118635
+          "median": 3.0227791,
+          "average": 3.0227791
         },
         "durations": [
           {
-            "duration": 3.9118635,
-            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:58"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "user verifies page title is {string}",
-    "steps": [
-      {
-        "name": "user verifies page title is \"Services to Support Member Health for Employers | Aetna\"",
-        "aggregatedDurations": {
-          "median": 0.0085829,
-          "average": 0.0085829
-        },
-        "durations": [
-          {
-            "duration": 0.0085829,
-            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:59"
+            "duration": 3.0227791,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:127"
           }
         ]
       }
