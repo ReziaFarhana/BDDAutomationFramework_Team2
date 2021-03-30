@@ -5,12 +5,12 @@
       {
         "name": "user is on employers page",
         "aggregatedDurations": {
-          "median": 13.8787725,
-          "average": 13.8787725
+          "median": 12.995786,
+          "average": 12.995786
         },
         "durations": [
           {
-            "duration": 13.8787725,
+            "duration": 12.995786,
             "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:4"
           }
         ]
@@ -23,49 +23,13 @@
       {
         "name": "user clicks on Products and services",
         "aggregatedDurations": {
-          "median": 3.2803412,
-          "average": 3.2803412
+          "median": 3.27207,
+          "average": 3.27207
         },
         "durations": [
           {
-            "duration": 3.2803412,
-            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:125"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "user clicks on Get A Quote",
-    "steps": [
-      {
-        "name": "user clicks on Get A Quote",
-        "aggregatedDurations": {
-          "median": 26.3271008,
-          "average": 26.3271008
-        },
-        "durations": [
-          {
-            "duration": 26.3271008,
-            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:126"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "user gets all links on Quotes Page",
-    "steps": [
-      {
-        "name": "user gets all links on Quotes Page",
-        "aggregatedDurations": {
-          "median": 3.0227791,
-          "average": 3.0227791
-        },
-        "durations": [
-          {
-            "duration": 3.0227791,
-            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:127"
+            "duration": 3.27207,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:132"
           }
         ]
       }

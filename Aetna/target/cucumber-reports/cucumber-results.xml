@@ -1,19 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="47.967">
-    <testcase classname="Employers Page Header Functionality" name="Products and Services Options Checking Get" time="47.524">
-        <failure message="Title doesnt match expected:&lt;[Get a Health Insurance Quote from Aetna for Your Clients]&gt; but was:&lt;[Sales Contact Tool for Insurance Agents/Brokers | Aetna]&gt;" type="org.junit.ComparisonFailure">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="37.839">
+    <testcase classname="Employers Page Header Functionality" name="Start a Quote functionality" time="37.15">
+        <failure message="Unable to locate element: //h2[@class='header topicLink hidden-phone title--anchor mouse--in']//a[contains(@aria-label,'Get a quote')][normalize-space()='Get a quote']&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-P1DOK11', ip: '192.168.43.229', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 86.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210310152336, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 23760, moz:profile: C:\Users\Easha\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: c5e92147-3d2c-4a47-8159-4945724db018&#10;*** Element info: {Using=xpath, value=//h2[@class='header topicLink hidden-phone title--anchor mouse--in']//a[contains(@aria-label,'Get a quote')][normalize-space()='Get a quote']}" type="org.openqa.selenium.NoSuchElementException">
             <![CDATA[Given user is on employers page.............................................passed
 And user clicks on Products and services....................................passed
-And user clicks on Get A Quote..............................................passed
-And user gets all links on Quotes Page......................................passed
-Then user verifies page title is "Get a Health Insurance Quote from Aetna for Your Clients".failed
+And user clicks on Get A Quote..............................................failed
+And user clicks Go to the individual dental Distribution Partner Portal.....skipped
+And user enters "12534".....................................................skipped
+When user clicks Get A Free Quote...........................................skipped
+Then user verifies page title is "Aetna Dental Direct | About You"..........skipped
 
 StackTrace:
-org.junit.ComparisonFailure: Title doesnt match expected:<[Get a Health Insurance Quote from Aetna for Your Clients]> but was:<[Sales Contact Tool for Insurance Agents/Brokers | Aetna]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at homepage.EmployersPage.verifyAllHealthPlanPage(EmployersPage.java:46)
-	at stepDefinition.EmployersPageStepDefinition.userVerifiesPageTitleIs(EmployersPageStepDefinition.java:79)
-	at ✽.user verifies page title is "Get a Health Insurance Quote from Aetna for Your Clients"(file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:128)
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //h2[@class='header topicLink hidden-phone title--anchor mouse--in']//a[contains(@aria-label,'Get a quote')][normalize-space()='Get a quote']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-P1DOK11', ip: '192.168.43.229', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 86.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210310152336, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 23760, moz:profile: C:\Users\Easha\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c5e92147-3d2c-4a47-8159-4945724db018
+*** Element info: {Using=xpath, value=//h2[@class='header topicLink hidden-phone title--anchor mouse--in']//a[contains(@aria-label,'Get a quote')][normalize-space()='Get a quote']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at common.WebAPI.scrollByXPATH(WebAPI.java:561)
+	at homepage.EmployersPage.clickGetAQuote(EmployersPage.java:134)
+	at stepDefinition.EmployersPageStepDefinition.userClicksOnGetAQuote(EmployersPageStepDefinition.java:203)
+	at ✽.user clicks on Get A Quote(file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:133)
 ]]>
         </failure>
     </testcase>

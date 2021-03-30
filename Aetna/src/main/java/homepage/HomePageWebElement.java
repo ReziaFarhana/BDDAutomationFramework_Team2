@@ -38,7 +38,11 @@ public class HomePageWebElement {
    public static final String allAdminToolsxP="/html/body/div[2]/div/nav/div/ul[1]/li[1]/div[2]/div/div/section/ul/li[3]/div[2]/ul/li[1]/a";
    public static final String payFlexXp= "//ul[@class='megamenu__tertiary--main']//a[@class='megamenu__tertiary--link" +
            " link__text--inline--tertiary'][normalize-space()='PayFlex']";
-   public static final String getAQuoteXp ="/html/body/div[2]/div/nav/div/ul[1]/li[1]/div[2]/div/div/section/ul/li[4]/div/a";
+   public static final String getAQuoteXp ="//h2[@class='header topicLink hidden-phone title--anchor mouse--in']//a[contains(@aria-label,'Get a quote')][normalize-space()='Get a quote']";
+   public static final String individualQuoteXp ="//span[contains(text(),'Go to the individual dental Distribution Partner P')]";
+   public static final String zipcodeBoxXp ="//div[@class='col-sm-8 col-sm-offset-2']//input[@placeholder='ZIP Code']";
+   public static final String getAFreeQuote="//div[@class='col-sm-8 col-sm-offset-2']//a[@type='button'][normalize-space()='Get a free quote']";
+//   public static final String =;
 //   public static final String =;
 
 

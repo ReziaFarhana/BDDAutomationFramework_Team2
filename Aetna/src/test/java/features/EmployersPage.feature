@@ -121,8 +121,20 @@ Feature: Employers Page Header Functionality
     Then user verifies page title is "PayFlex Integration for Employers & Employees | Aetna"
 
     @linkTest
-  Scenario:Products and Services Options Checking Get
+  Scenario:Products and Services Options Checking Get A Quote
     And user clicks on Products and services
-    And user clicks on Get A Quote
+
     And user gets all links on Quotes Page
     Then user verifies page title is "Get a Health Insurance Quote from Aetna for Your Clients"
+
+      @easha
+  Scenario Outline: Start a Quote functionality
+   And user clicks on Products and services
+   And user clicks on Get A Quote
+    And user clicks Go to the individual dental Distribution Partner Portal
+    And user enters "<Zipcode>"
+    When user clicks Get A Free Quote
+    Then user verifies page title is "Aetna Dental Direct | About You"
+    Examples:
+    |Zipcode|
+    |12534|

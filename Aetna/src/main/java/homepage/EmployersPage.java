@@ -2,6 +2,8 @@ package homepage;
 
 import common.WebAPI;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -135,6 +137,19 @@ public class EmployersPage extends WebAPI {
     public void getAllLinksFromQuotePage(){
         getListofWebElementsbyTag("a");
     }
+//*****************************************************
+    public void clickOnIndividualQuote(){
+        scrollByXPATH(individualQuoteXp);
+    }
+    public void enterZipcode(String zipcode) throws InterruptedException {
+        JavascriptExecutor executor=(JavascriptExecutor) driver;
+        WebElement element=driver.findElement(By.xpath(zipcodeBoxXp));
+        executor.executeScript("arguments[0].scrollIntoView(true);",element);
+        sleepFor(3);
+        driver.findElement(By.xpath(zipcodeBoxXp)).sendKeys(zipcode);
+    }
 
-
+    public void clickGetAFreeQuote(){
+        scrollByXPATH(getAFreeQuote);
+    }
 }
