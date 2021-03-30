@@ -123,5 +123,9 @@ public class EmployersPage extends WebAPI {
     public void clickAllAdminTools() {
         clickByXpath(allAdminToolsxP);
     }
+    //******************************************************************
+    public void clickPayFlex(){
+        clickByXpath(payFlexXp);
+    }
 
 }

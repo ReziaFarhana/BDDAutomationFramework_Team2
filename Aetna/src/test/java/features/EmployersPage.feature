@@ -114,4 +114,10 @@ Feature: Employers Page Header Functionality
     When user clicks All Administration Tools
     Then user verifies page title is "Health Plan & Benefits Administration for Employers | Aetna"
 
+  Scenario:Products and Services Options Checking Payflex
+    And user clicks on Products and services
+    And user hovers over Administration Offerings
+    When user clicks All Payflex
+    Then user verifies page title is "PayFlex Integration for Employers & Employees | Aetna"
+
 

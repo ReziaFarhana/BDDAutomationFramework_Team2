@@ -189,4 +189,10 @@ public class EmployersPageStepDefinition extends WebAPI {
     public void userClicksAllAdministrationTools() {
         employersPage.clickAllAdminTools();
     }
+    //*********************************************************************************
+
+    @When("user clicks All Payflex")
+    public void userClicksAllPayflex() {
+        employersPage.clickPayFlex();
+    }
 }
