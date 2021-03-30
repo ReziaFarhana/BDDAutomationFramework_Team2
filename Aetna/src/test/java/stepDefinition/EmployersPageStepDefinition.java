@@ -158,6 +158,10 @@ public class EmployersPageStepDefinition extends WebAPI {
     }
 
     //*****************************************
+    @When("user clicks Member Management Platform")
+    public void userClicksMemberManagementPlatform() {
+        employersPage.clickMemberManangementPlatform();
+    }
 
     //*****************************************
     //*****************************************

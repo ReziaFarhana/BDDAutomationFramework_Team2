@@ -105,7 +105,7 @@ public class EmployersPage extends WebAPI {
         clickByXpath(diabetesXp);
     }
     //**********************************************************
-    public void clickmemberManamgementPlatform(){
+    public void clickMemberManangementPlatform(){
         clickByXpath(memberManagmentPlatformxP);
     }//**********************************************************
     public void clickTelehealth(){
