@@ -163,7 +163,12 @@ public class EmployersPageStepDefinition extends WebAPI {
         employersPage.clickMemberManangementPlatform();
     }
 
+
     //*****************************************
+    @When("user clicks Telehealth")
+    public void userClicksTelehealth() {
+        employersPage.clickTelehealth();
+    }
     //*****************************************
 
 

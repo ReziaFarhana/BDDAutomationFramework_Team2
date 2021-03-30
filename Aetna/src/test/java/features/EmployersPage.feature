@@ -96,11 +96,11 @@ Feature: Employers Page Header Functionality
     When user clicks Member Management Platform
     Then user verifies page title is "Member Engagement Platform for Employers | Aetna"
 
-  Scenario:Products and Services Options Checking Customer Service
+  Scenario:Products and Services Options Checking Telehealth
     And user clicks on Products and services
     And user hovers over Member Programs
-    When user clicks Customer Service
-    Then user verifies page title is "Personalized Customer Service Programs & Support | Aetna"
+    When user clicks Telehealth
+    Then user verifies page title is "Telehealth Services from Aetna | Telemedicine Benefits"
 
   Scenario:Products and Services Options Checking Customer Service
     And user clicks on Products and services
