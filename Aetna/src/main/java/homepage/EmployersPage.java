@@ -13,7 +13,7 @@ public class EmployersPage extends WebAPI {
     @FindBy(how = How.CLASS_NAME, using =aboutUsPageTextClass ) public WebElement aboutUsText;
     @FindBy(how = How.XPATH, using =healthPlansXp) public WebElement healthPlans;
     @FindBy(how = How.XPATH, using =memberProgramsxP) public WebElement memberPrograms;
-    @FindBy(how = How.XPATH, using =aetnaHelpappXp) public WebElement aetnaHelpapp;
+    @FindBy(how = How.XPATH, using =aetnaHelpAppPagetxtSp) public WebElement aetnaHelpapp;
 
 
     public void clickDropDown(){
@@ -90,6 +90,11 @@ public class EmployersPage extends WebAPI {
 
     public void clickBehavioralHealth(){
         clickByXpath(behavioralHealthxp);
+    }
+    //*******************************************************************
+
+    public void clickCareManagement(){
+        clickByXpath(careManagxP);
     }
 
 
