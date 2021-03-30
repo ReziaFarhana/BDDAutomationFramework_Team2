@@ -82,8 +82,21 @@ public class EmployersPageStepDefinition extends WebAPI {
 
     //*****************************************
 
-    @And("user clicks All Medicare")
-    public void userClicksAllMedicare() {
+    @And("user clicks Medicare")
+    public void userClicksMedicare() throws InterruptedException {
         employersPage.clickMedicare();
     }
+    //*****************************************
+    @When("user clicks on Dental")
+    public void userClicksOnDental() throws InterruptedException {
+        employersPage.clickDental();
+    }
+    //*****************************************
+    @When("user clicks on Vision")
+    public void userClicksOnVision() throws InterruptedException {
+        employersPage.clickVision();
+    }
+    //*****************************************
+
+
 }

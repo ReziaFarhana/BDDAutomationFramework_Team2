@@ -1,12 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="27.353">
-    <testcase classname="Employers Page Header Functionality" name="Products and Services Options" time="26.529">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="38.689">
+    <testcase classname="Employers Page Header Functionality" name="Products and Services Options Checking Dental" time="17.36">
+        <failure message="Element &lt;a class=&quot;megamenu__tertiary--link link__text--inline--tertiary&quot; href=&quot;/solutions/segment/national-accounts.html&quot;&gt; could not be scrolled into view&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-P1DOK11', ip: '192.168.0.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 86.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210310152336, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 19936, moz:profile: C:\Users\Easha\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 6de0c616-7460-402f-a533-4aa985549720" type="org.openqa.selenium.ElementNotInteractableException">
+            <![CDATA[Given user is on employers page.............................................passed
+And user clicks on Products and services....................................passed
+And user hovers over Health Plans...........................................passed
+When user clicks on Dental..................................................failed
+Then user verifies page title is "Group Dental Insurance Plans from Aetna | DMO, PPO, & Indemnity Plans & Coverage for Employers".skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: Element <a class="megamenu__tertiary--link link__text--inline--tertiary" href="/solutions/segment/national-accounts.html"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-P1DOK11', ip: '192.168.0.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 86.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210310152336, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 19936, moz:profile: C:\Users\Easha\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6de0c616-7460-402f-a533-4aa985549720
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at common.WebAPI.clickByXpath(WebAPI.java:323)
+	at homepage.EmployersPage.clickDental(EmployersPage.java:52)
+	at stepDefinition.EmployersPageStepDefinition.userClicksOnDental(EmployersPageStepDefinition.java:92)
+	at ✽.user clicks on Dental(file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:30)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Employers Page Header Functionality" name="Products and Services Options Checking Vision" time="20.99">
         <system-out>
             <![CDATA[Given user is on employers page.............................................passed
-Then user clicks on Products and services...................................passed
+And user clicks on Products and services....................................passed
 And user hovers over Health Plans...........................................passed
-And user clicks All Health Plans............................................passed
-Then user verifies page title is "Group Medical, Medicare & Ancillary Insurance Plans | Aetna".passed
+When user clicks on Vision..................................................passed
+Then user verifies page title is "Group Vision Insurance from Aetna | Plans for Employers & Employees".passed
 ]]>
         </system-out>
     </testcase>

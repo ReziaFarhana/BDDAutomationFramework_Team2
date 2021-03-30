@@ -44,12 +44,18 @@ public class EmployersPage extends WebAPI {
     }
 
     //***************************************************************************
-    public void clickMedicare(){
+    public void clickMedicare() throws InterruptedException {
         clickByXpath(medicareXp);
+        sleepFor(3);
     }
-    public void verifyMedicarePage(String expectedText){
-        String actualText=driver.getTitle();
-        Assert.assertEquals("Title doesnt match", expectedText, actualText);
+    public void clickDental() throws InterruptedException {
+        clickByXpath(dentalXp);
+        sleepFor(3);
     }
+    public void clickVision() throws InterruptedException {
+        clickByXpath(visionxP);
+        sleepFor(2);
+    }
+
 
 }
