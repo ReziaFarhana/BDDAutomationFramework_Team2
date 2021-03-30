@@ -49,8 +49,9 @@ public class TravelForumStepDefinitions extends WebAPI {
     }
 
     @Then("user should see {string} appear properly")
-    public void userShouldSeeAppearProperly(String expectedText) throws InterruptedException {
-        travelforumpage.verifySearchText(expectedText);
+    @Then("user verifies {string} appears properly")
+    public void userVerifiesAppearsProperly(String pageURL) {
+        travelforumpage.verifyPageURL(pageURL);
     }
     //*****************************************************
 
@@ -58,4 +59,18 @@ public class TravelForumStepDefinitions extends WebAPI {
     public void userGetsAllLinksFromTravelPage() {
         travelforumpage.getlinksFromTravelForumPage();
     }
+
+
+
+    @When("user right clicks and opens all Browse Destination links")
+    public void userRightClicksAndOpensAllBrowseDestinationLinks() throws InterruptedException {
+        travelforumpage.rightClickandOpenBrowseDestinationLinks();
+    }
+
+    @Then("user verifies all Page Title prints")
+    public void userVerifiesAllPageTitlePrints() throws InterruptedException {
+        travelforumpage.verifyAllTitles();
+    }
+
+
 }

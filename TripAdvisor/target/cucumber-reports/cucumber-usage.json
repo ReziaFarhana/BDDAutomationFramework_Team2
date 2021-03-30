@@ -5,12 +5,12 @@
       {
         "name": "user is on Travel Forum page",
         "aggregatedDurations": {
-          "median": 14.5955586,
-          "average": 14.5955586
+          "median": 5.7521387,
+          "average": 5.7521387
         },
         "durations": [
           {
-            "duration": 14.5955586,
+            "duration": 5.7521387,
             "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/TravelForumsPage.feature:4"
           }
         ]
@@ -18,18 +18,36 @@
     ]
   },
   {
-    "source": "user gets all links from Travel Page",
+    "source": "user right clicks and opens all Browse Destination links",
     "steps": [
       {
-        "name": "user gets all links from Travel Page",
+        "name": "user right clicks and opens all Browse Destination links",
         "aggregatedDurations": {
-          "median": 0.9718286,
-          "average": 0.9718286
+          "median": 2.8413028,
+          "average": 2.8413028
         },
         "durations": [
           {
-            "duration": 0.9718286,
-            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/TravelForumsPage.feature:20"
+            "duration": 2.8413028,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/TravelForumsPage.feature:24"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user verifies all Page Title prints",
+    "steps": [
+      {
+        "name": "user verifies all Page Title prints",
+        "aggregatedDurations": {
+          "median": 44.8605035,
+          "average": 44.8605035
+        },
+        "durations": [
+          {
+            "duration": 44.8605035,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/TravelForumsPage.feature:25"
           }
         ]
       }

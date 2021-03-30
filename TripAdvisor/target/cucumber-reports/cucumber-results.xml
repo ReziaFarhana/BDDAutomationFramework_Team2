@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="16.467">
-    <testcase classname="Unknown" name="Check all Tabs in Header" time="15.798">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="53.968">
+    <testcase classname="Unknown" name="Verify Browse by Destination" time="53.589">
         <system-out>
             <![CDATA[Given user is on Travel Forum page..........................................passed
-Then user gets all links from Travel Page...................................passed
+When user right clicks and opens all Browse Destination links...............passed
+Then user verifies all Page Title prints....................................passed
 ]]>
         </system-out>
     </testcase>

@@ -1,5 +1,6 @@
 
-@sanityTest
-Scenario: Check all Tabs in Header          # src/test/java/features/TravelForumsPage.feature:19
-  Given user is on Travel Forum page        # stepDefinitions.TravelForumStepDefinitions.user_is_on_travel_forum_page()
-  Then user gets all links from Travel Page # stepDefinitions.TravelForumStepDefinitions.userGetsAllLinksFromTravelPage()
+@smokeTest
+Scenario: Verify Browse by Destination                          # src/test/java/features/TravelForumsPage.feature:23
+  Given user is on Travel Forum page                            # stepDefinitions.TravelForumStepDefinitions.user_is_on_travel_forum_page()
+  When user right clicks and opens all Browse Destination links # stepDefinitions.TravelForumStepDefinitions.userRightClicksAndOpensAllBrowseDestinationLinks()
+  Then user verifies all Page Title prints                      # stepDefinitions.TravelForumStepDefinitions.userVerifiesAllPageTitlePrints()

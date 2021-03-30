@@ -11,13 +11,13 @@
         "steps": [
           {
             "result": {
-              "duration": 14595558600,
+              "duration": 5752138700,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 53975700,
+                  "duration": 23711100,
                   "status": "passed"
                 },
                 "match": {
@@ -26,7 +26,7 @@
               },
               {
                 "result": {
-                  "duration": 1767900,
+                  "duration": 1000400,
                   "status": "passed"
                 },
                 "match": {
@@ -42,7 +42,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 2625800,
+                  "duration": 3957300,
                   "status": "passed"
                 },
                 "match": {
@@ -51,6 +51,7 @@
               },
               {
                 "result": {
+                  "duration": 1005700,
                   "status": "passed"
                 },
                 "match": {
@@ -63,22 +64,23 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-30T17:16:40.854Z",
-        "line": 19,
-        "name": "Check all Tabs in Header",
+        "start_timestamp": "2021-03-30T22:08:27.029Z",
+        "line": 23,
+        "name": "Verify Browse by Destination",
         "description": "",
-        "id": ";check-all-tabs-in-header",
+        "id": ";verify-browse-by-destination",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 971828600,
+              "duration": 2841302800,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
+                  "duration": 499900,
                   "status": "passed"
                 },
                 "match": {
@@ -87,7 +89,7 @@
               },
               {
                 "result": {
-                  "duration": 499000,
+                  "duration": 1074700,
                   "status": "passed"
                 },
                 "match": {
@@ -95,15 +97,67 @@
                 }
               }
             ],
-            "line": 20,
-            "name": "user gets all links from Travel Page",
+            "line": 24,
+            "name": "user right clicks and opens all Browse Destination links",
             "match": {
-              "location": "stepDefinitions.TravelForumStepDefinitions.userGetsAllLinksFromTravelPage()"
+              "location": "stepDefinitions.TravelForumStepDefinitions.userRightClicksAndOpensAllBrowseDestinationLinks()"
             },
             "after": [
               {
                 "result": {
-                  "duration": 999400,
+                  "duration": 1000400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.TravelForumStepDefinitions.tearDown(io.cucumber.java.Scenario)"
+                }
+              },
+              {
+                "result": {
+                  "duration": 1000600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.HomePageStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44860503500,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1500100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.HomePageStepDefinition.getInit()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 1001200,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.TravelForumStepDefinitions.getInit()"
+                }
+              }
+            ],
+            "line": 25,
+            "name": "user verifies all Page Title prints",
+            "match": {
+              "location": "stepDefinitions.TravelForumStepDefinitions.userVerifiesAllPageTitlePrints()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1008000,
                   "status": "passed"
                 },
                 "match": {
@@ -124,7 +178,7 @@
         ],
         "tags": [
           {
-            "name": "@sanityTest"
+            "name": "@smokeTest"
           }
         ]
       }

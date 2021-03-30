@@ -5,6 +5,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -17,6 +18,7 @@ import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import org.testng.annotations.Optional;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 
@@ -30,10 +32,7 @@ import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class WebAPI {
@@ -453,6 +452,19 @@ public class WebAPI {
         Select select = new Select(element);
         select.selectByVisibleText(value);
     }
+    //to double click
+    public void doubleClickwithXPATH(String locator){
+        Actions actions = new Actions(driver);
+        WebElement elementLocator = driver.findElement(By.xpath(locator));
+        actions.doubleClick(elementLocator).perform();
+    }
+
+    //to right click
+    public void rightClickwithXPATH(String locator){
+        Actions actions = new Actions(driver);
+        WebElement elementLocator = driver.findElement(By.xpath(locator));
+        actions.contextClick(elementLocator).perform();
+    }
     public void hoverOver(WebDriver drive, WebElement elementHover) throws InterruptedException {
         Actions selectToHover = new Actions(drive);
         selectToHover.moveToElement(elementHover).build().perform();
@@ -582,6 +594,51 @@ public class WebAPI {
         WebElement element=driver.findElement(By.className(locator));
         executor.executeScript("arguments[0].scrollIntoView(true);",element);
         element.click();
+    }
+
+    //by easha
+    public void openMultipleTabsAtOnce(String locator) throws InterruptedException {
+        //first bring element to view(if its not already, if it is skip)
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        WebElement openTabs = driver.findElement(By.xpath(locator));
+        executor.executeScript("arguments[0].scrollIntoView(true);", openTabs);
+
+        //to get size of each element in that locator using anchor tag
+        openTabs.findElements(By.tagName("a")).size();
+        System.out.println(openTabs.findElements(By.tagName("a")).size());
+
+        //loop through each element and open in a new tab
+        for (int i = 1; i < openTabs.findElements(By.tagName("a")).size(); i++) {
+            String openTabsAgain = Keys.chord(Keys.CONTROL, Keys.ENTER);
+            openTabs.findElements(By.tagName("a")).get(i).sendKeys(openTabsAgain);
+        }
+    }
+    public void getTitlesofMultipleTabs() throws InterruptedException {
+        //iterator through
+        Set<String> handleTitles = driver.getWindowHandles();
+        Iterator<String>iterate = handleTitles.iterator();
+
+        //switching to each tab
+        while(iterate.hasNext()) {
+            driver.switchTo().window(iterate.next());
+
+            //printing it to view
+            System.out.println(driver.getTitle());
+            sleepFor(4);
+
+        }
+    }
+    //right click and open new tab
+
+    public void rightClickandOpenNewTabUsingXP(String locator){
+        Actions act = new Actions(driver);
+        WebElement linkpath = driver.findElement(By.xpath(locator));
+        act.contextClick(linkpath).perform();  // right click
+        String openTabs= Keys.chord(Keys.CONTROL, Keys.ENTER);
+        act.sendKeys(openTabs).perform(); // click on new tab
+
+        ArrayList<String> tab = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tab.get(1));
     }
 
 
