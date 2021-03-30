@@ -2,9 +2,6 @@ package stepDefinition;
 
 import common.WebAPI;
 import homepage.EmployersPage;
-import homepage.HomePage;
-import io.cucumber.datatable.DataTable;
-import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.BeforeStep;
 import io.cucumber.java.Scenario;
@@ -14,7 +11,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.PageFactory;
 
 import java.io.IOException;
-import java.util.List;
 
 public class EmployersPageStepDefinition extends WebAPI {
 
@@ -213,15 +209,6 @@ public class EmployersPageStepDefinition extends WebAPI {
 
     }
 
-//    @And("user enters Zipcode")
-//    public void userEntersZipcode(DataTable dataTable) {
-//        List<List<String>> data = dataTable.asLists(String.class);
-//        //converting whatever data itll return to list<list> type array
-//        //now we want to see if we can retrieve from the datatable
-//        String zipcode = data.get(0).get(0);// first is row next is column index
-//        //now to pass the data to our method in homepage to send to the browswer
-//        homepage.enterEmailandPassword(email,password);
-//    }
 
     @And("user enters {string}")
     public void userEnters(String zipcode) throws InterruptedException {

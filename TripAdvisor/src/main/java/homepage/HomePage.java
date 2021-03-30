@@ -43,5 +43,6 @@ public class HomePage extends WebAPI {
         Assert.assertEquals("Text doesnt match", expectedText, actualText);
     }
 
+    //***************************************************************************************
 
 }
