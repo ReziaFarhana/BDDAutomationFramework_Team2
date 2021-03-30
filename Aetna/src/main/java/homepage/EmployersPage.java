@@ -86,6 +86,11 @@ public class EmployersPage extends WebAPI {
         String actualText=aetnaHelpapp.getText();
         Assert.assertEquals("Title doesnt match", expectedText, actualText);
     }
+    //*******************************************************************
+
+    public void clickBehavioralHealth(){
+        clickByXpath(behavioralHealthxp);
+    }
 
 
 }

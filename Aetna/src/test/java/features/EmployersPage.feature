@@ -58,9 +58,18 @@ Feature: Employers Page Header Functionality
     When user clicks All Member Programs
     Then user verifies page title is "Services to Support Member Health for Employers | Aetna"
 
+    @monkeyTest
   Scenario:Products and Services Options Checking Aetna Health app
     And user clicks on Products and services
     And user hovers over Member Programs
     When user clicks Aetna Health app
     Then user verifies  "Making a care connection with Aetna Health" appears properly
+
+
+  Scenario:Products and Services Options Checking Behavioral Health
+    And user clicks on Products and services
+    And user hovers over Member Programs
+    When user clicks Behavioral Health
+    Then user verifies page title is "Mental Health Insurance Plans & Coverage from Aetna | Behavioral Health Benefits & Programs for Employers"
+
 

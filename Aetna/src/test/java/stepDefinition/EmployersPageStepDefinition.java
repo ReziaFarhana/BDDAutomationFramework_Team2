@@ -118,6 +118,9 @@ public class EmployersPageStepDefinition extends WebAPI {
         employersPage.clickAllMemberPrograms();
     }
 
+    //*****************************************
+
+
     @When("user clicks Aetna Health app")
     public void userClicksAetnaHealthApp() {
         employersPage.clickAetnaHealthapp();
@@ -127,4 +130,12 @@ public class EmployersPageStepDefinition extends WebAPI {
     public void userVerifiesAppearsProperly(String expectedText) {
         employersPage.verifyHealthAppPage(expectedText);
     }
+
+    @When("user clicks Behavioral Health")
+    public void userClicksBehavioralHealth() {
+        employersPage.clickBehavioralHealth();
+    }
+    //*****************************************
+
+
 }

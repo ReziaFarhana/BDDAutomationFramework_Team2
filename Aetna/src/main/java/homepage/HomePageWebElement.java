@@ -26,7 +26,7 @@ public class HomePageWebElement {
            "='megamenu__tertiary--link link__text--inline--tertiary'][normalize-space()='All member programs']";
    public static final String memberProgramsxP="/html/body/div[2]/div/nav/div/ul[1]/li[1]/div[2]/div/div/section/ul/li[2]/div[1]/button";
    public static final String aetnaHelpappXp="//ul[@class='megamenu__tertiary--main']//a[@class='megamenu__tertiary--link link__text--inline--tertiary'][normalize-space()='Aetna Health app']";
-//   public static final String =;
+   public static final String behavioralHealthxp="//ul[@class='megamenu__tertiary--main']//a[@class='megamenu__tertiary--link link__text--inline--tertiary'][normalize-space()='Behavioral health']";
 //   public static final String =;
 //   public static final String =;
 
