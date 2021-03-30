@@ -13,6 +13,7 @@ public class EmployersPage extends WebAPI {
     @FindBy(how = How.CLASS_NAME, using =aboutUsPageTextClass ) public WebElement aboutUsText;
     @FindBy(how = How.XPATH, using =healthPlansXp) public WebElement healthPlans;
     @FindBy(how = How.XPATH, using =memberProgramsxP) public WebElement memberPrograms;
+    @FindBy(how = How.XPATH, using =aetnaHelpappXp) public WebElement aetnaHelpapp;
 
 
     public void clickDropDown(){
@@ -57,6 +58,7 @@ public class EmployersPage extends WebAPI {
         clickByXpath(visionxP);
         sleepFor(2);
     }
+
     public void clickPharmacy() throws InterruptedException {
             scrollByXPATH(pharmacyxP);
             sleepFor(2);
@@ -74,6 +76,15 @@ public class EmployersPage extends WebAPI {
     public void clickAllMemberPrograms() throws InterruptedException {
         scrollByXPATH(allmemberProgramsxP);
         sleepFor(2);
+    }
+    //*******************************************************************
+    public void clickAetnaHealthapp(){
+        clickByXpath(aetnaHelpappXp);
+
+    }
+    public void verifyHealthAppPage(String expectedText){
+        String actualText=aetnaHelpapp.getText();
+        Assert.assertEquals("Title doesnt match", expectedText, actualText);
     }
 
 

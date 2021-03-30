@@ -117,4 +117,14 @@ public class EmployersPageStepDefinition extends WebAPI {
     public void userClicksAllMemberPrograms() throws InterruptedException {
         employersPage.clickAllMemberPrograms();
     }
+
+    @When("user clicks Aetna Health app")
+    public void userClicksAetnaHealthApp() {
+        employersPage.clickAetnaHealthapp();
+    }
+
+    @Then("user verifies  {string} appears properly")
+    public void userVerifiesAppearsProperly(String expectedText) {
+        employersPage.verifyHealthAppPage(expectedText);
+    }
 }
