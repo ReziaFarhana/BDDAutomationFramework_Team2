@@ -36,3 +36,17 @@ Feature: Employers Page Header Functionality
     And user hovers over Health Plans
     When user clicks on Vision
     Then user verifies page title is "Group Vision Insurance from Aetna | Plans for Employers & Employees"
+
+
+  Scenario:Products and Services Options Checking Pharmacy
+    And user clicks on Products and services
+    And user hovers over Health Plans
+    When user clicks on Pharmacy
+    Then user verifies page title is "Group Pharmacy Insurance Plans from Aetna | Prescription Drug Plans & Coverage for Employers & Brokers"
+
+
+  Scenario:Products and Services Options Checking Supplemental
+    And user clicks on Products and services
+    And user hovers over Health Plans
+    When user clicks on Supplemental
+    Then user verifies page title is "Group Supplemental Medical Insurance Plans from Aetna | Voluntary Employee Benefits"

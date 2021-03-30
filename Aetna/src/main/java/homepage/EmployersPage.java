@@ -56,6 +56,14 @@ public class EmployersPage extends WebAPI {
         clickByXpath(visionxP);
         sleepFor(2);
     }
+    public void clickPharmacy() throws InterruptedException {
+            scrollByXPATH(pharmacyxP);
+            sleepFor(2);
+    }
+    public void clickSupplemental() throws InterruptedException {
+        clickByXpath(supplementalxP);
+        sleepFor(2);
+    }
 
 
 }

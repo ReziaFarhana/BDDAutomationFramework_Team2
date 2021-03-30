@@ -11,13 +11,13 @@
         "steps": [
           {
             "result": {
-              "duration": 9975429500,
+              "duration": 8729533500,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 23452100,
+                  "duration": 22426000,
                   "status": "passed"
                 },
                 "match": {
@@ -26,7 +26,6 @@
               },
               {
                 "result": {
-                  "duration": 997900,
                   "status": "passed"
                 },
                 "match": {
@@ -42,7 +41,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 799900,
+                  "duration": 3138600,
                   "status": "passed"
                 },
                 "match": {
@@ -51,7 +50,7 @@
               },
               {
                 "result": {
-                  "duration": 4916100,
+                  "duration": 1103500,
                   "status": "passed"
                 },
                 "match": {
@@ -64,23 +63,23 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-30T02:49:51.332Z",
-        "line": 27,
-        "name": "Products and Services Options Checking Dental",
+        "start_timestamp": "2021-03-30T02:56:34.340Z",
+        "line": 41,
+        "name": "Products and Services Options Checking Pharmacy",
         "description": "",
-        "id": "employers-page-header-functionality;products-and-services-options-checking-dental",
+        "id": "employers-page-header-functionality;products-and-services-options-checking-pharmacy",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3291312800,
+              "duration": 3300675400,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 499200,
+                  "duration": 500000,
                   "status": "passed"
                 },
                 "match": {
@@ -89,7 +88,7 @@
               },
               {
                 "result": {
-                  "duration": 499800,
+                  "duration": 2135900,
                   "status": "passed"
                 },
                 "match": {
@@ -97,7 +96,7 @@
                 }
               }
             ],
-            "line": 28,
+            "line": 42,
             "name": "user clicks on Products and services",
             "match": {
               "location": "stepDefinition.EmployersPageStepDefinition.userClicksOnProductsAndServices()"
@@ -124,13 +123,12 @@
           },
           {
             "result": {
-              "duration": 3161988500,
+              "duration": 3150101100,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 390500,
                   "status": "passed"
                 },
                 "match": {
@@ -139,6 +137,7 @@
               },
               {
                 "result": {
+                  "duration": 9725200,
                   "status": "passed"
                 },
                 "match": {
@@ -146,7 +145,7 @@
                 }
               }
             ],
-            "line": 29,
+            "line": 43,
             "name": "user hovers over Health Plans",
             "match": {
               "location": "stepDefinition.EmployersPageStepDefinition.userHoversOverHealthPlans()"
@@ -173,7 +172,7 @@
           },
           {
             "result": {
-              "duration": 5379178800,
+              "duration": 4289270200,
               "status": "passed"
             },
             "before": [
@@ -194,10 +193,10 @@
                 }
               }
             ],
-            "line": 30,
-            "name": "user clicks on Dental",
+            "line": 44,
+            "name": "user clicks on Pharmacy",
             "match": {
-              "location": "stepDefinition.EmployersPageStepDefinition.userClicksOnDental()"
+              "location": "stepDefinition.EmployersPageStepDefinition.userClicksOnPharmacy()"
             },
             "after": [
               {
@@ -221,7 +220,7 @@
           },
           {
             "result": {
-              "duration": 10280500,
+              "duration": 9301800,
               "status": "passed"
             },
             "before": [
@@ -242,12 +241,12 @@
                 }
               }
             ],
-            "line": 31,
-            "name": "user verifies page title is \"Group Dental Insurance Plans from Aetna | DMO, PPO, \u0026 Indemnity Plans \u0026 Coverage for Employers\"",
+            "line": 45,
+            "name": "user verifies page title is \"Group Pharmacy Insurance Plans from Aetna | Prescription Drug Plans \u0026 Coverage for Employers \u0026 Brokers\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Group Dental Insurance Plans from Aetna | DMO, PPO, \u0026 Indemnity Plans \u0026 Coverage for Employers\"",
+                  "val": "\"Group Pharmacy Insurance Plans from Aetna | Prescription Drug Plans \u0026 Coverage for Employers \u0026 Brokers\"",
                   "offset": 28
                 }
               ],
@@ -276,7 +275,7 @@
         ],
         "tags": [
           {
-            "name": "@sanityTest"
+            "name": "@integrationTest"
           }
         ]
       }

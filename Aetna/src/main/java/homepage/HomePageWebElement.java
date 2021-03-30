@@ -20,6 +20,9 @@ public class HomePageWebElement {
 
   public static final String dentalXp="//ul[@class='megamenu__tertiary--main']//a[@class='megamenu__tertiary--link link__text--inline--tertiary'][normalize-space()='Dental']";
    public static final String visionxP = "//ul[@class='megamenu__tertiary--main']//a[@class='megamenu__tertiary--link link__text--inline--tertiary'][normalize-space()='Vision']";
+   public static final String pharmacyxP = "//ul[@class='megamenu__tertiary--main']//a[@class='megamenu__tertiary--link link__text--inline--tertiary'][normalize-space()='Pharmacy']";
+   public static final String supplementalxP="//ul[@class='megamenu__tertiary--main']//a[@class='megamenu__tertiary--link link__text--inline--tertiary'][normalize-space()='Supplemental']";
+//   public static final String =;
 //   public static final String =;
 
 

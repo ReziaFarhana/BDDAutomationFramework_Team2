@@ -97,6 +97,14 @@ public class EmployersPageStepDefinition extends WebAPI {
         employersPage.clickVision();
     }
     //*****************************************
-
+    @When("user clicks on Pharmacy")
+    public void userClicksOnPharmacy() throws InterruptedException {
+        employersPage.clickPharmacy();
+    }
+    //*****************************************
+    @When("user clicks on Supplemental")
+    public void userClicksOnSupplemental() throws InterruptedException {
+        employersPage.clickSupplemental();
+    }
 
 }

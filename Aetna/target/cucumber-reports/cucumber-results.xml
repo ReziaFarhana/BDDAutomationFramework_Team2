@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="22.263">
-    <testcase classname="Employers Page Header Functionality" name="Products and Services Options Checking Dental" time="21.935">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.914">
+    <testcase classname="Employers Page Header Functionality" name="Products and Services Options Checking Pharmacy" time="19.595">
         <system-out>
             <![CDATA[Given user is on employers page.............................................passed
 And user clicks on Products and services....................................passed
 And user hovers over Health Plans...........................................passed
-When user clicks on Dental..................................................passed
-Then user verifies page title is "Group Dental Insurance Plans from Aetna | DMO, PPO, & Indemnity Plans & Coverage for Employers".passed
+When user clicks on Pharmacy................................................passed
+Then user verifies page title is "Group Pharmacy Insurance Plans from Aetna | Prescription Drug Plans & Coverage for Employers & Brokers".passed
 ]]>
         </system-out>
     </testcase>

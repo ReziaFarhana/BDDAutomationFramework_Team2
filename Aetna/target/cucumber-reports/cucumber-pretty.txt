@@ -1,8 +1,8 @@
 
-@sanityTest
-Scenario: Products and Services Options Checking Dental                                                                             # src/test/java/features/EmployersPage.feature:27
-  Given user is on employers page                                                                                                   # stepDefinition.EmployersPageStepDefinition.user_is_on_employers_page()
-  And user clicks on Products and services                                                                                          # stepDefinition.EmployersPageStepDefinition.userClicksOnProductsAndServices()
-  And user hovers over Health Plans                                                                                                 # stepDefinition.EmployersPageStepDefinition.userHoversOverHealthPlans()
-  When user clicks on Dental                                                                                                        # stepDefinition.EmployersPageStepDefinition.userClicksOnDental()
-  Then user verifies page title is "Group Dental Insurance Plans from Aetna | DMO, PPO, & Indemnity Plans & Coverage for Employers" # stepDefinition.EmployersPageStepDefinition.userVerifiesPageTitleIs(java.lang.String)
+@integrationTest
+Scenario: Products and Services Options Checking Pharmacy                                                                                   # src/test/java/features/EmployersPage.feature:41
+  Given user is on employers page                                                                                                           # stepDefinition.EmployersPageStepDefinition.user_is_on_employers_page()
+  And user clicks on Products and services                                                                                                  # stepDefinition.EmployersPageStepDefinition.userClicksOnProductsAndServices()
+  And user hovers over Health Plans                                                                                                         # stepDefinition.EmployersPageStepDefinition.userHoversOverHealthPlans()
+  When user clicks on Pharmacy                                                                                                              # stepDefinition.EmployersPageStepDefinition.userClicksOnPharmacy()
+  Then user verifies page title is "Group Pharmacy Insurance Plans from Aetna | Prescription Drug Plans & Coverage for Employers & Brokers" # stepDefinition.EmployersPageStepDefinition.userVerifiesPageTitleIs(java.lang.String)
