@@ -29,6 +29,12 @@ public class HomePageWebElement {
    public static final String aetnaHelpAppPagetxtSp="//*[@id=\"content__main\"]/div[1]/div/div/div[1]/div/div/div/h1";
    public static final String behavioralHealthxp="//ul[@class='megamenu__tertiary--main']//a[@class='megamenu__tertiary--link link__text--inline--tertiary'][normalize-space()='Behavioral health']";
    public static final String careManagxP ="//ul[@class='megamenu__tertiary--main']//a[@class='megamenu__tertiary--link link__text--inline--tertiary'][normalize-space()='Care management']";
+   public static final String customerServicexP="//ul[@class='megamenu__tertiary--main']//a[@class='megamenu__tertiary--link link__text--inline--tertiary'][normalize-space()='Customer service']";
+//   public static final String =;
+//   public static final String =;
+//   public static final String =;
+//   public static final String =;
+//   public static final String =;
 //   public static final String =;
 
 

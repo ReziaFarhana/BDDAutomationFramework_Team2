@@ -96,6 +96,10 @@ public class EmployersPage extends WebAPI {
     public void clickCareManagement(){
         clickByXpath(careManagxP);
     }
+    //**********************************************************
+    public void customerService(){
+        clickByXpath(customerServicexP);
+    }
 
 
 }

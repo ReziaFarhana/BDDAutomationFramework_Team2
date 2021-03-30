@@ -76,7 +76,12 @@ Feature: Employers Page Header Functionality
     And user clicks on Products and services
     And user hovers over Member Programs
     When user clicks Care Management
-    Then user verifies page title is "Mental Health Insurance Plans & Coverage from Aetna | Behavioral Health Benefits & Programs for Employers"
+    Then user verifies page title is "Medical Care Management Services | Aetna"
 
+  Scenario:Products and Services Options Checking Customer Service
+    And user clicks on Products and services
+    And user hovers over Member Programs
+    When user clicks Customer Service
+    Then user verifies page title is "Personalized Customer Service Programs & Support | Aetna"
 
 
