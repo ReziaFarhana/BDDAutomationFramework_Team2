@@ -78,6 +78,12 @@ public class EmployersPageStepDefinition extends WebAPI {
     public void userVerifiesPageTitleIs(String expectedText) {
         employersPage.verifyAllHealthPlanPage(expectedText);
     }
+
+
     //*****************************************
 
+    @And("user clicks All Medicare")
+    public void userClicksAllMedicare() {
+        employersPage.clickMedicare();
+    }
 }

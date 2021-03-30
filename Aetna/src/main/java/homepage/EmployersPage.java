@@ -37,8 +37,19 @@ public class EmployersPage extends WebAPI {
     public void clickAllHealthPlans(){
         clickByXpath(allHealthPlansXp);
     }
+
     public void verifyAllHealthPlanPage(String expectedText){
         String actualText=driver.getTitle();
         Assert.assertEquals("Title doesnt match", expectedText, actualText);
     }
+
+    //***************************************************************************
+    public void clickMedicare(){
+        clickByXpath(medicareXp);
+    }
+    public void verifyMedicarePage(String expectedText){
+        String actualText=driver.getTitle();
+        Assert.assertEquals("Title doesnt match", expectedText, actualText);
+    }
+
 }

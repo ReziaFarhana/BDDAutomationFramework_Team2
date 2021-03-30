@@ -15,7 +15,9 @@ public class HomePageWebElement {
    public static final String healthPlansXp="/html/body/div[2]/div/nav/div/ul[1]/li[1]/div[2]/div/div/section/ul/li[1]/div[1]/button";
    public static final String allHealthPlansXp="//ul[@class='megamenu__tertiary--main']//a[@class='megamenu__tertiary" +
            "--link link__text--inline--tertiary'][normalize-space()='All health plans']";
-//   public static final String =;
+   public static final String medicareXp= "/html/body/div[2]/div/nav/div/ul[1]/li[1]/div[2]/div/div/section/ul/li[1" +
+           "]/div[2]/ul/li[2]/a";
+
 //   public static final String =;
 //   public static final String =;
 //   public static final String =;
