@@ -5,12 +5,12 @@
       {
         "name": "user is on employers page",
         "aggregatedDurations": {
-          "median": 8.7295335,
-          "average": 8.7295335
+          "median": 9.8695443,
+          "average": 9.8695443
         },
         "durations": [
           {
-            "duration": 8.7295335,
+            "duration": 9.8695443,
             "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:4"
           }
         ]
@@ -23,13 +23,13 @@
       {
         "name": "user clicks on Products and services",
         "aggregatedDurations": {
-          "median": 3.3006754,
-          "average": 3.3006754
+          "median": 3.285145,
+          "average": 3.285145
         },
         "durations": [
           {
-            "duration": 3.3006754,
-            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:42"
+            "duration": 3.285145,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:49"
           }
         ]
       }
@@ -41,31 +41,31 @@
       {
         "name": "user hovers over Health Plans",
         "aggregatedDurations": {
-          "median": 3.1501011,
-          "average": 3.1501011
+          "median": 3.1702893,
+          "average": 3.1702893
         },
         "durations": [
           {
-            "duration": 3.1501011,
-            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:43"
+            "duration": 3.1702893,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:50"
           }
         ]
       }
     ]
   },
   {
-    "source": "user clicks on Pharmacy",
+    "source": "user clicks on Supplemental",
     "steps": [
       {
-        "name": "user clicks on Pharmacy",
+        "name": "user clicks on Supplemental",
         "aggregatedDurations": {
-          "median": 4.2892702,
-          "average": 4.2892702
+          "median": 4.1472134,
+          "average": 4.1472134
         },
         "durations": [
           {
-            "duration": 4.2892702,
-            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:44"
+            "duration": 4.1472134,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:51"
           }
         ]
       }
@@ -75,15 +75,15 @@
     "source": "user verifies page title is {string}",
     "steps": [
       {
-        "name": "user verifies page title is \"Group Pharmacy Insurance Plans from Aetna | Prescription Drug Plans \u0026 Coverage for Employers \u0026 Brokers\"",
+        "name": "user verifies page title is \"Group Supplemental Medical Insurance Plans from Aetna | Voluntary Employee Benefits\"",
         "aggregatedDurations": {
-          "median": 0.0093018,
-          "average": 0.0093018
+          "median": 0.0055477,
+          "average": 0.0055477
         },
         "durations": [
           {
-            "duration": 0.0093018,
-            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:45"
+            "duration": 0.0055477,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/EmployersPage.feature:52"
           }
         ]
       }

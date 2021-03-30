@@ -11,13 +11,13 @@
         "steps": [
           {
             "result": {
-              "duration": 8729533500,
+              "duration": 9869544300,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 22426000,
+                  "duration": 24613900,
                   "status": "passed"
                 },
                 "match": {
@@ -41,7 +41,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 3138600,
+                  "duration": 4155000,
                   "status": "passed"
                 },
                 "match": {
@@ -50,7 +50,6 @@
               },
               {
                 "result": {
-                  "duration": 1103500,
                   "status": "passed"
                 },
                 "match": {
@@ -63,23 +62,23 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-30T02:56:34.340Z",
-        "line": 41,
-        "name": "Products and Services Options Checking Pharmacy",
+        "start_timestamp": "2021-03-30T02:57:31.945Z",
+        "line": 48,
+        "name": "Products and Services Options Checking Supplemental",
         "description": "",
-        "id": "employers-page-header-functionality;products-and-services-options-checking-pharmacy",
+        "id": "employers-page-header-functionality;products-and-services-options-checking-supplemental",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3300675400,
+              "duration": 3285145000,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 500000,
+                  "duration": 499600,
                   "status": "passed"
                 },
                 "match": {
@@ -88,7 +87,7 @@
               },
               {
                 "result": {
-                  "duration": 2135900,
+                  "duration": 500500,
                   "status": "passed"
                 },
                 "match": {
@@ -96,7 +95,7 @@
                 }
               }
             ],
-            "line": 42,
+            "line": 49,
             "name": "user clicks on Products and services",
             "match": {
               "location": "stepDefinition.EmployersPageStepDefinition.userClicksOnProductsAndServices()"
@@ -123,7 +122,7 @@
           },
           {
             "result": {
-              "duration": 3150101100,
+              "duration": 3170289300,
               "status": "passed"
             },
             "before": [
@@ -137,7 +136,6 @@
               },
               {
                 "result": {
-                  "duration": 9725200,
                   "status": "passed"
                 },
                 "match": {
@@ -145,7 +143,7 @@
                 }
               }
             ],
-            "line": 43,
+            "line": 50,
             "name": "user hovers over Health Plans",
             "match": {
               "location": "stepDefinition.EmployersPageStepDefinition.userHoversOverHealthPlans()"
@@ -172,7 +170,7 @@
           },
           {
             "result": {
-              "duration": 4289270200,
+              "duration": 4147213400,
               "status": "passed"
             },
             "before": [
@@ -193,10 +191,10 @@
                 }
               }
             ],
-            "line": 44,
-            "name": "user clicks on Pharmacy",
+            "line": 51,
+            "name": "user clicks on Supplemental",
             "match": {
-              "location": "stepDefinition.EmployersPageStepDefinition.userClicksOnPharmacy()"
+              "location": "stepDefinition.EmployersPageStepDefinition.userClicksOnSupplemental()"
             },
             "after": [
               {
@@ -220,7 +218,7 @@
           },
           {
             "result": {
-              "duration": 9301800,
+              "duration": 5547700,
               "status": "passed"
             },
             "before": [
@@ -241,12 +239,12 @@
                 }
               }
             ],
-            "line": 45,
-            "name": "user verifies page title is \"Group Pharmacy Insurance Plans from Aetna | Prescription Drug Plans \u0026 Coverage for Employers \u0026 Brokers\"",
+            "line": 52,
+            "name": "user verifies page title is \"Group Supplemental Medical Insurance Plans from Aetna | Voluntary Employee Benefits\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Group Pharmacy Insurance Plans from Aetna | Prescription Drug Plans \u0026 Coverage for Employers \u0026 Brokers\"",
+                  "val": "\"Group Supplemental Medical Insurance Plans from Aetna | Voluntary Employee Benefits\"",
                   "offset": 28
                 }
               ],
