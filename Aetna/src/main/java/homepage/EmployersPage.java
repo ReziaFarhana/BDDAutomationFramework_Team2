@@ -165,6 +165,13 @@ public class EmployersPage extends WebAPI {
     }
     //*************************************************************
     public void clickMidSizeCompany(){
-
+        clickByXpath(midSizeCompanyXp);
+    }
+    //************************************************************
+    public void clickLargeBusiness(){
+        clickByXpath(largeBusinessXp);
+    }
+    public void getLinksFromLargeBusinessPage(){
+        getLinks(visionLink);
     }
 }

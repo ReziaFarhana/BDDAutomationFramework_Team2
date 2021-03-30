@@ -152,8 +152,9 @@ Feature: Employers Page Header Functionality
     Then user verifies page title is "Mid-Sized Business Health Insurance from Aetna | Plans for Mid-Market / Medium-Sized Business Employers"
 
 
-  Scenario:Solutions Options Checking Mid-size Business
+  Scenario:Solutions Options Checking Large Business
     And user clicks on Solutions
     And user hovers over By company size
-    When user clicks Mid-size Business
+    When user clicks Large Business
     Then user verifies page title is "Mid-Sized Business Health Insurance from Aetna | Plans for Mid-Market / Medium-Sized Business Employers"
+    And user gets links from Large Business Page

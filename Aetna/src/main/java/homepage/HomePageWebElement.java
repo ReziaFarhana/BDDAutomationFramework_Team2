@@ -46,6 +46,11 @@ public class HomePageWebElement {
    public static final String byCompSizeXp ="//ul[@class='megamenu__block--main megamenu__secondarylink--hover']//button[@aria-expanded='false'][normalize-space()='By company size']";
    public static final String smallBusinessXp="//ul[@class='megamenu__tertiary--main']//a[@class='megamenu__tertiary--link link__text--inline--tertiary'][normalize-space()='Small business (100 or less employees)']";
    public static final String midSizeCompanyXp="//ul[@class='megamenu__tertiary--main']//a[@class='megamenu__tertiary--link link__text--inline--tertiary'][normalize-space()='Mid-size business (101-4,999 employees)']";
+   public static final String largeBusinessXp="//ul[@class='megamenu__tertiary--main']//a[@class='megamenu__tertiary--link link__text--inline--tertiary'][normalize-space()='Large business (5,000+ employees)']";
+   public static final String visionLink="Vision plans";
+//   public static final String =;
+//   public static final String =;
+//   public static final String =;
 //   public static final String =;
 
 

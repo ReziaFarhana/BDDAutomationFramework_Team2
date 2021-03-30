@@ -255,4 +255,14 @@ public class EmployersPageStepDefinition extends WebAPI {
     public void userClicksMidSizeBusiness() {
         employersPage.clickMidSizeCompany();
     }
+
+    @When("user clicks Large Business")
+    public void userClicksLargeBusiness() {
+        employersPage.clickLargeBusiness();
+    }
+
+    @And("user gets links from Large Business Page")
+    public void userGetsLinksFromLargeBusinessPage() {
+        employersPage.getLinksFromLargeBusinessPage();
+    }
 }
