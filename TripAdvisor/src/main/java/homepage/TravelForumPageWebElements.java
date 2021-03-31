@@ -23,8 +23,9 @@ public class TravelForumPageWebElements {
     public static final String searchData="madrid";
     public static final String dateXP="//*[@id=\"date_picker_in_1\"]";
     public static final String nycimagecusxp="(//img[@class='_1a4WY7aS'])[1]";
+    public static final String franceimagecusxp="(//img[@class='_1a4WY7aS'])[2]";
+    public static final String romeimagecusxp="(//img[@class='_1a4WY7aS'])[2]";
     public static final String page4CusXp="(//*[@href='/ShowForum-g60763-i5-o60-New_York_City_New_York.html'])[1]";
-    public static final String newyrkcitypgtextXp="//a[@data-label='header']";
 //    public static final String=;
 //    public static final String=;
 //    public static final String=;

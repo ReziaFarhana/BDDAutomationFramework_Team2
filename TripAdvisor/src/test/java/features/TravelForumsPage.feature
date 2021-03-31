@@ -91,6 +91,21 @@ Feature:
     And clicks on page four
     Then user verifies "New York City Travel Forum" appears on page
 
+  Scenario: Image Functionality of Paris, France
+    When user right clicks and opens Paris image on new tab
+    And clicks on page four
+    Then user verifies "Paris Travel Forum" appears on page
+
+  Scenario: Image Functionality of Rome, Italy
+    When user right clicks and opens Rome image on new tab
+    And clicks on page four
+    Then user verifies "Rome Travel Forum" appears on page
+
+  Scenario: Image Functionality of New York City, NY
+    When user right clicks and opens New York image on new tab
+    And clicks on page four
+    Then user verifies "New York City Travel Forum" appears on page
+
 
 
 

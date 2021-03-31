@@ -163,7 +163,21 @@ public class TravelForumStepDefinitions extends WebAPI {
 
     @And("clicks on page four")
     public void clicksOnPageFour() {
+        travelforumpage.clickOnPage4();
     }
+    //***********************************************************************
+
+    @When("user right clicks and opens Paris image on new tab")
+    public void userRightClicksAndOpensParisImageOnNewTab() {
+        travelforumpage.rightClicksOnParisimage();
+    }
+    //***********************************************************************
+
+
+    @When("user right clicks and opens Rome image on new tab")
+    public void userRightClicksAndOpensRomeImageOnNewTab() {
+    }
+
 }
 
 

@@ -142,6 +142,17 @@ public void selectDatePickerUsingJs(WebDriver driver, WebElement element, String
         clickByXpath(page4CusXp);
     }
 
+    //********************************************************
+    public void rightClicksOnParisimage(){
+        rightClickandOpenNewTabUsingXPATH(franceimagecusxp);
+    }
+    //********************************************************
+    public void rightClicksOnRomeimage(){
+        rightClickandOpenNewTabUsingXPATH(romeimagecusxp);
+    }
+
+
+
 
 
 
