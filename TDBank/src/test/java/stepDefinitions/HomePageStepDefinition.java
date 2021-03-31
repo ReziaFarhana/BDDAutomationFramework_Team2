@@ -100,5 +100,6 @@ public class HomePageStepDefinition extends WebAPI {
 
     @And("user clicks on Special Offers")
     public void userClicksOnSpecialOffers() {
+        homepage.clickSpecialOffer();
     }
 }
