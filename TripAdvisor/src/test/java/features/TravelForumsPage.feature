@@ -59,11 +59,12 @@ Feature:
     When user clicks on Bargain Travel
     Then user verifies "Bargain Travel Forum" appears on page
 
-  @regressionTest
+
   Scenario: Browse by Theme of Train Travel
     When user clicks on Train Travel
     Then user verifies "Train Travel Forum" appears on page
 
+  @regressionTest
   Scenario: Browse by Theme of Air Travel
     When user clicks on Air Travel
     Then user verifies "Air Travel Forum" appears on page

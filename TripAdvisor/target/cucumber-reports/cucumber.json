@@ -11,13 +11,13 @@
         "steps": [
           {
             "result": {
-              "duration": 7227101500,
+              "duration": 7120612300,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 29377500,
+                  "duration": 26155800,
                   "status": "passed"
                 },
                 "match": {
@@ -26,7 +26,7 @@
               },
               {
                 "result": {
-                  "duration": 823200,
+                  "duration": 3025800,
                   "status": "passed"
                 },
                 "match": {
@@ -42,7 +42,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 3670800,
+                  "duration": 3690100,
                   "status": "passed"
                 },
                 "match": {
@@ -51,7 +51,7 @@
               },
               {
                 "result": {
-                  "duration": 1021100,
+                  "duration": 499100,
                   "status": "passed"
                 },
                 "match": {
@@ -64,23 +64,23 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-31T01:05:41.961Z",
-        "line": 63,
-        "name": "Browse by Theme of Train Travel",
+        "start_timestamp": "2021-03-31T01:06:57.921Z",
+        "line": 68,
+        "name": "Browse by Theme of Air Travel",
         "description": "",
-        "id": ";browse-by-theme-of-train-travel",
+        "id": ";browse-by-theme-of-air-travel",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 5579782600,
+              "duration": 5764935000,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 1598200,
+                  "duration": 910000,
                   "status": "passed"
                 },
                 "match": {
@@ -89,7 +89,6 @@
               },
               {
                 "result": {
-                  "duration": 494300,
                   "status": "passed"
                 },
                 "match": {
@@ -97,14 +96,15 @@
                 }
               }
             ],
-            "line": 64,
-            "name": "user clicks on Train Travel",
+            "line": 69,
+            "name": "user clicks on Air Travel",
             "match": {
-              "location": "stepDefinitions.TravelForumStepDefinitions.userClicksOnTrainTravel()"
+              "location": "stepDefinitions.TravelForumStepDefinitions.userClicksOnAirTravel()"
             },
             "after": [
               {
                 "result": {
+                  "duration": 500000,
                   "status": "passed"
                 },
                 "match": {
@@ -113,6 +113,7 @@
               },
               {
                 "result": {
+                  "duration": 1001200,
                   "status": "passed"
                 },
                 "match": {
@@ -124,13 +125,13 @@
           },
           {
             "result": {
-              "duration": 220433500,
+              "duration": 141984100,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 1656100,
+                  "duration": 1408000,
                   "status": "passed"
                 },
                 "match": {
@@ -139,7 +140,7 @@
               },
               {
                 "result": {
-                  "duration": 578600,
+                  "duration": 1044600,
                   "status": "passed"
                 },
                 "match": {
@@ -147,12 +148,12 @@
                 }
               }
             ],
-            "line": 65,
-            "name": "user verifies \"Train Travel Forum\" appears on page",
+            "line": 70,
+            "name": "user verifies \"Air Travel Forum\" appears on page",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Train Travel Forum\"",
+                  "val": "\"Air Travel Forum\"",
                   "offset": 14
                 }
               ],
@@ -161,7 +162,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 500600,
+                  "duration": 633900,
                   "status": "passed"
                 },
                 "match": {
@@ -170,7 +171,6 @@
               },
               {
                 "result": {
-                  "duration": 506800,
                   "status": "passed"
                 },
                 "match": {

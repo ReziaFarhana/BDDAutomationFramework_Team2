@@ -128,7 +128,8 @@ public class TravelForumStepDefinitions extends WebAPI {
 //******************************************************************************
 
     @When("user clicks on Air Travel")
-    public void userClicksOnAirTravel() {
+    public void userClicksOnAirTravel() throws InterruptedException {
+        travelforumpage.clickOnAirTravel();
     }
 //******************************************************************************
 
