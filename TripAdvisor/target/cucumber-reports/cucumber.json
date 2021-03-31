@@ -11,13 +11,13 @@
         "steps": [
           {
             "result": {
-              "duration": 7238744100,
+              "duration": 7488842200,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 29327600,
+                  "duration": 43931000,
                   "status": "passed"
                 },
                 "match": {
@@ -26,7 +26,7 @@
               },
               {
                 "result": {
-                  "duration": 2384800,
+                  "duration": 1111700,
                   "status": "passed"
                 },
                 "match": {
@@ -42,7 +42,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 2123300,
+                  "duration": 2732700,
                   "status": "passed"
                 },
                 "match": {
@@ -51,6 +51,7 @@
               },
               {
                 "result": {
+                  "duration": 588900,
                   "status": "passed"
                 },
                 "match": {
@@ -63,23 +64,23 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-31T00:34:41.748Z",
-        "line": 38,
-        "name": "Browse by Theme of Road Trips",
+        "start_timestamp": "2021-03-31T00:36:08.981Z",
+        "line": 43,
+        "name": "Browse by Theme of Travel Gadgets and Gear",
         "description": "",
-        "id": ";browse-by-theme-of-road-trips",
+        "id": ";browse-by-theme-of-travel-gadgets-and-gear",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 5550323600,
+              "duration": 5496684900,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 1002000,
+                  "duration": 548300,
                   "status": "passed"
                 },
                 "match": {
@@ -88,7 +89,7 @@
               },
               {
                 "result": {
-                  "duration": 998400,
+                  "duration": 499800,
                   "status": "passed"
                 },
                 "match": {
@@ -96,15 +97,15 @@
                 }
               }
             ],
-            "line": 39,
-            "name": "user clicks on Road Trips",
+            "line": 44,
+            "name": "user clicks on Travel Gadgets and Gear",
             "match": {
-              "location": "stepDefinitions.TravelForumStepDefinitions.userClicksOnRoadTrips()"
+              "location": "stepDefinitions.TravelForumStepDefinitions.userClicksOnTravelGadgetsAndGear()"
             },
             "after": [
               {
                 "result": {
-                  "duration": 327200,
+                  "duration": 499800,
                   "status": "passed"
                 },
                 "match": {
@@ -113,6 +114,7 @@
               },
               {
                 "result": {
+                  "duration": 577800,
                   "status": "passed"
                 },
                 "match": {
@@ -124,13 +126,13 @@
           },
           {
             "result": {
-              "duration": 107638700,
+              "duration": 107532400,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 1527100,
+                  "duration": 2107700,
                   "status": "passed"
                 },
                 "match": {
@@ -139,7 +141,7 @@
               },
               {
                 "result": {
-                  "duration": 1000700,
+                  "duration": 998800,
                   "status": "passed"
                 },
                 "match": {
@@ -147,12 +149,12 @@
                 }
               }
             ],
-            "line": 40,
-            "name": "user verifies \"Road Trips Forum\" appears on page",
+            "line": 45,
+            "name": "user verifies \"Travel Gadgets and Gear Forum\" appears on page",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Road Trips Forum\"",
+                  "val": "\"Travel Gadgets and Gear Forum\"",
                   "offset": 14
                 }
               ],
@@ -161,7 +163,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 499500,
+                  "duration": 776400,
                   "status": "passed"
                 },
                 "match": {
@@ -170,7 +172,7 @@
               },
               {
                 "result": {
-                  "duration": 500400,
+                  "duration": 500600,
                   "status": "passed"
                 },
                 "match": {

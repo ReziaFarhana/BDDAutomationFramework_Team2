@@ -34,11 +34,12 @@ Feature:
     When user clicks on Outdoors  Adventure Travel
     Then user verifies "Outdoors / Adventure Travel Forum" appears on page
 
-  @regressionTest
+
   Scenario: Browse by Theme of Road Trips
     When user clicks on Road Trips
     Then user verifies "Road Trips Forum" appears on page
 
+  @regressionTest
   Scenario: Browse by Theme of Travel Gadgets and Gear
     When user clicks on Travel Gadgets and Gear
     Then user verifies "Travel Gadgets and Gear Forum" appears on page

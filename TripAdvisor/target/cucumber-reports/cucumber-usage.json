@@ -5,12 +5,12 @@
       {
         "name": "user is on Travel Forum page",
         "aggregatedDurations": {
-          "median": 7.2387441,
-          "average": 7.2387441
+          "median": 7.4888422,
+          "average": 7.4888422
         },
         "durations": [
           {
-            "duration": 7.2387441,
+            "duration": 7.4888422,
             "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/TravelForumsPage.feature:4"
           }
         ]
@@ -18,18 +18,18 @@
     ]
   },
   {
-    "source": "user clicks on Road Trips",
+    "source": "user clicks on Travel Gadgets and Gear",
     "steps": [
       {
-        "name": "user clicks on Road Trips",
+        "name": "user clicks on Travel Gadgets and Gear",
         "aggregatedDurations": {
-          "median": 5.5503236,
-          "average": 5.5503236
+          "median": 5.4966849,
+          "average": 5.4966849
         },
         "durations": [
           {
-            "duration": 5.5503236,
-            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/TravelForumsPage.feature:39"
+            "duration": 5.4966849,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/TravelForumsPage.feature:44"
           }
         ]
       }
@@ -39,15 +39,15 @@
     "source": "user verifies {string} appears on page",
     "steps": [
       {
-        "name": "user verifies \"Road Trips Forum\" appears on page",
+        "name": "user verifies \"Travel Gadgets and Gear Forum\" appears on page",
         "aggregatedDurations": {
-          "median": 0.1076387,
-          "average": 0.1076387
+          "median": 0.1075324,
+          "average": 0.1075324
         },
         "durations": [
           {
-            "duration": 0.1076387,
-            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/TravelForumsPage.feature:40"
+            "duration": 0.1075324,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/TravelForumsPage.feature:45"
           }
         ]
       }
