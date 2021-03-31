@@ -1,0 +1,20 @@
+[
+  {
+    "source": "user am on TD Bank homepage",
+    "steps": [
+      {
+        "name": "user am on TD Bank homepage",
+        "aggregatedDurations": {
+          "median": 17.2835981,
+          "average": 17.2835981
+        },
+        "durations": [
+          {
+            "duration": 17.2835981,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage.feature:3"
+          }
+        ]
+      }
+    ]
+  }
+]
