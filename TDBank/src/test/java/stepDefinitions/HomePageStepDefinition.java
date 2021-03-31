@@ -70,6 +70,7 @@ public class HomePageStepDefinition extends WebAPI {
 
     @And("user clicks on Home Equity Loans and Lines")
     public void userClicksOnHomeEquityLoansAndLines() {
+        homepage.clickHomeEquityLoansandLines();
     }
 
     @And("user clicks on Mortgage")
