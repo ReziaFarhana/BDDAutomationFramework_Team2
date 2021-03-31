@@ -60,6 +60,7 @@ public class HomePageStepDefinition extends WebAPI {
 
     @And("user clicks on CD")
     public void userClicksOnCD() {
+        homepage.clickCD();
     }
 
     @And("user clicks on Credit Cards")
