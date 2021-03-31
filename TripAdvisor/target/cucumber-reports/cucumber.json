@@ -11,13 +11,13 @@
         "steps": [
           {
             "result": {
-              "duration": 7234919800,
+              "duration": 7238744100,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 27291800,
+                  "duration": 29327600,
                   "status": "passed"
                 },
                 "match": {
@@ -26,7 +26,7 @@
               },
               {
                 "result": {
-                  "duration": 577000,
+                  "duration": 2384800,
                   "status": "passed"
                 },
                 "match": {
@@ -42,7 +42,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 10469700,
+                  "duration": 2123300,
                   "status": "passed"
                 },
                 "match": {
@@ -51,7 +51,6 @@
               },
               {
                 "result": {
-                  "duration": 920700,
                   "status": "passed"
                 },
                 "match": {
@@ -64,23 +63,23 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-31T00:32:52.030Z",
-        "line": 33,
-        "name": "Browse by Theme of Outdoors / Adventure Travel",
+        "start_timestamp": "2021-03-31T00:34:41.748Z",
+        "line": 38,
+        "name": "Browse by Theme of Road Trips",
         "description": "",
-        "id": ";browse-by-theme-of-outdoors-/-adventure-travel",
+        "id": ";browse-by-theme-of-road-trips",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 5446674700,
+              "duration": 5550323600,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 499900,
+                  "duration": 1002000,
                   "status": "passed"
                 },
                 "match": {
@@ -89,7 +88,7 @@
               },
               {
                 "result": {
-                  "duration": 971900,
+                  "duration": 998400,
                   "status": "passed"
                 },
                 "match": {
@@ -97,15 +96,15 @@
                 }
               }
             ],
-            "line": 34,
-            "name": "user clicks on Outdoors  Adventure Travel",
+            "line": 39,
+            "name": "user clicks on Road Trips",
             "match": {
-              "location": "stepDefinitions.TravelForumStepDefinitions.user_clicks_on_outdoors_adventure_travel()"
+              "location": "stepDefinitions.TravelForumStepDefinitions.userClicksOnRoadTrips()"
             },
             "after": [
               {
                 "result": {
-                  "duration": 500500,
+                  "duration": 327200,
                   "status": "passed"
                 },
                 "match": {
@@ -114,7 +113,6 @@
               },
               {
                 "result": {
-                  "duration": 500700,
                   "status": "passed"
                 },
                 "match": {
@@ -126,13 +124,13 @@
           },
           {
             "result": {
-              "duration": 140872000,
+              "duration": 107638700,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 1696200,
+                  "duration": 1527100,
                   "status": "passed"
                 },
                 "match": {
@@ -141,7 +139,7 @@
               },
               {
                 "result": {
-                  "duration": 499500,
+                  "duration": 1000700,
                   "status": "passed"
                 },
                 "match": {
@@ -149,12 +147,12 @@
                 }
               }
             ],
-            "line": 35,
-            "name": "user verifies \"Outdoors / Adventure Travel Forum\" appears on page",
+            "line": 40,
+            "name": "user verifies \"Road Trips Forum\" appears on page",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Outdoors / Adventure Travel Forum\"",
+                  "val": "\"Road Trips Forum\"",
                   "offset": 14
                 }
               ],
@@ -163,7 +161,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 591400,
+                  "duration": 499500,
                   "status": "passed"
                 },
                 "match": {
@@ -172,7 +170,7 @@
               },
               {
                 "result": {
-                  "duration": 546100,
+                  "duration": 500400,
                   "status": "passed"
                 },
                 "match": {

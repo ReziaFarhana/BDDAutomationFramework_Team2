@@ -91,7 +91,8 @@ public class TravelForumStepDefinitions extends WebAPI {
 
 
     @When("user clicks on Road Trips")
-    public void userClicksOnRoadTrips() {
+    public void userClicksOnRoadTrips() throws InterruptedException {
+        travelforumpage.clickOnRoadTrip();
     }
 //******************************************************************************
 
