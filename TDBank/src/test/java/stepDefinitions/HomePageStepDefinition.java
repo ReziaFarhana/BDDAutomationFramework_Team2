@@ -53,4 +53,44 @@ public class HomePageStepDefinition extends WebAPI {
     }
 
 
+    @And("user clicks on Saving")
+    public void userClicksOnSaving() {
+        homepage.clickSavings();
+    }
+
+    @And("user clicks on CD")
+    public void userClicksOnCD() {
+    }
+
+    @And("user clicks on Credit Cards")
+    public void userClicksOnCreditCards() {
+    }
+
+    @And("user clicks on Home Equity Loans and Lines")
+    public void userClicksOnHomeEquityLoansAndLines() {
+    }
+
+    @And("user clicks on Mortgage")
+    public void userClicksOnMortgage() {
+    }
+
+    @And("user clicks on Personal Loans")
+    public void userClicksOnPersonalLoans() {
+    }
+
+    @And("user clicks on IRA")
+    public void userClicksOnIRA() {
+    }
+
+    @And("user clicks on Debit Cards")
+    public void userClicksOnDebitCards() {
+    }
+
+    @And("user clicks on Prepaid Cards")
+    public void userClicksOnPrepaidCards() {
+    }
+
+    @And("user clicks on Special Offers")
+    public void userClicksOnSpecialOffers() {
+    }
 }
