@@ -5,4 +5,14 @@ Feature: Products Drop Down Functionalities
     Given user is on Checking page
     When user clicks on Learn More
     Then user verifies URL is "https://www.td.com/us/en/personal-banking/checking-accounts/"
-                                                 |
+
+@sanity
+  Scenario Outline:
+    Given user is on Special Offers page
+    When user clicks on search box
+    And enters "<search data>"
+    Then user verifies url is "https://www.tdbank.com/CustomerService/search-results.aspx?q=credit+"
+    Examples:
+      | search data |
+      | credit |
+      | loan |

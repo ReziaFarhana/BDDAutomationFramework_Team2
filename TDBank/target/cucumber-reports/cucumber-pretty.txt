@@ -1,36 +1,14 @@
 
-@sanityTest
-Scenario: Check Checking Link                                                                             # src/test/java/features/HomePage.feature:7
-  Given user am on TD Bank homepage                                                                       # stepDefinitions.HomePageStepDefinition.user_am_on_td_bank_homepage()
-  When user hovers over Products Drop down                                                                # stepDefinitions.HomePageStepDefinition.user_hovers_over_products_drop_down()
-      org.openqa.selenium.WebDriverException: TypeError: rect is undefined
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-P1DOK11', ip: '192.168.43.229', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 86.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210310152336, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 12964, moz:profile: C:\Users\Easha\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 50d564ec-d89c-4381-b8e0-75f6bc06b015
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-	at common.WebAPI.hoverOver(WebAPI.java:478)
-	at homepage.HomePage.hoverOverProductsDropDown(HomePage.java:18)
-	at stepDefinitions.HomePageStepDefinition.user_hovers_over_products_drop_down(HomePageStepDefinition.java:44)
-	at ✽.user hovers over Products Drop down(file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage.feature:4)
+@sanity
+Scenario Outline:                                                                                  # src/test/java/features/ProductDropDown.feature:17
+  Given user is on Special Offers page                                                             # stepDefinitions.ProductDropDownStepDefinition.user_is_on_special_offers_page()
+  When user clicks on search box                                                                   # stepDefinitions.ProductDropDownStepDefinition.user_clicks_on_search_box()
+  And enters "credit"                                                                              # stepDefinitions.ProductDropDownStepDefinition.enters(java.lang.String)
+  Then user verifies url is "https://www.tdbank.com/CustomerService/search-results.aspx?q=credit+" # stepDefinitions.ProductDropDownStepDefinition.user_verifies_url_is(java.lang.String)
 
-
-    Embedding demo1 [image/png 87354 bytes]
-
-
-    Embedding demo1 [image/png 86190 bytes]
-
-  And user clicks on Checking                                                                             # stepDefinitions.HomePageStepDefinition.user_clicks_on_checking()
-  Then user verifies "Open A Checking Account Online In Minutes | TD Bank Checking Accounts" is the title # stepDefinitions.HomePageStepDefinition.user_verifies_is_the_title(java.lang.String)
+@sanity
+Scenario Outline:                                                                                  # src/test/java/features/ProductDropDown.feature:18
+  Given user is on Special Offers page                                                             # stepDefinitions.ProductDropDownStepDefinition.user_is_on_special_offers_page()
+  When user clicks on search box                                                                   # stepDefinitions.ProductDropDownStepDefinition.user_clicks_on_search_box()
+  And enters "loan"                                                                                # stepDefinitions.ProductDropDownStepDefinition.enters(java.lang.String)
+  Then user verifies url is "https://www.tdbank.com/CustomerService/search-results.aspx?q=credit+" # stepDefinitions.ProductDropDownStepDefinition.user_verifies_url_is(java.lang.String)

@@ -49,4 +49,22 @@ public class ProductDropDownStepDefinition extends WebAPI {
     public void userVerifiesURLIs(String expectedUrl) {
         productsddpage.verifyUrl(expectedUrl);
     }
+
+    @Given("user is on Special Offers page")
+    public void user_is_on_special_offers_page() throws IOException {
+        openBrowser("https://www.tdbank.com/offers/");
+    }
+    @When("user clicks on search box")
+    public void user_clicks_on_search_box() {
+        productsddpage.clickOnSearchBox();
+    }
+    @When("enters {string}")
+    public void enters(String searchData) {
+        productsddpage.searchData(searchData);
+
+    }
+    @Then("user verifies url is {string}")
+    public void user_verifies_url_is(String givenUrl) {
+
+    }
 }

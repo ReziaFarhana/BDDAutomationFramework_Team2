@@ -1,17 +1,96 @@
 [
   {
-    "source": "user am on TD Bank homepage",
+    "source": "user is on Special Offers page",
     "steps": [
       {
-        "name": "user am on TD Bank homepage",
+        "name": "user is on Special Offers page",
         "aggregatedDurations": {
-          "median": 17.2835981,
-          "average": 17.2835981
+          "median": 9.22129515,
+          "average": 9.22129515
         },
         "durations": [
           {
-            "duration": 17.2835981,
-            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage.feature:3"
+            "duration": 9.7454591,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/ProductDropDown.feature:11"
+          },
+          {
+            "duration": 8.6971312,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/ProductDropDown.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user clicks on search box",
+    "steps": [
+      {
+        "name": "user clicks on search box",
+        "aggregatedDurations": {
+          "median": 0.28571205,
+          "average": 0.28571205
+        },
+        "durations": [
+          {
+            "duration": 0.2840692,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/ProductDropDown.feature:12"
+          },
+          {
+            "duration": 0.2873549,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/ProductDropDown.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "enters {string}",
+    "steps": [
+      {
+        "name": "enters \"credit\"",
+        "aggregatedDurations": {
+          "median": 0.1281596,
+          "average": 0.1281596
+        },
+        "durations": [
+          {
+            "duration": 0.1281596,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/ProductDropDown.feature:13"
+          }
+        ]
+      },
+      {
+        "name": "enters \"loan\"",
+        "aggregatedDurations": {
+          "median": 0.1613069,
+          "average": 0.1613069
+        },
+        "durations": [
+          {
+            "duration": 0.1613069,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/ProductDropDown.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user verifies url is {string}",
+    "steps": [
+      {
+        "name": "user verifies url is \"https://www.tdbank.com/CustomerService/search-results.aspx?q\u003dcredit+\"",
+        "aggregatedDurations": {
+          "median": 3.2E-4,
+          "average": 3.2E-4
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/ProductDropDown.feature:14"
+          },
+          {
+            "duration": 6.4E-4,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/ProductDropDown.feature:14"
           }
         ]
       }
