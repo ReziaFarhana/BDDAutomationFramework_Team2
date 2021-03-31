@@ -101,4 +101,6 @@ public class HomePageStepDefinition extends WebAPI {
     public void userClicksOnSpecialOffers() {
         homepage.clickSpecialOffer();
     }
+
+
 }

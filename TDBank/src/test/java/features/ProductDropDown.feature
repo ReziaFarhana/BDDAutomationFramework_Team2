@@ -7,7 +7,7 @@ Feature: Products Drop Down Functionalities
     Then user verifies URL is "https://www.td.com/us/en/personal-banking/checking-accounts/"
 
 @sanity
-  Scenario Outline:
+  Scenario Outline: Search box functionality
     Given user is on Special Offers page
     When user clicks on search box
     And enters "<search data>"
@@ -16,3 +16,8 @@ Feature: Products Drop Down Functionalities
       | search data |
       | credit |
       | loan |
+
+  Scenario: Check Calculate My Rate Button functionality
+    Given user am on Mortgage Page
+    When user clicks on Calculate My Rate button
+    And user verifies "Find a Loan" is displayed

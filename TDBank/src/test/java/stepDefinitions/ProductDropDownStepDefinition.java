@@ -65,6 +65,22 @@ public class ProductDropDownStepDefinition extends WebAPI {
     }
     @Then("user verifies url is {string}")
     public void user_verifies_url_is(String givenUrl) {
+        productsddpage.verifyUrl(givenUrl);
 
+    }
+//**********************************************************
+    @Given("user am on Mortgage Page")
+    public void userAmOnMortgagePage() throws IOException {
+        openBrowser("https://www.td.com/us/en/personal-banking/mortgage/");
+    }
+
+    @When("user clicks on Calculate My Rate button")
+    public void userClicksOnCalculateMyRateButton() {
+        productsddpage.clicksOnCalcuate();
+    }
+
+    @And("user verifies {string} is displayed")
+    public void userVerifiesIsDisplayed(String expectedText) {
+        productsddpage.verifyCalculate();
     }
 }

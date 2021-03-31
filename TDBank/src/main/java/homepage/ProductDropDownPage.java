@@ -33,5 +33,14 @@ public class ProductDropDownPage extends WebAPI {
         driver.findElement(By.xpath(searchBoxCusXp)).sendKeys(searchData, Keys.ENTER);
     }
 
+    //*******************************************************************
+    public void clicksOnCalcuate(){
+        clickByXpath(getQuoteCusXp);
+    }
+
+    public void verifyCalculate(String expectedText){
+        String actualText = getTextByXpath(findALoanTextCusXp);
+        Assert.assertEquals("Text doesnt match", expectedText, actualText);
+    }
 
 }

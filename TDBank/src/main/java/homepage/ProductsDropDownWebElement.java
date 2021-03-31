@@ -7,6 +7,8 @@ public class ProductsDropDownWebElement {
     public static final String viewAccountDeetCusXp="(//a[text()='View account details'])[1]";
     public static final String searchResultTextCusXp="//span[text()='Search Results']";
     public static final String searchBoxCusXp="//input[@id='txtSearch']";
+    public static final String findALoanTextCusXp="(//*[@aria-label='Find a Loan'])[1]";
+    public static final String getQuoteCusXp="//*[@id='get-quote']";
 
 
 
