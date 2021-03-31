@@ -3,6 +3,8 @@ package homepage;
 import common.WebAPI;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -96,27 +98,19 @@ public class DestinationDealsHom extends WebAPI {
         sleepFor(5);
     }
 
-    public void enterFromCity( String city){
-      typeOnElementNEnter(bookFromLocator,city);
 
-    }
-
-    @FindBy(css = bookFromLocator)
-    public WebElement found;
-    public void enterToCity( String city){
-      scrollTo(found);
-      typeOnElementNEnter(bookFromLocator,city);
-    }
 
     public void selectDepartureDate(){
         clickByCss(bookDepartureDateLocator);
         clickByXpath(leftCalenderClickLocator);
-        clickByXpath(march30Locator);
+        clickByXpath(departureDateLocator);
     }
 
-    public void selectDestinationDate(){
+    public void selectDestinationDate() throws InterruptedException {
         clickByCss(bookReturnDateLocator);
-        clickByXpath(april24Locator);
+        clickByXpath(rightCalenderClickLocator);
+        sleepFor(2);
+        clickByXpath(returnDateLocator);
     }
 
     public void selectTravelerInfo(){
@@ -130,12 +124,112 @@ public class DestinationDealsHom extends WebAPI {
     }
 
     public void enterPromoCode(String promoCode){
-        clickByCss(promotionalCodeLocator);
+        typeOnElement(promotionalCodeLocator,promoCode);
     }
 
     public void clickOnSearchFlightBox(){
         clickByXpath(searchButtonLocator);
     }
+
+
+    public void selectClassAndAmount(){
+        clickByCss(travelersInfoLocator);
+        clickByCss(selectEconomy);
+        driver.findElement(By.cssSelector(selectEconomy)).sendKeys("E",
+                Keys.ENTER, Keys.TAB,Keys.TAB, Keys.CLEAR, "2");
+    }
+
+    public void verifyWithCodeBookingResult(String expected){
+        driver.findElement(By.xpath(verifyBookingLocator)).isDisplayed();
+        String actual = driver.findElement(By.xpath(verifyBookingLocator)).getText();
+        Assert.assertEquals("Test failed",expected,actual);
+//        }else if(driver.findElement(By.cssSelector(verifyBookWithMileLocator)).isDisplayed());{
+//            String actual = driver.findElement(By.cssSelector(verifyBookWithMileLocator)).getText();
+//            Assert.assertEquals("Test failed",expected,actual);
+//        }
+    }
+
+    public void verifyNoCodeBookingResult(String expected){
+
+        String actual = driver.findElement(By.cssSelector(verifyNoPromoCodeLocator)).getText();
+        Assert.assertNotEquals("Test failed",expected,actual);
+    }
+
+    public void verifyBookingWithMile(String expected){
+        expected = "Sign in to your MileagePlus account to show the best award availability";
+        String actual = driver.findElement(By.cssSelector(verifyBookWithMileLocator)).getText();
+    }
+
+    /**
+     * To verify using a text from a given locator
+     * @param loc
+     * @param expected
+     */
+    public void verifyWithText(String loc, String expected){
+
+        String actual = driver.findElement(By.cssSelector(loc)).getText();
+        Assert.assertEquals("Test failed",expected,actual);
+    }
+
+    public void clickOnBagChageRules(){
+//        driver.findElement(By.cssSelector(promotionalCodeLocator)).sendKeys(Keys.TAB, Keys.ENTER);
+        clickByXpath(ClickOnchangeBagRulesLocator);
+    }
+
+        // How much will it cost to check my bag under Any flight Button
+    public void findHowMuchABageWillCost(){
+//        scrollTo();
+        driver.findElement(By.xpath(toLocateBagInfoLocator)).getLocation();
+        clickByXpath(clickOnAnyFlightTabLocator);
+    }
+
+    public void toUpdateOnFrom(String value){
+//        typeOnElement(addCityFromLocator,value);
+        driver.findElement(By.cssSelector(addCityFromLocator)).sendKeys
+                (value,Keys.TAB);
+        driver.findElement(By.cssSelector(addCityToLocator)).sendKeys
+                (value,Keys.TAB);
+
+    }
+
+    public void toUpdateOnTo(String value){
+        typeOnElement(addCityToLocator,value);
+
+    }
+
+    public void verifyHowMuchWillCstMyBag(String expected){
+        String actual = getTextByXpath(verifyBagPriceLocator);
+        Assert.assertEquals("Test failed ",expected,actual);
+    }
+
+
+
+    public void scrollTo(WebElement element){
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("arguments[0].scrollIntoView(true)",element);
+    }
+
+    public void scrollTO(String loc) {
+        try {
+            WebElement element = driver.findElement(By.xpath(loc));
+            scrollTo(element);
+        } catch (Exception e) {
+            try {
+                WebElement element = driver.findElement(By.cssSelector(loc));
+                scrollTo(element);
+            } catch (Exception ee) {
+                try {
+                    WebElement element = driver.findElement(By.id(loc));
+                    scrollTo(element);
+                }catch (Exception eee){
+                    System.out.println("Unable to locate with xpath, css and id");
+                }
+
+            }
+        }
+
+    }
+
 
 
 

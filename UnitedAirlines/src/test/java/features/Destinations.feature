@@ -44,17 +44,65 @@ Feature: working on DESTINATION DEALS
     When I clicked on Flights to Orlando link
     Then I should land to a new windows tab with bread cramp end with  "Flights to Orlando"
 
-  Scenario : Book a flight
-    Given I clicked on Flights to popular destinations
-    And   I should land on a new tab "United Cheap Flights to 300+ Destinations Worldwide | United Airlines"
-    And   enter "Departure" From city
-    And   enter "Destination" To city
-    And select a departure date form the calendar
-    And Select a return date from the given calendar
-    And Select travelers class, traveler type and amount and click on done
-    And enter "Promotion" in the promo field
-    When I click on search flights
-    Then I should have "this"
+  @run
+  Scenario: Book a Roundtrip flight with a promotion code
+    When I clicked on Flights to Orlando link
+    Then I should land to a new windows tab with bread cramp end with  "Flights to Orlando"
+    When I enter a departure city and destination city
+      | From | To  |
+      | JFK  | SFO |
+    And I selected the departure and return dates
+    And I selected travel info class of travel and number of travelers
+    When I entered the promotion code "1239865721"
+    And I click on the Search Flights button
+    Then I should see a text "We could not process your request. Please see the message below and make revisions."
 
-      | Departure | Destination | Promotion |
-      | iad       | sfo         | selam     |
+  @run
+  Scenario: Book a Roundtrip flight without a promotion code
+    When I clicked on Flights to Orlando link
+    Then I should land to a new windows tab with bread cramp end with  "Flights to Orlando"
+    When I enter a departure city and destination city
+      | From | To  |
+      | JFK  | SFO |
+    And I selected the departure and return dates
+    And I selected travel info class of travel and number of travelers
+    And I click on the Search Flights button
+    Then I should land on a page displays a text "We could not process your request. Please see the message below and make revisions."
+
+  @run
+  Scenario: Book a Roundtrip flight with a mile and no promotion code
+    When I clicked on Flights to popular destinations
+    Then I should land on a new tab "United Cheap Flights to 300+ Destinations Worldwide | United Airlines"
+    When I clicked on Book with miles checklist
+    And I enter a departure city and destination city
+      | From | To  |
+      | JFK  | SFO |
+    And I selected the departure and return dates
+    And I selected travel info class of travel and number of travelers
+    And I click on the Search Flights button
+    Then I should expect to see the text "Sign in to your MileagePlus account to show the best award availability"
+  @run
+  Scenario: Changed bag rules
+    When I clicked on Flights to popular destinations
+    Then I should land on a new tab "United Cheap Flights to 300+ Destinations Worldwide | United Airlines"
+    And clicked on Changed bag rules Link
+    Then I should have a new page with a text "Changed bag rules and optional services"
+  @pending
+  Scenario: How much will it cost to check my bag?
+    When I clicked on Flights to popular destinations
+    Then I should land on a new tab "United Cheap Flights to 300+ Destinations Worldwide | United Airlines"
+    And clicked on Changed bag rules Link
+    Then I should have a new page with a text "Changed bag rules and optional services"
+    And I clicked on Any Flights Tab
+    And Update the From and To box with cities
+        |From | New York|
+        |To   | Washington DC|
+    Then I should have same page updated and a text "Standard checked bag price" will be displayed
+
+
+
+
+
+
+
+

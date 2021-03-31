@@ -1,75 +1,134 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="16" time="0.709">
-    <testcase classname="working on DESTINATION DEALS" name="Flights to popular destinations" time="0.078">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="19" time="1.056">
+    <testcase classname="working on DESTINATION DEALS" name="Flights to popular destinations" time="0.108">
         <system-out>
-            <![CDATA[When I clicked on Flights to popular destinations...........................passed
+            <![CDATA[Given I am on United Airlines Home page.....................................passed
+And I click on the DEALS option.............................................passed
+When I clicked on Flights to popular destinations...........................passed
 Then I should land on a new tab "United Cheap Flights to 300+ Destinations Worldwide | United Airlines".passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Flights to national parks" time="0.004">
+    <testcase classname="working on DESTINATION DEALS" name="Flights to national parks" time="0.01">
         <system-out>
-            <![CDATA[When I click on national parks..............................................passed
+            <![CDATA[Given I am on United Airlines Home page.....................................passed
+And I click on the DEALS option.............................................passed
+When I click on national parks..............................................passed
 Then I should land on a new page with "Flights to USA National Parks - Find the Best Fare for Your Next Trip - United Airlines".passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Flights to San Francisco" time="0.003">
+    <testcase classname="working on DESTINATION DEALS" name="Flights to San Francisco" time="0.012">
         <system-out>
-            <![CDATA[When I clicked on Flights to San Francisco link.............................passed
+            <![CDATA[Given I am on United Airlines Home page.....................................passed
+And I click on the DEALS option.............................................passed
+When I clicked on Flights to San Francisco link.............................passed
 Then I should have a new windows tab with a title "Flights to San Francisco".passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Flights to New York Newark" time="0.004">
+    <testcase classname="working on DESTINATION DEALS" name="Flights to New York Newark" time="0.011">
         <system-out>
-            <![CDATA[When I clicked on the Flights to New York Newark link.......................passed
+            <![CDATA[Given I am on United Airlines Home page.....................................passed
+And I click on the DEALS option.............................................passed
+When I clicked on the Flights to New York Newark link.......................passed
 Then I should be found a new page with a bread cramp end with "Flights to New York/Newark".passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Flights to Houston" time="0.004">
+    <testcase classname="working on DESTINATION DEALS" name="Flights to Houston" time="0.01">
         <system-out>
-            <![CDATA[When I clicked on the link on Flights to Houston............................passed
+            <![CDATA[Given I am on United Airlines Home page.....................................passed
+And I click on the DEALS option.............................................passed
+When I clicked on the link on Flights to Houston............................passed
 Then I should land to a new windows tab with bread cramp end with  "Flights to Houston".passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Flights to Chicago" time="0.003">
+    <testcase classname="working on DESTINATION DEALS" name="Flights to Chicago" time="0.013">
         <system-out>
-            <![CDATA[When I clicked on Flights to Chicago link...................................passed
+            <![CDATA[Given I am on United Airlines Home page.....................................passed
+And I click on the DEALS option.............................................passed
+When I clicked on Flights to Chicago link...................................passed
 Then I should land to a new windows tab with bread cramp end with  "Flights to Chicago".passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Flights to Los Angeles" time="0.003">
+    <testcase classname="working on DESTINATION DEALS" name="Flights to Los Angeles" time="0.006">
         <system-out>
-            <![CDATA[When I clicked on Flights to Los Angeles link...............................passed
+            <![CDATA[Given I am on United Airlines Home page.....................................passed
+And I click on the DEALS option.............................................passed
+When I clicked on Flights to Los Angeles link...............................passed
 Then I should land to a new windows tab with bread cramp end with  "Flights to Los Angeles".passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Flights to Orlando" time="0.003">
+    <testcase classname="working on DESTINATION DEALS" name="Flights to Orlando" time="0.008">
         <system-out>
-            <![CDATA[When I clicked on Flights to Orlando link...................................passed
+            <![CDATA[Given I am on United Airlines Home page.....................................passed
+And I click on the DEALS option.............................................passed
+When I clicked on Flights to Orlando link...................................passed
 Then I should land to a new windows tab with bread cramp end with  "Flights to Orlando".passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="" time="0.017">
+    <testcase classname="working on DESTINATION DEALS" name="Book a Roundtrip flight with a promotion code" time="0.019">
+        <system-out>
+            <![CDATA[Given I am on United Airlines Home page.....................................passed
+And I click on the DEALS option.............................................passed
+When I clicked on Flights to Orlando link...................................passed
+Then I should land to a new windows tab with bread cramp end with  "Flights to Orlando".passed
+When I enter a departure city and destination city..........................passed
+And I selected the departure and return dates...............................passed
+And I selected travel info class of travel and number of travelers..........passed
+When I entered the promotion code "1239865721"..............................passed
+And I click on the Search Flights button....................................passed
+Then I should see a text "We could not process your request. Please see the message below and make revisions.".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="working on DESTINATION DEALS" name="Book a Roundtrip flight without a promotion code" time="0.014">
+        <system-out>
+            <![CDATA[Given I am on United Airlines Home page.....................................passed
+And I click on the DEALS option.............................................passed
+When I clicked on Flights to Orlando link...................................passed
+Then I should land to a new windows tab with bread cramp end with  "Flights to Orlando".passed
+When I enter a departure city and destination city..........................passed
+And I selected the departure and return dates...............................passed
+And I selected travel info class of travel and number of travelers..........passed
+And I click on the Search Flights button....................................passed
+Then I should land on a page displays a text "We could not process your request. Please see the message below and make revisions.".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="working on DESTINATION DEALS" name="Book a Roundtrip flight with a mile and no promotion code" time="0.016">
+        <system-out>
+            <![CDATA[Given I am on United Airlines Home page.....................................passed
+And I click on the DEALS option.............................................passed
+When I clicked on Flights to popular destinations...........................passed
+Then I should land on a new tab "United Cheap Flights to 300+ Destinations Worldwide | United Airlines".passed
+When I clicked on Book with miles checklist.................................passed
+And I enter a departure city and destination city...........................passed
+And I selected the departure and return dates...............................passed
+And I selected travel info class of travel and number of travelers..........passed
+And I click on the Search Flights button....................................passed
+Then I should expect to see the text "Sign in to your MileagePlus account to show the best award availability".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="working on DESTINATION DEALS" name="Changed bag rules" time="0.012">
         <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
-            <![CDATA[Given I clicked on Flights to popular destinations..........................passed
-And enter "Departure" and " Destination" into the From and To fields........undefined
-And select a departure date form the calendar...............................skipped
-And Select a return date from the given calendar............................skipped
-And Select travelers class, traveler type and amount and click on done......skipped
-And enter "Promotion" in the promo field....................................skipped
-When I click on search flights..............................................skipped
-Then I should have..........................................................skipped
+            <![CDATA[Given I am on United Airlines Home page.....................................passed
+And I click on the DEALS option.............................................passed
+When I clicked on Flights to popular destinations...........................passed
+Then I should land on a new tab "United Cheap Flights to 300+ Destinations Worldwide | United Airlines".passed
+And clicked on Changed bag rules Link.......................................passed
+Then I should have a new page with a text "Changed bag rules and optional services".passed
+And test....................................................................undefined
 ]]>
         </failure>
     </testcase>
-    <testcase classname="Test United Airlines deals features on https://www.united.com/en/us/" name="Current offers and promos" time="0.013">
+    <testcase classname="Test United Airlines deals features on https://www.united.com/en/us/" name="Current offers and promos" time="0.006">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -77,7 +136,7 @@ Then I should see the OFFERS option.........................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Current offers and promos" time="0.009">
+    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Current offers and promos" time="0.011">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -86,7 +145,7 @@ Then I should see Deals & offers on the front page..........................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Working on United Airlines OFFERS section under Deals" name="MileagePlus news and offers" time="0.008">
+    <testcase classname="Working on United Airlines OFFERS section under Deals" name="MileagePlus news and offers" time="0.005">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -95,7 +154,7 @@ Then I should see MileagePlus deals & offers on the front page..............pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Discounts for 18 to 22 year olds" time="0.005">
+    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Discounts for 18 to 22 year olds" time="0.007">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -104,7 +163,7 @@ Then I should see Discounts for 18 to 22 year olds on the front page........pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Veterans Advantage discount" time="0.005">
+    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Veterans Advantage discount" time="0.003">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -122,7 +181,7 @@ Then I should see Redeem eCertificate displayed on the front page...........pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Getting Electronic travel certificate Under Redeem eCert" time="0.008">
+    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Getting Electronic travel certificate Under Redeem eCert" time="0.015">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed

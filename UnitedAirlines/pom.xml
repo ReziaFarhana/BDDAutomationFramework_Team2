@@ -46,7 +46,7 @@
                     <testFailureIgnore>true</testFailureIgnore>
                     <!--Test Runner Files-->
                     <includes>
-                        <!--                            <include>**/AmazonTestRunner.java</include>-->
+                           <include>**/Destinations.feature</include>
                     </includes>
                     <suiteXmlFiles>
 

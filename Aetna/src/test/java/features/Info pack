@@ -1,0 +1,69 @@
+Feature: Verifying Account management option
+
+  Background:  complited
+    Given I am on Aetna's home page
+    When  I click on the  Member support Menu bar link
+    Then  I should get a drop down option for further slection
+
+
+
+    Scenario: Log in to your member website
+      When I click on Log in to your member website link
+      Then I should have land on a page with a text "Secure Member Log-in"
+
+    Scenario: Find a doctor  -->
+      When I click on Find a doctor link
+      Then I should have land on a page with a text "Find Doctor, Dentist or Hospital"
+
+      Scenario: Find a pharmacy under the Find doctor link section
+        When I click on Find a doctor link
+        And  I click on a Find a pharmacy link
+        Then I should have land on a page with a text "Aetna Pharmacy Home   "
+
+#      Search by Location, Search by Name , Advanced Search
+              Scenario:
+                Search for: Selection
+                Type: 	Selection
+                Search in:
+                Radio -Zip Code
+                Radio - City
+
+                 ZIP CODE  input box
+                 DISTANCE  Select
+
+               Select a Plan: 	Select
+
+              Scenaior : Search by Name
+                Search for: Selection
+                *Pharmacy Name: input box
+                Search in:
+                    Radio -Zip Code
+                    Radio - City
+
+                  ZIP CODE  input box
+                  DISTANCE  Select
+
+                Select a Plan: 	Select
+
+              Scenario: Advanced Search
+                Search for: Selection
+                Type: Selection
+                Select a Pland : Selection
+                Search in:
+                	Radio -Zip Code
+                	Radio - City
+
+                  ZIP CODE  input box
+                  DISTANCE  Select
+
+                  Pharmacy Name: input box
+                  Open 24 Hrs check box
+
+
+  Scenario: Find medicine and costs
+
+    Scenario: Find a form
+    Scenario: Pay your premium
+
+
+

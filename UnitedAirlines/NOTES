@@ -1,0 +1,9 @@
+
+So far I have ran 19 and one failed
+ the To [destination] failed to be recognized need to check more
+
+Step failed
+org.openqa.selenium.InvalidSelectorException: Given css selector expression
+"//input[@aria-autocomplete='list']" is invalid: InvalidSelectorError: Document.querySelector:
+'//input[@aria-autocomplete='list']' is not a valid selector: "//input[@aria-autocomplete='list']"
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html

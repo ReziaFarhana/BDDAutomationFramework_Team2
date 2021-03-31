@@ -39,6 +39,7 @@ public class UAWebElement {
     public static final String bookDepartureDateLocator ="#cmp-departure-date-id";
     public static final String bookReturnDateLocator ="#cmp-return-date-id";
     public static final String travelersInfoLocator ="#cmp-travelers-id";
+    public static final String selectEconomy ="#cmp-travel-class-label-id";
     public static final String promotionalCodeLocator ="#cmp-promo-code-id";
     public static final String searchButtonLocator ="//button[.='Search flights']";
     public static final String moveToAdultLocator ="body.page-template-home:nth-child(2) div.module-row.module-row--header:nth-child(7) div.booking-backdrop div.container div.trfx-component.trfx-component-booking.airline-ua.desktop div.default.no-icons div.form-container.clearfix.default.no-icons div.clearfix.fields:nth-child(4) div.col-xs-24.col-md-16.col-sm-24.padding-none:nth-child(1) div.col-xs-24.col-md-12.col-sm-12.padding:nth-child(1) div.field.field-travelers.form-group div.input-group:nth-child(2) div.travelers-selector div.travelers-popover:nth-child(2) div:nth-child(1) fieldset.clearfix.section.TravelerContainer:nth-child(2) div.form-group.TravelerSelector.row:nth-child(2) div.col-xs-12.TravelerSelectorLabelContainer:nth-child(1) > label:nth-child(1)";
@@ -47,8 +48,24 @@ public class UAWebElement {
     public static final String increaseAdultLocator ="//div[@class='travelers-popover']//div//div//div[1]//div[2]//div[1]//div[1]//span[2]//button[1]//i[1]";
     public static final String doneButtonLocator ="button[class='btn btn-sm btn-link']";
     public static final String leftCalenderClickLocator ="//a[@class='react-datepicker__navigation react-datepicker__navigation--previous']";
-    public static final String march30Locator ="/html/body/div[5]/div/div[2]/div[2]/div[5]/div[3]";
-    public static final String april24Locator ="/html/body/div[5]/div/div[2]/div[2]/div[4]/div[7]";
+    public static final String rightCalenderClickLocator ="//a[@class='react-datepicker__navigation react-datepicker__navigation--next']";
+    public static final String departureDateLocator ="//div[@class='react-datepicker__day'][normalize-space()='21']";
+    public static final String returnDateLocator ="//div[@class='react-datepicker__day react-datepicker__day--weekend'][normalize-space()='2']";
+
+    public static final String verifyBookingLocator ="//h2[.='We could not process your request. Please see the message below and make revisions.']";
+    public static final String verifyNoPromoCodeLocator ="#fl-search-segment-header-wrap";
+    public static final String bookWithMileLocator ="#use-miles-popup";
+    public static final String verifyBookWithMileLocator ="#ui-id-1";
+    public static final String ClickOnchangeBagRulesLocator = "//a[normalize-space()='Changed bag rules']";             //"//a[.='Changed bag rules']";
+    public static final String textVerifyOnBagRulesLocator ="h1[class='temphead']";
+
+    public static final String locateAnyTabLocator ="//h2[.='How much will it cost to check my bag?']";
+    public static final String clickOnAnyFlightTabLocator ="//a[normalize-space()='Any flights']";
+    public static final String toLocateBagInfoLocator ="//div[@class='dynamicBagFees']";
+    public static final String addCityFromLocator ="#ctl00_ContentInfo_BaggageFeeForm_Airports01_Origin_txtOrigin";
+    public static final String addCityToLocator ="//input[@aria-autocomplete='list']";
+    public static final String verifyBagPriceLocator ="//label[.='Standard checked bag price']";
+//    public static final String Locator ="";
 //    public static final String Locator ="";
 
 

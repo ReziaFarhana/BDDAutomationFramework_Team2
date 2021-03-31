@@ -4,27 +4,32 @@ Feature: Working on United Airlines OFFERS section under Deals
     Given I am on United Airlines Home page
     And   I click on the DEALS option
 
-    @rund
+  @run
   Scenario: Current offers and promos
     And I click on the Current offers and promos link
     Then I should see Deals & offers on the front page
-  @rund
+
+  @run
   Scenario: MileagePlus news and offers
     And I click on MileagePlus news and offers link
     Then I should see MileagePlus deals & offers on the front page
-  @rund
+
+  @run
   Scenario: Discounts for 18 to 22 year olds
     When I click on Discounts for 18 to 22 year olds link
     Then I should see Discounts for 18 to 22 year olds on the front page
-  @rund
+
+  @run
   Scenario: Veterans Advantage discount
     And I click on Veterans Advantage discount link
     Then I should see Veterans Advantage discount on the front page
-  @rund
+
+  @run
   Scenario: Redeem eCertificate
     And I clicked On Redeem eCertificate link
     Then I should see Redeem eCertificate displayed on the front page
-  @rund
+
+  @run
   Scenario: Getting Electronic travel certificate Under Redeem eCert
     When I clicked On Redeem eCertificate link
     And scroll to Electronic travel certificate Section

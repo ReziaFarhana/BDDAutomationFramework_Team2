@@ -17,8 +17,8 @@ import org.junit.runner.RunWith;
         strict = true,
         monochrome = true,
         dryRun = false,
-        publish = true,
-        tags = "(@mahmud) and (not @pending)"
+        publish = true
+        ,tags = "(@run) and (not @pending)"
 
 
 )

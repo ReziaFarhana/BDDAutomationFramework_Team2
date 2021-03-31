@@ -16,13 +16,13 @@ import static homepage.UAWebElement.*;
 
 public class UADealsStepDefinition extends WebAPI {
     UAActionHome action;
-    UAWebElement element;
 
     public static final String url = "https://www.united.com";
 
     public void homePageOfUA() throws IOException {
         openBrowser(url);
     }
+
     @BeforeStep
     public  void getInit(){
         action= PageFactory.initElements(driver,UAActionHome.class);
