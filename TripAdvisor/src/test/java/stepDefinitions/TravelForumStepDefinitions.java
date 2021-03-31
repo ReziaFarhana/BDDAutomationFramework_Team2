@@ -176,6 +176,7 @@ public class TravelForumStepDefinitions extends WebAPI {
 
     @When("user right clicks and opens Rome image on new tab")
     public void userRightClicksAndOpensRomeImageOnNewTab() {
+        travelforumpage.rightClicksOnRomeimage();
     }
 
 }
