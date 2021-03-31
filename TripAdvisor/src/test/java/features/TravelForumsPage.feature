@@ -54,11 +54,12 @@ Feature:
     When user clicks on Family Travel
     Then user verifies "Family Travel Forum" appears on page
 
-  @regressionTest
+
   Scenario: Browse by Theme of Bargain Travel
     When user clicks on Bargain Travel
     Then user verifies "Bargain Travel Forum" appears on page
 
+  @regressionTest
   Scenario: Browse by Theme of Train Travel
     When user clicks on Train Travel
     Then user verifies "Train Travel Forum" appears on page

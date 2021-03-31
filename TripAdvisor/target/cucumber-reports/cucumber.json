@@ -11,13 +11,13 @@
         "steps": [
           {
             "result": {
-              "duration": 6445756500,
+              "duration": 7227101500,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 25762800,
+                  "duration": 29377500,
                   "status": "passed"
                 },
                 "match": {
@@ -26,7 +26,7 @@
               },
               {
                 "result": {
-                  "duration": 1022000,
+                  "duration": 823200,
                   "status": "passed"
                 },
                 "match": {
@@ -42,7 +42,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 2723800,
+                  "duration": 3670800,
                   "status": "passed"
                 },
                 "match": {
@@ -51,7 +51,7 @@
               },
               {
                 "result": {
-                  "duration": 1010500,
+                  "duration": 1021100,
                   "status": "passed"
                 },
                 "match": {
@@ -64,23 +64,23 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-31T01:03:56.853Z",
-        "line": 58,
-        "name": "Browse by Theme of Bargain Travel",
+        "start_timestamp": "2021-03-31T01:05:41.961Z",
+        "line": 63,
+        "name": "Browse by Theme of Train Travel",
         "description": "",
-        "id": ";browse-by-theme-of-bargain-travel",
+        "id": ";browse-by-theme-of-train-travel",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 5548424300,
+              "duration": 5579782600,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 1190000,
+                  "duration": 1598200,
                   "status": "passed"
                 },
                 "match": {
@@ -89,7 +89,7 @@
               },
               {
                 "result": {
-                  "duration": 1197700,
+                  "duration": 494300,
                   "status": "passed"
                 },
                 "match": {
@@ -97,15 +97,14 @@
                 }
               }
             ],
-            "line": 59,
-            "name": "user clicks on Bargain Travel",
+            "line": 64,
+            "name": "user clicks on Train Travel",
             "match": {
-              "location": "stepDefinitions.TravelForumStepDefinitions.userClicksOnBargainTravel()"
+              "location": "stepDefinitions.TravelForumStepDefinitions.userClicksOnTrainTravel()"
             },
             "after": [
               {
                 "result": {
-                  "duration": 101500,
                   "status": "passed"
                 },
                 "match": {
@@ -125,13 +124,13 @@
           },
           {
             "result": {
-              "duration": 115889400,
+              "duration": 220433500,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 2336500,
+                  "duration": 1656100,
                   "status": "passed"
                 },
                 "match": {
@@ -140,7 +139,7 @@
               },
               {
                 "result": {
-                  "duration": 726800,
+                  "duration": 578600,
                   "status": "passed"
                 },
                 "match": {
@@ -148,12 +147,12 @@
                 }
               }
             ],
-            "line": 60,
-            "name": "user verifies \"Bargain Travel Forum\" appears on page",
+            "line": 65,
+            "name": "user verifies \"Train Travel Forum\" appears on page",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Bargain Travel Forum\"",
+                  "val": "\"Train Travel Forum\"",
                   "offset": 14
                 }
               ],
@@ -162,7 +161,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 1117300,
+                  "duration": 500600,
                   "status": "passed"
                 },
                 "match": {
@@ -171,7 +170,7 @@
               },
               {
                 "result": {
-                  "duration": 1026600,
+                  "duration": 506800,
                   "status": "passed"
                 },
                 "match": {
