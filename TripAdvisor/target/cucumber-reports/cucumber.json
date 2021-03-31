@@ -11,13 +11,13 @@
         "steps": [
           {
             "result": {
-              "duration": 7120612300,
+              "duration": 6562593700,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 26155800,
+                  "duration": 24726700,
                   "status": "passed"
                 },
                 "match": {
@@ -26,7 +26,7 @@
               },
               {
                 "result": {
-                  "duration": 3025800,
+                  "duration": 1000300,
                   "status": "passed"
                 },
                 "match": {
@@ -42,7 +42,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 3690100,
+                  "duration": 2810800,
                   "status": "passed"
                 },
                 "match": {
@@ -51,7 +51,7 @@
               },
               {
                 "result": {
-                  "duration": 499100,
+                  "duration": 998600,
                   "status": "passed"
                 },
                 "match": {
@@ -64,23 +64,23 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-31T01:06:57.921Z",
-        "line": 68,
-        "name": "Browse by Theme of Air Travel",
+        "start_timestamp": "2021-03-31T01:08:25.629Z",
+        "line": 73,
+        "name": "Browse by Theme of Solo Travel",
         "description": "",
-        "id": ";browse-by-theme-of-air-travel",
+        "id": ";browse-by-theme-of-solo-travel",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 5764935000,
+              "duration": 5534248900,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 910000,
+                  "duration": 994600,
                   "status": "passed"
                 },
                 "match": {
@@ -89,6 +89,7 @@
               },
               {
                 "result": {
+                  "duration": 1000300,
                   "status": "passed"
                 },
                 "match": {
@@ -96,15 +97,14 @@
                 }
               }
             ],
-            "line": 69,
-            "name": "user clicks on Air Travel",
+            "line": 74,
+            "name": "user clicks on Solo Travel",
             "match": {
-              "location": "stepDefinitions.TravelForumStepDefinitions.userClicksOnAirTravel()"
+              "location": "stepDefinitions.TravelForumStepDefinitions.userClicksOnSoloTravel()"
             },
             "after": [
               {
                 "result": {
-                  "duration": 500000,
                   "status": "passed"
                 },
                 "match": {
@@ -113,7 +113,7 @@
               },
               {
                 "result": {
-                  "duration": 1001200,
+                  "duration": 500300,
                   "status": "passed"
                 },
                 "match": {
@@ -125,13 +125,13 @@
           },
           {
             "result": {
-              "duration": 141984100,
+              "duration": 158085500,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 1408000,
+                  "duration": 2010800,
                   "status": "passed"
                 },
                 "match": {
@@ -140,7 +140,7 @@
               },
               {
                 "result": {
-                  "duration": 1044600,
+                  "duration": 498000,
                   "status": "passed"
                 },
                 "match": {
@@ -148,12 +148,12 @@
                 }
               }
             ],
-            "line": 70,
-            "name": "user verifies \"Air Travel Forum\" appears on page",
+            "line": 75,
+            "name": "user verifies \"Solo Travel Forum\" appears on page",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Air Travel Forum\"",
+                  "val": "\"Solo Travel Forum\"",
                   "offset": 14
                 }
               ],
@@ -162,7 +162,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 633900,
+                  "duration": 499500,
                   "status": "passed"
                 },
                 "match": {
@@ -171,6 +171,7 @@
               },
               {
                 "result": {
+                  "duration": 500300,
                   "status": "passed"
                 },
                 "match": {

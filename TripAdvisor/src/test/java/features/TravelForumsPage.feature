@@ -64,11 +64,12 @@ Feature:
     When user clicks on Train Travel
     Then user verifies "Train Travel Forum" appears on page
 
-  @regressionTest
+
   Scenario: Browse by Theme of Air Travel
     When user clicks on Air Travel
     Then user verifies "Air Travel Forum" appears on page
 
+  @regressionTest
   Scenario: Browse by Theme of Solo Travel
     When user clicks on Solo Travel
     Then user verifies "Solo Travel Forum" appears on page
