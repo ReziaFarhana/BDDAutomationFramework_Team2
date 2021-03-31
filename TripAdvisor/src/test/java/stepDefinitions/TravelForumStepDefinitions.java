@@ -11,6 +11,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.PageFactory;
 
+import java.awt.*;
 import java.io.IOException;
 
 public class TravelForumStepDefinitions extends WebAPI {
@@ -138,6 +139,31 @@ public class TravelForumStepDefinitions extends WebAPI {
         travelforumpage.clickOnSoloTravel();
     }
 
+    @When("user clicks on Antarctic Adventures")
+    public void userClicksOnAntarcticAdventures() throws InterruptedException {
+        travelforumpage.clickOnAntartic();
+    }
+
+
+
+    @And("user enters City")
+    public void userEntersCity() {
+        travelforumpage.typeInSearchBox();
+    }
+    @And("user picks date")
+    public void userPicksDate() throws InterruptedException {
+        travelforumpage.selectDate();
+    }
+
+    //************************************************************
+    @When("user right clicks and opens New York image on new tab")
+    public void userRightClicksAndOpensNewYorkImageOnNewTab() {
+        travelforumpage.rightClicksOnNYCimage();
+    }
+
+    @And("clicks on page four")
+    public void clicksOnPageFour() {
+    }
 }
 
 

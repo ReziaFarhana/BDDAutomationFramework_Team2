@@ -5,49 +5,13 @@
       {
         "name": "user is on Travel Forum page",
         "aggregatedDurations": {
-          "median": 6.5625937,
-          "average": 6.5625937
+          "median": 8.848109,
+          "average": 8.848109
         },
         "durations": [
           {
-            "duration": 6.5625937,
+            "duration": 8.848109,
             "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/TravelForumsPage.feature:4"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "user clicks on Solo Travel",
-    "steps": [
-      {
-        "name": "user clicks on Solo Travel",
-        "aggregatedDurations": {
-          "median": 5.5342489,
-          "average": 5.5342489
-        },
-        "durations": [
-          {
-            "duration": 5.5342489,
-            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/TravelForumsPage.feature:74"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "user verifies {string} appears on page",
-    "steps": [
-      {
-        "name": "user verifies \"Solo Travel Forum\" appears on page",
-        "aggregatedDurations": {
-          "median": 0.1580855,
-          "average": 0.1580855
-        },
-        "durations": [
-          {
-            "duration": 0.1580855,
-            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/TravelForumsPage.feature:75"
           }
         ]
       }

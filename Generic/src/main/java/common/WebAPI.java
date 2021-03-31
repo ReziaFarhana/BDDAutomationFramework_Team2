@@ -2,6 +2,7 @@ package common;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
+import io.cucumber.java.en_old.Ac;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.*;
@@ -10,9 +11,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.*;
 import org.testng.Assert;
 import org.testng.ITestContext;
@@ -22,6 +25,7 @@ import org.testng.annotations.Optional;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 
+import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -33,6 +37,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.*;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class WebAPI {
@@ -387,7 +392,10 @@ public class WebAPI {
         list = driver.findElements(By.xpath(locator));
         return list;
     }
-    //method by Easha
+    //methods by Easha
+
+
+
     public List<WebElement> getListofWebElementsbyTag(String tagName){
         List<WebElement> list = new ArrayList<WebElement>();
         list = driver.findElements(By.tagName(tagName));//list of webelements
@@ -563,8 +571,8 @@ public class WebAPI {
     public static WebDriver handleNewTab(WebDriver driver1) {
         String oldTab = driver1.getWindowHandle();
         List<String> newTabs = new ArrayList<String>(driver1.getWindowHandles());
-        newTabs.remove(oldTab);
         driver1.switchTo().window(newTabs.get(0));
+        newTabs.remove(oldTab);
         return driver1;
     }
 
@@ -598,15 +606,48 @@ public class WebAPI {
 
     //by easha
 
-    public void rightClickandOpenNewTabUsingLink(String locator){
 
+    public void rightClickandOpenNewTabUsingLink(String locator)  {
         JavascriptExecutor executor = (JavascriptExecutor) driver;
-        WebElement element = driver.findElement(By.linkText(locator));
+        WebElement element = driver.findElement(By.linkText(locator)); //get your element
+
+        //get your element in view
         executor.executeScript("arguments[0].scrollIntoView(true);", element);
 
 
-        String openTabsAgain = Keys.chord(Keys.CONTROL+"t" + Keys.ENTER);
-        element.sendKeys(openTabsAgain);
+        //perform keyboard functions using actions class
+        Actions actions = new Actions(driver);
+        actions.keyDown(Keys.LEFT_CONTROL)
+                .click(element)
+                .keyUp(Keys.LEFT_CONTROL)
+                .build()
+                .perform();
+
+        //switch to new tab
+        ArrayList<String> tab = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tab.get(1));
+
+    }
+    public void rightClickandOpenNewTabUsingXPATH(String locator)  {
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        WebElement element = driver.findElement(By.xpath(locator)); //get your element
+
+        //get your element in view
+        executor.executeScript("arguments[0].scrollIntoView(true);", element);
+
+
+        //perform keyboard functions using actions class
+        Actions actions = new Actions(driver);
+        actions.keyDown(Keys.LEFT_CONTROL)
+                .click(element)
+                .keyUp(Keys.LEFT_CONTROL)
+                .build()
+                .perform();
+
+        //switch to new tab
+        ArrayList<String> tab = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tab.get(1));
+
     }
     public void openMultipleTabsAtOnce(String locator) throws InterruptedException {
         //first bring element to view(if its not already, if it is skip)

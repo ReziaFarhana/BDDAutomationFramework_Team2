@@ -69,10 +69,29 @@ Feature:
     When user clicks on Air Travel
     Then user verifies "Air Travel Forum" appears on page
 
-  @regressionTest
+
   Scenario: Browse by Theme of Solo Travel
     When user clicks on Solo Travel
     Then user verifies "Solo Travel Forum" appears on page
+
+  @regressionTest
+  Scenario: Browse by Theme of Antarctic Adventures
+    When user clicks on Antarctic Adventures
+    Then user verifies "Antarctic Adventures Forum" appears on page
+
+#    @date
+#  Scenario: Plan a trip
+#    When user clicks on Antarctic Adventures
+#    And user enters City
+#    And user picks date
+
+  @smokeTest
+  Scenario: Image Functionality of New York City, NY
+    When user right clicks and opens New York image on new tab
+    And clicks on page four
+    Then user verifies "New York City Travel Forum" appears on page
+
+
 
 
 
