@@ -39,11 +39,12 @@ Feature:
     When user clicks on Road Trips
     Then user verifies "Road Trips Forum" appears on page
 
-  @regressionTest
+
   Scenario: Browse by Theme of Travel Gadgets and Gear
     When user clicks on Travel Gadgets and Gear
     Then user verifies "Travel Gadgets and Gear Forum" appears on page
 
+  @regressionTest
   Scenario: Browse by Theme of Honeymoons and Romance
     When user clicks on Honeymoons and Romance
     Then user verifies "Honeymoons and Romance Forum" appears on page
