@@ -597,6 +597,17 @@ public class WebAPI {
     }
 
     //by easha
+
+    public void rightClickandOpenNewTabUsingLink(String locator){
+
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        WebElement element = driver.findElement(By.linkText(locator));
+        executor.executeScript("arguments[0].scrollIntoView(true);", element);
+
+
+        String openTabsAgain = Keys.chord(Keys.CONTROL+"t" + Keys.ENTER);
+        element.sendKeys(openTabsAgain);
+    }
     public void openMultipleTabsAtOnce(String locator) throws InterruptedException {
         //first bring element to view(if its not already, if it is skip)
         JavascriptExecutor executor = (JavascriptExecutor) driver;
@@ -612,6 +623,19 @@ public class WebAPI {
             String openTabsAgain = Keys.chord(Keys.CONTROL, Keys.ENTER);
             openTabs.findElements(By.tagName("a")).get(i).sendKeys(openTabsAgain);
         }
+    }
+    //eashas window handle
+    //new window handle
+    public void windowHandle() throws InterruptedException {
+        String parentHandle = driver.getWindowHandle();
+        sleepFor(5);
+        driver.switchTo().window(parentHandle).close();
+        for (String childwinHandle : driver.getWindowHandles()) {
+            driver.switchTo().window(childwinHandle); // switch focus of WebDriver to the next found window handle
+            // (that's your newly opened window
+        }
+
+
     }
     public void getTitlesofMultipleTabs() throws InterruptedException {
         //iterator through
@@ -630,16 +654,6 @@ public class WebAPI {
     }
     //right click and open new tab
 
-    public void rightClickandOpenNewTabUsingXP(String locator){
-        Actions act = new Actions(driver);
-        WebElement linkpath = driver.findElement(By.xpath(locator));
-        act.contextClick(linkpath).perform();  // right click
-        String openTabs= Keys.chord(Keys.CONTROL, Keys.ENTER);
-        act.sendKeys(openTabs).perform(); // click on new tab
-
-        ArrayList<String> tab = new ArrayList<>(driver.getWindowHandles());
-        driver.switchTo().window(tab.get(1));
-    }
 
 
     public void typeOnInputBox(String locator, String value) {

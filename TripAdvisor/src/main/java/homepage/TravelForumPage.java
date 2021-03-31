@@ -1,18 +1,23 @@
 package homepage;
 
 import common.WebAPI;
+import io.cucumber.java.en_old.Ac;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import static homepage.TravelForumPageWebElements.*;
 
@@ -51,6 +56,75 @@ public class TravelForumPage extends WebAPI {
      public void verifyAllTitles() throws InterruptedException {
        getTitlesofMultipleTabs();
      }
+    //**************************************************************
+     public void clickOnTravelingWithPets() throws InterruptedException {
+        //opens new tab after clicking link
+        rightClickandOpenNewTabUsingLink(travelingwPetsLink);
+        //switches to that tab
+        windowHandle();
+
+     }
+    public void verifyBrowseByTheme(String expectedText){
+        String actualText = driver.findElement(By.id(browseByThemeLinksText)).getText();
+        Assert.assertEquals("Text doesnt match", expectedText, actualText);
+    }
+    //**************************************************************
+    public void clickOnOutdoorAdventureTravel() throws InterruptedException {
+        //opens new tab after clicking link
+        rightClickandOpenNewTabUsingLink(outdoorAdvenTravLink);
+        //switches to that tab
+        windowHandle();
+    }
+    //**************************************************************
+    public void clickOnRoadTrip() throws InterruptedException {
+        //opens new tab after clicking link
+        rightClickandOpenNewTabUsingLink(roadTripsLink);
+        //switches to that tab
+        windowHandle();
+    }
+    //**************************************************************
+    public void clickOnTravelGadgetsGear() throws InterruptedException {
+        rightClickandOpenNewTabUsingLink(travelGadgetsGearLink);
+        windowHandle();
+    }
+    //**************************************************************
+    public void clickOnhoneyMoonRomance() throws InterruptedException {
+        rightClickandOpenNewTabUsingLink(honeymoonsRomanceLink);
+        windowHandle();
+    }
+    //**************************************************************
+    public void clickOnFamilyTravel() throws InterruptedException {
+        rightClickandOpenNewTabUsingLink(familyTravelLink);
+        windowHandle();
+    }
+    //**************************************************************
+    public void clickOnBargainTravel() throws InterruptedException {
+        rightClickandOpenNewTabUsingLink(bargainTravelLink);
+        windowHandle();
+    }
+    //**************************************************************
+    public void clickTrainTravel() throws InterruptedException {
+        rightClickandOpenNewTabUsingLink(trainTravelLink);
+        windowHandle();
+    }
+    //**************************************************************
+    public void clickOnAirTravel() throws InterruptedException {
+        rightClickandOpenNewTabUsingLink(airTravelLink);
+        windowHandle();
+    }
+    //**************************************************************
+    public void clickOnAntartic() throws InterruptedException {
+        rightClickandOpenNewTabUsingLink(antarcticLink);
+        windowHandle();
+    }
+    //**************************************************************
+    public void clickOnSoloTravel() throws InterruptedException {
+        rightClickandOpenNewTabUsingLink(soloTravelLink);
+        windowHandle();
+    }
+    //**************************************************************
+
+
 
 
 

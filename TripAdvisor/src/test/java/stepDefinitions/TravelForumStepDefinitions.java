@@ -61,7 +61,6 @@ public class TravelForumStepDefinitions extends WebAPI {
     }
 
 
-
     @When("user right clicks and opens all Browse Destination links")
     public void userRightClicksAndOpensAllBrowseDestinationLinks() throws InterruptedException {
         travelforumpage.rightClickandOpenBrowseDestinationLinks();
@@ -71,6 +70,66 @@ public class TravelForumStepDefinitions extends WebAPI {
     public void userVerifiesAllPageTitlePrints() throws InterruptedException {
         travelforumpage.verifyAllTitles();
     }
+//******************************************************************************
 
+    @When("user clicks on Traveling with Pets")
+    public void userClicksOnTravelingWithPets() throws InterruptedException {
+        travelforumpage.clickOnTravelingWithPets();
+    }
+
+    @Then("user verifies {string} appears on page")
+    public void userVerifiesAppearsOnPage(String expectedText) {
+        travelforumpage.verifyBrowseByTheme(expectedText);
+    }
+//******************************************************************************
+
+    @When("user clicks on Outdoors  Adventure Travel")
+    public void user_clicks_on_outdoors_adventure_travel() throws InterruptedException {
+        travelforumpage.clickOnOutdoorAdventureTravel();
+    }
+    //******************************************************************************
+
+
+    @When("user clicks on Road Trips")
+    public void userClicksOnRoadTrips() {
+    }
+//******************************************************************************
+
+    @When("user clicks on Travel Gadgets and Gear")
+    public void userClicksOnTravelGadgetsAndGear() {
+    }
+//******************************************************************************
+
+    @When("user clicks on Honeymoons and Romance")
+    public void userClicksOnHoneymoonsAndRomance() {
+    }
+//******************************************************************************
+
+    @When("user clicks on Family Travel")
+    public void userClicksOnFamilyTravel() {
+    }
+    //******************************************************************************
+
+
+    @When("user clicks on Bargain Travel")
+    public void userClicksOnBargainTravel() {
+    }
+//******************************************************************************
+
+    @When("user clicks on Train Travel")
+    public void userClicksOnTrainTravel() {
+    }
+//******************************************************************************
+
+    @When("user clicks on Air Travel")
+    public void userClicksOnAirTravel() {
+    }
+//******************************************************************************
+
+    @When("user clicks on Solo Travel")
+    public void userClicksOnSoloTravel() {
+    }
 
 }
+
+

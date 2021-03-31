@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="53.968">
-    <testcase classname="Unknown" name="Verify Browse by Destination" time="53.589">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="13.324">
+    <testcase classname="Unknown" name="Browse by Theme of Outdoors / Adventure Travel" time="12.98">
         <system-out>
             <![CDATA[Given user is on Travel Forum page..........................................passed
-When user right clicks and opens all Browse Destination links...............passed
-Then user verifies all Page Title prints....................................passed
+When user clicks on Outdoors  Adventure Travel..............................passed
+Then user verifies "Outdoors / Adventure Travel Forum" appears on page......passed
 ]]>
         </system-out>
     </testcase>

@@ -1,6 +1,6 @@
 
-@smokeTest
-Scenario: Verify Browse by Destination                          # src/test/java/features/TravelForumsPage.feature:23
-  Given user is on Travel Forum page                            # stepDefinitions.TravelForumStepDefinitions.user_is_on_travel_forum_page()
-  When user right clicks and opens all Browse Destination links # stepDefinitions.TravelForumStepDefinitions.userRightClicksAndOpensAllBrowseDestinationLinks()
-  Then user verifies all Page Title prints                      # stepDefinitions.TravelForumStepDefinitions.userVerifiesAllPageTitlePrints()
+@regressionTest
+Scenario: Browse by Theme of Outdoors / Adventure Travel                 # src/test/java/features/TravelForumsPage.feature:33
+  Given user is on Travel Forum page                                     # stepDefinitions.TravelForumStepDefinitions.user_is_on_travel_forum_page()
+  When user clicks on Outdoors  Adventure Travel                         # stepDefinitions.TravelForumStepDefinitions.user_clicks_on_outdoors_adventure_travel()
+  Then user verifies "Outdoors / Adventure Travel Forum" appears on page # stepDefinitions.TravelForumStepDefinitions.userVerifiesAppearsOnPage(java.lang.String)

@@ -11,13 +11,13 @@
         "steps": [
           {
             "result": {
-              "duration": 5752138700,
+              "duration": 7234919800,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 23711100,
+                  "duration": 27291800,
                   "status": "passed"
                 },
                 "match": {
@@ -26,7 +26,7 @@
               },
               {
                 "result": {
-                  "duration": 1000400,
+                  "duration": 577000,
                   "status": "passed"
                 },
                 "match": {
@@ -42,7 +42,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 3957300,
+                  "duration": 10469700,
                   "status": "passed"
                 },
                 "match": {
@@ -51,7 +51,7 @@
               },
               {
                 "result": {
-                  "duration": 1005700,
+                  "duration": 920700,
                   "status": "passed"
                 },
                 "match": {
@@ -64,17 +64,17 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-30T22:08:27.029Z",
-        "line": 23,
-        "name": "Verify Browse by Destination",
+        "start_timestamp": "2021-03-31T00:32:52.030Z",
+        "line": 33,
+        "name": "Browse by Theme of Outdoors / Adventure Travel",
         "description": "",
-        "id": ";verify-browse-by-destination",
+        "id": ";browse-by-theme-of-outdoors-/-adventure-travel",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2841302800,
+              "duration": 5446674700,
               "status": "passed"
             },
             "before": [
@@ -89,7 +89,7 @@
               },
               {
                 "result": {
-                  "duration": 1074700,
+                  "duration": 971900,
                   "status": "passed"
                 },
                 "match": {
@@ -97,15 +97,15 @@
                 }
               }
             ],
-            "line": 24,
-            "name": "user right clicks and opens all Browse Destination links",
+            "line": 34,
+            "name": "user clicks on Outdoors  Adventure Travel",
             "match": {
-              "location": "stepDefinitions.TravelForumStepDefinitions.userRightClicksAndOpensAllBrowseDestinationLinks()"
+              "location": "stepDefinitions.TravelForumStepDefinitions.user_clicks_on_outdoors_adventure_travel()"
             },
             "after": [
               {
                 "result": {
-                  "duration": 1000400,
+                  "duration": 500500,
                   "status": "passed"
                 },
                 "match": {
@@ -114,7 +114,7 @@
               },
               {
                 "result": {
-                  "duration": 1000600,
+                  "duration": 500700,
                   "status": "passed"
                 },
                 "match": {
@@ -126,13 +126,13 @@
           },
           {
             "result": {
-              "duration": 44860503500,
+              "duration": 140872000,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 1500100,
+                  "duration": 1696200,
                   "status": "passed"
                 },
                 "match": {
@@ -141,7 +141,7 @@
               },
               {
                 "result": {
-                  "duration": 1001200,
+                  "duration": 499500,
                   "status": "passed"
                 },
                 "match": {
@@ -149,15 +149,21 @@
                 }
               }
             ],
-            "line": 25,
-            "name": "user verifies all Page Title prints",
+            "line": 35,
+            "name": "user verifies \"Outdoors / Adventure Travel Forum\" appears on page",
             "match": {
-              "location": "stepDefinitions.TravelForumStepDefinitions.userVerifiesAllPageTitlePrints()"
+              "arguments": [
+                {
+                  "val": "\"Outdoors / Adventure Travel Forum\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepDefinitions.TravelForumStepDefinitions.userVerifiesAppearsOnPage(java.lang.String)"
             },
             "after": [
               {
                 "result": {
-                  "duration": 1008000,
+                  "duration": 591400,
                   "status": "passed"
                 },
                 "match": {
@@ -166,6 +172,7 @@
               },
               {
                 "result": {
+                  "duration": 546100,
                   "status": "passed"
                 },
                 "match": {
@@ -178,7 +185,7 @@
         ],
         "tags": [
           {
-            "name": "@smokeTest"
+            "name": "@regressionTest"
           }
         ]
       }
