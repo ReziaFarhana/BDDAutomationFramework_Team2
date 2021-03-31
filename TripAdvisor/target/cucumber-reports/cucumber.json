@@ -11,13 +11,13 @@
         "steps": [
           {
             "result": {
-              "duration": 7426163100,
+              "duration": 6665344700,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 27926900,
+                  "duration": 29704800,
                   "status": "passed"
                 },
                 "match": {
@@ -26,7 +26,7 @@
               },
               {
                 "result": {
-                  "duration": 981500,
+                  "duration": 999500,
                   "status": "passed"
                 },
                 "match": {
@@ -42,7 +42,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 1512900,
+                  "duration": 3506200,
                   "status": "passed"
                 },
                 "match": {
@@ -51,7 +51,7 @@
               },
               {
                 "result": {
-                  "duration": 533300,
+                  "duration": 502100,
                   "status": "passed"
                 },
                 "match": {
@@ -64,23 +64,23 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-31T00:37:54.262Z",
-        "line": 48,
-        "name": "Browse by Theme of Honeymoons and Romance",
+        "start_timestamp": "2021-03-31T01:02:20.519Z",
+        "line": 53,
+        "name": "Browse by Theme of Family Travel",
         "description": "",
-        "id": ";browse-by-theme-of-honeymoons-and-romance",
+        "id": ";browse-by-theme-of-family-travel",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 5372212300,
+              "duration": 5577700600,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 1003600,
+                  "duration": 1001200,
                   "status": "passed"
                 },
                 "match": {
@@ -89,7 +89,7 @@
               },
               {
                 "result": {
-                  "duration": 499400,
+                  "duration": 1337400,
                   "status": "passed"
                 },
                 "match": {
@@ -97,15 +97,15 @@
                 }
               }
             ],
-            "line": 49,
-            "name": "user clicks on Honeymoons and Romance",
+            "line": 54,
+            "name": "user clicks on Family Travel",
             "match": {
-              "location": "stepDefinitions.TravelForumStepDefinitions.userClicksOnHoneymoonsAndRomance()"
+              "location": "stepDefinitions.TravelForumStepDefinitions.userClicksOnFamilyTravel()"
             },
             "after": [
               {
                 "result": {
-                  "duration": 1000200,
+                  "duration": 509600,
                   "status": "passed"
                 },
                 "match": {
@@ -114,6 +114,7 @@
               },
               {
                 "result": {
+                  "duration": 500100,
                   "status": "passed"
                 },
                 "match": {
@@ -125,13 +126,13 @@
           },
           {
             "result": {
-              "duration": 112141900,
+              "duration": 170767100,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 1439100,
+                  "duration": 1109600,
                   "status": "passed"
                 },
                 "match": {
@@ -140,7 +141,7 @@
               },
               {
                 "result": {
-                  "duration": 500600,
+                  "duration": 999900,
                   "status": "passed"
                 },
                 "match": {
@@ -148,12 +149,12 @@
                 }
               }
             ],
-            "line": 50,
-            "name": "user verifies \"Honeymoons and Romance Forum\" appears on page",
+            "line": 55,
+            "name": "user verifies \"Family Travel Forum\" appears on page",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Honeymoons and Romance Forum\"",
+                  "val": "\"Family Travel Forum\"",
                   "offset": 14
                 }
               ],
@@ -162,7 +163,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 1006200,
+                  "duration": 830400,
                   "status": "passed"
                 },
                 "match": {
@@ -171,7 +172,7 @@
               },
               {
                 "result": {
-                  "duration": 577100,
+                  "duration": 751200,
                   "status": "passed"
                 },
                 "match": {

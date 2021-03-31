@@ -19,7 +19,7 @@ Feature:
   Scenario: Check all Tabs in Header
     Then user gets all links from Travel Page
 
-  @smokeTest
+
   Scenario:Verify Browse by Destination
     When user right clicks and opens all Browse Destination links
     Then user verifies all Page Title prints
@@ -44,11 +44,12 @@ Feature:
     When user clicks on Travel Gadgets and Gear
     Then user verifies "Travel Gadgets and Gear Forum" appears on page
 
-  @regressionTest
+
   Scenario: Browse by Theme of Honeymoons and Romance
     When user clicks on Honeymoons and Romance
     Then user verifies "Honeymoons and Romance Forum" appears on page
 
+  @regressionTest
   Scenario: Browse by Theme of Family Travel
     When user clicks on Family Travel
     Then user verifies "Family Travel Forum" appears on page
