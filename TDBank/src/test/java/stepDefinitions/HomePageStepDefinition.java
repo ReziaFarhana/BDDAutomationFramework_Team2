@@ -2,7 +2,6 @@ package stepDefinitions;
 
 import common.WebAPI;
 import homepage.HomePage;
-import homepage.ProductsPage;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.BeforeStep;
 import io.cucumber.java.Scenario;

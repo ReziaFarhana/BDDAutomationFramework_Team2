@@ -13,7 +13,7 @@ public class HomePageWebElements {
     public static final String debitCardsCusXp="(//*[text()='Debit Cards'])[1]";
     public static final String prepaidCardsCusXp="(//*[text()='Prepaid Cards'])[1]";
     public static final String specialOffCusXp="(//*[text()='Special Offer'])[1]";
-//    public static final String=;
+
 //    public static final String=;
 //    public static final String=;
 //    public static final String=;
