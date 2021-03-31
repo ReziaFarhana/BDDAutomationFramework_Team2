@@ -34,3 +34,16 @@ Feature: Verify the Providers page
   Scenario: Check the Disputes and appeals link
     When I click on learn about disputes and appeals
     Then I verify the text "Disputes & Appeals"
+
+  @Israt
+    Scenario: Navigate to the payment and claims helpful links
+    And I right click the payment solutions link to open in a new window
+    When I click on the explore claims options
+    Then I verify the title as "Electronic claims | Aetna"
+
+    @Israt
+    Scenario: Navigate to the Availity claims management and authorizations site
+      And I click on the submit claims through the availity site
+      And I click on contiue to availity site and close the old window
+      When I click on the no button on the availity site pop-up
+      Then I verify the page as "Availity Revenue Cycle Management, Clearinghouse, Provider Portal"

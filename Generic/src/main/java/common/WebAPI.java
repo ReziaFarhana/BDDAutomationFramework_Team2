@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -72,6 +73,23 @@ public class WebAPI {
         jscript = (JavascriptExecutor) driver;
         jscript.executeScript("window.scrollBy(0,-350)", "");
     }
+
+    //action methods
+
+    public void doubleClick(WebElement element){
+        Actions action = new Actions(driver);
+        action.doubleClick(element).perform();
+    }
+
+    //right click and open new tab
+    public void rightClickandOpenNewTabUsingXP(String locator){
+        Actions act = new Actions(driver);
+        WebElement linkpath = driver.findElement(By.xpath(locator));
+        act.contextClick(linkpath).perform();  // right click
+        String openTabs= Keys.chord(Keys.CONTROL, Keys.ENTER);
+        act.sendKeys(openTabs).perform(); // click on new tab
+    }
+
 
     public void hoverAndClick(WebElement elementHover, WebElement elementClick) {
         Actions selecrMenu = new Actions(driver);
@@ -393,8 +411,11 @@ public class WebAPI {
     }
 
 
-    public void clearField(String locator) {
+    public void clearFieldById(String locator) {
         driver.findElement(By.id(locator)).clear();
+    }
+    public void clearFieldByXpath(String locator) {
+        driver.findElement(By.xpath(locator)).clear();
     }
 
     public void navigateBack() {
@@ -424,6 +445,9 @@ public class WebAPI {
 
     public void clickByXpath(String locator) {
         driver.findElement(By.xpath(locator)).click();
+    }
+    public void enterByXpath(String locator) {
+        driver.findElement(By.xpath(locator)).submit();
     }
 
     public void typeByCss(String locator, String value) {

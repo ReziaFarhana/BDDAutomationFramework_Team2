@@ -15,11 +15,11 @@ public class ProvidersWebElement {
         public static final String stateRegulationsPageTitle = "//h1[normalize-space()='Insurance regulations by state']";
     public static final String disputesAndAppeals  = "//span[normalize-space()='Learn about disputes and appeals']";
     public static final String disputesAndAppealsPageTitle = "//h1[normalize-space()='Disputes & Appeals']";
-//    public static final String  = "";
-//    public static final String  = "";
-//    public static final String  = "";
-//    public static final String  = "";
-//    public static final String  = "";
+    public static final String paymentAndClaimsLink = "//a[@data-analytics-name='Payment and claims']";
+    public static final String exploreClaimsOptions = "//a[normalize-space()='Explore claims options']";
+    public static final String submitClaimsThroughAvailityLink  = "//span[normalize-space()='Submit claims through Availity']";
+    public static final String continueToAvailitySite = "//a[@href='https://www.availity.com/']//span[contains(text(),'Continue')]";
+    public static final String availitySitePopUpAnswer = "//button[normalize-space()='No']";
 //    public static final String  = "";
 //    public static final String  = "";
 //    public static final String  = "";
