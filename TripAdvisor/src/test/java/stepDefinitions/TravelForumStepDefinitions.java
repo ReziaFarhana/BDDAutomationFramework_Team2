@@ -116,7 +116,8 @@ public class TravelForumStepDefinitions extends WebAPI {
 
 
     @When("user clicks on Bargain Travel")
-    public void userClicksOnBargainTravel() {
+    public void userClicksOnBargainTravel() throws InterruptedException {
+        travelforumpage.clickOnBargainTravel();
     }
 //******************************************************************************
 

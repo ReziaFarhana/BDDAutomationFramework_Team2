@@ -11,13 +11,13 @@
         "steps": [
           {
             "result": {
-              "duration": 6665344700,
+              "duration": 6445756500,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 29704800,
+                  "duration": 25762800,
                   "status": "passed"
                 },
                 "match": {
@@ -26,7 +26,7 @@
               },
               {
                 "result": {
-                  "duration": 999500,
+                  "duration": 1022000,
                   "status": "passed"
                 },
                 "match": {
@@ -42,7 +42,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 3506200,
+                  "duration": 2723800,
                   "status": "passed"
                 },
                 "match": {
@@ -51,7 +51,7 @@
               },
               {
                 "result": {
-                  "duration": 502100,
+                  "duration": 1010500,
                   "status": "passed"
                 },
                 "match": {
@@ -64,23 +64,23 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-31T01:02:20.519Z",
-        "line": 53,
-        "name": "Browse by Theme of Family Travel",
+        "start_timestamp": "2021-03-31T01:03:56.853Z",
+        "line": 58,
+        "name": "Browse by Theme of Bargain Travel",
         "description": "",
-        "id": ";browse-by-theme-of-family-travel",
+        "id": ";browse-by-theme-of-bargain-travel",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 5577700600,
+              "duration": 5548424300,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 1001200,
+                  "duration": 1190000,
                   "status": "passed"
                 },
                 "match": {
@@ -89,7 +89,7 @@
               },
               {
                 "result": {
-                  "duration": 1337400,
+                  "duration": 1197700,
                   "status": "passed"
                 },
                 "match": {
@@ -97,15 +97,15 @@
                 }
               }
             ],
-            "line": 54,
-            "name": "user clicks on Family Travel",
+            "line": 59,
+            "name": "user clicks on Bargain Travel",
             "match": {
-              "location": "stepDefinitions.TravelForumStepDefinitions.userClicksOnFamilyTravel()"
+              "location": "stepDefinitions.TravelForumStepDefinitions.userClicksOnBargainTravel()"
             },
             "after": [
               {
                 "result": {
-                  "duration": 509600,
+                  "duration": 101500,
                   "status": "passed"
                 },
                 "match": {
@@ -114,7 +114,6 @@
               },
               {
                 "result": {
-                  "duration": 500100,
                   "status": "passed"
                 },
                 "match": {
@@ -126,13 +125,13 @@
           },
           {
             "result": {
-              "duration": 170767100,
+              "duration": 115889400,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 1109600,
+                  "duration": 2336500,
                   "status": "passed"
                 },
                 "match": {
@@ -141,7 +140,7 @@
               },
               {
                 "result": {
-                  "duration": 999900,
+                  "duration": 726800,
                   "status": "passed"
                 },
                 "match": {
@@ -149,12 +148,12 @@
                 }
               }
             ],
-            "line": 55,
-            "name": "user verifies \"Family Travel Forum\" appears on page",
+            "line": 60,
+            "name": "user verifies \"Bargain Travel Forum\" appears on page",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Family Travel Forum\"",
+                  "val": "\"Bargain Travel Forum\"",
                   "offset": 14
                 }
               ],
@@ -163,7 +162,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 830400,
+                  "duration": 1117300,
                   "status": "passed"
                 },
                 "match": {
@@ -172,7 +171,7 @@
               },
               {
                 "result": {
-                  "duration": 751200,
+                  "duration": 1026600,
                   "status": "passed"
                 },
                 "match": {

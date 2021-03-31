@@ -49,11 +49,12 @@ Feature:
     When user clicks on Honeymoons and Romance
     Then user verifies "Honeymoons and Romance Forum" appears on page
 
-  @regressionTest
+
   Scenario: Browse by Theme of Family Travel
     When user clicks on Family Travel
     Then user verifies "Family Travel Forum" appears on page
 
+  @regressionTest
   Scenario: Browse by Theme of Bargain Travel
     When user clicks on Bargain Travel
     Then user verifies "Bargain Travel Forum" appears on page

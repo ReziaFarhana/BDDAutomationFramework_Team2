@@ -1,6 +1,6 @@
 
 @regressionTest
-Scenario: Browse by Theme of Family Travel                 # src/test/java/features/TravelForumsPage.feature:53
-  Given user is on Travel Forum page                       # stepDefinitions.TravelForumStepDefinitions.user_is_on_travel_forum_page()
-  When user clicks on Family Travel                        # stepDefinitions.TravelForumStepDefinitions.userClicksOnFamilyTravel()
-  Then user verifies "Family Travel Forum" appears on page # stepDefinitions.TravelForumStepDefinitions.userVerifiesAppearsOnPage(java.lang.String)
+Scenario: Browse by Theme of Bargain Travel                 # src/test/java/features/TravelForumsPage.feature:58
+  Given user is on Travel Forum page                        # stepDefinitions.TravelForumStepDefinitions.user_is_on_travel_forum_page()
+  When user clicks on Bargain Travel                        # stepDefinitions.TravelForumStepDefinitions.userClicksOnBargainTravel()
+  Then user verifies "Bargain Travel Forum" appears on page # stepDefinitions.TravelForumStepDefinitions.userVerifiesAppearsOnPage(java.lang.String)
