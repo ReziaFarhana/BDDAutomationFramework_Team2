@@ -20,7 +20,7 @@ Feature: Check the Hotels searchPage in Trip Advisor
       | NJ            | NJ                    |
       | NY            | NY                    |
 
-  Scenario: Check the functionality of the Currency dropdown
+  Scenario: Navigate to the searched hotels page
 
 
 

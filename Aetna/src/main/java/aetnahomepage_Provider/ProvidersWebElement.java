@@ -20,22 +20,15 @@ public class ProvidersWebElement {
     public static final String submitClaimsThroughAvailityLink  = "//span[normalize-space()='Submit claims through Availity']";
     public static final String continueToAvailitySite = "//a[@href='https://www.availity.com/']//span[contains(text(),'Continue')]";
     public static final String availitySitePopUpAnswer = "//button[normalize-space()='No']";
-//    public static final String  = "";
-//    public static final String  = "";
-//    public static final String  = "";
-//    public static final String  = "";
-//    public static final String  = "";
-//    public static final String  = "";
-//    public static final String  = "";
-//    public static final String  = "";
-//    public static final String  = "";
-//    public static final String  = "";
-//    public static final String  = "";
-//    public static final String  = "";
-//    public static final String  = "";
-//    public static final String  = "";
-//    public static final String  = "";
-//    public static final String  = "";
+    public static final String iAcceptButton = "//a[normalize-space()='I Accept >']";
+    public static final String precertificationButton = "//span[normalize-space()='Precertification']";
+    public static final String codeInputField1 = "//*[@aria-label='Enter a 5 digit CPT code in field 1']";
+    public static final String codeSubmitButton = "//*[@id=\"main\"]/div[1]/div[3]/div[2]/form/input[6]";
+    public static final String expectedCPTCode = "//h2[@class='precertHeader']//a[@href='#']";
+    public static final String codeInputField2  = "//input[@name='input-2']";
+    public static final String codeInputField3  = "//input[@name='input-3']";
+    public static final String codeInputField4  = "//input[@name='input-4']";
+    public static final String codeInputField5  = "//input[@name='input-5']";
     public static final String feedbackButton= "QSIFeedbackButton-btn" ;//id
     public static final String feedBackReason = "//span[text()='Praise']" ;
     public static final String covid19FAQButton = "//a[normalize-space()='COVID-19 FAQs']" ;
@@ -79,11 +72,7 @@ public class ProvidersWebElement {
     public static final String cdcIssueGuideline = "//span[contains(text(),'CDC issues guidelines')]";
     public static final String continueToCovidCDC = "//div[@id='exit-covid-cdc']//span[contains(@class,'btn--primary')][normalize-space()='Continue']" ;
     public static final String headerSearchLocator = "headerSearch" ;//id and hit enter
-//    public static final String advancedSearchLocator = "//header[@aria-label='Header']//div//div//div//form//div//div//a[normalize-space()='Advanced Search']";
-//    public static final String advancedSearchLocator = "//body/div/div/header[@aria-label='Header']/div/div/div/form/div[2]";
-//    public static final String advancedSearchLocator = "//*[@href='//search.cdc.gov/search/index.html#advanced']";
     public static final String advancedSearchLocator = "//body/div/div/header[@aria-label='Header']/div/div/div/form/div/a[1]";
-//    public static final String advancedSearchLocator = "/html/body/div[3]/div/header/div/div[2]/div/form/div[2]/a";
     public static final String advancedSearchBoxLocator = "//div[@class='col-lg input-group']//input[@name='query']";
     public static final String allTheseWordsInputBox = "search-all" ;
     public static final String thisExactWordOrPhraseInputBox = "search-exact" ;
@@ -105,34 +94,8 @@ public class ProvidersWebElement {
     public static final String communityStrategyToAddressInequities = "//span[normalize-space()='Community strategy to address inequities']" ;
     public static final String contniueToCVSSite = "//div[@id='exit-covid-cvs-second']//span[contains(@class,'btn--primary')][normalize-space()='Continue']";
     public static final String cvsHealthexpandsaccesstovaccinesLink = "//span[normalize-space()='CVS Health expands access to vaccines']"; ;
-//    public static final String ;
-//    public static final String ;
-//    public static final String ;
-//    public static final String ;
-//    public static final String ;
-//    public static final String ;
-//    public static final String ;
-//    public static final String ;
-//    public static final String ;
-//    public static final String ;
-//    public static final String ;
-//    public static final String ;
-//    public static final String ;
-//    public static final String ;
-//    public static final String ;
-//    public static final String ;
-//    public static final String ;
-//    public static final String ;
-//    public static final String ;
-//    public static final String ;
-//    public static final String ;
-//    public static final String ;
-//    public static final String ;
-//    public static final String ;
-//    public static final String ;
-//    public static final String ;
-//    public static final String ;
-//
+
+
 
 
 

@@ -40,7 +40,7 @@ public class HotelsSearchWithKeywordStepDefinition extends WebAPI {
     }
 
     @And("I click on Hotels")
-    public void i_click_on_hotels() {
+    public void i_click_on_hotels() throws InterruptedException {
         hotels.hotelsLink();
     }
 

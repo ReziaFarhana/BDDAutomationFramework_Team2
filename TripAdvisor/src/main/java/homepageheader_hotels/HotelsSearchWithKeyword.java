@@ -12,7 +12,8 @@ import static homepageheader_hotels.HotelsWebElement.*;
 public class HotelsSearchWithKeyword extends WebAPI {
     //@FindBy(how = How.XPATH, using = )
 
-    public void hotelsLink() {
+    public void hotelsLink() throws InterruptedException {
+        sleepFor(3);
         clickByXpath(hotelsLinkLocator);
     }
 

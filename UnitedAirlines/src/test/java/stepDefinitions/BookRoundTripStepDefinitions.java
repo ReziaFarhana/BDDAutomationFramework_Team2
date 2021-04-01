@@ -31,7 +31,7 @@ public class BookRoundTripStepDefinitions extends WebAPI {
         bookRoundTrip= PageFactory.initElements(driver,BookRoundTrip.class);
     }
 
-    @After
+    //@After
     public void closeBrowser(){
         cleanUp();
     }
@@ -94,163 +94,17 @@ public class BookRoundTripStepDefinitions extends WebAPI {
     public void i_click_on_the_add_more_adults_button_five_times() throws InterruptedException {
         bookRoundTrip.addMoreAdultsButton();
     }
+    @When("I click on the submit button")
+    public void iClickOnTheSubmitButton() throws InterruptedException {
+        bookRoundTrip.submitButton();
+    }
     @Then("I verify the input {string} in the travellersField")
     public void i_verify_the_input_in_the_travellers_field(String expectedAdultAmount) {
        bookRoundTrip.verifyAddedAdultTravellersAmount(expectedAdultAmount);
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @Then("I verify the error message {string}")
+    public void iVerifyTheErrorMessage(String expectedError) {
+        bookRoundTrip.verifyErrorMessage(expectedError);
+    }
 }

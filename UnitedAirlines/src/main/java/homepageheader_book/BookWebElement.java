@@ -18,8 +18,8 @@ public class BookWebElement {
     public static final String subtractAdultButton = "//button[@aria-label='Add one more Adult']";
     public static final String verifyAdultTravellersAmount = "//input[@value='5 Adults']";
     public static final String closeTravllersBox = "//div[@id='passengerMenuId']//div//button[@aria-label='Close Panel']//*[local-name()='svg']";
-//    public static final String = "";
-//    public static final String = "";
+    public static final String submitButton = "//button[@type='submit']";
+    public static final String errorSearchMessage = "//*[text()='Please correct the following 1 error(s):']";
 //    public static final String = "";
 //    public static final String = "";
 //    public static final String = "";

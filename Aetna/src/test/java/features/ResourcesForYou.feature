@@ -1,8 +1,7 @@
 Feature: Check the Resources For You page
 
   Background:
-    Given I am on the Aetna Homepage
-    When I click on the Providers link
+    Given I am on the Aetna providers Homepage
     And I close the Partnering with providers alert
     Then i click on the ResourcesForYou on the Providers page
 @Israt

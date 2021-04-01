@@ -8,7 +8,7 @@ public class HotelsWebElement {
     public static final String nextButton ="//button[@data-testid='nav_next']";
     public static final String checkOutBox = "//div[@data-test-target='picker-CHECKOUT']";
     public static final String checkInDate = "//div[@aria-label='Thu Jun 10 2021']";
-    public static final String checkFromDate = "//div[@aria-label='Mon Jul 05 2021']";
+    public static final String checkFromDate = "//div[@aria-label='Thu Jun 24 2021']";
     public static final String addRoomsButton = "//button[@data-test-target='ticker-plus-rooms']";
     public static final String addAdultsButton = "//button[@data-test-target='ticker-plus-adults']";
     public static final String addChildrenButton = "//button[@data-test-target='ticker-plus-children']";
@@ -20,23 +20,29 @@ public class HotelsWebElement {
     public static final String queryResultText = "//span[@class='title-query']";
     public static final String clearField = "CLEAR_WHAT";
     public static final String currencyDropdownButton = "//button[@aria-label='Currency: A$ AUD']";
+    public static final String verifyTheNumberOfRooms ="//span[normalize-space()='3 rooms']";
+    public static final String verifyTheNumberOfAdults = "//span[normalize-space()='5 adults']";
+    public static final String ageDropdownForChild1= "//body//div//div[@data-test-target='trip-search-open']//div//div//div[1]//div[1]//button[1]";
+    public static final String ageThree = "//body//div//button[4]";
+    public static final String ageEight = "//body//div//button[9]";
+    public static final String verifyTheNumberOfChildren = "//span[normalize-space()='2 children']";
+    public static final String ageDropDownForChild2 = "//body//div//div[@data-test-target='trip-search-open']//div//div//div[2]//div[1]//button[1]";
+    public static final String filterPriceLocator = "//body/div/div/div/div/div[@data-breakpoint='desktop']/div/div[@data-placement-name='wc_filter_list_container']/div[@data-component-props='page-manifest']/div[@data-test-target='hotels-filters']/div/div[@data-param='pRange']/div/div/div/div[2]/div[1]";
+    public static final String filterPriceResult = "//body/div/div/div/div/div[@data-breakpoint='desktop']/div/div[@data-placement-name='wc_filter_list_container']/div[@data-component-props='page-manifest']/div[@data-test-target='hotels-filters']/div/div[@data-param='pRange']/div/div/div[1]/div[1]/div[1]";
+    public static final String = "";
 //    public static final String = "";
 //    public static final String = "";
 //    public static final String = "";
 //    public static final String = "";
-//    public static final String = "";
-//    public static final String = "";
-//    public static final String = "";
-//    public static final String = "";
-//    public static final String = "";
-//    public static final String = "";
-//    public static final String = "";
-//    public static final String = "";
-//    public static final String = "";
-//    public static final String = "";
-//    public static final String = "";
-//    public static final String = "";
-//    public static final String = "";
+
+
+        public static final String signInLocator  = "//span[normalize-space()='Sign in']";
+    public static final String continueWithEmailButton = "//*[text()='Continue with email']";
+    public static final String becomeAMemberButton  = "//button[normalize-space()='Become a member']";
+    public static final String becomeAMemberBoxTitle= "//div[contains(text(),'Become a member.')]";
+    public static final String popularDestinationsLocator = "//*[@href='/Hotels-g32655-Los_Angeles_California-Hotels.html']";
+    public static final String searchDestinationTitle= "//h1[normalize-space()='Los Angeles Hotels']";
+
 //    public static final String = "";
 //    public static final String = "";
 //    public static final String = "";

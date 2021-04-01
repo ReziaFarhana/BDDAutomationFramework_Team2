@@ -12,7 +12,7 @@ Feature: Check the Input functionality of the Roundtrip section in Book
 
     Scenario: Select dates from the calendar and Navigate to the flights results page
       And I enter "Philadelphia PHL" in the fromField
-      And I enter "Miami MIA" in the toField
+      And I enter "Detroit, MI, US (DTW)" in the toField
       And I click on the departDate field
       And using the arrow I go to the next month and select the depart date
       And I click on the returnDate field
@@ -23,17 +23,17 @@ Feature: Check the Input functionality of the Roundtrip section in Book
 
     Scenario: Navigate to the Flights Results Page after adding multiple adult travellers from the homepage
       And I enter "Philadelphia PHL" in the fromField
-      And I enter "Miami MIA" in the toField
+      And I enter "Detroit, MI, US (DTW)" in the toField
       And I click on the departDate field
       And using the arrow I go to the next month and select the depart date
       And I click on the returnDate field
       And using the arrow I go to the next month and select the return date
       And I click on the travellersButton
-      When I click on the add More Adults Button five times
-      When I click on the Find Flights button
-      Then I verify the input "5 Adults" in the travellersField
+      And I click on the add More Adults Button five times
+      And I click on the Find Flights button
+      When I click on the submit button
+      Then I verify the error message "Please correct the following 1 error(s):"
 
-      Scenario:
 
 
 

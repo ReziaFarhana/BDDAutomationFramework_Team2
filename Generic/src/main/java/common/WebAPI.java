@@ -53,6 +53,7 @@ public class WebAPI {
         jscript = (JavascriptExecutor) driver;
         jscript.executeScript("arguments[0].scrollIntoView(true);", element);
     }
+
     public void windowsPageScrollToLocator(By locator) {
         jscript = (JavascriptExecutor) driver;
         jscript.executeScript("arguments[0].scrollIntoView(true);", locator);
@@ -76,19 +77,77 @@ public class WebAPI {
 
     //action methods
 
-    public void doubleClick(WebElement element){
+    public void doubleClick(WebElement element) {
         Actions action = new Actions(driver);
         action.doubleClick(element).perform();
     }
 
     //right click and open new tab
-    public void rightClickandOpenNewTabUsingXP(String locator){
+    public void rightClickandOpenNewTabUsingXP(String locator) {
         Actions act = new Actions(driver);
         WebElement linkpath = driver.findElement(By.xpath(locator));
         act.contextClick(linkpath).perform();  // right click
-        String openTabs= Keys.chord(Keys.CONTROL, Keys.ENTER);
+        String openTabs = Keys.chord(Keys.CONTROL, Keys.ENTER);
         act.sendKeys(openTabs).perform(); // click on new tab
     }
+    public void rightClickandOpenTabXPATH(String locator)  {
+
+        WebElement element = driver.findElement(By.xpath(locator)); //get your element
+
+        //perform keyboard functions using actions class
+        Actions actions = new Actions(driver);
+        actions.keyDown(Keys.LEFT_CONTROL)
+                .click(element)
+                .keyUp(Keys.LEFT_CONTROL)
+                .build()
+                .perform();
+
+        //switch to new tab
+        ArrayList<String> tab = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tab.get(1));
+
+    }
+
+    //rightclick
+    public void rightCLickById(String locator) {
+    Actions action = new Actions(driver);
+    WebElement link = driver.findElement(By.id(locator));
+action.contextClick(link).perform();
+}
+public void rightCLickByXpath(String locator) {
+    Actions action = new Actions(driver);
+    WebElement link = driver.findElement(By.xpath(locator));
+action.contextClick(link).perform();
+}
+public void rightCLick(String locator) {
+    Actions action = new Actions(driver);
+    WebElement element = driver.findElement(By.xpath(locator));
+    action.contextClick(element).sendKeys(Keys.ARROW_DOWN)
+            .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER)
+            .build().perform();
+    driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+    String windowHandler = driver.getWindowHandle();
+    ArrayList tab2 = new ArrayList(driver.getWindowHandles());
+    driver.switchTo().window((String)tab2.get(0));
+    driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+    //String link = driver.findElement(By.xpath(locator));
+//
+//    Set<String> winid = driver.getWindowHandles();
+//    Iterator<String> iter = winid.iterator();
+//    iter.next();
+//    String tab = iter.next();
+//    driver.switchTo().window(tab);
+}
+
+//slider method
+    public void slideByXpath(String locator,Integer xOffset, Integer yOffset){
+        WebElement slider = driver.findElement(By.xpath(locator));
+        Actions action = new Actions(driver);
+//        action.clickAndHold(slider);
+//        action .moveByOffset(xOffset,yOffset).build().perform();
+        action.dragAndDropBy(slider, xOffset, yOffset).build().perform();
+    }
+
 
 
     public void hoverAndClick(WebElement elementHover, WebElement elementClick) {
