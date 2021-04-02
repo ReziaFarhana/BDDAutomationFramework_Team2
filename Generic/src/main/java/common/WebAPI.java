@@ -90,7 +90,8 @@ public class WebAPI {
         String openTabs = Keys.chord(Keys.CONTROL, Keys.ENTER);
         act.sendKeys(openTabs).perform(); // click on new tab
     }
-    public void rightClickandOpenTabXPATH(String locator)  {
+
+    public void rightClickandOpenTabXPATH(String locator) {
 
         WebElement element = driver.findElement(By.xpath(locator)); //get your element
 
@@ -108,46 +109,59 @@ public class WebAPI {
 
     }
 
+    //
+    public boolean verifyIfACheckboxIsCheckedOrNotByXpath(String locator) throws InterruptedException {
+        WebElement checkBox = driver.findElement(By.xpath(locator));
+        sleepFor(5);
+        boolean isSelected = checkBox.isSelected();
+//performing click operation if element is not checked
+        if (!isSelected) {
+            System.out.println("CheckBox is not selected");
+        }
+        return isSelected;
+    }
+
     //rightclick
     public void rightCLickById(String locator) {
-    Actions action = new Actions(driver);
-    WebElement link = driver.findElement(By.id(locator));
-action.contextClick(link).perform();
-}
-public void rightCLickByXpath(String locator) {
-    Actions action = new Actions(driver);
-    WebElement link = driver.findElement(By.xpath(locator));
-action.contextClick(link).perform();
-}
-public void rightCLick(String locator) {
-    Actions action = new Actions(driver);
-    WebElement element = driver.findElement(By.xpath(locator));
-    action.contextClick(element).sendKeys(Keys.ARROW_DOWN)
-            .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER)
-            .build().perform();
-    driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-    String windowHandler = driver.getWindowHandle();
-    ArrayList tab2 = new ArrayList(driver.getWindowHandles());
-    driver.switchTo().window((String)tab2.get(0));
-    driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-    //String link = driver.findElement(By.xpath(locator));
+        Actions action = new Actions(driver);
+        WebElement link = driver.findElement(By.id(locator));
+        action.contextClick(link).perform();
+    }
+
+    public void rightCLickByXpath(String locator) {
+        Actions action = new Actions(driver);
+        WebElement link = driver.findElement(By.xpath(locator));
+        action.contextClick(link).perform();
+    }
+
+    public void rightCLick(String locator) {
+        Actions action = new Actions(driver);
+        WebElement element = driver.findElement(By.xpath(locator));
+        action.contextClick(element).sendKeys(Keys.ARROW_DOWN)
+                .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER)
+                .build().perform();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        String windowHandler = driver.getWindowHandle();
+        ArrayList tab2 = new ArrayList(driver.getWindowHandles());
+        driver.switchTo().window((String) tab2.get(0));
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        //String link = driver.findElement(By.xpath(locator));
 //
 //    Set<String> winid = driver.getWindowHandles();
 //    Iterator<String> iter = winid.iterator();
 //    iter.next();
 //    String tab = iter.next();
 //    driver.switchTo().window(tab);
-}
+    }
 
-//slider method
-    public void slideByXpath(String locator,Integer xOffset, Integer yOffset){
+    //slider method
+    public void slideByXpath(String locator, Integer xOffset, Integer yOffset) {
         WebElement slider = driver.findElement(By.xpath(locator));
         Actions action = new Actions(driver);
 //        action.clickAndHold(slider);
 //        action .moveByOffset(xOffset,yOffset).build().perform();
         action.dragAndDropBy(slider, xOffset, yOffset).build().perform();
     }
-
 
 
     public void hoverAndClick(WebElement elementHover, WebElement elementClick) {
@@ -162,6 +176,7 @@ public void rightCLick(String locator) {
         }
         return mapTable;
     }
+
     //new window handle
     public void windowHandle() {
         String parentHandle = driver.getWindowHandle();
@@ -170,12 +185,14 @@ public void rightCLick(String locator) {
         }
     }
 
-    public void changeToOldWindow(){
+    public void changeToOldWindow() {
         //Store the current window handle
         String winHandleBefore = driver.getWindowHandle();
 // Perform the click operation that opens new window
         // Switch to new window opened
-        for(String winHandle : driver.getWindowHandles()){ driver.switchTo().window(winHandle); }
+        for (String winHandle : driver.getWindowHandles()) {
+            driver.switchTo().window(winHandle);
+        }
         // Close the new window, if that window no more required\
         driver.close();
 // Switch back to original browser (first window)
@@ -183,11 +200,13 @@ public void rightCLick(String locator) {
         // Continue with original browser (first window)
     }
 
-    public void closeTheOldWindow(){
+    public void closeTheOldWindow() {
         String winHandleBefore = driver.getWindowHandle();
         driver.switchTo().window(winHandleBefore);
         driver.close();
-        for(String winHandle : driver.getWindowHandles()){ driver.switchTo().window(winHandle); }
+        for (String winHandle : driver.getWindowHandles()) {
+            driver.switchTo().window(winHandle);
+        }
     }
 
 
@@ -196,23 +215,25 @@ public void rightCLick(String locator) {
     }
 
     public void typeOnElementByIdNTab(String locator, String value) {
-        driver.findElement(By.id(locator)).sendKeys(value,Keys.TAB);
+        driver.findElement(By.id(locator)).sendKeys(value, Keys.TAB);
     }
 
     public void typeOnElementByLinkTextNTab(String locator, String value) {
-        driver.findElement(By.linkText(locator)).sendKeys(value,Keys.TAB);
+        driver.findElement(By.linkText(locator)).sendKeys(value, Keys.TAB);
     }
 
     public void typeOnElementByIdNEnter(String locator, String value) {
-        driver.findElement(By.id(locator)).sendKeys(value,Keys.ENTER);
+        driver.findElement(By.id(locator)).sendKeys(value, Keys.ENTER);
     }
 
     public void typeOnElementByXpathNTab(String locator, String value) {
-        driver.findElement(By.xpath(locator)).sendKeys(value,Keys.TAB);
+        driver.findElement(By.xpath(locator)).sendKeys(value, Keys.TAB);
     }
+
     public void typeOnElementByXpathNEnter(String locator, String value) {
-        driver.findElement(By.xpath(locator)).sendKeys(value,Keys.ENTER);
+        driver.findElement(By.xpath(locator)).sendKeys(value, Keys.ENTER);
     }
+
     public void typeOnElementByXpath(String locator, String value) {
         driver.findElement(By.xpath(locator)).sendKeys(value);
     }
@@ -306,7 +327,7 @@ public void rightCLick(String locator) {
     public static String sauceLabs_accessKey = "";
 
     public void openBrowser(String url) throws IOException {
-        setUp(false,"browserStack","windows","10","chrome","89",url);
+        setUp(false, "browserStack", "windows", "10", "chrome", "89", url);
     }
 
 
@@ -384,7 +405,7 @@ public void rightCLick(String locator) {
         return driver;
     }
 
-//    @AfterMethod(alwaysRun = true)
+    //    @AfterMethod(alwaysRun = true)
     public void cleanUp() {
         //driver.close();
         driver.quit();
@@ -473,6 +494,7 @@ public void rightCLick(String locator) {
     public void clearFieldById(String locator) {
         driver.findElement(By.id(locator)).clear();
     }
+
     public void clearFieldByXpath(String locator) {
         driver.findElement(By.xpath(locator)).clear();
     }
@@ -505,6 +527,7 @@ public void rightCLick(String locator) {
     public void clickByXpath(String locator) {
         driver.findElement(By.xpath(locator)).click();
     }
+
     public void enterByXpath(String locator) {
         driver.findElement(By.xpath(locator)).submit();
     }
@@ -545,6 +568,7 @@ public void rightCLick(String locator) {
         }
         return text;
     }
+
     public static List<String> getTextFromWebElementsByXpath(String locator) {
         List<WebElement> element = new ArrayList<WebElement>();
         List<String> text = new ArrayList<String>();
@@ -556,6 +580,7 @@ public void rightCLick(String locator) {
         System.out.println(text);
         return text;
     }
+
     public static List<String> getTextFromWebElementsById(String locator) {
         List<WebElement> element = new ArrayList<WebElement>();
         List<String> text = new ArrayList<String>();
@@ -596,7 +621,6 @@ public void rightCLick(String locator) {
         list = driver.findElements(By.xpath(locator));
         return list;
     }
-
 
 
     public String getCurrentPageUrl() {
@@ -773,7 +797,7 @@ public void rightCLick(String locator) {
         //Step:2-->Iterate linksList: exclude all links/images which does not have any href attribute
         List<WebElement> activeLinks = new ArrayList<WebElement>();
         for (int i = 0; i < linksList.size(); i++) {
-           // System.out.println(linksList.get(i).getAttribute("href"));
+            // System.out.println(linksList.get(i).getAttribute("href"));
             if (linksList.get(i).getAttribute("href") != null && (!linksList.get(i).getAttribute("href").contains("javascript") && (!linksList.get(i).getAttribute("href").contains("mailto")))) {
                 activeLinks.add(linksList.get(i));
             }

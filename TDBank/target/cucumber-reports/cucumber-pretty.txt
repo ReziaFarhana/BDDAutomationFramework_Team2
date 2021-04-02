@@ -23,56 +23,6 @@ Scenario Outline: TD Bank Type your question searchBox functionality check in th
 Scenario Outline: TD Bank Type your question searchBox functionality check in the Commercial page with valid questions # src/test/java/features/CommercialPage.feature:18
   Given I am on the TD Bank homePage                                                                                   # stepDefinitions.CommercialPageStepDefinition.i_am_on_the_td_bank_home_page()
   When I close the Ads Choices & Personalization popUp                                                                 # stepDefinitions.CommercialPageStepDefinition.i_close_the_ads_choices_personalization_pop_up()
-      org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=89.0.4389.90)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-TILJLKS', ip: '192.168.124.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\israt\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50690}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3d032eb770b9095daf310bb614aed4cf
-*** Element info: {Using=xpath, value=//*[@id="ensCall"]/span[2]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at common.WebAPI.clickByXpath(WebAPI.java:416)
-	at homepageheader.CommercialPage.adsChoicesAndPersonalizationpopUp(CommercialPage.java:50)
-	at stepDefinitions.CommercialPageStepDefinition.i_close_the_ads_choices_personalization_pop_up(CommercialPageStepDefinition.java:50)
-	at ✽.I close the Ads Choices & Personalization popUp(file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/CommercialPage.feature:5)
-
-      org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=89.0.4389.90)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-TILJLKS', ip: '192.168.124.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\israt\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50690}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3d032eb770b9095daf310bb614aed4cf
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at stepDefinitions.CommercialPageStepDefinition.tearDown(CommercialPageStepDefinition.java:28)
-
   Then I click on the Commercial tab                                                                                   # stepDefinitions.CommercialPageStepDefinition.i_click_on_the_commerical_tab()
   And I enter "How do I cancel my TD debit card?" in the searchBox                                                     # stepDefinitions.CommercialPageStepDefinition.i_enter_in_the_search_box(java.lang.String)
   When I click on the askNow Button                                                                                    # stepDefinitions.CommercialPageStepDefinition.i_click_on_the_ask_now_button()
@@ -80,4 +30,115 @@ Session ID: 3d032eb770b9095daf310bb614aed4cf
   But I should not see "When should I use a wire transfer?" appear below the searchBox                                 # stepDefinitions.CommercialPageStepDefinition.i_should_not_see_appear_below_the_search_box(java.lang.String)
 
 @Israt
-Scenario: Verify the commercial page                                                             # src/test/java/features/CommercialPage.feature:21
+Scenario: Verify the Commercial Lending page                                                     # src/test/java/features/CommercialPage.feature:21
+  Given I am on the TD Bank homePage                                                             # stepDefinitions.CommercialPageStepDefinition.i_am_on_the_td_bank_home_page()
+  When I close the Ads Choices & Personalization popUp                                           # stepDefinitions.CommercialPageStepDefinition.i_close_the_ads_choices_personalization_pop_up()
+  Then I click on the Commercial tab                                                             # stepDefinitions.CommercialPageStepDefinition.i_click_on_the_commerical_tab()
+  And I hover over the Lending button and I select Commercial Lending option                     # stepDefinitions.CommercialPageStepDefinition.i_hover_over_the_lending_button_and_i_select_commercial_lending_option()
+  Then I verify "TD Bank Commercial & Corporate Loans, Lending & Financing" in the product title # stepDefinitions.CommercialPageStepDefinition.i_verify_in_the_product_title(java.lang.String)
+
+@Israt
+Scenario: Verify the functionality of the Request a call button              # src/test/java/features/CommercialPage.feature:26
+  Given I am on the TD Bank homePage                                         # stepDefinitions.CommercialPageStepDefinition.i_am_on_the_td_bank_home_page()
+  When I close the Ads Choices & Personalization popUp                       # stepDefinitions.CommercialPageStepDefinition.i_close_the_ads_choices_personalization_pop_up()
+  Then I click on the Commercial tab                                         # stepDefinitions.CommercialPageStepDefinition.i_click_on_the_commerical_tab()
+  And I hover over the Lending button and I select Commercial Lending option # stepDefinitions.CommercialPageStepDefinition.i_hover_over_the_lending_button_and_i_select_commercial_lending_option()
+  And I scrolled down to click on the Request a call button                  # stepDefinitions.CommercialPageStepDefinition.i_scrolled_down_to_click_on_the_request_a_call_button()
+  And I enter all the personal information to schedule an appointment        # stepDefinitions.CommercialPageStepDefinition.i_enter_all_the_personal_information_to_schedule_an_appointment(java.util.List<java.util.List<java.lang.String>>)
+  When I clicked on the Are you a TD customer radioButton                    # stepDefinitions.CommercialPageStepDefinition.i_clicked_on_the_are_you_a_td_customer_radio_button()
+  Then I verify the "Schedule an Appointment" header on the page             # stepDefinitions.CommercialPageStepDefinition.i_verify_the_header_on_the_page(java.lang.String)
+
+@Israt
+Scenario: Verify the functionality of the Learn More Button                                      # src/test/java/features/CommercialPage.feature:39
+  Given I am on the TD Bank homePage                                                             # stepDefinitions.CommercialPageStepDefinition.i_am_on_the_td_bank_home_page()
+  When I close the Ads Choices & Personalization popUp                                           # stepDefinitions.CommercialPageStepDefinition.i_close_the_ads_choices_personalization_pop_up()
+  Then I click on the Commercial tab                                                             # stepDefinitions.CommercialPageStepDefinition.i_click_on_the_commerical_tab()
+  And I hover over the Lending button and I select Commercial Lending option                     # stepDefinitions.CommercialPageStepDefinition.i_hover_over_the_lending_button_and_i_select_commercial_lending_option()
+  When I click on the Learn More button                                                          # stepDefinitions.CommercialPageStepDefinition.i_click_on_the_learn_more_button()
+  Then I verify that it scrolls down to "Flexible lending options, personal service" on the page # stepDefinitions.CommercialPageStepDefinition.i_verify_that_it_scrolls_down_to_on_the_page(java.lang.String)
+
+@Israt
+Scenario: Verify the TD Investor Relations Page                              # src/test/java/features/CommercialPage.feature:45
+  Given I am on the TD Bank homePage                                         # stepDefinitions.CommercialPageStepDefinition.i_am_on_the_td_bank_home_page()
+  When I close the Ads Choices & Personalization popUp                       # stepDefinitions.CommercialPageStepDefinition.i_close_the_ads_choices_personalization_pop_up()
+  Then I click on the Commercial tab                                         # stepDefinitions.CommercialPageStepDefinition.i_click_on_the_commerical_tab()
+  And I hover over the Lending button and I select Commercial Lending option # stepDefinitions.CommercialPageStepDefinition.i_hover_over_the_lending_button_and_i_select_commercial_lending_option()
+  When I scrolled down to click TD Global Trade Finance Get details button   # stepDefinitions.CommercialPageStepDefinition.i_scrolled_down_to_click_td_global_trade_finance_get_details_button()
+  Then I clicked on the Visit TD Investor Relations link                     # stepDefinitions.CommercialPageStepDefinition.i_clicked_on_the_visit_td_investor_relations_link()
+  Then I verify the "Investor Relations" title on the page                   # stepDefinitions.CommercialPageStepDefinition.i_verify_the_title_on_the_page(java.lang.String)
+
+@Israt
+Scenario: Sign up for Alerts in Investor Relations news                          # src/test/java/features/CommercialPage.feature:52
+  Given I am on the TD Bank homePage                                             # stepDefinitions.CommercialPageStepDefinition.i_am_on_the_td_bank_home_page()
+  When I close the Ads Choices & Personalization popUp                           # stepDefinitions.CommercialPageStepDefinition.i_close_the_ads_choices_personalization_pop_up()
+  Then I click on the Commercial tab                                             # stepDefinitions.CommercialPageStepDefinition.i_click_on_the_commerical_tab()
+  And I hover over the Lending button and I select Commercial Lending option     # stepDefinitions.CommercialPageStepDefinition.i_hover_over_the_lending_button_and_i_select_commercial_lending_option()
+  When I scrolled down to click TD Global Trade Finance Get details button       # stepDefinitions.CommercialPageStepDefinition.i_scrolled_down_to_click_td_global_trade_finance_get_details_button()
+  Then I clicked on the Visit TD Investor Relations link                         # stepDefinitions.CommercialPageStepDefinition.i_clicked_on_the_visit_td_investor_relations_link()
+  Then I clicked on sign up for alerts                                           # stepDefinitions.CommercialPageStepDefinition.i_clicked_on_sign_up_for_alerts()
+  And I entered all the personal information fields for Get News Alerts By Email # stepDefinitions.CommercialPageStepDefinition.i_entered_all_the_personal_information_fields_for_get_news_alerts_by_email(io.cucumber.datatable.DataTable)
+  And I used the Sector dropdown to select "Media"                               # stepDefinitions.CommercialPageStepDefinition.i_used_the_sector_dropdown_to_select(java.lang.String)
+  Then I verify "Get News Alerts by Email" title on the page                     # stepDefinitions.CommercialPageStepDefinition.i_verify_title_on_the_page(java.lang.String)
+
+@Israt
+Scenario: Navigate to the Award Winning page in Investor Relations           # src/test/java/features/CommercialPage.feature:64
+  Given I am on the TD Bank homePage                                         # stepDefinitions.CommercialPageStepDefinition.i_am_on_the_td_bank_home_page()
+  When I close the Ads Choices & Personalization popUp                       # stepDefinitions.CommercialPageStepDefinition.i_close_the_ads_choices_personalization_pop_up()
+  Then I click on the Commercial tab                                         # stepDefinitions.CommercialPageStepDefinition.i_click_on_the_commerical_tab()
+  And I hover over the Lending button and I select Commercial Lending option # stepDefinitions.CommercialPageStepDefinition.i_hover_over_the_lending_button_and_i_select_commercial_lending_option()
+  When I scrolled down to click TD Global Trade Finance Get details button   # stepDefinitions.CommercialPageStepDefinition.i_scrolled_down_to_click_td_global_trade_finance_get_details_button()
+  Then I clicked on the Visit TD Investor Relations link                     # stepDefinitions.CommercialPageStepDefinition.i_clicked_on_the_visit_td_investor_relations_link()
+  When I scrolled down to click the Award Winning button                     # stepDefinitions.CommercialPageStepDefinition.i_scrolled_down_to_click_the_award_winning_button()
+  Then I verify the "Presentations and Events" section title of the page     # stepDefinitions.CommercialPageStepDefinition.i_verify_the_section_title_of_the_page(java.lang.String)
+
+@Israt
+Scenario: Play the TD eTreasury Link                                        # src/test/java/features/CommercialPage.feature:72
+  Given I am on the TD Bank homePage                                        # stepDefinitions.CommercialPageStepDefinition.i_am_on_the_td_bank_home_page()
+  When I close the Ads Choices & Personalization popUp                      # stepDefinitions.CommercialPageStepDefinition.i_close_the_ads_choices_personalization_pop_up()
+  Then I click on the Commercial tab                                        # stepDefinitions.CommercialPageStepDefinition.i_click_on_the_commerical_tab()
+  And I hover over the Treasury Services and I select the Payables option   # stepDefinitions.CommercialPageStepDefinition.i_hover_over_the_treasury_services_and_i_select_the_payables_option()
+  When I click on the TD Information Services Get details Button            # stepDefinitions.CommercialPageStepDefinition.i_click_on_the_td_information_services_get_details_button()
+  And I click on the TD eTreasury link to play the video                    # stepDefinitions.CommercialPageStepDefinition.i_click_on_the_td_e_treasury_link_to_play_the_video()
+  When I click on transcript                                                # stepDefinitions.CommercialPageStepDefinition.i_click_on_transcript()
+      org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=89.0.4389.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-TILJLKS', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\israt\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51930}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 43292f9dc0b1cfbab41d4f78b3cee58e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at common.WebAPI.clickByXpath(WebAPI.java:528)
+	at homepageheader.CommercialPage.clickTranscript(CommercialPage.java:153)
+	at stepDefinitions.CommercialPageStepDefinition.i_click_on_transcript(CommercialPageStepDefinition.java:168)
+	at ✽.I click on transcript(file:///C:/Users/israt/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/CommercialPage.feature:76)
+
+
+    Embedding demo1 [image/png 123183 bytes]
+
+
+    Embedding demo1 [image/png 123183 bytes]
+
+  Then I verify the "Welcome to TD eTreasury." transcript on the video page # stepDefinitions.CommercialPageStepDefinition.i_verify_the_transcript_on_the_video_page(java.lang.String)
+
+@Israt
+Scenario: Verify the TD Education Financing page                                                        # src/test/java/features/CommercialPage.feature:80
+  Given I am on the TD Bank homePage                                                                    # stepDefinitions.CommercialPageStepDefinition.i_am_on_the_td_bank_home_page()
+  When I close the Ads Choices & Personalization popUp                                                  # stepDefinitions.CommercialPageStepDefinition.i_close_the_ads_choices_personalization_pop_up()
+  Then I click on the Commercial tab                                                                    # stepDefinitions.CommercialPageStepDefinition.i_click_on_the_commerical_tab()
+  When I hover over the Industries and I select the Education option                                    # stepDefinitions.CommercialPageStepDefinition.i_hover_over_the_industries_and_i_select_the_education_option()
+  Then I verify "TD Bank Education Services | Financing For Public & Private Schools" in the page title # stepDefinitions.CommercialPageStepDefinition.i_verify_in_the_page_title(java.lang.String)
+
+@Israt
+Scenario: Navigate to the Asset Based Learning Icon                                         # src/test/java/features/CommercialPage.feature:85
