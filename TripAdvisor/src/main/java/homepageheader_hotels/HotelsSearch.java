@@ -198,7 +198,8 @@ public class HotelsSearch extends WebAPI {
         Assert.assertTrue(actualTransitCheckBox);
     }
 
-    public void postButton() {
+    public void postButton() throws InterruptedException {
+        sleepFor(3);
         clickByXpath(postButton);
     }
 
@@ -251,9 +252,26 @@ public class HotelsSearch extends WebAPI {
         clickByXpath(hiltonHotelLocation);
     }
     public void verifyHotelTitle(String expectedName){
-        String actualName = getTextByXpath(hotelCoxsHiltonTitle);
+        //String actualName = getTextByXpath(hotelCoxsHiltonTitle);
+        String actualName = driver.getTitle();
         Assert.assertEquals(actualName, expectedName, "Name is not a match");
 
+    }
+
+    public void alertsButton(){
+        clickByXpath(alertsButton);
+    }
+    public void verifySignInPage(String expectedText){
+        String actualText = getTextByXpath(becomeAMemberBoxTitle);
+        Assert.assertEquals(actualText,expectedText,"Text is not a match");
+    }
+
+    public void savedTrips(){
+        clickByXpath(savedTripsLocator);
+    }
+    public void savedTripsPageText(String expectedText){
+        String actualText = getTextByXpath(savedTripsWelcomeText);
+        Assert.assertEquals(actualText,expectedText,"Text is not a match");
     }
 
 

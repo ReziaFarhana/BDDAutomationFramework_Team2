@@ -28,10 +28,6 @@ Feature: Check the items on the hotels search page
       When I click on the close button
       Then I verify the page title as "THE 10 BEST Hotels in Los Angeles, CA for 2021 (from $52) - Tripadvisor"
 
-  Scenario: Trip Advisor searchBox functionality check with valid location search
-    And I enter "detro" in the HotelsSearchBox and I select
-
-
 #  Scenario: Check the take survey button
 #    And I click on the checkIn box
 #    And I click on the right angle bracket on the calendar to go next and I select a date
@@ -114,9 +110,20 @@ Scenario: Check the functionality of the City or destination and hotels searchBo
   And I click on the hotels searchBox
   And I enter "Hilton" in the hotels searchBox
   When I click on the Hotel Cox's Hilton location
-  Then I should see the hotel title as "Hotel Cox's Hilton"
+#  Then I should see the hotel title as "Hotel Cox's Hilton"
+  Then I should see the hotel title as "Write a review - Tripadvisor"
 
-  Scenario: Write a review for Hotel Cox's Hilton
+  Scenario: Check the alert's button
+    And I click on the alerts button
+    When I click on the continue with email button
+    Then I verify the text "Become a member."
+
+    Scenario: Verify the saved trips page title
+      When I click on the saved trips locator
+      Then I should see the text "Traveling soon? Save your amazing ideas all in one place with Trips."
+
+
+
 
 
 

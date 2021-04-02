@@ -2,9 +2,12 @@ Feature: Registering for an Account
 
   Background:
     Given I am on the Trip Advisor homepage
+    And I click on the alerts button
+    When I click on the continue with email button
 
-    Scenario: Verify the registration page
-      And I click on the signIn button
-      And I click on the continue with email button
-      When I click on the become a member button
-      Then I verify the text "Become a member." as the title
+  Scenario: Verify the registration page
+    And I enter user information from the table
+      | Email             | laciwe2019@684hh.com |
+      | CreateAPassword | Abcde12345           |
+      Then I click on the join button
+

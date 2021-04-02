@@ -164,14 +164,14 @@ public class HotelsSearchStepDefinition extends WebAPI {
 //    }
 
 
-
     @When("I select the three checkboxes under deals")
     public void i_select_the_three_checkboxes_under_deals() {
         hotelsSearch.dealsCheckBoxes();
     }
+
     @Then("I verify the first checkBox {string} as one of the filters")
     public void i_verify_the_first_check_box_as_one_of_the_filters(String expectedCheckBox) {
-       hotelsSearch.verifyFirstCheckBox(expectedCheckBox);
+        hotelsSearch.verifyFirstCheckBox(expectedCheckBox);
     }
 
     @Then("I verify the second checkBox {string} as the second filter")
@@ -188,36 +188,42 @@ public class HotelsSearchStepDefinition extends WebAPI {
     public void i_click_on_the_view_map_button() throws InterruptedException {
         hotelsSearch.viewMapButton();
     }
+
     @Then("I should see {string} when the page opens")
     public void i_should_see_when_the_page_opens(String expectedText) {
-      hotelsSearch.verifyViewMapPageText(expectedText);
+        hotelsSearch.verifyViewMapPageText(expectedText);
     }
 
     @When("I click on the restaurants, things to do, and transit checkBox")
     public void i_click_on_the_restaurants_things_to_do_and_transit_check_box() throws InterruptedException {
         hotelsSearch.showNearBySelection();
     }
+
     @Then("I verify if restaurants was checked")
     public void i_verify_if_restaurants_was_checked() throws InterruptedException {
-      hotelsSearch.verifyRestaurantCheckboxCheck();
+        hotelsSearch.verifyRestaurantCheckboxCheck();
     }
+
     @Then("I verify that things to do is checked")
     public void i_verify_that_things_to_do_is_checked() throws InterruptedException {
         hotelsSearch.verifyThingsToDoCheckboxCheck();
     }
+
     @Then("lastly I verify that transit is checked")
     public void lastly_i_verify_that_transit_is_checked() throws InterruptedException {
         hotelsSearch.verifyTransitCheckboxCheck();
     }
 
     @When("I click on the post button")
-    public void i_click_on_the_post_button() {
-      hotelsSearch.postButton();
+    public void i_click_on_the_post_button() throws InterruptedException {
+        hotelsSearch.postButton();
     }
+
     @When("I click on write a review")
     public void i_click_on_write_a_review() {
         hotelsSearch.writeAReviewLink();
     }
+
     @Then("I should see {string} as the title")
     public void i_should_see_as_the_title(String expectedTitle) {
         hotelsSearch.verifyTheReviewPageTitle(expectedTitle);
@@ -227,18 +233,22 @@ public class HotelsSearchStepDefinition extends WebAPI {
     public void i_click_on_the_sort_button() {
         hotelsSearch.sortButton();
     }
+
     @When("I click on the distance to city center")
     public void i_click_on_the_distance_to_city_center() {
         hotelsSearch.sortOptionInViewMap();
     }
+
     @When("I click on the done button")
     public void i_click_on_the_done_button() throws InterruptedException {
-       hotelsSearch.doneButton();
+        hotelsSearch.doneButton();
     }
+
     @When("I click on the close button")
     public void i_click_on_the_close_button() throws InterruptedException {
-       hotelsSearch.closeButton();
+        hotelsSearch.closeButton();
     }
+
     @When("I click on the city searchBox")
     public void i_click_on_the_city_search_box() {
         hotelsSearch.clickCitySearchBox();
@@ -246,30 +256,52 @@ public class HotelsSearchStepDefinition extends WebAPI {
 
     @When("I enter {string} in the city searchBox")
     public void i_enter_in_the_city_search_box(String destination) {
-       hotelsSearch.citySearchBox(destination);
+        hotelsSearch.citySearchBox(destination);
     }
+
     @When("I click on Bangladesh Asia")
     public void i_click_on_bangladesh_asia() throws InterruptedException {
         hotelsSearch.bangladeshAsiaLocator();
     }
+
     @When("I click on the hotels searchBox")
     public void i_click_on_the_hotels_search_box() {
-       hotelsSearch.clickHotelsSearchBox();
+        hotelsSearch.clickHotelsSearchBox();
     }
+
     @When("I enter {string} in the hotels searchBox")
     public void i_enter_in_the_hotels_search_box(String hotel) throws InterruptedException {
         hotelsSearch.hotelsSearchBox(hotel);
     }
+
     @When("I click on the Hotel Cox's Hilton location")
     public void i_click_on_the_hotel_cox_s_hilton_location() {
-       hotelsSearch.hotelCoxsHiltonLocation();
+        hotelsSearch.hotelCoxsHiltonLocation();
     }
+
     @Then("I should see the hotel title as {string}")
     public void i_should_see_the_hotel_title_as(String expectedName) {
         hotelsSearch.verifyHotelTitle(expectedName);
     }
 
+    @When("I click on the alerts button")
+    public void i_click_on_the_alerts_button() {
+        hotelsSearch.alertsButton();
+    }
 
+    @Then("I verify the text {string}")
+    public void i_verify_the_text(String expectedText) {
+        hotelsSearch.verifySignInPage(expectedText);
+    }
+
+    @When("I click on the saved trips locator")
+    public void i_click_on_the_saved_trips_locator() {
+       hotelsSearch.savedTrips();
+    }
+    @Then("I should see the text {string}")
+    public void i_should_see_the_text(String expectedText) {
+        hotelsSearch.savedTripsPageText(expectedText);
+    }
 }
 
 
