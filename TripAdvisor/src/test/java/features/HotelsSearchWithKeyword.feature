@@ -6,9 +6,11 @@ Feature: Check the Hotels searchPage in Trip Advisor
     When I enter "California" in the whereTo searchBox and hit enter
     And I click on the hotels button
 
+  @Israt
   Scenario: Verify the searchBox keyword on the hotels search page
     Then I verify the title as "Search results: California - Tripadvisor"
 
+  @Israt
   Scenario Outline:  Check the searchBox functionality box in the hotels page with valid searchTopics
     And I click on the searchBox and clear it
     And I enter "<stateInitials>" in the searchBox
@@ -20,7 +22,6 @@ Feature: Check the Hotels searchPage in Trip Advisor
       | NJ            | NJ                    |
       | NY            | NY                    |
 
-  Scenario: Navigate to the searched hotels page
 
 
 

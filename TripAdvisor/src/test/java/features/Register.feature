@@ -5,9 +5,10 @@ Feature: Registering for an Account
     And I click on the alerts button
     When I click on the continue with email button
 
+  @Israt
   Scenario: Verify the registration page
     And I enter user information from the table
-      | Email             | laciwe2019@684hh.com |
+      | Email           | laciwe2019@684hh.com |
       | CreateAPassword | Abcde12345           |
-      Then I click on the join button
+    Then I click on the join button
 

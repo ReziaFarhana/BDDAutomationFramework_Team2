@@ -29,7 +29,7 @@ public class HotelsSearchStepDefinition extends WebAPI {
         hotelsSearch = PageFactory.initElements(driver, HotelsSearch.class);
     }
 
-    @After
+    //@After
     public void closeBrowser() {
         cleanUp();
     }
@@ -296,12 +296,26 @@ public class HotelsSearchStepDefinition extends WebAPI {
 
     @When("I click on the saved trips locator")
     public void i_click_on_the_saved_trips_locator() {
-       hotelsSearch.savedTrips();
+        hotelsSearch.savedTrips();
     }
+
     @Then("I should see the text {string}")
     public void i_should_see_the_text(String expectedText) {
         hotelsSearch.savedTripsPageText(expectedText);
     }
+
+
+    @When("I click on the get started button")
+    public void i_click_on_the_get_started_button() {
+        hotelsSearch.getStartedButton();
+    }
+
+    @When("I click on the continue with email button on the signIn pop-up")
+    public void i_click_on_the_continue_with_email_button_on_the_sign_in_pop_up() throws InterruptedException {
+       hotelsSearch.continueWithEmailPopUP();
+    }
+
 }
+
 
 

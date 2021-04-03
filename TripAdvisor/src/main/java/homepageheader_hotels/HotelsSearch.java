@@ -229,50 +229,68 @@ public class HotelsSearch extends WebAPI {
         clickByXpath(closeButton);
         sleepFor(3);
     }
-    public void clickCitySearchBox(){
+
+    public void clickCitySearchBox() {
         clickById(citySearchBox);
     }
+
     public void citySearchBox(String destination) {
         typeById(citySearchBox, destination);
     }
+
     public void bangladeshAsiaLocator() throws InterruptedException {
         sleepFor(3);
         clickByXpath(bangladeshAsiaLocator);
     }
-    public void clickHotelsSearchBox(){
+
+    public void clickHotelsSearchBox() {
         clickById(hotelsSearchBox);
     }
+
     public void hotelsSearchBox(String hotel) throws InterruptedException {
         sleepFor(3);
-        typeById(hotelsSearchBox,hotel);
+        typeById(hotelsSearchBox, hotel);
 
         sleepFor(4);
     }
-    public void hotelCoxsHiltonLocation(){
+
+    public void hotelCoxsHiltonLocation() {
         clickByXpath(hiltonHotelLocation);
     }
-    public void verifyHotelTitle(String expectedName){
+
+    public void verifyHotelTitle(String expectedName) {
         //String actualName = getTextByXpath(hotelCoxsHiltonTitle);
         String actualName = driver.getTitle();
         Assert.assertEquals(actualName, expectedName, "Name is not a match");
 
     }
 
-    public void alertsButton(){
+    public void alertsButton() {
         clickByXpath(alertsButton);
     }
-    public void verifySignInPage(String expectedText){
+
+    public void verifySignInPage(String expectedText) {
         String actualText = getTextByXpath(becomeAMemberBoxTitle);
-        Assert.assertEquals(actualText,expectedText,"Text is not a match");
+        Assert.assertEquals(actualText, expectedText, "Text is not a match");
     }
 
-    public void savedTrips(){
+    public void savedTrips() {
         clickByXpath(savedTripsLocator);
     }
-    public void savedTripsPageText(String expectedText){
+
+    public void savedTripsPageText(String expectedText) {
         String actualText = getTextByXpath(savedTripsWelcomeText);
-        Assert.assertEquals(actualText,expectedText,"Text is not a match");
+        Assert.assertEquals(actualText, expectedText, "Text is not a match");
     }
+
+    public void getStartedButton(){
+        clickByXpath(getStartedButton);
+    }
+    public void continueWithEmailPopUP() throws InterruptedException {
+        sleepFor(4);
+        clickByXpath(continueWithEmailButton);
+    }
+
 
 
 }

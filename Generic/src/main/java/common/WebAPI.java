@@ -75,6 +75,14 @@ public class WebAPI {
         jscript.executeScript("window.scrollBy(0,-350)", "");
     }
 
+    //backspace
+    public void backSpaceById(String locator, Integer characterlength){
+        for (int i = 0; i < characterlength; i++) {
+            driver.findElement(By.id(locator)).sendKeys(Keys.BACK_SPACE);
+            driver.findElement(By.id(locator)).clear();
+        }
+    }
+
     //action methods
 
     public void doubleClick(WebElement element) {
@@ -580,7 +588,28 @@ public class WebAPI {
         System.out.println(text);
         return text;
     }
-
+    //
+    public static List<String> checkWebElementsByXpath(String locator) {
+        List<WebElement> element = new ArrayList<WebElement>();
+        List<String> text = new ArrayList<String>();
+        element = driver.findElements(By.xpath(locator));
+        for (WebElement web : element) {
+            String st = web.getText();
+            web.click();
+            text.add(st);
+        }
+        System.out.println(text);
+        return text;
+    }
+    //
+    public List<WebElement> checkListOfWebElementsByXpath(String locator) {
+        List<WebElement> list = new ArrayList<WebElement>();
+        list = driver.findElements(By.xpath(locator));
+        for (WebElement web : list) {
+            web.click();
+        }
+        return list;
+    }
     public static List<String> getTextFromWebElementsById(String locator) {
         List<WebElement> element = new ArrayList<WebElement>();
         List<String> text = new ArrayList<String>();

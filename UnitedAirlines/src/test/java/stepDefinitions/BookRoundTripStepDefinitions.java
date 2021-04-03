@@ -66,7 +66,7 @@ public class BookRoundTripStepDefinitions extends WebAPI {
         bookRoundTrip.departDate();
     }
     @Given("using the arrow I go to the next month and select the depart date")
-    public void using_the_arrow_i_go_to_the_next_month_and_select_the_depart_date() {
+    public void using_the_arrow_i_go_to_the_next_month_and_select_the_depart_date() throws InterruptedException {
         bookRoundTrip.selectDepartDate();
     }
     @Given("I click on the returnDate field")

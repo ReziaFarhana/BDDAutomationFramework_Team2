@@ -49,8 +49,9 @@ public class BookRoundTrip extends WebAPI {
 
     }
 
-    public void selectDepartDate() {
+    public void selectDepartDate() throws InterruptedException {
         clickByXpath(arrowButtonToNextMonth);
+        sleepFor(3);
         clickByXpath(departDateSelect);
     }
 
@@ -87,13 +88,15 @@ public class BookRoundTrip extends WebAPI {
         clickByXpath(closeTravllersBox);
         sleepFor(5);
     }
+
     public void submitButton() throws InterruptedException {
         clickByXpath(submitButton);
 
     }
-    public void verifyErrorMessage(String expectedError){
+
+    public void verifyErrorMessage(String expectedError) {
         String actualError = getTextByXpath(errorSearchMessage);
-        Assert.assertEquals(actualError,expectedError,"Error message is not a match");
+        Assert.assertEquals(actualError, expectedError, "Error message is not a match");
     }
 
     public void verifyAddedAdultTravellersAmount(String expectedAdultAmount) {

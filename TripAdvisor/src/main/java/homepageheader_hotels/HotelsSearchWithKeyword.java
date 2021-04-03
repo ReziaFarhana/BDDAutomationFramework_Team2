@@ -2,15 +2,10 @@ package homepageheader_hotels;
 
 import common.WebAPI;
 import org.testng.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 
 import static homepageheader_hotels.HotelsWebElement.*;
 
 public class HotelsSearchWithKeyword extends WebAPI {
-    //@FindBy(how = How.XPATH, using = )
 
     public void hotelsLink() throws InterruptedException {
         sleepFor(3);
