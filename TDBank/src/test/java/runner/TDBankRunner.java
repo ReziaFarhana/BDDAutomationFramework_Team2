@@ -19,15 +19,14 @@ import org.junit.runner.RunWith;
         strict = true,
         monochrome = true,
         dryRun = false,
-        publish = true,
-        tags = "(@mahmud) and (not @pending)"
-//         tags = "(@smokeTest or @RegressionTest or @IntegrationTest ) and (not @pending)"
+        publish = true
+//        ,tags = "(@ran) and (not @pending)"
 
 
 )
 
 
-public class AmazonTestRunner {
+public class TDBankRunner {
 
 
 }

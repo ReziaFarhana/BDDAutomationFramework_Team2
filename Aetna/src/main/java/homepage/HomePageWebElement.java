@@ -5,6 +5,7 @@ public class HomePageWebElement {
 
     public static final String memberSupportHomePageLink="/html/body/div[2]/div/nav/div/ul/li[2]/div/button";
     public static final String dropDownBlock = "div[class='megamenu__dropdown'] div[class='row row__wrapper'] ";
+
     public static final String accountManagementLink = "/html/body/div[2]/div/nav/div/ul[1]/li[2]/div[2]/div/div/section/ul/li[1]/div[1]/button";
     public static final String memberWebsiteLink="li[class='megamenu__secondary--item megamenu__secondary--clicklink secondaryblock--active'] li:nth-child(1) a:nth-child(1)";
     public static final String textMemberLogin="//h1[1]";
@@ -38,7 +39,15 @@ public class HomePageWebElement {
     public static final String emailAddressSubscription="#Email";
     public static final String subscriptionVerificationText="//p[contains(text(),'Thanks! Be sure to check your email for periodic u')]";
     public static final String clickOnSignUpButton="input[value='Sign up']";
-//    public static final String productName="";
+    public static final String clickOnMemberSupportLink="button[aria-expanded='true']";
+    public static final String verifyClickOnHealthResource="h1[class=' title__hero']";
+    public static final String anothercheck=".secondaryblock--active > div:nth-child(2) > ul:nth-child(1) > li:nth-child(1) > a";
+    public static final String clickOnHMOvsPOS="//span[.='HMO vs POS and more']";
+    public static final String verifyHMOvsPOS="//h2[contains(@class,'d-none d-md-block title__block')][normalize-space()='HMO, POS, PPO, HDHP: Explained']";
+    public static final String helpingFamilies="//span[normalize-space()='Helping families']";
+    public static final String helpingFamiliesText="//h2[contains(@class,'d-none d-md-block title__block')][normalize-space()='Neighborhood health story']";
+    public static final String healthySchoolYear="//span[normalize-space()='Healthy school year']";
+    public static final String toVerifyHealthySchool="//h2[@class='d-none d-md-block title__block'][contains(text(),'5 tips for a healthy school year')]";
 //    public static final String productName="";
 //    public static final String productName="";
 

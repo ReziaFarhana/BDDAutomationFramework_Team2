@@ -123,6 +123,32 @@ public class HomePage extends WebAPI {
         String actual = getTextByXpath(subscriptionVerificationText);
     }
 
+    public void verifyLoggedInOnHealthResource(String expected){
+        String actual = getTextByCss(verifyClickOnHealthResource);
+        Assert.assertEquals("Test failed", expected, actual);
+    }
+
+    public void verifyHMOvsPOSIsDesplayed(String expected){
+        String actual = getTextByXpath(verifyHMOvsPOS);
+        Assert.assertEquals("Test failed", expected, actual);
+    }
+
+   public void verifyHelpingFamiliesDesplayed(String expected){
+        String actual = getTextByXpath(helpingFamiliesText);
+        Assert.assertEquals("Test failed", expected, actual);
+    }
+
+    public void verifyHealthySchoolYearIsDesplayed(String expected) {
+        String actual = getTextByXpath(toVerifyHealthySchool);
+        Assert.assertEquals("Test failed", expected, actual);
+    }
+
+
+
+
+
+
+
 
 
 

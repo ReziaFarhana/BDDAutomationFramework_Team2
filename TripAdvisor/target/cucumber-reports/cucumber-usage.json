@@ -1,0 +1,258 @@
+[
+  {
+    "source": "I am navigated to tripadvisor Home page",
+    "steps": [
+      {
+        "name": "I am navigated to tripadvisor Home page",
+        "aggregatedDurations": {
+          "median": 8.6822227,
+          "average": 8.809296083
+        },
+        "durations": [
+          {
+            "duration": 9.6654351,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:4"
+          },
+          {
+            "duration": 8.6468904,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:4"
+          },
+          {
+            "duration": 8.6930573,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:4"
+          },
+          {
+            "duration": 8.4710298,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:4"
+          },
+          {
+            "duration": 8.7079758,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:4"
+          },
+          {
+            "duration": 8.6713881,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on the More tab from the Header",
+    "steps": [
+      {
+        "name": "click on the More tab from the Header",
+        "aggregatedDurations": {
+          "median": 0.28960655,
+          "average": 0.2910018
+        },
+        "durations": [
+          {
+            "duration": 0.2650915,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:5"
+          },
+          {
+            "duration": 0.3074879,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:5"
+          },
+          {
+            "duration": 0.2717146,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:5"
+          },
+          {
+            "duration": 0.2819187,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:5"
+          },
+          {
+            "duration": 0.3225037,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:5"
+          },
+          {
+            "duration": 0.2972944,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I clicked on Add a Place",
+    "steps": [
+      {
+        "name": "I clicked on Add a Place",
+        "aggregatedDurations": {
+          "median": 1.6418935,
+          "average": 1.6418935
+        },
+        "durations": [
+          {
+            "duration": 1.6418935,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should have seen a text {string}",
+    "steps": [
+      {
+        "name": "I should have seen a text \"Add a place to Tripadvisor\"",
+        "aggregatedDurations": {
+          "median": 0.0804724,
+          "average": 0.0804724
+        },
+        "durations": [
+          {
+            "duration": 0.0804724,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I clicked on Airlines link",
+    "steps": [
+      {
+        "name": "I clicked on Airlines link",
+        "aggregatedDurations": {
+          "median": 1.7256468,
+          "average": 1.7256468
+        },
+        "durations": [
+          {
+            "duration": 1.7256468,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should have a new Airlines page with a text {string}",
+    "steps": [
+      {
+        "name": "I should have a new Airlines page with a text \"Airlines\"",
+        "aggregatedDurations": {
+          "median": 0.0498653,
+          "average": 0.0498653
+        },
+        "durations": [
+          {
+            "duration": 0.0498653,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:15"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I clicked on Cruises link",
+    "steps": [
+      {
+        "name": "I clicked on Cruises link",
+        "aggregatedDurations": {
+          "median": 2.9291855,
+          "average": 2.9291855
+        },
+        "durations": [
+          {
+            "duration": 2.9291855,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should have a new Cruises page with a text {string}",
+    "steps": [
+      {
+        "name": "I should have a new Cruises page with a text \"Cruises - Cruise Vacations: 2021 Destinations \u0026 Ports | CHEAP Cruises - Tripadvisor\"",
+        "aggregatedDurations": {
+          "median": 0.0084878,
+          "average": 0.0084878
+        },
+        "durations": [
+          {
+            "duration": 0.0084878,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I clicked on Flights link",
+    "steps": [
+      {
+        "name": "I clicked on Flights link",
+        "aggregatedDurations": {
+          "median": 2.1723126,
+          "average": 2.1723126
+        },
+        "durations": [
+          {
+            "duration": 2.1723126,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:24"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I clicked on Rental Cars link",
+    "steps": [
+      {
+        "name": "I clicked on Rental Cars link",
+        "aggregatedDurations": {
+          "median": 0.3076405,
+          "average": 0.3076405
+        },
+        "durations": [
+          {
+            "duration": 0.3076405,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:29"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I clicked on Hire a Trip Designer link",
+    "steps": [
+      {
+        "name": "I clicked on Hire a Trip Designer link",
+        "aggregatedDurations": {
+          "median": 2.7873967,
+          "average": 2.7873967
+        },
+        "durations": [
+          {
+            "duration": 2.7873967,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should have a new Hire a Trip Designer page with a text {string}",
+    "steps": [
+      {
+        "name": "I should have a new Hire a Trip Designer page with a text \"Reco Trip Designers | A new kind of travel agent experience from Tripadvisor\"",
+        "aggregatedDurations": {
+          "median": 0.0129634,
+          "average": 0.0129634
+        },
+        "durations": [
+          {
+            "duration": 0.0129634,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:35"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,15 +1,11 @@
 package stepDefinitions;
 
 import common.WebAPI;
+import homepage.DestinationDealsHom;
 import homepage.UAActionHome;
-import io.cucumber.java.After;
-import io.cucumber.java.AfterStep;
 import io.cucumber.java.BeforeStep;
-import io.cucumber.java.Scenario;
 import io.cucumber.java.en.*;
-import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+
 import org.openqa.selenium.support.PageFactory;
 
 import static homepage.UAWebElement.*;
@@ -17,6 +13,7 @@ import static homepage.UAWebElement.*;
 
 public class UAOffersSectionStepDefinition extends WebAPI {
     UAActionHome act;
+    DestinationDealsHom action;
 
     @BeforeStep
     public void getInit() {
@@ -68,6 +65,7 @@ public class UAOffersSectionStepDefinition extends WebAPI {
     public void i_clicked_on_redeem_e_certificate_link() throws InterruptedException {
         act.clickOnRedeemeCert();
         sleepFor(3);
+        scrollTO(locatorToMakevisible);
     }
 
     @Then("I should see Redeem eCertificate displayed on the front page")
@@ -82,23 +80,53 @@ public class UAOffersSectionStepDefinition extends WebAPI {
 
     @When("Select Year {string} Under Year Issued")
     public void select_year_under_year_issued(String string) {
-        act.enterInWebElement(toEnterYearInfoLocator,string);
+        act.enterInWebElement(toEnterYearInfoLocator, string);
     }
+
     @When("entered {string} in PIN Options")
     public void entered_in_pin_options(String string) {
-        act.enterInWebElement(enterPONLocator,string);
+        act.enterInWebElement(enterPONLocator, string);
     }
+
     @When("enter {string} in the last name field")
     public void enter_in_the_last_name_field(String string) {
-        act.enterInWebElement(enterLastNameLocator,string);
+        act.enterInWebElement(enterLastNameLocator, string);
     }
+
     @When("I clicked on confirm button")
     public void i_clicked_on_confirm_button() {
         clickByCss(clickOnConfirmButtonLocator);
     }
+
     @Then("I should have get {string} in return")
     public void i_should_have_get_in_return(String string) {
         act.verifyeCeritificate();
+    }
+
+    @Given("I Selected the Year issued {string}")
+    public void i_selected_the_year_issued(String years) {
+        selectOptionByVisibleText(LocatorForYearSelection,years);
+    }
+
+    @Given("I entered the an invalid Pin {string}")
+    public void i_entered_the_an_invalid_pin_digits(String string) {
+        typeByCss(LocatorToEnterPIN,string);
+    }
+
+    @Given("I entered unanimous  Recipient's last name {string}")
+    public void i_entered_unanimous_recipient_s_last_name(String string) {
+        typeByCss(LocatorForRecipientsLName,string);
+    }
+    @When("I clicked on the confirm button")
+    public void i_clicked_on_the_confirm_button() throws InterruptedException {
+        clickByCss(locatorToClickOnConfirm);
+        sleepFor(5);
+
+    }
+
+    @Then("I should have get a response {string}")
+    public void i_should_have_get_a_response_entered_valid_information(String expected) {
+        action.verifyBalanceLookup(expected);
     }
 
 }

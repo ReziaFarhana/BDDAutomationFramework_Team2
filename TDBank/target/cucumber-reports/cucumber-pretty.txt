@@ -1,0 +1,30 @@
+
+Scenario: Products Tab option                                                        # src/test/java/features/OnlineBackingFeatures.feature:9
+  Given I am navigated to TDBank Home page TDBank                                    # stepDefinitions.TDHomeStepDefinition.i_am_navigated_to_td_bank_home_page_https_www_td_com()
+  And I clicked on the Log In Header Option                                          # stepDefinitions.TDHomeStepDefinition.i_clicked_on_the_log_in_header_option()
+  And I locate and clicked on Online Banking under Login                             # stepDefinitions.TDHomeStepDefinition.i_locate_and_clicked_on_online_banking_under_login()
+  Then I should land on a new Online Banking windows tab "Welcome to Online Banking" # stepDefinitions.TDHomeStepDefinition.i_should_land_on_a_new_online_banking_windows_tab(java.lang.String)
+  When I clicked on Products tab                                                     # stepDefinitions.OnlineBankingStepDefinition.i_clicked_on_products_tab()
+  Then I should have a Title page "Products and Services"                            # stepDefinitions.OnlineBankingStepDefinition.i_should_have_a_title_page(java.lang.String)
+
+Scenario: Cross Border Banking Solutions Tab Option                                  # src/test/java/features/OnlineBackingFeatures.feature:13
+  Given I am navigated to TDBank Home page TDBank                                    # stepDefinitions.TDHomeStepDefinition.i_am_navigated_to_td_bank_home_page_https_www_td_com()
+  And I clicked on the Log In Header Option                                          # stepDefinitions.TDHomeStepDefinition.i_clicked_on_the_log_in_header_option()
+  And I locate and clicked on Online Banking under Login                             # stepDefinitions.TDHomeStepDefinition.i_locate_and_clicked_on_online_banking_under_login()
+  Then I should land on a new Online Banking windows tab "Welcome to Online Banking" # stepDefinitions.TDHomeStepDefinition.i_should_land_on_a_new_online_banking_windows_tab(java.lang.String)
+  When I clicked on Products tab                                                     # stepDefinitions.OnlineBankingStepDefinition.i_clicked_on_products_tab()
+  And I hover on the Solutions Link                                                  # null
+  And I clicked on Cross Border Banking                                              # null
+  Then I should land on a new Online Banking windows tab "Welcome to Online Banking" # stepDefinitions.TDHomeStepDefinition.i_should_land_on_a_new_online_banking_windows_tab(java.lang.String)
+
+Scenario: accessing Online Banking From the Service Header Option  # src/test/java/features/OnlineBankingHomeStepDefinition.feature:3
+  Given I am navigated to TDBank Home page TDBank                  # stepDefinitions.TDHomeStepDefinition.i_am_navigated_to_td_bank_home_page_https_www_td_com()
+  And I clicked on Services link                                   # stepDefinitions.TDHomeStepDefinition.i_clicked_on_services_link()
+  And I locate and clicked on Online Banking                       # stepDefinitions.TDHomeStepDefinition.i_locate_and_clicked_on_online_banking()
+  Then I should land on a new Online Banking page "Online Banking" # stepDefinitions.TDHomeStepDefinition.i_should_land_on_a_new_online_banking_page(java.lang.String)
+
+Scenario: accessing Online Banking From the Log In Option                            # src/test/java/features/OnlineBankingHomeStepDefinition.feature:9
+  Given I am navigated to TDBank Home page TDBank                                    # stepDefinitions.TDHomeStepDefinition.i_am_navigated_to_td_bank_home_page_https_www_td_com()
+  And I clicked on the Log In Header Option                                          # stepDefinitions.TDHomeStepDefinition.i_clicked_on_the_log_in_header_option()
+  And I locate and clicked on Online Banking under Login                             # stepDefinitions.TDHomeStepDefinition.i_locate_and_clicked_on_online_banking_under_login()
+  Then I should land on a new Online Banking windows tab "Welcome to Online Banking" # stepDefinitions.TDHomeStepDefinition.i_should_land_on_a_new_online_banking_windows_tab(java.lang.String)

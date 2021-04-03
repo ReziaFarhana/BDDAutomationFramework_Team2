@@ -39,6 +39,13 @@ Feature: Working on United Airlines OFFERS section under Deals
     When I clicked on confirm button
     Then I should have get "Please make sure you entered valid information." in return
 
+    Scenario: Electronic travel certificate Look up
+      And I clicked On Redeem eCertificate link
+      And I Selected the Year issued "2019"
+      And I entered the an invalid Pin "2356987542"
+      And I entered unanimous  Recipient's last name "David"
+      When I clicked on the confirm button
+      Then I should have get a response "Please make sure you entered valid information."
 
 
 

@@ -129,15 +129,15 @@ public class WebAPI {
     public static String sauceLabs_accessKey = "";
 
     public void openBrowser(String url) throws IOException {
-        setUp(false,"browserStack","windows","10","firefox","86",url);
+        setUp(false, "browserStack", "windows", "10", "firefox", "86", url);
     }
 
     public void openBrowserUsingMultiBrowser(String url, String browserName, String browserVersion) throws IOException {
-        setUp(false,"browserStack","windows","10","firefox","87",url);
+        setUp(false, "browserStack", "windows", "10", "firefox", "87", url);
     }
 
 
-//    @Parameters({"useCloudEnv", "cloudEnvName", "OS", "os_version", "browserName", "browserVersion", "url"})
+    //    @Parameters({"useCloudEnv", "cloudEnvName", "OS", "os_version", "browserName", "browserVersion", "url"})
 //    @BeforeMethod
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("sauceLabs") String cloudEnvName, @Optional("windows") String OS, @Optional("10") String os_version, @Optional("firefox") String browserName, @Optional("86") String browserVersion, @Optional("https://www.google.com/") String url) throws IOException {
         // Platform: Local Machine/ Cloud Machine
@@ -211,10 +211,10 @@ public class WebAPI {
         return driver;
     }
 
-//    @AfterMethod(alwaysRun = true)
+    //    @AfterMethod(alwaysRun = true)
     public void cleanUp() {
         //driver.close();
-        driver.quit();
+//        driver.quit();
     }
 
 
@@ -318,14 +318,14 @@ public class WebAPI {
 
     public void typeOnInputField(String locator, String value) {
         try {
-            driver.findElement(By.cssSelector(locator)).sendKeys(Keys.SHIFT,value);
+            driver.findElement(By.cssSelector(locator)).sendKeys(Keys.SHIFT, value);
         } catch (Exception css) {
             try {
-                driver.findElement(By.xpath(locator)).sendKeys(Keys.SHIFT,value);
-            }catch (Exception xpath){
+                driver.findElement(By.xpath(locator)).sendKeys(Keys.SHIFT, value);
+            } catch (Exception xpath) {
                 try {
-                    driver.findElement(By.id(locator)).sendKeys(Keys.SHIFT,value);
-                }catch (Exception id){
+                    driver.findElement(By.id(locator)).sendKeys(Keys.SHIFT, value);
+                } catch (Exception id) {
                     System.out.println("css,xpath and id failed to locate it");
                 }
             }
@@ -350,7 +350,19 @@ public class WebAPI {
     }
 
     public void takeEnterKeys(String locator) {
-        driver.findElement(By.cssSelector(locator)).sendKeys(Keys.ENTER);
+        try {
+            driver.findElement(By.cssSelector(locator)).sendKeys(Keys.ENTER);
+        } catch (Exception css) {
+            try {
+                driver.findElement(By.xpath(locator)).sendKeys(Keys.ENTER);
+            } catch (Exception xpath) {
+                try {
+                    driver.findElement(By.id(locator)).sendKeys(Keys.ENTER);
+                } catch (Exception id) {
+                    System.out.println("css,xpath and id failed");
+                }
+            }
+        }
     }
 
     public void clearInputField(String locator) {
@@ -404,7 +416,6 @@ public class WebAPI {
     }
 
 
-
     public String getCurrentPageUrl() {
         String url = driver.getCurrentUrl();
         return url;
@@ -428,6 +439,10 @@ public class WebAPI {
         return driver.findElement(By.id(locator)).getText();
     }
 
+    public String getTextByclass(String locator) {
+        return driver.findElement(By.className(locator)).getText();
+    }
+
     public String getTextByName(String locator) {
         String st = driver.findElement(By.name(locator)).getText();
         return st;
@@ -447,11 +462,35 @@ public class WebAPI {
         select.selectByVisibleText(value);
     }
 
+    public void selectOptionByVisibleText(String loc, String value) {
+        try {
+            WebElement element = driver.findElement(By.cssSelector(loc));
+            Select select = new Select(element);
+            select.selectByVisibleText(value);
+        } catch (Exception css) {
+            try {
+                WebElement element = driver.findElement(By.xpath(loc));
+                Select select = new Select(element);
+                select.selectByVisibleText(value);
+            } catch (Exception xpath) {
+                try {
+                    WebElement element = driver.findElement(By.id(loc));
+                    Select select = new Select(element);
+                    select.selectByVisibleText(value);
+                } catch (Exception id) {
+                    System.out.println("css,xpath and id faile to locate it");
+                }
+            }
+        }
+    }
+
+
     public void mouseHoverByCSS(String locator) {
         try {
             WebElement element = driver.findElement(By.cssSelector(locator));
             Actions action = new Actions(driver);
-            Actions hover = action.moveToElement(element);  // need fix
+//            Actions hover = action.moveToElement(element);  // need fix
+            action.moveToElement(element); // deleted Actions hover
         } catch (Exception ex) {
             System.out.println("First attempt has been done, This is second try");
             WebElement element = driver.findElement(By.cssSelector(locator));
@@ -545,6 +584,18 @@ public class WebAPI {
         return driver1;
     }
 
+    /**
+     * this is in extension of handleNewTab with no argument
+     * @return
+     */
+    public static WebDriver handleNewTab() {
+        String oldTab = driver.getWindowHandle();
+        List<String> newTabs = new ArrayList<String>(driver.getWindowHandles());
+        newTabs.remove(oldTab);
+        driver.switchTo().window(newTabs.get(0));
+        return driver;
+    }
+
     public static boolean isPopUpWindowDisplayed(WebDriver driver1, String locator) {
         boolean value = driver1.findElement(By.cssSelector(locator)).isDisplayed();
         return value;
@@ -580,7 +631,7 @@ public class WebAPI {
         //Step:2-->Iterate linksList: exclude all links/images which does not have any href attribute
         List<WebElement> activeLinks = new ArrayList<WebElement>();
         for (int i = 0; i < linksList.size(); i++) {
-           // System.out.println(linksList.get(i).getAttribute("href"));
+            // System.out.println(linksList.get(i).getAttribute("href"));
             if (linksList.get(i).getAttribute("href") != null && (!linksList.get(i).getAttribute("href").contains("javascript") && (!linksList.get(i).getAttribute("href").contains("mailto")))) {
                 activeLinks.add(linksList.get(i));
             }
@@ -776,7 +827,7 @@ public class WebAPI {
         return url;
     }
 
-    public void rightClick(String loc){
+    public void rightClick(String loc) {
         WebElement element = driver.findElement(By.xpath(loc));
         Actions use = new Actions(driver);
         use.moveToElement(element).contextClick(element).sendKeys(Keys.ARROW_DOWN).build().perform();
@@ -785,11 +836,12 @@ public class WebAPI {
 
     /**
      * to scroll to a web element
+     *
      * @param element
      */
-    public void scrollTo(WebElement element){
+    public void scrollTo(WebElement element) {
         JavascriptExecutor executor = (JavascriptExecutor) driver;
-        executor.executeScript("arguments[0].scrollIntoView(true)",element);
+        executor.executeScript("arguments[0].scrollIntoView(true)", element);
     }
 
     public void windoSwitchHandler2(int index) {
@@ -798,7 +850,7 @@ public class WebAPI {
         hold.addAll(hold);
         try {
             driver.switchTo().window((hold.get(index)));
-        }catch (IndexOutOfBoundsException e){
+        } catch (IndexOutOfBoundsException e) {
             System.out.println("Expected index out of bound ");
         }
 
@@ -806,6 +858,7 @@ public class WebAPI {
 
     /**
      * to scroll to a particular web locater
+     *
      * @param loc
      */
     public void scrollTO(String loc) {
@@ -820,7 +873,7 @@ public class WebAPI {
                 try {
                     WebElement element = driver.findElement(By.id(loc));
                     scrollTo(element);
-                }catch (Exception eee){
+                } catch (Exception eee) {
                     System.out.println("Unable to locate with xpath, css and id");
                 }
 
@@ -833,34 +886,57 @@ public class WebAPI {
         boolean found = false;
         try {
             found = driver.findElement(By.cssSelector(locator)).isDisplayed();
-        }catch (Exception ee){
+        } catch (Exception ee) {
             try {
                 found = driver.findElement(By.xpath(locator)).isDisplayed();
-            }catch (Exception bb){
+            } catch (Exception bb) {
                 try {
-                    found= driver.findElement(By.id(locator)).isDisplayed();
-                }catch (Exception cc){
+                    found = driver.findElement(By.id(locator)).isDisplayed();
+                } catch (Exception cc) {
                     System.out.println("Element failed to be located with css,xpath and id");
                 }
             }
         }
-          return  found;
+        return found;
     }
 
     /**
      * to handle data table of a BDD
+     *
      * @param fromTable
      * @return
      */
-    public static Map<String, String> getData(List<List<String>> fromTable){
-        Map<String,String> info = new HashMap<>();
-        for (List<String> adding : fromTable){
-            info.put(adding.get(0),adding.get(1));}
+    public static Map<String, String> getData(List<List<String>> fromTable) {
+        Map<String, String> info = new HashMap<>();
+        for (List<String> adding : fromTable) {
+            info.put(adding.get(0), adding.get(1));
+        }
         return info;
     }
 
+    public void moveToElementClick(String loc) {
 
+        try {
+            WebElement element = driver.findElement(By.xpath(loc));
+            Actions use = new Actions(driver);
+            use.moveToElement(element).click();
+        } catch (Exception xpath) {
+            try {
+                WebElement element = driver.findElement(By.cssSelector(loc));
+                Actions use = new Actions(driver);
+                use.moveToElement(element).click();
+            } catch (Exception css) {
+                try {
+                    WebElement element = driver.findElement(By.id(loc));
+                    Actions use = new Actions(driver);
+                    use.moveToElement(element).click();
+                } catch (Exception id) {
+                    System.out.println("id,css and xpath failed to find it");
+                }
+            }
+        }
 
+    }
 
 
 }

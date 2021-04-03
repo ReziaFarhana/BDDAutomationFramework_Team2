@@ -81,12 +81,14 @@ Feature: working on DESTINATION DEALS
     And I selected travel info class of travel and number of travelers
     And I click on the Search Flights button
     Then I should expect to see the text "Sign in to your MileagePlus account to show the best award availability"
+
   @run
   Scenario: Changed bag rules
     When I clicked on Flights to popular destinations
     Then I should land on a new tab "United Cheap Flights to 300+ Destinations Worldwide | United Airlines"
     And clicked on Changed bag rules Link
     Then I should have a new page with a text "Changed bag rules and optional services"
+
   @pending
   Scenario: How much will it cost to check my bag?
     When I clicked on Flights to popular destinations
@@ -95,8 +97,8 @@ Feature: working on DESTINATION DEALS
     Then I should have a new page with a text "Changed bag rules and optional services"
     And I clicked on Any Flights Tab
     And Update the From and To box with cities
-        |From | New York|
-        |To   | Washington DC|
+      | From | New York      |
+      | To   | Washington DC |
     Then I should have same page updated and a text "Standard checked bag price" will be displayed
 
 

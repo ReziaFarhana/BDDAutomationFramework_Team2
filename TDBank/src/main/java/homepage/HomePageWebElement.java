@@ -1,22 +1,26 @@
 package homepage;
 
 public class HomePageWebElement {
-    // WebElement class for Locators only and some other properties
+    // accessing Online Banking From the Service Header Option
+    public static final String popupAtFrontPage="span[class='td-icon td-icon-close icon-small']";
+    public static final String servicesLocator="#td-desktop-nav-dropdown-link-3";
+    public static final String onlineBankingLocator="//ul[@class='td-dropdown-content']//a[normalize-space()='Online Banking']";
+    public static final String verifyOnlineBaking = "//h1[normalize-space()='Online Banking']";
 
-    public static final String productName="Mask";
-    public static final String searchBoxLocator="twotabsearchtextbox";
-    public static final String searchButtonLocator="nav-search-submit-button";
-    public static final String helloSignInLocator="//*[@id=\"nav-link-accountList-nav-line-1\"]";
-    public static final String emailPhoneForSignInLocator="//*[@id=\"ap_email\"]";
-    public static final String continueForSignInLocator="//*[@id=\"continue\"]";
-    public static final String passwordForSignInLocator="//*[@id=\"ap_password\"]";
-    public static final String signInSubmitLocator="//*[@id=\"signInSubmit\"]";
-    public static final String helloUserLocator="//*[@id=\"nav-link-accountList-nav-line-1\"]";
-    public static final String errorMessageLocator="//*[text()='There was a problem']";
-    public static final String customerNameLocator="//*[@id=\"ap_customer_name\"]";
-    public static final String createYourAmazonAccountLocator="//*[@id=\"createAccountSubmit\"]";
-    public static final String searchTextLocator="//*[@id=\"search\"]/span/div/span/h1/div/div[1]/div/div/span[3]";
+        // Scenario: accessing Online Banking From the Log In Option
+    public static final String clickOnLoginOption="#td-desktop-nav-dropdown-link-4";
+    public static final String onlineBankingInSignIn="//div[@class='td-col']//a[normalize-space()='Online Banking']";
+    public static final String verifyonlineBankingInSignIn="h1[class='td-ui-login-app-title ng-binding']";
 
+        //~~ Products options
+    public static final String productsTab="//li[@role='button']//span[@class='td-menuItem-label ng-binding'][normalize-space()='Products']";
+    public static final String solutionsTab="div[aria-label='Solutions'] span[class='title-text ng-binding td-margin-right-10']";
+    public static final String crossBorderBanking="//span[normalize-space()='Cross Border Banking']";
+//    public static final String productName="";
+//    public static final String productName="";
+//    public static final String productName="";
+//    public static final String productName="";
+//    public static final String productName="";
 
 
 

@@ -1,0 +1,204 @@
+[
+  {
+    "source": "I am navigated to TDBank Home page TDBank",
+    "steps": [
+      {
+        "name": "I am navigated to TDBank Home page TDBank",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 2.494E-4
+        },
+        "durations": [
+          {
+            "duration": 9.976E-4,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TDBank/src/test/java/features/OnlineBackingFeatures.feature:4"
+          },
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TDBank/src/test/java/features/OnlineBackingFeatures.feature:4"
+          },
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TDBank/src/test/java/features/OnlineBankingHomeStepDefinition.feature:4"
+          },
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TDBank/src/test/java/features/OnlineBankingHomeStepDefinition.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I clicked on the Log In Header Option",
+    "steps": [
+      {
+        "name": "I clicked on the Log In Header Option",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TDBank/src/test/java/features/OnlineBackingFeatures.feature:5"
+          },
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TDBank/src/test/java/features/OnlineBackingFeatures.feature:5"
+          },
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TDBank/src/test/java/features/OnlineBankingHomeStepDefinition.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I locate and clicked on Online Banking under Login",
+    "steps": [
+      {
+        "name": "I locate and clicked on Online Banking under Login",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 3.32433E-4
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TDBank/src/test/java/features/OnlineBackingFeatures.feature:6"
+          },
+          {
+            "duration": 9.973E-4,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TDBank/src/test/java/features/OnlineBackingFeatures.feature:6"
+          },
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TDBank/src/test/java/features/OnlineBankingHomeStepDefinition.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should land on a new Online Banking windows tab {string}",
+    "steps": [
+      {
+        "name": "I should land on a new Online Banking windows tab \"Welcome to Online Banking\"",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 3.32466E-4
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TDBank/src/test/java/features/OnlineBackingFeatures.feature:7"
+          },
+          {
+            "duration": 9.974E-4,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TDBank/src/test/java/features/OnlineBackingFeatures.feature:7"
+          },
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TDBank/src/test/java/features/OnlineBankingHomeStepDefinition.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I clicked on Products tab",
+    "steps": [
+      {
+        "name": "I clicked on Products tab",
+        "aggregatedDurations": {
+          "median": 4.5995E-4,
+          "average": 4.5995E-4
+        },
+        "durations": [
+          {
+            "duration": 9.199E-4,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TDBank/src/test/java/features/OnlineBackingFeatures.feature:10"
+          },
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TDBank/src/test/java/features/OnlineBackingFeatures.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should have a Title page {string}",
+    "steps": [
+      {
+        "name": "I should have a Title page \"Products and Services\"",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TDBank/src/test/java/features/OnlineBackingFeatures.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I clicked on Services link",
+    "steps": [
+      {
+        "name": "I clicked on Services link",
+        "aggregatedDurations": {
+          "median": 9.974E-4,
+          "average": 9.974E-4
+        },
+        "durations": [
+          {
+            "duration": 9.974E-4,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TDBank/src/test/java/features/OnlineBankingHomeStepDefinition.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I locate and clicked on Online Banking",
+    "steps": [
+      {
+        "name": "I locate and clicked on Online Banking",
+        "aggregatedDurations": {
+          "median": 9.987E-4,
+          "average": 9.987E-4
+        },
+        "durations": [
+          {
+            "duration": 9.987E-4,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TDBank/src/test/java/features/OnlineBankingHomeStepDefinition.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should land on a new Online Banking page {string}",
+    "steps": [
+      {
+        "name": "I should land on a new Online Banking page \"Online Banking\"",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TDBank/src/test/java/features/OnlineBankingHomeStepDefinition.feature:7"
+          }
+        ]
+      }
+    ]
+  }
+]

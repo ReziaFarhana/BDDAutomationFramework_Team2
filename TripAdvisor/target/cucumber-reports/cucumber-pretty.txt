@@ -1,0 +1,60 @@
+
+@run
+Scenario: verify click on Add a Place Link                    # src/test/java/features/MoreTab.feature:8
+  Given I am navigated to tripadvisor Home page               # stepDefinitions.MoreTabStepDefinition.i_am_navigated_to_tripadvisor_home_page()
+  And click on the More tab from the Header                   # stepDefinitions.MoreTabStepDefinition.click_on_the_more_tab_from_the_header()
+  And I clicked on Add a Place                                # stepDefinitions.MoreTabStepDefinition.i_clicked_on_add_a_place()
+  Then I should have seen a text "Add a place to Tripadvisor" # stepDefinitions.MoreTabStepDefinition.i_should_have_seen_a_text_add_a_place_to_tripadvisor(java.lang.String)
+
+@run
+Scenario: verify click on Airlines Link                         # src/test/java/features/MoreTab.feature:13
+  Given I am navigated to tripadvisor Home page                 # stepDefinitions.MoreTabStepDefinition.i_am_navigated_to_tripadvisor_home_page()
+  And click on the More tab from the Header                     # stepDefinitions.MoreTabStepDefinition.click_on_the_more_tab_from_the_header()
+  And I clicked on Airlines link                                # stepDefinitions.MoreTabStepDefinition.i_clicked_on_airlines_link()
+  Then I should have a new Airlines page with a text "Airlines" # stepDefinitions.MoreTabStepDefinition.i_should_have_a_new_airlines_page_with_a_text(java.lang.String)
+
+@run
+Scenario: verify click on Cruises Link                                                                                                    # src/test/java/features/MoreTab.feature:18
+  Given I am navigated to tripadvisor Home page                                                                                           # stepDefinitions.MoreTabStepDefinition.i_am_navigated_to_tripadvisor_home_page()
+  And click on the More tab from the Header                                                                                               # stepDefinitions.MoreTabStepDefinition.click_on_the_more_tab_from_the_header()
+  And I clicked on Cruises link                                                                                                           # stepDefinitions.MoreTabStepDefinition.i_clicked_on_cruises_link()
+  Then I should have a new Cruises page with a text "Cruises - Cruise Vacations: 2021 Destinations & Ports | CHEAP Cruises - Tripadvisor" # stepDefinitions.MoreTabStepDefinition.i_should_have_a_new_cruises_page_with_a_text(java.lang.String)
+
+@run
+Scenario: verify click on Flights Link                                                                        # src/test/java/features/MoreTab.feature:23
+  Given I am navigated to tripadvisor Home page                                                               # stepDefinitions.MoreTabStepDefinition.i_am_navigated_to_tripadvisor_home_page()
+  And click on the More tab from the Header                                                                   # stepDefinitions.MoreTabStepDefinition.click_on_the_more_tab_from_the_header()
+  And I clicked on Flights link                                                                               # stepDefinitions.MoreTabStepDefinition.i_clicked_on_flights_link()
+  Then I should have a new Flights page with a text "Cheap Flights from Boston, MA - from $153 - Tripadvisor" # stepDefinitions.MoreTabStepDefinition.i_should_have_a_new_flights_page_with_a_text(java.lang.String)
+      org.junit.ComparisonFailure: Test failed expected:<... Boston, MA - from $[153] - Tripadvisor> but was:<... Boston, MA - from $[90] - Tripadvisor>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at homepage.HomePage.verifyTitlePage(HomePage.java:27)
+	at stepDefinitions.MoreTabStepDefinition.i_should_have_a_new_flights_page_with_a_text(MoreTabStepDefinition.java:100)
+	at ✽.I should have a new Flights page with a text "Cheap Flights from Boston, MA - from $153 - Tripadvisor"(file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:25)
+
+
+    Embedding demo1 [image/png 1402245 bytes]
+
+
+@run
+Scenario: verify click on Car Rental Link                                                                                # src/test/java/features/MoreTab.feature:28
+  Given I am navigated to tripadvisor Home page                                                                          # stepDefinitions.MoreTabStepDefinition.i_am_navigated_to_tripadvisor_home_page()
+  And click on the More tab from the Header                                                                              # stepDefinitions.MoreTabStepDefinition.click_on_the_more_tab_from_the_header()
+  And I clicked on Rental Cars link                                                                                      # stepDefinitions.MoreTabStepDefinition.i_clicked_on_Rental_Cars_link()
+  Then I should have a new Rental Cars page with a text "Book Cheap Rental Cars & Search Car Rental Deals - Tripadvisor" # stepDefinitions.MoreTabStepDefinition.i_should_have_a_new_Rental_Cars_page_with_a_text(java.lang.String)
+      org.junit.ComparisonFailure: Test failed expected:<[Book Cheap Rental Cars & Search Car Rental Deals - Tripadvisor]> but was:<[Tripadvisor: Read Reviews, Compare Prices & Book]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at homepage.HomePage.verifyTitlePage(HomePage.java:27)
+	at stepDefinitions.MoreTabStepDefinition.i_should_have_a_new_Rental_Cars_page_with_a_text(MoreTabStepDefinition.java:110)
+	at ✽.I should have a new Rental Cars page with a text "Book Cheap Rental Cars & Search Car Rental Deals - Tripadvisor"(file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:30)
+
+
+    Embedding demo1 [image/png 15757 bytes]
+
+
+@run
+Scenario: verify click on Hire a Trip Designer Link                                                                                             # src/test/java/features/MoreTab.feature:33
+  Given I am navigated to tripadvisor Home page                                                                                                 # stepDefinitions.MoreTabStepDefinition.i_am_navigated_to_tripadvisor_home_page()
+  And click on the More tab from the Header                                                                                                     # stepDefinitions.MoreTabStepDefinition.click_on_the_more_tab_from_the_header()
+  And I clicked on Hire a Trip Designer link                                                                                                    # stepDefinitions.MoreTabStepDefinition.i_clicked_on_hire_a_trip_designer_link()
+  Then I should have a new Hire a Trip Designer page with a text "Reco Trip Designers | A new kind of travel agent experience from Tripadvisor" # stepDefinitions.MoreTabStepDefinition.i_should_have_a_new_hire_a_trip_designer_page_with_a_text(java.lang.String)

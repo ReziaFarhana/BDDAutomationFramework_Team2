@@ -65,6 +65,14 @@ public class UAWebElement {
     public static final String addCityFromLocator ="#ctl00_ContentInfo_BaggageFeeForm_Airports01_Origin_txtOrigin";
     public static final String addCityToLocator ="//input[@aria-autocomplete='list']";
     public static final String verifyBagPriceLocator ="//label[.='Standard checked bag price']";
+
+        // ~~  Electronic travel certificate section - Balance look up
+    public static final String LocatorForYearSelection ="#etcBalance-year";
+    public static final String LocatorToEnterPIN ="#etcBalance-pin";
+    public static final String LocatorForRecipientsLName ="#etcBalance-lastName";
+    public static final String locatorToClickOnConfirm ="#etcBalance-submit";
+    public static final String locatorToVerifyBalanceLookUp ="div.atm-l-linelength-container:nth-child(1) > div";
+    public static final String locatorToMakevisible ="//a[normalize-space()='Balance look up']";
 //    public static final String Locator ="";
 //    public static final String Locator ="";
 

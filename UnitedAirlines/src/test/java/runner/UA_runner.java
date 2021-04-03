@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
         monochrome = true,
         dryRun = false,
         publish = true
-        ,tags = "(@run) and (not @pending)"
+        ,tags = "(@smoke) and (not @pending)"
 
 )
 

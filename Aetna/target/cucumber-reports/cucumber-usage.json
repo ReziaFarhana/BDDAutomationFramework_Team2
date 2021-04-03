@@ -5,65 +5,21 @@
       {
         "name": "I am on Aetna\u0027s home page",
         "aggregatedDurations": {
-          "median": 12.184589,
-          "average": 12.697548242
+          "median": 11.0759243,
+          "average": 10.854685133
         },
         "durations": [
           {
-            "duration": 14.3789796,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:4"
+            "duration": 11.172131,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/TheHealthGuide.feature:4"
           },
           {
-            "duration": 13.0040586,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:4"
+            "duration": 11.0759243,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/TheHealthGuide.feature:4"
           },
           {
-            "duration": 13.796204,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:4"
-          },
-          {
-            "duration": 12.1121752,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:4"
-          },
-          {
-            "duration": 16.2592723,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:4"
-          },
-          {
-            "duration": 11.790529,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:4"
-          },
-          {
-            "duration": 11.6931059,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:4"
-          },
-          {
-            "duration": 13.6035966,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:4"
-          },
-          {
-            "duration": 11.9121658,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:4"
-          },
-          {
-            "duration": 11.3328684,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:4"
-          },
-          {
-            "duration": 11.3744394,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:4"
-          },
-          {
-            "duration": 12.8463403,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:4"
-          },
-          {
-            "duration": 12.2570028,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:4"
-          },
-          {
-            "duration": 11.4049375,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/MemberSupportHome.feature:5"
+            "duration": 10.3160001,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/TheHealthGuide.feature:4"
           }
         ]
       }
@@ -75,65 +31,21 @@
       {
         "name": "I click on the  Member support Menu bar link",
         "aggregatedDurations": {
-          "median": 0.29239275,
-          "average": 0.314033942
+          "median": 0.3095542,
+          "average": 0.301755933
         },
         "durations": [
           {
-            "duration": 0.3033623,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:5"
+            "duration": 0.3180418,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/TheHealthGuide.feature:5"
           },
           {
-            "duration": 0.2884782,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:5"
+            "duration": 0.2776718,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/TheHealthGuide.feature:5"
           },
           {
-            "duration": 0.2955891,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:5"
-          },
-          {
-            "duration": 0.2891964,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:5"
-          },
-          {
-            "duration": 0.2695411,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:5"
-          },
-          {
-            "duration": 0.4506722,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:5"
-          },
-          {
-            "duration": 0.2964187,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:5"
-          },
-          {
-            "duration": 0.2686365,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:5"
-          },
-          {
-            "duration": 0.2687428,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:5"
-          },
-          {
-            "duration": 0.407009,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:5"
-          },
-          {
-            "duration": 0.2633554,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:5"
-          },
-          {
-            "duration": 0.3414925,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:5"
-          },
-          {
-            "duration": 0.2720153,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:5"
-          },
-          {
-            "duration": 0.3819657,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/MemberSupportHome.feature:6"
+            "duration": 0.3095542,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/TheHealthGuide.feature:5"
           }
         ]
       }
@@ -145,858 +57,137 @@
       {
         "name": "I should get a drop down option for further slection",
         "aggregatedDurations": {
-          "median": 3.08126445,
-          "average": 3.089871442
+          "median": 3.0883767,
+          "average": 3.0880602
         },
         "durations": [
           {
-            "duration": 3.1175056,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:6"
+            "duration": 3.1080705,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/TheHealthGuide.feature:6"
           },
           {
-            "duration": 3.0765528,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:6"
+            "duration": 3.0883767,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/TheHealthGuide.feature:6"
           },
           {
-            "duration": 3.1340247,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:6"
-          },
-          {
-            "duration": 3.103416,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:6"
-          },
-          {
-            "duration": 3.0694411,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:6"
-          },
-          {
-            "duration": 3.124706,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:6"
-          },
-          {
-            "duration": 3.0616033,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:6"
-          },
-          {
-            "duration": 3.1130037,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:6"
-          },
-          {
-            "duration": 3.0726045,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:6"
-          },
-          {
-            "duration": 3.0824499,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:6"
-          },
-          {
-            "duration": 3.0400095,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:6"
-          },
-          {
-            "duration": 3.0508078,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:6"
-          },
-          {
-            "duration": 3.080079,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:6"
-          },
-          {
-            "duration": 3.1319963,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/MemberSupportHome.feature:7"
+            "duration": 3.0677334,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/TheHealthGuide.feature:6"
           }
         ]
       }
     ]
   },
   {
-    "source": "I hover over on account management Link",
+    "source": "I hover on The Health Guide Option and click on All health resources",
     "steps": [
       {
-        "name": "I hover over on account management Link",
+        "name": "I hover on The Health Guide Option and click on All health resources",
         "aggregatedDurations": {
-          "median": 0.2008508,
-          "average": 0.19627815
+          "median": 6.4946716,
+          "average": 6.2711715
         },
         "durations": [
           {
-            "duration": 0.2417989,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:7"
+            "duration": 6.4946716,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/TheHealthGuide.feature:9"
           },
           {
-            "duration": 0.1473716,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:7"
+            "duration": 6.5275604,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/TheHealthGuide.feature:13"
           },
           {
-            "duration": 0.2279126,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:7"
-          },
-          {
-            "duration": 0.2279826,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:7"
-          },
-          {
-            "duration": 0.164834,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:7"
-          },
-          {
-            "duration": 0.2147092,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:7"
-          },
-          {
-            "duration": 0.1586239,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:7"
-          },
-          {
-            "duration": 0.1869924,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:7"
+            "duration": 5.7912825,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/TheHealthGuide.feature:18"
           }
         ]
       }
     ]
   },
   {
-    "source": "I click on Log in to your member website link",
+    "source": "I should land on a new page with a Title {string}",
     "steps": [
       {
-        "name": "I click on Log in to your member website link",
+        "name": "I should land on a new page with a Title \"Your good health starts here\"",
         "aggregatedDurations": {
-          "median": 3.8217765,
-          "average": 3.8217765
+          "median": 0.0467391,
+          "average": 0.0467391
         },
         "durations": [
           {
-            "duration": 3.8217765,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:11"
+            "duration": 0.0467391,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/TheHealthGuide.feature:10"
           }
         ]
       }
     ]
   },
   {
-    "source": "I click on Find a doctor link",
+    "source": "I click on HMO vs POS and more",
     "steps": [
       {
-        "name": "I click on Find a doctor link",
+        "name": "I click on HMO vs POS and more",
         "aggregatedDurations": {
-          "median": 2.7157622,
-          "average": 3.256584428
+          "median": 0.0628308,
+          "average": 0.0628308
         },
         "durations": [
           {
-            "duration": 5.8443747,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:16"
-          },
-          {
-            "duration": 2.7157622,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:21"
-          },
-          {
-            "duration": 2.4119641,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:27"
-          },
-          {
-            "duration": 2.6582991,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:39"
-          },
-          {
-            "duration": 2.5823314,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:51"
-          },
-          {
-            "duration": 3.2258446,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:64"
-          },
-          {
-            "duration": 3.3575149,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:77"
+            "duration": 0.0628308,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/TheHealthGuide.feature:14"
           }
         ]
       }
     ]
   },
   {
-    "source": "I should have land on a Find a doctor with a text {string}",
+    "source": "I should see the corresponding {string}",
     "steps": [
       {
-        "name": "I should have land on a Find a doctor with a text \"Find Doctor, Dentist or Hospital\"",
+        "name": "I should see the corresponding \"HMO, POS, PPO, HDHP: Explained\"",
         "aggregatedDurations": {
-          "median": 0.0554528,
-          "average": 0.0554528
+          "median": 0.0608356,
+          "average": 0.0608356
         },
         "durations": [
           {
-            "duration": 0.0554528,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:17"
+            "duration": 0.0608356,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/TheHealthGuide.feature:15"
           }
         ]
       }
     ]
   },
   {
-    "source": "I click on a Find a pharmacy link",
+    "source": "I click on Helping families",
     "steps": [
       {
-        "name": "I click on a Find a pharmacy link",
+        "name": "I click on Helping families",
         "aggregatedDurations": {
-          "median": 4.50368485,
-          "average": 4.478163316
+          "median": 0.1062836,
+          "average": 0.1062836
         },
         "durations": [
           {
-            "duration": 4.434954,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:22"
-          },
-          {
-            "duration": 4.4033173,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:28"
-          },
-          {
-            "duration": 4.0997759,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:40"
-          },
-          {
-            "duration": 4.6232826,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:52"
-          },
-          {
-            "duration": 4.7352344,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:65"
-          },
-          {
-            "duration": 4.5724157,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:78"
+            "duration": 0.1062836,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/TheHealthGuide.feature:19"
           }
         ]
       }
     ]
   },
   {
-    "source": "I should have land on a Pharmacy Home with a text {string}",
+    "source": "I should see the corresponding helping families text {string}",
     "steps": [
       {
-        "name": "I should have land on a Pharmacy Home with a text \"Aetna Pharmacy Home\"",
+        "name": "I should see the corresponding helping families text \"Neighborhood health story\"",
         "aggregatedDurations": {
-          "median": 0.0599502,
-          "average": 0.0599502
+          "median": 0.061836,
+          "average": 0.061836
         },
         "durations": [
           {
-            "duration": 0.0599502,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:23"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "I select Retail Pharmacy Locations",
-    "steps": [
-      {
-        "name": "I select Retail Pharmacy Locations",
-        "aggregatedDurations": {
-          "median": 0.3753836,
-          "average": 0.3602371
-        },
-        "durations": [
-          {
-            "duration": 0.3161683,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:29"
-          },
-          {
-            "duration": 0.3753836,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:41"
-          },
-          {
-            "duration": 0.3891594,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:80"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "I click on a Radio button named ZIP CODE",
-    "steps": [
-      {
-        "name": "I click on a Radio button named ZIP CODE",
-        "aggregatedDurations": {
-          "median": 0.0164014,
-          "average": 0.0164014
-        },
-        "durations": [
-          {
-            "duration": 0.0169971,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:30"
-          },
-          {
-            "duration": 0.0158057,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:82"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "I entered a zip cod {string}",
-    "steps": [
-      {
-        "name": "I entered a zip cod \"10001\"",
-        "aggregatedDurations": {
-          "median": 0.0452878,
-          "average": 0.043432133
-        },
-        "durations": [
-          {
-            "duration": 0.0452878,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:31"
-          },
-          {
-            "duration": 0.0524484,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:56"
-          },
-          {
-            "duration": 0.0325602,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:83"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "I select Distance 20 miles",
-    "steps": [
-      {
-        "name": "I select Distance 20 miles",
-        "aggregatedDurations": {
-          "median": 2.30687385,
-          "average": 2.30687385
-        },
-        "durations": [
-          {
-            "duration": 2.3006388,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:32"
-          },
-          {
-            "duration": 2.3131089,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:84"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "I select a Plan Aetna Rx Value Network",
-    "steps": [
-      {
-        "name": "I select a Plan Aetna Rx Value Network",
-        "aggregatedDurations": {
-          "median": 20.4687314,
-          "average": 20.4719446
-        },
-        "durations": [
-          {
-            "duration": 20.4875432,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:33"
-          },
-          {
-            "duration": 20.4687314,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:45"
-          },
-          {
-            "duration": 20.4281321,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:58"
-          },
-          {
-            "duration": 20.5146887,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:71"
-          },
-          {
-            "duration": 20.4606276,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:81"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "I click on the search box",
-    "steps": [
-      {
-        "name": "I click on the search box",
-        "aggregatedDurations": {
-          "median": 3.2839622,
-          "average": 3.2839622
-        },
-        "durations": [
-          {
-            "duration": 3.5106065,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:34"
-          },
-          {
-            "duration": 3.0573179,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:46"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "I should find a text {string}",
-    "steps": [
-      {
-        "name": "I should find a text \"Aetna Rx Value Network\"",
-        "aggregatedDurations": {
-          "median": 0.03324205,
-          "average": 0.03324205
-        },
-        "durations": [
-          {
-            "duration": 0.0397313,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:35"
-          },
-          {
-            "duration": 0.0267528,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:47"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "I click on a Radio button named CITY CODE",
-    "steps": [
-      {
-        "name": "I click on a Radio button named CITY CODE",
-        "aggregatedDurations": {
-          "median": 0.28154105,
-          "average": 0.28154105
-        },
-        "durations": [
-          {
-            "duration": 0.2598262,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:42"
-          },
-          {
-            "duration": 0.3032559,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:68"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "I entered a City {string}",
-    "steps": [
-      {
-        "name": "I entered a City \"Alexandria\"",
-        "aggregatedDurations": {
-          "median": 0.0643738,
-          "average": 0.0643738
-        },
-        "durations": [
-          {
-            "duration": 0.0479626,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:43"
-          },
-          {
-            "duration": 0.080785,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:69"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "I select State",
-    "steps": [
-      {
-        "name": "I select State",
-        "aggregatedDurations": {
-          "median": 2.3252508,
-          "average": 2.3252508
-        },
-        "durations": [
-          {
-            "duration": 2.3086914,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:44"
-          },
-          {
-            "duration": 2.3418102,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:70"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "I click on a Search by Name tab",
-    "steps": [
-      {
-        "name": "I click on a Search by Name tab",
-        "aggregatedDurations": {
-          "median": 1.09352145,
-          "average": 1.09352145
-        },
-        "durations": [
-          {
-            "duration": 1.5347803,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:53"
-          },
-          {
-            "duration": 0.6522626,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:66"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "I enter the Pharmacy Name {string}",
-    "steps": [
-      {
-        "name": "I enter the Pharmacy Name \"CVS\"",
-        "aggregatedDurations": {
-          "median": 0.06173125,
-          "average": 0.06173125
-        },
-        "durations": [
-          {
-            "duration": 0.0796186,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:54"
-          },
-          {
-            "duration": 0.0438439,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:85"
-          }
-        ]
-      },
-      {
-        "name": "I enter the Pharmacy Name \"cvs\"",
-        "aggregatedDurations": {
-          "median": 0.0639493,
-          "average": 0.0639493
-        },
-        "durations": [
-          {
-            "duration": 0.0639493,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:67"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "I verify ZIP Code is selected",
-    "steps": [
-      {
-        "name": "I verify ZIP Code is selected",
-        "aggregatedDurations": {
-          "median": 0.0387992,
-          "average": 0.0387992
-        },
-        "durations": [
-          {
-            "duration": 0.0387992,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:55"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "I select Distance 30 miles",
-    "steps": [
-      {
-        "name": "I select Distance 30 miles",
-        "aggregatedDurations": {
-          "median": 0.4234563,
-          "average": 0.4234563
-        },
-        "durations": [
-          {
-            "duration": 0.4234563,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:57"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "I click on the search box of Search By Name tab",
-    "steps": [
-      {
-        "name": "I click on the search box of Search By Name tab",
-        "aggregatedDurations": {
-          "median": 1.0954376,
-          "average": 1.137122233
-        },
-        "durations": [
-          {
-            "duration": 1.0691503,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:59"
-          },
-          {
-            "duration": 1.2467788,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:72"
-          },
-          {
-            "duration": 1.0954376,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:86"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "I should find Search by Name ends with a page that has a text{string}",
-    "steps": [
-      {
-        "name": "I should find Search by Name ends with a page that has a text\"Pharmacy Name:\"",
-        "aggregatedDurations": {
-          "median": 0.0440499,
-          "average": 0.0440499
-        },
-        "durations": [
-          {
-            "duration": 0.0440052,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:60"
-          },
-          {
-            "duration": 0.0440946,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:73"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "I click on a Advance Search tab",
-    "steps": [
-      {
-        "name": "I click on a Advance Search tab",
-        "aggregatedDurations": {
-          "median": 0.9886054,
-          "average": 0.9886054
-        },
-        "durations": [
-          {
-            "duration": 0.9886054,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:79"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "I should land on a page with a text {string}",
-    "steps": [
-      {
-        "name": "I should land on a page with a text \"Search Settings\"",
-        "aggregatedDurations": {
-          "median": 0.0408939,
-          "average": 0.0408939
-        },
-        "durations": [
-          {
-            "duration": 0.0408939,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:87"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "I click on find Medicine and costs link",
-    "steps": [
-      {
-        "name": "I click on find Medicine and costs link",
-        "aggregatedDurations": {
-          "median": 2.07441,
-          "average": 2.20195106
-        },
-        "durations": [
-          {
-            "duration": 2.0673125,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:10"
-          },
-          {
-            "duration": 2.07441,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:15"
-          },
-          {
-            "duration": 2.3818961,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:21"
-          },
-          {
-            "duration": 2.0180884,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:21"
-          },
-          {
-            "duration": 2.4680483,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:21"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "I should have land to a page {string}",
-    "steps": [
-      {
-        "name": "I should have land to a page \"Prescription Drug List (Formulary), Coverage \u0026 Costs - Aetna | Find a Medication\"",
-        "aggregatedDurations": {
-          "median": 0.0119712,
-          "average": 0.0119712
-        },
-        "durations": [
-          {
-            "duration": 0.0119712,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:11"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "I click on explore medicare option button",
-    "steps": [
-      {
-        "name": "I click on explore medicare option button",
-        "aggregatedDurations": {
-          "median": 6.9053096,
-          "average": 6.906235775
-        },
-        "durations": [
-          {
-            "duration": 7.5317265,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:16"
-          },
-          {
-            "duration": 7.1479506,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:22"
-          },
-          {
-            "duration": 6.6626686,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:22"
-          },
-          {
-            "duration": 6.2825974,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:22"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "I should have get medicare Aetna logo page",
-    "steps": [
-      {
-        "name": "I should have get medicare Aetna logo page",
-        "aggregatedDurations": {
-          "median": 0.1390017,
-          "average": 0.1390017
-        },
-        "durations": [
-          {
-            "duration": 0.1390017,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:17"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "I enter {string} {string} and {string}",
-    "steps": [
-      {
-        "name": "I enter \"Maria\" \"Bolton\" and \"ma@aetna.com\"",
-        "aggregatedDurations": {
-          "median": 0.26178,
-          "average": 0.26178
-        },
-        "durations": [
-          {
-            "duration": 0.26178,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:23"
-          }
-        ]
-      },
-      {
-        "name": "I enter \"Martha\" \"Daniel\" and \"tha@aetna.com\"",
-        "aggregatedDurations": {
-          "median": 0.3390561,
-          "average": 0.3390561
-        },
-        "durations": [
-          {
-            "duration": 0.3390561,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:23"
-          }
-        ]
-      },
-      {
-        "name": "I enter \"Caleb\" \"John\" and \"ca@aetna.com\"",
-        "aggregatedDurations": {
-          "median": 0.2144391,
-          "average": 0.2144391
-        },
-        "durations": [
-          {
-            "duration": 0.2144391,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:23"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "I click on a signUp button",
-    "steps": [
-      {
-        "name": "I click on a signUp button",
-        "aggregatedDurations": {
-          "median": 0.5106044,
-          "average": 0.5066996
-        },
-        "durations": [
-          {
-            "duration": 0.4845799,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:24"
-          },
-          {
-            "duration": 0.5106044,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:24"
-          },
-          {
-            "duration": 0.5249145,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:24"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "I should have a text response of {string}",
-    "steps": [
-      {
-        "name": "I should have a text response of \"Thanks! Be sure to check your email for periodic u\"",
-        "aggregatedDurations": {
-          "median": 0.0636251,
-          "average": 0.062907133
-        },
-        "durations": [
-          {
-            "duration": 0.0766667,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:25"
-          },
-          {
-            "duration": 0.0484296,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:25"
-          },
-          {
-            "duration": 0.0636251,
-            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/FindMedicinCoste.feature:25"
+            "duration": 0.061836,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/TheHealthGuide.feature:20"
           }
         ]
       }

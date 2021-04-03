@@ -2,88 +2,53 @@ package homepage;
 
 import common.WebAPI;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+
+import java.net.HttpURLConnection;
+import java.util.List;
 
 import static homepage.HomePageWebElement.*;
 
 public class HomePage extends WebAPI {
 
-// Action Method class
-
-    // Find By Annotation: First Approach
-    @FindBy(how = How.ID, using =searchBoxLocator ) public WebElement searchBox;
-    @FindBy (how = How.ID, using =searchButtonLocator ) public WebElement searchButton;
-    @FindBy (how = How.XPATH, using =searchTextLocator ) public WebElement searchText;
-    @FindBy (how = How.XPATH, using =helloSignInLocator ) public WebElement helloSignIn;
-    @FindBy (how = How.XPATH, using =emailPhoneForSignInLocator ) public WebElement emailPhoneForSignIn;
-    @FindBy (how = How.XPATH, using =passwordForSignInLocator ) public WebElement passwordForSignIn;
-    @FindBy (how = How.XPATH, using =continueForSignInLocator ) public WebElement continueForSignIn;
-    @FindBy (how = How.XPATH, using =signInSubmitLocator ) public WebElement signInSubmit;
-    @FindBy (how = How.XPATH, using =helloUserLocator ) public WebElement helloUser;
-    @FindBy (how = How.XPATH, using =errorMessageLocator ) public WebElement errorMessage;
-    @FindBy (how = How.XPATH, using =customerNameLocator ) public WebElement customerName;
-    @FindBy (how = How.XPATH, using =createYourAmazonAccountLocator ) public WebElement createYourAmazonAccount;
-
-
-
-
-    public void enterProductName( String productName){
-        searchBox.sendKeys(productName);
+    public void verifyAddAPlacePage(String expected) {
+        String actual = getTextByCss(locatorToVerifyAddPlace);
+        Assert.assertEquals("Test failed", expected, actual);
     }
 
-    public void clickOnSearchButton(){
-        searchButton.click();
+    public void verifyAirlinesPage(String expected) {
+        String actual = getTextByXpath(locatorToVerifyAirlinesLink);
+        Assert.assertEquals("Test failed", expected, actual);
     }
 
-    public void verifySearchResult(String expectedText){
-        String actualText=searchText.getText();
-        Assert.assertEquals("Product does not match",expectedText,actualText);
+    public void verifyTitlePage(String expected) {
+        String actual = driver.getTitle();
+        Assert.assertEquals("Test failed", expected, actual);
     }
 
-    public void verifySearchResultNotMatch(String expectedText){
-        String actualText=searchText.getText();
-        Assert.assertNotEquals("Product does not match",expectedText,actualText);
+    public void bootStrap(String loc, String val) {
+        List<WebElement> list = driver.findElements(By.xpath(loc));
+        System.out.println(list.size());
+//        for (int i = 0; i < siz; i++) {
+//            System.out.println(list.get(i).getText());
+//            if (list.get(i).getText().contains(val)) {
+//                list.get(i).click();
+//
+//            }
+//        }
+
+        for(WebElement el : list){
+            System.out.println(list.size());
+            System.out.println(el.getText());
+            if(el.getText().contains(val)){
+                el.click();
+            }
+        }
+
     }
 
-    public void verifyPageTitle(String expectedText){
-        String actualText=driver.getTitle();
-        Assert.assertEquals("Page Title not match",expectedText,actualText);
-    }
-
-    public void clickOnHelloSignIn(){
-        helloSignIn.click();
-    }
-    public void enterEmailPhone( String emailPhone){
-        emailPhoneForSignIn.sendKeys(emailPhone);
-    }
-
-    public void clickOnContinueForSignIn(){
-        continueForSignIn.click();
-    }
-    public void enterPasswordForSignIn( String password){
-        passwordForSignIn.sendKeys(password);
-    }
-    public void clickOnSignInSubmit(){
-        signInSubmit.click();
-    }
-
-    public void verifyUserLoggedIn(String expectedText){
-        String actualText=helloUser.getText();
-        Assert.assertEquals("Product does not match",expectedText,actualText);
-    }
-    public void verifyErrorMessage(String expectedText){
-        String actualText=errorMessage.getText();
-        Assert.assertEquals("Product does not match",expectedText,actualText);
-    }
-
-    public void enterCustomerName( String name){
-        customerName.sendKeys(name);
-    }
-
-    public void clickOnCreateYourAmazonAccount(){
-        createYourAmazonAccount.click();
-    }
 
 }

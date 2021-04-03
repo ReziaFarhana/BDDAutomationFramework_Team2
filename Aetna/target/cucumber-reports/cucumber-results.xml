@@ -1,207 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="14" time="476.719">
-    <testcase classname="Verifying Account management option" name="Log in to your member website -- this is a dummy trial" time="24.796">
-        <failure message="Test failed. Actual: Secure Member Log-in" type="java.lang.AssertionError">
-            <![CDATA[Given I am on Aetna's home page.............................................passed
-When I click on the  Member support Menu bar link...........................passed
-Then I should get a drop down option for further slection...................passed
-And I hover over on account management Link.................................passed
-When I click on Log in to your member website link..........................passed
-Then I should have land on a page with a text "Secure Member Log-in"........failed
-
-StackTrace:
-java.lang.AssertionError: Test failed. Actual: Secure Member Log-in
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failEquals(Assert.java:187)
-	at org.junit.Assert.assertNotEquals(Assert.java:163)
-	at homepage.HomePage.verifyLoginPage(HomePage.java:20)
-	at stepDefinitions.MemberSupportAccountManagement.i_should_have_land_on_a_page_with_a_text(MemberSupportAccountManagement.java:82)
-	at ✽.I should have land on a page with a text "Secure Member Log-in"(file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:12)
-]]>
-        </failure>
-    </testcase>
-    <testcase classname="Verifying Account management option" name="Find a doctor  --&gt;" time="24.19">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="65.22">
+    <testcase classname="Working on The Health Guide Tab" name="To verify the All health resources  Link" time="22.271">
         <system-out>
             <![CDATA[Given I am on Aetna's home page.............................................passed
 When I click on the  Member support Menu bar link...........................passed
 Then I should get a drop down option for further slection...................passed
-And I hover over on account management Link.................................passed
-When I click on Find a doctor link..........................................passed
-Then I should have land on a Find a doctor with a text "Find Doctor, Dentist or Hospital".passed
+And I hover on The Health Guide Option and click on All health resources....passed
+Then I should land on a new page with a Title "Your good health starts here".passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Verifying Account management option" name="Find a pharmacy under the Find doctor link section" time="26.569">
+    <testcase classname="Working on The Health Guide Tab" name="verify HMO vs POS and more is selected" time="22.003">
         <system-out>
             <![CDATA[Given I am on Aetna's home page.............................................passed
 When I click on the  Member support Menu bar link...........................passed
 Then I should get a drop down option for further slection...................passed
-And I hover over on account management Link.................................passed
-When I click on Find a doctor link..........................................passed
-And I click on a Find a pharmacy link.......................................passed
-Then I should have land on a Pharmacy Home with a text "Aetna Pharmacy Home".passed
+When I hover on The Health Guide Option and click on All health resources...passed
+And I click on HMO vs POS and more..........................................passed
+Then I should see the corresponding "HMO, POS, PPO, HDHP: Explained"........passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Verifying Account management option" name="Search Pharmacy by Location ZIP" time="51.206">
+    <testcase classname="Working on The Health Guide Tab" name="verify Helping families is selected" time="20.593">
         <system-out>
             <![CDATA[Given I am on Aetna's home page.............................................passed
 When I click on the  Member support Menu bar link...........................passed
 Then I should get a drop down option for further slection...................passed
-And I hover over on account management Link.................................passed
-When I click on Find a doctor link..........................................passed
-And I click on a Find a pharmacy link.......................................passed
-And I select Retail Pharmacy Locations......................................passed
-And I click on a Radio button named ZIP CODE................................passed
-And I entered a zip cod "10001".............................................passed
-And I select Distance 20 miles..............................................passed
-And I select a Plan Aetna Rx Value Network..................................passed
-When I click on the search box..............................................passed
-Then I should find a text "Aetna Rx Value Network"..........................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Verifying Account management option" name="Search Pharmacy by Location City" time="55.123">
-        <system-out>
-            <![CDATA[Given I am on Aetna's home page.............................................passed
-When I click on the  Member support Menu bar link...........................passed
-Then I should get a drop down option for further slection...................passed
-And I hover over on account management Link.................................passed
-When I click on Find a doctor link..........................................passed
-And I click on a Find a pharmacy link.......................................passed
-And I select Retail Pharmacy Locations......................................passed
-And I click on a Radio button named CITY CODE...............................passed
-And I entered a City "Alexandria"...........................................passed
-And I select State..........................................................passed
-And I select a Plan Aetna Rx Value Network..................................passed
-When I click on the search box..............................................passed
-Then I should find a text "Aetna Rx Value Network"..........................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Verifying Account management option" name="Search by Name using a ZIP Code" time="47.941">
-        <system-out>
-            <![CDATA[Given I am on Aetna's home page.............................................passed
-When I click on the  Member support Menu bar link...........................passed
-Then I should get a drop down option for further slection...................passed
-And I hover over on account management Link.................................passed
-When I click on Find a doctor link..........................................passed
-And I click on a Find a pharmacy link.......................................passed
-And I click on a Search by Name tab.........................................passed
-And I enter the Pharmacy Name "CVS".........................................passed
-And I verify ZIP Code is selected...........................................passed
-And I entered a zip cod "10001".............................................passed
-And I select Distance 30 miles..............................................passed
-And I select a Plan Aetna Rx Value Network..................................passed
-When I click on the search box of Search By Name tab........................passed
-Then I should find Search by Name ends with a page that has a text"Pharmacy Name:".passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Verifying Account management option" name="Search by Name using a City" time="50.52">
-        <system-out>
-            <![CDATA[Given I am on Aetna's home page.............................................passed
-When I click on the  Member support Menu bar link...........................passed
-Then I should get a drop down option for further slection...................passed
-And I hover over on account management Link.................................passed
-When I click on Find a doctor link..........................................passed
-And I click on a Find a pharmacy link.......................................passed
-And I click on a Search by Name tab.........................................passed
-And I enter the Pharmacy Name "cvs".........................................passed
-And I click on a Radio button named CITY CODE...............................passed
-And I entered a City "Alexandria"...........................................passed
-And I select State..........................................................passed
-And I select a Plan Aetna Rx Value Network..................................passed
-When I click on the search box of Search By Name tab........................passed
-Then I should find Search by Name ends with a page that has a text"Pharmacy Name:".passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Verifying Account management option" name="Advance Search using a ZIP Code" time="52.216">
-        <system-out>
-            <![CDATA[Given I am on Aetna's home page.............................................passed
-When I click on the  Member support Menu bar link...........................passed
-Then I should get a drop down option for further slection...................passed
-And I hover over on account management Link.................................passed
-When I click on Find a doctor link..........................................passed
-And I click on a Find a pharmacy link.......................................passed
-And I click on a Advance Search tab.........................................passed
-And I select Retail Pharmacy Locations......................................passed
-And I select a Plan Aetna Rx Value Network..................................passed
-And I click on a Radio button named ZIP CODE................................passed
-And I entered a zip cod "10001".............................................passed
-And I select Distance 20 miles..............................................passed
-And I enter the Pharmacy Name "CVS".........................................passed
-When I click on the search box of Search By Name tab........................passed
-Then I should land on a page with a text "Search Settings"..................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Verify Find Medicine and Costs" name="Verify Find Medicine and Costs Link" time="18.62">
-        <system-out>
-            <![CDATA[Given I am on Aetna's home page.............................................passed
-When I click on the  Member support Menu bar link...........................passed
-Then I should get a drop down option for further slection...................passed
-When I click on find Medicine and costs link................................passed
-Then I should have land to a page "Prescription Drug List (Formulary), Coverage & Costs - Aetna | Find a Medication".passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Verify Find Medicine and Costs" name="verify medicare option plan in Prescription Drug List ... | Find a Medication page" time="26.385">
-        <system-out>
-            <![CDATA[Given I am on Aetna's home page.............................................passed
-When I click on the  Member support Menu bar link...........................passed
-Then I should get a drop down option for further slection...................passed
-When I click on find Medicine and costs link................................passed
-And I click on explore medicare option button...............................passed
-Then I should have get medicare Aetna logo page.............................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Verify Find Medicine and Costs" name="Email subscription" time="27.105">
-        <system-out>
-            <![CDATA[Given I am on Aetna's home page.............................................passed
-When I click on the  Member support Menu bar link...........................passed
-Then I should get a drop down option for further slection...................passed
-When I click on find Medicine and costs link................................passed
-And I click on explore medicare option button...............................passed
-When I enter "Maria" "Bolton" and "ma@aetna.com"............................passed
-And I click on a signUp button..............................................passed
-Then I should have a text response of "Thanks! Be sure to check your email for periodic u".passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Verify Find Medicine and Costs" name="Email subscription 2" time="27.734">
-        <system-out>
-            <![CDATA[Given I am on Aetna's home page.............................................passed
-When I click on the  Member support Menu bar link...........................passed
-Then I should get a drop down option for further slection...................passed
-When I click on find Medicine and costs link................................passed
-And I click on explore medicare option button...............................passed
-When I enter "Martha" "Daniel" and "tha@aetna.com"..........................passed
-And I click on a signUp button..............................................passed
-Then I should have a text response of "Thanks! Be sure to check your email for periodic u".passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Verify Find Medicine and Costs" name="Email subscription 3" time="26.868">
-        <system-out>
-            <![CDATA[Given I am on Aetna's home page.............................................passed
-When I click on the  Member support Menu bar link...........................passed
-Then I should get a drop down option for further slection...................passed
-When I click on find Medicine and costs link................................passed
-And I click on explore medicare option button...............................passed
-When I enter "Caleb" "John" and "ca@aetna.com"..............................passed
-And I click on a signUp button..............................................passed
-Then I should have a text response of "Thanks! Be sure to check your email for periodic u".passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Verifying Aetna Member support Home page Header https://www.aetna.com/" name="Member support Home page" time="16.54">
-        <system-out>
-            <![CDATA[Given I am on Aetna's home page.............................................passed
-When I click on the  Member support Menu bar link...........................passed
-Then I should get a drop down option for further slection...................passed
+When I hover on The Health Guide Option and click on All health resources...passed
+And I click on Helping families.............................................passed
+Then I should see the corresponding helping families text "Neighborhood health story".passed
 ]]>
         </system-out>
     </testcase>

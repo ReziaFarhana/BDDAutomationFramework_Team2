@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="0.445">
+    <testcase classname="Verifing Online Banking product features" name="Products Tab option" time="0.075">
+        <system-out>
+            <![CDATA[Given I am navigated to TDBank Home page TDBank.............................passed
+And I clicked on the Log In Header Option...................................passed
+And I locate and clicked on Online Banking under Login......................passed
+Then I should land on a new Online Banking windows tab "Welcome to Online Banking".passed
+When I clicked on Products tab..............................................passed
+Then I should have a Title page "Products and Services".....................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Verifing Online Banking product features" name="Cross Border Banking Solutions Tab Option" time="0.014">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given I am navigated to TDBank Home page TDBank.............................passed
+And I clicked on the Log In Header Option...................................passed
+And I locate and clicked on Online Banking under Login......................passed
+Then I should land on a new Online Banking windows tab "Welcome to Online Banking".passed
+When I clicked on Products tab..............................................passed
+And I hover on the Solutions Link...........................................undefined
+And I clicked on Cross Border Banking.......................................skipped
+Then I should land on a new Online Banking windows tab "Welcome to Online Banking".skipped
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Verify TDBank Online services" name="accessing Online Banking From the Service Header Option" time="0.01">
+        <system-out>
+            <![CDATA[Given I am navigated to TDBank Home page TDBank.............................passed
+And I clicked on Services link..............................................passed
+And I locate and clicked on Online Banking..................................passed
+Then I should land on a new Online Banking page "Online Banking"............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Verify TDBank Online services" name="accessing Online Banking From the Log In Option" time="0.006">
+        <system-out>
+            <![CDATA[Given I am navigated to TDBank Home page TDBank.............................passed
+And I clicked on the Log In Header Option...................................passed
+And I locate and clicked on Online Banking under Login......................passed
+Then I should land on a new Online Banking windows tab "Welcome to Online Banking".passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
