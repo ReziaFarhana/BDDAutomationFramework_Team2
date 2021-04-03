@@ -628,7 +628,7 @@ public class WebAPI {
         driver.switchTo().window(tab.get(1));
 
     }
-    public void rightClickandOpenNewTabUsingXPATH(String locator)  {
+    public void     rightClickandOpenNewTabUsingXPATH(String locator)  {
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         WebElement element = driver.findElement(By.xpath(locator)); //get your element
 

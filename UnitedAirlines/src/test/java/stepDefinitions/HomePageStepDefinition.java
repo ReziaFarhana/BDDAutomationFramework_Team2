@@ -34,46 +34,38 @@ public class HomePageStepDefinition  extends WebAPI {
         homePage= PageFactory.initElements(driver,HomePage.class);
     }
 
-    @After
-    public void closeBrowser(){
-        cleanUp();
+//    @After
+//    public void closeBrowser(){
+//        cleanUp();
+//    }
+
+    @Given("user is on the UnitedAirlines homepage")
+    public void user_is_on_the_united_airlines_homepage() throws IOException {
+        openBrowser("https://www.united.com/en/us");
+    }
+    @And("user enters From location")
+    public void user_enters_from_location() {
+        homePage.enterLocationFrom();
+    }
+    @Given("user enters To location")
+    public void user_enters_to_location() {
+        homePage.enterLocationTo();
+    }
+    @Given("user enters dates for flight")
+    public void user_enters_dates_for_flight() {
+        homePage.selectDates();
+    }
+    @Given("user selects Premium economy")
+    public void user_selects_premium_economy() {
+        homePage.selectFlightClass();
+    }
+    @When("user clicks Find Flights button")
+    public void user_clicks_find_flights_button() {
+        homePage.clickFindFlightsBtn();
     }
 
 
-    @Given("I am on amazon homePage")
-    public void i_am_on_amazon_home_page() throws IOException {
-    // Call Action method
-        openBrowser("https://www.amazon.com/");
 
-    }
-
-    @And("I enter {string} in searchBox")
-    public void i_enter_in_search_box(String productName) {
-        // Action method
-        homePage.enterProductName(productName);
-    }
-
-
-    @When("I click on search Button")
-    public void i_click_on_search_button() {
-    homePage.clickOnSearchButton();
-    }
-
-    @Then("I should see {string} is properly appear")
-    public void i_should_see_is_properly_appear(String expectedText) {
-    homePage.verifySearchResult("\""+expectedText+"\"");
-    }
-
-    @Then("I should not see {string} is appear")
-    public void i_should_not_see_is_appear(String expectedText) {
-        homePage.verifySearchResultNotMatch("\""+expectedText+"\"");
-    }
-
-    @Then("I verify {string} in product title")
-    public void i_verify_in_product_title(String expectedText) {
-        // Amazon.com : hand sanitizer
-        homePage.verifyPageTitle(expectedText);
-    }
 
 
 

@@ -1,0 +1,38 @@
+
+@smokeTest
+Scenario: Book A Flight functionality          # src/test/java/features/HomePage.feature:4
+  Given user is on the UnitedAirlines homepage # stepDefinitions.HomePageStepDefinition.user_is_on_the_united_airlines_homepage()
+  And user enters From location                # stepDefinitions.HomePageStepDefinition.user_enters_from_location()
+  And user enters To location                  # stepDefinitions.HomePageStepDefinition.user_enters_to_location()
+  And user enters dates for flight             # stepDefinitions.HomePageStepDefinition.user_enters_dates_for_flight()
+      org.openqa.selenium.NoSuchElementException: Unable to locate element: //td[@aria-label='Friday, May 28, 2021, Currently selected as Start Date.']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-P1DOK11', ip: '192.168.0.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 86.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210310152336, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 1116, moz:profile: C:\Users\Easha\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9b9d8754-9b1c-4931-be1f-57d0cc3f7b58
+*** Element info: {Using=xpath, value=//td[@aria-label='Friday, May 28, 2021, Currently selected as Start Date.']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at homepage.HomePage.selectDates(HomePage.java:24)
+	at stepDefinitions.HomePageStepDefinition.user_enters_dates_for_flight(HomePageStepDefinition.java:56)
+	at ✽.user enters dates for flight(file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/HomePage.feature:8)
+
+
+    Embedding demo1 [image/png 2696205 bytes]
+
+  And user selects Premium economy             # stepDefinitions.HomePageStepDefinition.user_selects_premium_economy()
+  When user clicks Find Flights button         # stepDefinitions.HomePageStepDefinition.user_clicks_find_flights_button()

@@ -4,6 +4,7 @@ import common.WebAPI;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.support.ui.Select;
 
 import static homepage.ProductsDropDownWebElement.*;
 
@@ -42,5 +43,7 @@ public class ProductDropDownPage extends WebAPI {
         String actualText = getTextByXpath(findALoanTextCusXp);
         Assert.assertEquals("Text doesnt match", expectedText, actualText);
     }
+    //**************************************************************************
+
 
 }

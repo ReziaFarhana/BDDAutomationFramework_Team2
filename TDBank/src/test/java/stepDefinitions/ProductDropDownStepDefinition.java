@@ -81,6 +81,6 @@ public class ProductDropDownStepDefinition extends WebAPI {
 
     @And("user verifies {string} is displayed")
     public void userVerifiesIsDisplayed(String expectedText) {
-        productsddpage.verifyCalculate();
+        productsddpage.verifyCalculate(expectedText);
     }
 }

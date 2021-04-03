@@ -1,9 +1,7 @@
-Feature:
+Feature:Travel Forum Page Functionality
 
   Background:
     Given user is on Travel Forum page
-
-
 
   Scenario Outline: Search Box functionality check with Valid Product
     When user clicks on searchbox

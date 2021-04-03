@@ -1,0 +1,56 @@
+[
+  {
+    "source": "user is on the UnitedAirlines homepage",
+    "steps": [
+      {
+        "name": "user is on the UnitedAirlines homepage",
+        "aggregatedDurations": {
+          "median": 20.4453003,
+          "average": 20.4453003
+        },
+        "durations": [
+          {
+            "duration": 20.4453003,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/HomePage.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user enters From location",
+    "steps": [
+      {
+        "name": "user enters From location",
+        "aggregatedDurations": {
+          "median": 0.5837652,
+          "average": 0.5837652
+        },
+        "durations": [
+          {
+            "duration": 0.5837652,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/HomePage.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user enters To location",
+    "steps": [
+      {
+        "name": "user enters To location",
+        "aggregatedDurations": {
+          "median": 0.3629002,
+          "average": 0.3629002
+        },
+        "durations": [
+          {
+            "duration": 0.3629002,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/HomePage.feature:7"
+          }
+        ]
+      }
+    ]
+  }
+]
