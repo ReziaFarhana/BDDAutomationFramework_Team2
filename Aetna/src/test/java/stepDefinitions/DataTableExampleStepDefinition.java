@@ -16,7 +16,7 @@ import java.util.Map;
 
 public class DataTableExampleStepDefinition extends WebAPI {
     static HomePage homePage;
-
+/*
     @BeforeStep
     public static void getInit(){
         homePage= PageFactory.initElements(driver,HomePage.class);
@@ -29,6 +29,8 @@ public class DataTableExampleStepDefinition extends WebAPI {
 
 
     @Given("I enter Email or mobile phone number")
+
+
     public void i_enter_email_or_mobile_phone_number(DataTable dataTable) throws InterruptedException {
         // Write code here that turns the phrase above into concrete actions
         // For automatic transformation, change DataTable to one of
@@ -154,7 +156,7 @@ public class DataTableExampleStepDefinition extends WebAPI {
         homePage.enterCustomerName(yourName);
 
     }
-
+*/
 
 }
 

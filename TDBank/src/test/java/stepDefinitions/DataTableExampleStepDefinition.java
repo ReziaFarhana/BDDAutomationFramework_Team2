@@ -1,4 +1,4 @@
-package stepDefinitions;
+/*package stepDefinitions;
 
 import common.WebAPI;
 import homepage.HomePage;
@@ -22,7 +22,7 @@ public class DataTableExampleStepDefinition extends WebAPI {
         homePage= PageFactory.initElements(driver,HomePage.class);
     }
 
-    @Given("I click on Account & Lists")
+   @Given("I click on Account & Lists")
     public void i_click_on_account_lists() {
         homePage.clickOnHelloSignIn();
     }
@@ -156,6 +156,6 @@ public class DataTableExampleStepDefinition extends WebAPI {
     }
 
 
-}
+}*/
 
 

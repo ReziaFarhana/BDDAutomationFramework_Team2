@@ -1,0 +1,180 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-04T01:04:22.127Z",
+        "line": 4,
+        "name": "TD Bank personal Tab Working",
+        "description": "",
+        "id": "searchbox-functionality-check;td-bank-personal-tab-working",
+        "after": [
+          {
+            "result": {
+              "duration": 747554500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.HomePageStepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6301912000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 31245500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.HomePageStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "I am on  TDBank homePage",
+            "match": {
+              "location": "stepDefinitions.HomePageStepDefinition.i_am_on_td_bank_home_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1037400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.HomePageStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7364024100,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 999000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.HomePageStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "I click on personal tab",
+            "match": {
+              "location": "stepDefinitions.HomePageStepDefinition.i_click_on_personal_tab()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1001000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.HomePageStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 46988700,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2009100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.HomePageStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "I should see we are here to help you",
+            "match": {
+              "location": "stepDefinitions.HomePageStepDefinition.i_should_see_we_are_here_to_help_you()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.HomePageStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1005400,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 999900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.HomePageStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "I verify \"TDBank.com : personal tab\" is a working tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TDBank.com : personal tab\"",
+                  "offset": 9
+                }
+              ],
+              "location": "stepDefinitions.HomePageStepDefinition.i_verify_is_a_working_tab(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.HomePageStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@maria"
+          }
+        ]
+      }
+    ],
+    "name": "SearchBox Functionality check",
+    "description": "",
+    "id": "searchbox-functionality-check",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/HomePage.feature",
+    "tags": []
+  }
+]

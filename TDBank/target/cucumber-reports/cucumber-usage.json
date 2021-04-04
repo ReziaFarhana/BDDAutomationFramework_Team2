@@ -1,0 +1,74 @@
+[
+  {
+    "source": "I am on  TDBank homePage",
+    "steps": [
+      {
+        "name": "I am on  TDBank homePage",
+        "aggregatedDurations": {
+          "median": 6.301912,
+          "average": 6.301912
+        },
+        "durations": [
+          {
+            "duration": 6.301912,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on personal tab",
+    "steps": [
+      {
+        "name": "I click on personal tab",
+        "aggregatedDurations": {
+          "median": 7.3640241,
+          "average": 7.3640241
+        },
+        "durations": [
+          {
+            "duration": 7.3640241,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should see we are here to help you",
+    "steps": [
+      {
+        "name": "I should see we are here to help you",
+        "aggregatedDurations": {
+          "median": 0.0469887,
+          "average": 0.0469887
+        },
+        "durations": [
+          {
+            "duration": 0.0469887,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I verify {string} is a working tab",
+    "steps": [
+      {
+        "name": "I verify \"TDBank.com : personal tab\" is a working tab",
+        "aggregatedDurations": {
+          "median": 0.0010054,
+          "average": 0.0010054
+        },
+        "durations": [
+          {
+            "duration": 0.0010054,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage.feature:8"
+          }
+        ]
+      }
+    ]
+  }
+]

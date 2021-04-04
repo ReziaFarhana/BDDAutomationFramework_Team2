@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="14.908">
+    <testcase classname="SearchBox Functionality check" name="TD Bank personal Tab Working" time="14.555">
+        <system-out>
+            <![CDATA[Given I am on  TDBank homePage..............................................passed
+When I click on personal tab................................................passed
+Then I should see we are here to help you...................................passed
+And I verify "TDBank.com : personal tab" is a working tab...................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

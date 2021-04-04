@@ -17,7 +17,48 @@ import org.openqa.selenium.support.PageFactory;
 import java.io.IOException;
 
 public class HomePageStepDefinition  extends WebAPI {
-    static HomePage homePage;
+
+
+
+
+    @Given("I am on Atena homePage")
+    public void i_am_on_atena_home_page() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+    @Given("I enter {string} in searchBox")
+    public void i_enter_in_search_box(String string) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+    @When("I click on search Button")
+    public void i_click_on_search_button() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+    @Then("I should see {string} is properly appearing in the researches")
+    public void i_should_see_is_properly_appearing_in_the_researches(String string) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+    @Then("I should not see {string}  appearing")
+    public void i_should_not_see_appearing(String string) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+    @Then("I verify {string} is a valid research")
+    public void i_verify_is_a_valid_research(String string) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
+
+
+
+
+
+
+   /* static HomePage homePage;
 
     // Cucumber Hook
     @AfterStep
@@ -78,7 +119,7 @@ public class HomePageStepDefinition  extends WebAPI {
 
 
 
-
+*/
 
 
 }
