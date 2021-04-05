@@ -1,6 +1,6 @@
 Feature: Products Drop Down Functionalities
 
-
+@smokeTest
   Scenario : Check Learn More Button Functionality
     Given user is on Checking page
     When user clicks on Learn More
@@ -16,6 +16,7 @@ Feature: Products Drop Down Functionalities
       | search data |
       | credit |
       | loan |
+      | prepaid |
 
   Scenario: Check Calculate My Rate Button functionality
     Given user am on Mortgage Page

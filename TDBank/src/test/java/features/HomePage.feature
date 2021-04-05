@@ -48,3 +48,4 @@ Feature: HomePage Header Functionalities
   Scenario: Check Home Special Offers Link
     And user clicks on Special Offers
     Then user verifies "TD Bank Offers, Promotions And Sign Up Bonuses" is the title
+

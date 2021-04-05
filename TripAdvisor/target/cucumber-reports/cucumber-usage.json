@@ -1,17 +1,71 @@
 [
   {
-    "source": "user is on Travel Forum page",
+    "source": "I am on TripAdvisor homepage",
     "steps": [
       {
-        "name": "user is on Travel Forum page",
+        "name": "I am on TripAdvisor homepage",
         "aggregatedDurations": {
-          "median": 8.848109,
-          "average": 8.848109
+          "median": 10.622428,
+          "average": 10.622428
         },
         "durations": [
           {
-            "duration": 8.848109,
-            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/TravelForumsPage.feature:4"
+            "duration": 10.622428,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/HomePage.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user clicks on the searchbox",
+    "steps": [
+      {
+        "name": "user clicks on the searchbox",
+        "aggregatedDurations": {
+          "median": 0.4414878,
+          "average": 0.4414878
+        },
+        "durations": [
+          {
+            "duration": 0.4414878,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/HomePage.feature:25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user types data into search box from database",
+    "steps": [
+      {
+        "name": "user types data into search box from database",
+        "aggregatedDurations": {
+          "median": 6.2196408,
+          "average": 6.2196408
+        },
+        "durations": [
+          {
+            "duration": 6.2196408,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/HomePage.feature:26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user verifies {string} is displayed properly",
+    "steps": [
+      {
+        "name": "user verifies \"Bangladesh\" is displayed properly",
+        "aggregatedDurations": {
+          "median": 0.9794701,
+          "average": 0.9794701
+        },
+        "durations": [
+          {
+            "duration": 0.9794701,
+            "location": "file:///C:/Users/Easha/IdeaProjects/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/HomePage.feature:27"
           }
         ]
       }

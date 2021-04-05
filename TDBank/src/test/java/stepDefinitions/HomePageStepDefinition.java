@@ -103,4 +103,8 @@ public class HomePageStepDefinition extends WebAPI {
     }
 
 
+    @And("user clicks on search box field")
+    public void userClicksOnSearchBoxField() {
+
+    }
 }

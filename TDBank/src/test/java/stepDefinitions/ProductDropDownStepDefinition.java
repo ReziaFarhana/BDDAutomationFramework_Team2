@@ -46,7 +46,7 @@ public class ProductDropDownStepDefinition extends WebAPI {
     }
 
     @Then("user verifies URL is {string}")
-    public void userVerifiesURLIs(String expectedUrl) {
+    public void userVerifiesURLs(String expectedUrl) {
         productsddpage.verifyUrl(expectedUrl);
     }
 

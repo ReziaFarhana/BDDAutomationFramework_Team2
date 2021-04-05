@@ -81,6 +81,28 @@ public class HomePageStepDefinition extends WebAPI {
         homepage.verifyUserSignedIn(expectedText);
     }
 
+    //*************************************************************************************
+
+    @And("user clicks on the searchbox")
+    public void userClicksOnTheSearchbox() {
+        homepage.clickOnSearchBox();
+    }
+
+
+    @When("user types data into search box from excel")
+    public void userTypesDataIntoSearchBoxFromExcel() throws IOException {
+        homepage.enterDataInSearchBoxFromExcel();
+    }
+
+    @Then("user verifies {string} is displayed properly")
+    public void userVerifiesIsDisplayedProperly(String expectedText) {
+        homepage.verifySearchResult(expectedText);
+    }
+
+    @When("user types data into search box from database")
+   public void userTypesDataIntoSearchBoxFromDatabase() throws Exception {
+        homepage.searchDataFromDB();
+    }
 
 
 }

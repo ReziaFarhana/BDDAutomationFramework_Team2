@@ -25,7 +25,7 @@ import org.testng.annotations.DataProvider;
         // to check the mapping is proper between feature file and step definition file
         dryRun = false,
         publish = true,
-        tags = "(@easha) and(not @smokeTest)and(not @monkeyTest)"
+        tags = "(@sanityTest) and(not @smokeTest)and(not @monkeyTest)"
 
 
 
