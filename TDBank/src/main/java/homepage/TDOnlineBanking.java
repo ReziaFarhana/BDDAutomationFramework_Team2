@@ -29,6 +29,7 @@ public class TDOnlineBanking extends WebAPI {
     @FindBy(xpath = "//h1[contains(text(),'Welcome to Online Banking')]")
     WebElement validateText;
     @FindBy(xpath = "//span[contains(text(),'Sign up for Online Banking')]")
+
     WebElement signUpBtn;
     @FindBy(xpath = "//label[@class='card'][contains(text(),'I am the account owner for all accounts.')]")//(//div[starts-with(@class,'td-checkbox')]//label[@class='card'])[4]
     WebElement plsConfirmCheckBtn;

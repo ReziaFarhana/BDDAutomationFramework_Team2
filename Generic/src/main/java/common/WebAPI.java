@@ -754,5 +754,77 @@ public class WebAPI {
         return url;
     }
 
+    public JavascriptExecutor jscript;
+
+    public void windowsFullPageScrollDown() {
+        jscript = (JavascriptExecutor) driver;
+        jscript.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+    }
+
+    public void windowsFullPageScrollUp() {
+        jscript = (JavascriptExecutor) driver;
+        jscript.executeScript("window.scrollTo(0, -document.body.scrollHeight);");
+    }
+
+    public void windowsFullPageScrollSideBar(WebElement element) {
+        jscript = (JavascriptExecutor) driver;
+        jscript.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+    public void windowsPageScrollToLocator(By locator) {
+        jscript = (JavascriptExecutor) driver;
+        jscript.executeScript("arguments[0].scrollIntoView(true);", locator);
+    }
+
+    public void hoverAndClick(WebElement elementHover, WebElement elementClick) {
+        Actions actions = new Actions(driver);
+        actions.moveToElement(elementHover).click(elementClick).perform();
+    }
+
+    public void scrollByID(String locator) {
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        WebElement element = driver.findElement(By.id(locator));
+        executor.executeScript("arguments[0].scrollIntoView(true);", element);
+        element.click();
+    }
+
+    public void scrollByXPATH(String locator) {
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        WebElement element = driver.findElement(By.xpath(locator));
+        executor.executeScript("arguments[0].scrollIntoView(true);", element);
+        element.click();
+    }
+
+    public void scrollbyCSS(String locator) {
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        WebElement element = driver.findElement(By.cssSelector(locator));
+        executor.executeScript("arguments[0].scrollIntoView(true);", element);
+        element.click();
+    }
+
+    public void scrollbyClass(String locator) {
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        WebElement element = driver.findElement(By.className(locator));
+
+    }
+
+    //new window handle
+    public void windowHandle() {
+        String parentHandle = driver.getWindowHandle();
+        for (String winHandle : driver.getWindowHandles()) {
+            driver.switchTo().window(winHandle); // switch focus of WebDriver to the next found window handle (that's your newly opened window)
+        }
+
+
+    }
+    //clicking images using cssSelector-
+    public void getImage(String cssLocator, String pgTitle) {
+        driver.findElement(By.cssSelector(cssLocator)).click();
+        if (driver.getTitle().equals(pgTitle)) {
+            System.out.println("We are on image page");
+        } else {
+            System.out.println("We are not on image page");
+        }
+    }
 
 }

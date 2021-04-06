@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns="http://maven.apache.org/POM/4.0.0"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
@@ -14,10 +14,7 @@
         <module>TripAdvisor</module>
         <module>UnitedAirlines</module>
         <module>TDBank</module>
-        <module>Verizon</module>
-        <module>BBC</module>
-        <module>WalMart</module>
-        <module>Geico</module>
+
     </modules>
 
     <properties>
@@ -270,19 +267,14 @@
                         <testFailureIgnore>true</testFailureIgnore>
                         <!--Test Runner Files-->
                         <includes>
-                            <!--                            <include>**/AmazonTestRunner.java</include>-->
+
                         </includes>
                         <suiteXmlFiles>
-                            <!--                            <suiteXmlFile>target/test-classes/AmazonTestRunner.xml</suiteXmlFile>-->
-                            <!--                        <suiteXmlFile>target/test-classes/CNNTestRunner.xml</suiteXmlFile>-->
-                            <!--                        <suiteXmlFile>target/test-classes/CignaTestRunner.xml</suiteXmlFile>-->
 
                         </suiteXmlFiles>
 
-
                     </configuration>
                 </plugin>
-
 
                 <plugin>
                     <groupId>net.masterthought</groupId>
