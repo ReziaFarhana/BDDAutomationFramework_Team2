@@ -3,33 +3,39 @@ Feature: Amazon HomePage Header
   #Background: common steps by sync way will work with your scenario
 
   Background:
-    Given I am on amazon homePage
+    Given I am on United Airlines homePage
 
-  @smokeTest
-  Scenario: Amazon searchBox functionality check with valid product
-    And I enter "Hand Sanitizer" in searchBox
+  @maria
+  Scenario: United Airlines searchBox functionality check with valid research
+    And I enter "Covid 19 Information" in searchBox
     When I click on search Button
-    Then I should see "Hand Sanitizer" is properly appear
-    But I should not see "mobile" is appear
-    And I verify "Amazon.com : Hand Sanitizer" in product title
+    Then I should see "COVID 19 Information" is properly displaying
+    But I should not see "tickets" is appear
+    And I verify "Search United.Com - Find Pages on Our Website & FAQs" in product title
 
-  @pending @mahmud @RegressionTest
-  Scenario: Amazon searchBox functionality check with valid product1
-    And I enter "Mask" in searchBox
+  @maria
+  Scenario: United Airlines searchBox functionality check with valid research
+    And I enter "Covid 19 Information" in searchBox
     When I click on search Button
-    Then I should see "Mask1" is properly appear
-    But I should not see "mobile" is appear
-    And I verify "Amazon.com : Mask" in product title
+    Then I should see "COVID 19 Information" is properly displaying
+    But I should not see "tickets" is appear
+    And I verify "Search United.Com - Find Pages on Our Website & FAQs" in product title
 
-  @test @IntegrationTest
-  Scenario: Amazon searchBox functionality check with valid product2
-    And I enter "MacBook" in searchBox
-    When I click on search Button
-    Then I should see "MacBook" is properly appear
-    But I should not see "mobile" is appear
-    And I verify "Amazon.com : MacBook" in product title
+  @maria
+  Scenario: United Airlines Travel Info is working properly
+    And I click on Travel Info TAb
+    Then I should see "Travel Info" is properly displaying
+    But I should not see "Book" is appearing
+    And I verify "" in product title
 
-
+  @maria
+  Scenario: United Airlines Book a ticket Info is working properly
+    And I enter {new york} in searchBox Info TAb
+    And I enter {chicago} in searchBox
+    And I select a date
+    And i click on find a flight
+    Then I should see {trip} is properly displaying
+    And i verify "United Airlines Reservations - Book a Flight on More Than 80 Airlines" the product title
 
 
 

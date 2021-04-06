@@ -11,9 +11,29 @@ Feature: SearchBox Functionality check
   Scenario: TD Bank personal checking account is working properly
     Given I am on  TDBank homePage
     And I click on  personal tab
-  And I click on checking account tab
-  Then I should see TD Bank open a TDBank checking account display properly
-   And I verify " TDBank.com: checking account is displaying " is displaying
+    And I click on checking account tab
+    Then I should see TD Bank open a TDBank checking account display properly
+    And I verify " Checking & Savings Account Offers" is displaying
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #   @IntegrationTest
 #  Scenario: Amazon searchBox functionality check with valid product2

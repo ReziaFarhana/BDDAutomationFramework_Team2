@@ -1,0 +1,56 @@
+[
+  {
+    "source": "I am on United Airlines homePage",
+    "steps": [
+      {
+        "name": "I am on United Airlines homePage",
+        "aggregatedDurations": {
+          "median": 9.9013714,
+          "average": 9.9013714
+        },
+        "durations": [
+          {
+            "duration": 9.9013714,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/HomePage.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I enter {string} in searchBox",
+    "steps": [
+      {
+        "name": "I enter \"Covid 19 Information\" in searchBox",
+        "aggregatedDurations": {
+          "median": 0.1953999,
+          "average": 0.1953999
+        },
+        "durations": [
+          {
+            "duration": 0.1953999,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/HomePage.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on search Button",
+    "steps": [
+      {
+        "name": "I click on search Button",
+        "aggregatedDurations": {
+          "median": 0.5003318,
+          "average": 0.5003318
+        },
+        "durations": [
+          {
+            "duration": 0.5003318,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/HomePage.feature:7"
+          }
+        ]
+      }
+    ]
+  }
+]

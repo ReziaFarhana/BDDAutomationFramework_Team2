@@ -46,6 +46,11 @@ public class HomePage extends WebAPI {
        Assert.assertEquals("Text Does not Match", exResult,acResult);
 
 
+    }
+    public void CheckingAccountGetTitle(){
+        String expectedText="Checking & Savings Account Offers";
+        String actualTest= BeyoundCheckingGetText1.getText();
+        Assert.assertEquals("page Title not Match", expectedText,actualTest );
 
     }
 

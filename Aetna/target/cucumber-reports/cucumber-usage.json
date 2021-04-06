@@ -1,0 +1,20 @@
+[
+  {
+    "source": "I am Atena homePage",
+    "steps": [
+      {
+        "name": "I am Atena homePage",
+        "aggregatedDurations": {
+          "median": 12.2424024,
+          "average": 12.2424024
+        },
+        "durations": [
+          {
+            "duration": 12.2424024,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/HomePage.feature:5"
+          }
+        ]
+      }
+    ]
+  }
+]

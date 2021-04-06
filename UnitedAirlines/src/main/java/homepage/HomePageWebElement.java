@@ -3,21 +3,17 @@ package homepage;
 public class HomePageWebElement {
     // WebElement class for Locators only and some other properties
 
-    public static final String productName="Mask";
-    public static final String searchBoxLocator="twotabsearchtextbox";
-    public static final String searchButtonLocator="nav-search-submit-button";
-    public static final String helloSignInLocator="//*[@id=\"nav-link-accountList-nav-line-1\"]";
-    public static final String emailPhoneForSignInLocator="//*[@id=\"ap_email\"]";
-    public static final String continueForSignInLocator="//*[@id=\"continue\"]";
-    public static final String passwordForSignInLocator="//*[@id=\"ap_password\"]";
-    public static final String signInSubmitLocator="//*[@id=\"signInSubmit\"]";
-    public static final String helloUserLocator="//*[@id=\"nav-link-accountList-nav-line-1\"]";
-    public static final String errorMessageLocator="//*[text()='There was a problem']";
-    public static final String customerNameLocator="//*[@id=\"ap_customer_name\"]";
-    public static final String createYourAmazonAccountLocator="//*[@id=\"createAccountSubmit\"]";
-    public static final String searchTextLocator="//*[@id=\"search\"]/span/div/span/h1/div/div[1]/div/div/span[3]";
+    public static final String searchButton = "//span[@class='app-components-GlobalHeader-globalHeader__searchLink--1lBsg']//span[contains(text(),'Search')]";
+    public static final String searchBoxLocator = "//input[@id='inputAutosuggestModel']";
+    public static final String search = "//a[normalize-space()='Important travel notices | United Airlines']";
+    public static final String covid19getText = "//a[normalize-space()='Important travel notices | United Airlines']";
+    public static final String travelInfo = "//div[@role='dialog']";
+    public static final String contactUs = "//span[normalize-space()='Contact us']";
 
-
+    public static final String customerSupport = "//input[@id='inputAutosuggestModel']";
+    public static final String searchBox = "//button[@type='submit']";
+    public static final String baggage = "baggage fees";
+ public static final String searchUnited = "//label[normalize-space()='Search united.com']";
 
 
 

@@ -1,57 +1,32 @@
-Feature: SearchBox Functionality check
+Feature: Homepage Tabs Check
 
-  @smokeTest
-  Scenario: Amazon searchBox functionality check with valid product
-    Given I am on amazon homePage
-    And I enter "Hand Sanitizer" in searchBox
-    When I click on search Button
-    Then I should see "Hand Sanitizer" is properly appear
-    But I should not see "mobile" is appear
-    And I verify "Amazon.com : Hand Sanitizer" in product title
+  @maria
+  Scenario: Atena shop for a plan tab is working
+    Given I am Atena homePage
+    And I click on shop for a plan
+    Then I verify title "Health Insurance Plans | Aetna" is working
 
-  @pending @mahmud @RegressionTest
-  Scenario: Amazon searchBox functionality check with valid product1
-    Given I am on amazon homePage
-    And I enter "Mask" in searchBox
-    When I click on search Button
-    Then I should see "Mask1" is properly appear
-    But I should not see "mobile" is appear
-    And I verify "Amazon.com : Mask" in product title
-
-   @IntegrationTest
-  Scenario: Amazon searchBox functionality check with valid product2
-    Given I am on amazon homePage
-    And I enter "MacBook" in searchBox
-    When I click on search Button
-    Then I should see "MacBook" is properly appear
-    But I should not see "mobile" is appear
-    And I verify "Amazon.com : MacBook" in product title
-
-  @test
-  Scenario Outline: Amazon searchBox functionality check with valid product3
-    Given I am on amazon homePage
-    And I enter "<productName>" in searchBox
-    When I click on search Button
-    Then I should see "<ExpectedProduct>" is properly appear
-    But I should not see "<notExpected>" is appear
-    And I verify "<verifyTitle>" in product title
-    Examples:
-      | productName    | ExpectedProduct | notExpected | verifyTitle                 |
-      | Hand Sanitizer | Hand Sanitizer  | mobile      | Amazon.com : Hand Sanitizer |
-      | Mask           | Mask            | mobile      | Amazon.com : Mask           |
-      | MacBook        | MacBook         | mobile      | Amazon.com : MacBook        |
+  @maria
+  Scenario: Atena shop for a plan tab is working
+    Given I am Atena homePage
+    And I click on shop for a plan
+    And I click on Medicare
+    And I click on Find a doctor
+    Then i will verify that the page Aetna is working properly
 
 
+  @maria
+  Scenario: Atena Individual tab is working
+    Given I am Atena homePage
+    And I click on Individual tab
+    Then i will verify that the Individual tab is working properly
 
 
-
-
-
-
-
-
-
-
+  @maria
+  Scenario: Explore Aetna tab is working properly
+    Given I am Atena homePage
+    And I click on Individual tab
+    Then i will verify that the Individual tab is working properly
 
 
 

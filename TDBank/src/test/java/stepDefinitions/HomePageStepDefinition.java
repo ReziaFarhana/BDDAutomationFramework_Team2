@@ -64,7 +64,7 @@ public class HomePageStepDefinition extends WebAPI {
 
     }
 
-
+//****************************************************************************************************
 
     @Given("I click on  personal tab")
     public void i_click_on_personal_tab() {
@@ -79,12 +79,12 @@ public class HomePageStepDefinition extends WebAPI {
 
         @Then("I should see TD Bank open a TDBank checking account display properly")
         public void i_should_see_td_bank_open_a_td_bank_checking_account_display_properly () {
-       // homepage.CheckingAccountGetText();
+       homepage.CheckingAccountGetText();
 
         }
 
         @Then("I verify {string} is displaying")
-        public void i_verify_is_displaying (String string){
-
+        public void i_verify_is_displaying (){
+homepage.CheckingAccountGetTitle( );
         }
     }

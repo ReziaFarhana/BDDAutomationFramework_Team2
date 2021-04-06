@@ -17,14 +17,14 @@ import java.util.Map;
 public class DataTableExampleStepDefinition extends WebAPI {
     static HomePage homePage;
 
-    @BeforeStep
+  /*  @BeforeStep
     public static void getInit(){
         homePage= PageFactory.initElements(driver,HomePage.class);
     }
 
     @Given("I click on Account & Lists")
     public void i_click_on_account_lists() {
-        homePage.clickOnHelloSignIn();
+     //   homePage.clickOnHelloSignIn();
     }
 
 
@@ -40,8 +40,8 @@ public class DataTableExampleStepDefinition extends WebAPI {
 
         List<List<String>> data = dataTable.asLists(String.class);
         String email = data.get(1).get(0);
-//        System.out.println(email);
-        homePage.enterEmailPhone(email);
+        System.out.println(email);
+       // homePage.enterEmailPhone(email);
     }
 
     @Given("I click on continue button")
@@ -153,7 +153,7 @@ public class DataTableExampleStepDefinition extends WebAPI {
 
         homePage.enterCustomerName(yourName);
 
-    }
+    }*/
 
 
 }
