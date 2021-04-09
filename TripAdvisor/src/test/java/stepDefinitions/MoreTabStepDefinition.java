@@ -12,7 +12,10 @@ import io.cucumber.java.en.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import java.io.IOException;
 
@@ -124,9 +127,67 @@ public class MoreTabStepDefinition extends WebAPI {
     public void i_clicked_on_where_to_box_and_select_caribbean() throws InterruptedException {
         clickByCss(locatorWhereToInCruise);
         sleepFor(3);
-//        moveToElementClick(locatorToSelectCaribbean);
-
     }
 
+    @Given("when I clicked on Insurance link")
+    public void when_i_clicked_on_insurance_link() {
+        clickByCss(locatorOfInsurance);
+    }
+    @Then("I should have found a TripProtection logo on the left top corner of the pate")
+    public void i_should_have_found_a_trip_prolocatorOfInsurancetection_logo_on_the_left_top_corner_of_the_pate() {
+        action.verifyTripProtectionPage();
+    }
+
+    @Given("I clicked on Single Tripe Get your Quote button")
+    public void i_clicked_on_single_tripe_get_your_quote_button() throws InterruptedException {
+        clickByCss(singleInsuranceQuotelocator);
+        windoSwitchHandler2(1);
+        sleepFor(3);
+    }
+    @Then("I should have a new window tab with a text {string}")
+    public void i_should_have_a_new_window_tab_with_a_text(String expected) throws InterruptedException {
+        action. verifySingleInsurance(expected);
+        sleepFor(3);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @FindBy(css = iframeLocator ) public WebElement iframe;
+    @FindBy(xpath = stateSelectionIframe ) public WebElement state;
+
+    @And("read iframe")
+    public void test() throws InterruptedException {
+        driver.switchTo().frame(iframe);
+        sleepFor(5);
+//        System.out.println(getTextByclass(locatorIframe));
+//        state.click();
+//        Select sel = new Select(state);
+//        sleepFor(3);
+//        sel.selectByVisibleText("VA-Virginia");
+        typeByCss(tripCostlocator,"1200");
+        typeByCss(age1locator,"44");
+
+        sleepFor(3);
+        driver.switchTo().parentFrame();
+
+    }
 
 }

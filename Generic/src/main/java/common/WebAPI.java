@@ -214,7 +214,7 @@ public class WebAPI {
     //    @AfterMethod(alwaysRun = true)
     public void cleanUp() {
         //driver.close();
-//        driver.quit();
+        driver.quit();
     }
 
 
@@ -223,6 +223,10 @@ public class WebAPI {
 
     public static void sleepFor(int seconds) throws InterruptedException {
         Thread.sleep(seconds * 1000);
+    }
+
+    public static void explicitWaitTime(int seconds){
+        WebDriverWait wait = new WebDriverWait(driver,seconds*1000);
     }
 
     public void clickOnElement(String locator) {

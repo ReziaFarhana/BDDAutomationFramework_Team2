@@ -63,6 +63,42 @@ Scenario: Book a Roundtrip flight with a promotion code                         
   Then I should land to a new windows tab with bread cramp end with  "Flights to Orlando"                        # stepDefinitions.UADestinationStepDefinition.i_should_land_to_a_new_windows_tab_with_bread_cramp_end_with(java.lang.String)
   When I enter a departure city and destination city                                                             # stepDefinitions.UADestinationStepDefinition.i_enter_a_departure_city_and_destination_city(io.cucumber.datatable.DataTable)
   And I selected the departure and return dates                                                                  # stepDefinitions.UADestinationStepDefinition.i_selected_the_departure_and_return_dates()
+      org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@class='react-datepicker__navigation react-datepicker__navigation--previous']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 26424, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d1c3c7aa-5af2-438f-a677-d20f58c11219
+*** Element info: {Using=xpath, value=//a[@class='react-datepicker__navigation react-datepicker__navigation--previous']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at common.WebAPI.clickByXpath(WebAPI.java:337)
+	at homepage.DestinationDealsHom.selectDepartureDate(DestinationDealsHom.java:105)
+	at stepDefinitions.UADestinationStepDefinition.i_selected_the_departure_and_return_dates(UADestinationStepDefinition.java:127)
+	at ✽.I selected the departure and return dates(file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:54)
+
+
+    Embedding demo1 [image/png 343023 bytes]
+
+
+    Embedding demo1 [image/png 343003 bytes]
+
+
+    Embedding demo1 [image/png 342943 bytes]
+
   And I selected travel info class of travel and number of travelers                                             # stepDefinitions.UADestinationStepDefinition.i_selected_travel_info_class_of_travel_and_number_of_travelers()
   When I entered the promotion code "1239865721"                                                                 # stepDefinitions.UADestinationStepDefinition.i_entered_the_promotion_code(java.lang.String)
   And I click on the Search Flights button                                                                       # stepDefinitions.UADestinationStepDefinition.i_Click_On_The_Search_Flights_Button()
@@ -76,6 +112,42 @@ Scenario: Book a Roundtrip flight without a promotion code                      
   Then I should land to a new windows tab with bread cramp end with  "Flights to Orlando"                                            # stepDefinitions.UADestinationStepDefinition.i_should_land_to_a_new_windows_tab_with_bread_cramp_end_with(java.lang.String)
   When I enter a departure city and destination city                                                                                 # stepDefinitions.UADestinationStepDefinition.i_enter_a_departure_city_and_destination_city(io.cucumber.datatable.DataTable)
   And I selected the departure and return dates                                                                                      # stepDefinitions.UADestinationStepDefinition.i_selected_the_departure_and_return_dates()
+      org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@class='react-datepicker__navigation react-datepicker__navigation--previous']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 30304, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3e89e731-573f-4792-8132-9312b1d55cfc
+*** Element info: {Using=xpath, value=//a[@class='react-datepicker__navigation react-datepicker__navigation--previous']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at common.WebAPI.clickByXpath(WebAPI.java:337)
+	at homepage.DestinationDealsHom.selectDepartureDate(DestinationDealsHom.java:105)
+	at stepDefinitions.UADestinationStepDefinition.i_selected_the_departure_and_return_dates(UADestinationStepDefinition.java:127)
+	at ✽.I selected the departure and return dates(file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:67)
+
+
+    Embedding demo1 [image/png 343003 bytes]
+
+
+    Embedding demo1 [image/png 343014 bytes]
+
+
+    Embedding demo1 [image/png 343014 bytes]
+
   And I selected travel info class of travel and number of travelers                                                                 # stepDefinitions.UADestinationStepDefinition.i_selected_travel_info_class_of_travel_and_number_of_travelers()
   And I click on the Search Flights button                                                                                           # stepDefinitions.UADestinationStepDefinition.i_Click_On_The_Search_Flights_Button()
   Then I should land on a page displays a text "We could not process your request. Please see the message below and make revisions." # stepDefinitions.UADestinationStepDefinition.i_should_land_on_a_page_displays_a_text(java.lang.String)
@@ -89,18 +161,54 @@ Scenario: Book a Roundtrip flight with a mile and no promotion code             
   When I clicked on Book with miles checklist                                                                    # stepDefinitions.UADestinationStepDefinition.i_clicked_on_Book_with_miles_checklist()
   And I enter a departure city and destination city                                                              # stepDefinitions.UADestinationStepDefinition.i_enter_a_departure_city_and_destination_city(io.cucumber.datatable.DataTable)
   And I selected the departure and return dates                                                                  # stepDefinitions.UADestinationStepDefinition.i_selected_the_departure_and_return_dates()
+      org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@class='react-datepicker__navigation react-datepicker__navigation--previous']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 34692, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0d17e625-d27d-40ca-a3f5-24078ecf6da2
+*** Element info: {Using=xpath, value=//a[@class='react-datepicker__navigation react-datepicker__navigation--previous']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at common.WebAPI.clickByXpath(WebAPI.java:337)
+	at homepage.DestinationDealsHom.selectDepartureDate(DestinationDealsHom.java:105)
+	at stepDefinitions.UADestinationStepDefinition.i_selected_the_departure_and_return_dates(UADestinationStepDefinition.java:127)
+	at ✽.I selected the departure and return dates(file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:80)
+
+
+    Embedding demo1 [image/png 367971 bytes]
+
+
+    Embedding demo1 [image/png 367855 bytes]
+
+
+    Embedding demo1 [image/png 367980 bytes]
+
   And I selected travel info class of travel and number of travelers                                             # stepDefinitions.UADestinationStepDefinition.i_selected_travel_info_class_of_travel_and_number_of_travelers()
   And I click on the Search Flights button                                                                       # stepDefinitions.UADestinationStepDefinition.i_Click_On_The_Search_Flights_Button()
   Then I should expect to see the text "Sign in to your MileagePlus account to show the best award availability" # stepDefinitions.UADestinationStepDefinition.i_should_expect_to_the_text(java.lang.String)
 
-Scenario: Changed bag rules                                                                               # src/test/java/features/Destinations.feature:85
+@run
+Scenario: Changed bag rules                                                                               # src/test/java/features/Destinations.feature:86
   Given I am on United Airlines Home page                                                                 # stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()
   And I click on the DEALS option                                                                         # stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()
   When I clicked on Flights to popular destinations                                                       # stepDefinitions.UADestinationStepDefinition.i_clicked_on_flights_to_popular_destinations()
   Then I should land on a new tab "United Cheap Flights to 300+ Destinations Worldwide | United Airlines" # stepDefinitions.UADestinationStepDefinition.i_should_land_on_a_new_tab(java.lang.String)
   And clicked on Changed bag rules Link                                                                   # stepDefinitions.UADestinationStepDefinition.clicked_on_changed_bag_rules_link()
   Then I should have a new page with a text "Changed bag rules and optional services"                     # stepDefinitions.UADestinationStepDefinition.i_should_have_a_new_page_with_a_text(java.lang.String)
-  And test                                                                                                # null
 
 @run
 Scenario: Current offers and promos       # src/test/java/features/UADealsLink.feature:3

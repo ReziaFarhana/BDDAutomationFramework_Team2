@@ -14,10 +14,6 @@
         <module>TripAdvisor</module>
         <module>UnitedAirlines</module>
         <module>TDBank</module>
-        <module>Verizon</module>
-        <module>BBC</module>
-        <module>WalMart</module>
-        <module>Geico</module>
     </modules>
 
     <properties>
@@ -270,7 +266,7 @@
                         <testFailureIgnore>true</testFailureIgnore>
                         <!--Test Runner Files-->
                         <includes>
-                            <!--                            <include>**/AmazonTestRunner.java</include>-->
+<!--                              <include>**/AmazonTestRunner.java</include>-->
                         </includes>
                         <suiteXmlFiles>
                             <!--                            <suiteXmlFile>target/test-classes/AmazonTestRunner.xml</suiteXmlFile>-->

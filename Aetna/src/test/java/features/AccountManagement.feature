@@ -86,6 +86,7 @@ Feature: Verifying Account management option
     When I click on the search box of Search By Name tab
     Then I should land on a page with a text "Search Settings"
 
+  @run
   Scenario: Advance Search using a City
     When I click on Find a doctor link
     And  I click on a Find a pharmacy link

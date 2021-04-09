@@ -26,14 +26,14 @@ Scenario: verify click on Flights Link                                          
   And click on the More tab from the Header                                                                   # stepDefinitions.MoreTabStepDefinition.click_on_the_more_tab_from_the_header()
   And I clicked on Flights link                                                                               # stepDefinitions.MoreTabStepDefinition.i_clicked_on_flights_link()
   Then I should have a new Flights page with a text "Cheap Flights from Boston, MA - from $153 - Tripadvisor" # stepDefinitions.MoreTabStepDefinition.i_should_have_a_new_flights_page_with_a_text(java.lang.String)
-      org.junit.ComparisonFailure: Test failed expected:<... Boston, MA - from $[153] - Tripadvisor> but was:<... Boston, MA - from $[90] - Tripadvisor>
+      org.junit.ComparisonFailure: Test failed expected:<... Boston, MA - from $[153] - Tripadvisor> but was:<... Boston, MA - from $[32] - Tripadvisor>
 	at org.junit.Assert.assertEquals(Assert.java:117)
-	at homepage.HomePage.verifyTitlePage(HomePage.java:27)
+	at homepage.HomePage.verifyTitlePage(HomePage.java:29)
 	at stepDefinitions.MoreTabStepDefinition.i_should_have_a_new_flights_page_with_a_text(MoreTabStepDefinition.java:100)
 	at ✽.I should have a new Flights page with a text "Cheap Flights from Boston, MA - from $153 - Tripadvisor"(file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:25)
 
 
-    Embedding demo1 [image/png 1402245 bytes]
+    Embedding demo1 [image/png 1402379 bytes]
 
 
 @run
@@ -44,7 +44,7 @@ Scenario: verify click on Car Rental Link                                       
   Then I should have a new Rental Cars page with a text "Book Cheap Rental Cars & Search Car Rental Deals - Tripadvisor" # stepDefinitions.MoreTabStepDefinition.i_should_have_a_new_Rental_Cars_page_with_a_text(java.lang.String)
       org.junit.ComparisonFailure: Test failed expected:<[Book Cheap Rental Cars & Search Car Rental Deals - Tripadvisor]> but was:<[Tripadvisor: Read Reviews, Compare Prices & Book]>
 	at org.junit.Assert.assertEquals(Assert.java:117)
-	at homepage.HomePage.verifyTitlePage(HomePage.java:27)
+	at homepage.HomePage.verifyTitlePage(HomePage.java:29)
 	at stepDefinitions.MoreTabStepDefinition.i_should_have_a_new_Rental_Cars_page_with_a_text(MoreTabStepDefinition.java:110)
 	at ✽.I should have a new Rental Cars page with a text "Book Cheap Rental Cars & Search Car Rental Deals - Tripadvisor"(file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:30)
 

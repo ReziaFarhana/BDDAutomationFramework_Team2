@@ -33,18 +33,8 @@ Feature: Verifying More Tab of TripAdvisor Home page https://www.tripadvisor.com
   Scenario: verify click on Hire a Trip Designer Link
     And I clicked on Hire a Trip Designer link
     Then I should have a new Hire a Trip Designer page with a text "Reco Trip Designers | A new kind of travel agent experience from Tripadvisor"
+  @run
+  Scenario: verify click on Insurance Link
+    And when I clicked on Insurance link
+    Then I should have found a TripProtection logo on the left top corner of the pate
 
-
-
-
-    # Add a Place
-    #Airlines
-    #Cruises
-    #Flights
-    #Help Center
-    #Hire a Trip Designer
-    #Insurance
-    #Rental Cars
-    #Road Trips
-    #Travelers' Choice
-    #Vacation Packages  #

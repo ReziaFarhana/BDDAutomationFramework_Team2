@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="75.281">
-    <testcase classname="Verifying More Tab of TripAdvisor Home page https://www.tripadvisor.com/" name="verify click on Add a Place Link" time="13.021">
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="76.357">
+    <testcase classname="Verifying More Tab of TripAdvisor Home page https://www.tripadvisor.com/" name="verify click on Add a Place Link" time="13.683">
         <system-out>
             <![CDATA[Given I am navigated to tripadvisor Home page...............................passed
 And click on the More tab from the Header...................................passed
@@ -9,7 +9,7 @@ Then I should have seen a text "Add a place to Tripadvisor".................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Verifying More Tab of TripAdvisor Home page https://www.tripadvisor.com/" name="verify click on Airlines Link" time="12.022">
+    <testcase classname="Verifying More Tab of TripAdvisor Home page https://www.tripadvisor.com/" name="verify click on Airlines Link" time="12.095">
         <system-out>
             <![CDATA[Given I am navigated to tripadvisor Home page...............................passed
 And click on the More tab from the Header...................................passed
@@ -18,7 +18,7 @@ Then I should have a new Airlines page with a text "Airlines"...............pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Verifying More Tab of TripAdvisor Home page https://www.tripadvisor.com/" name="verify click on Cruises Link" time="13.248">
+    <testcase classname="Verifying More Tab of TripAdvisor Home page https://www.tripadvisor.com/" name="verify click on Cruises Link" time="13.118">
         <system-out>
             <![CDATA[Given I am navigated to tripadvisor Home page...............................passed
 And click on the More tab from the Header...................................passed
@@ -27,23 +27,23 @@ Then I should have a new Cruises page with a text "Cruises - Cruise Vacations: 2
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Verifying More Tab of TripAdvisor Home page https://www.tripadvisor.com/" name="verify click on Flights Link" time="12.774">
-        <failure message="Test failed expected:&lt;... Boston, MA - from $[153] - Tripadvisor&gt; but was:&lt;... Boston, MA - from $[90] - Tripadvisor&gt;" type="org.junit.ComparisonFailure">
+    <testcase classname="Verifying More Tab of TripAdvisor Home page https://www.tripadvisor.com/" name="verify click on Flights Link" time="12.85">
+        <failure message="Test failed expected:&lt;... Boston, MA - from $[153] - Tripadvisor&gt; but was:&lt;... Boston, MA - from $[32] - Tripadvisor&gt;" type="org.junit.ComparisonFailure">
             <![CDATA[Given I am navigated to tripadvisor Home page...............................passed
 And click on the More tab from the Header...................................passed
 And I clicked on Flights link...............................................passed
 Then I should have a new Flights page with a text "Cheap Flights from Boston, MA - from $153 - Tripadvisor".failed
 
 StackTrace:
-org.junit.ComparisonFailure: Test failed expected:<... Boston, MA - from $[153] - Tripadvisor> but was:<... Boston, MA - from $[90] - Tripadvisor>
+org.junit.ComparisonFailure: Test failed expected:<... Boston, MA - from $[153] - Tripadvisor> but was:<... Boston, MA - from $[32] - Tripadvisor>
 	at org.junit.Assert.assertEquals(Assert.java:117)
-	at homepage.HomePage.verifyTitlePage(HomePage.java:27)
+	at homepage.HomePage.verifyTitlePage(HomePage.java:29)
 	at stepDefinitions.MoreTabStepDefinition.i_should_have_a_new_flights_page_with_a_text(MoreTabStepDefinition.java:100)
 	at ✽.I should have a new Flights page with a text "Cheap Flights from Boston, MA - from $153 - Tripadvisor"(file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:25)
 ]]>
         </failure>
     </testcase>
-    <testcase classname="Verifying More Tab of TripAdvisor Home page https://www.tripadvisor.com/" name="verify click on Car Rental Link" time="10.678">
+    <testcase classname="Verifying More Tab of TripAdvisor Home page https://www.tripadvisor.com/" name="verify click on Car Rental Link" time="10.71">
         <failure message="Test failed expected:&lt;[Book Cheap Rental Cars &amp; Search Car Rental Deals - Tripadvisor]&gt; but was:&lt;[Tripadvisor: Read Reviews, Compare Prices &amp; Book]&gt;" type="org.junit.ComparisonFailure">
             <![CDATA[Given I am navigated to tripadvisor Home page...............................passed
 And click on the More tab from the Header...................................passed
@@ -53,13 +53,13 @@ Then I should have a new Rental Cars page with a text "Book Cheap Rental Cars & 
 StackTrace:
 org.junit.ComparisonFailure: Test failed expected:<[Book Cheap Rental Cars & Search Car Rental Deals - Tripadvisor]> but was:<[Tripadvisor: Read Reviews, Compare Prices & Book]>
 	at org.junit.Assert.assertEquals(Assert.java:117)
-	at homepage.HomePage.verifyTitlePage(HomePage.java:27)
+	at homepage.HomePage.verifyTitlePage(HomePage.java:29)
 	at stepDefinitions.MoreTabStepDefinition.i_should_have_a_new_Rental_Cars_page_with_a_text(MoreTabStepDefinition.java:110)
 	at ✽.I should have a new Rental Cars page with a text "Book Cheap Rental Cars & Search Car Rental Deals - Tripadvisor"(file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:30)
 ]]>
         </failure>
     </testcase>
-    <testcase classname="Verifying More Tab of TripAdvisor Home page https://www.tripadvisor.com/" name="verify click on Hire a Trip Designer Link" time="13.158">
+    <testcase classname="Verifying More Tab of TripAdvisor Home page https://www.tripadvisor.com/" name="verify click on Hire a Trip Designer Link" time="13.47">
         <system-out>
             <![CDATA[Given I am navigated to tripadvisor Home page...............................passed
 And click on the More tab from the Header...................................passed

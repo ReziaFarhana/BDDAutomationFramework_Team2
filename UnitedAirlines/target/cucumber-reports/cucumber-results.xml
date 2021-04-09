@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="19" time="1.056">
-    <testcase classname="working on DESTINATION DEALS" name="Flights to popular destinations" time="0.108">
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="19" time="739.956">
+    <testcase classname="working on DESTINATION DEALS" name="Flights to popular destinations" time="46.982">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -9,7 +9,7 @@ Then I should land on a new tab "United Cheap Flights to 300+ Destinations World
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Flights to national parks" time="0.01">
+    <testcase classname="working on DESTINATION DEALS" name="Flights to national parks" time="33.427">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -18,7 +18,7 @@ Then I should land on a new page with "Flights to USA National Parks - Find the 
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Flights to San Francisco" time="0.012">
+    <testcase classname="working on DESTINATION DEALS" name="Flights to San Francisco" time="36.425">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -27,7 +27,7 @@ Then I should have a new windows tab with a title "Flights to San Francisco".pas
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Flights to New York Newark" time="0.011">
+    <testcase classname="working on DESTINATION DEALS" name="Flights to New York Newark" time="34.219">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -36,7 +36,7 @@ Then I should be found a new page with a bread cramp end with "Flights to New Yo
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Flights to Houston" time="0.01">
+    <testcase classname="working on DESTINATION DEALS" name="Flights to Houston" time="34.557">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -45,7 +45,7 @@ Then I should land to a new windows tab with bread cramp end with  "Flights to H
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Flights to Chicago" time="0.013">
+    <testcase classname="working on DESTINATION DEALS" name="Flights to Chicago" time="36.127">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -54,7 +54,7 @@ Then I should land to a new windows tab with bread cramp end with  "Flights to C
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Flights to Los Angeles" time="0.006">
+    <testcase classname="working on DESTINATION DEALS" name="Flights to Los Angeles" time="35.959">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -63,7 +63,7 @@ Then I should land to a new windows tab with bread cramp end with  "Flights to L
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Flights to Orlando" time="0.008">
+    <testcase classname="working on DESTINATION DEALS" name="Flights to Orlando" time="33.551">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -72,63 +72,146 @@ Then I should land to a new windows tab with bread cramp end with  "Flights to O
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Book a Roundtrip flight with a promotion code" time="0.019">
-        <system-out>
-            <![CDATA[Given I am on United Airlines Home page.....................................passed
-And I click on the DEALS option.............................................passed
-When I clicked on Flights to Orlando link...................................passed
-Then I should land to a new windows tab with bread cramp end with  "Flights to Orlando".passed
-When I enter a departure city and destination city..........................passed
-And I selected the departure and return dates...............................passed
-And I selected travel info class of travel and number of travelers..........passed
-When I entered the promotion code "1239865721"..............................passed
-And I click on the Search Flights button....................................passed
-Then I should see a text "We could not process your request. Please see the message below and make revisions.".passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Book a Roundtrip flight without a promotion code" time="0.014">
-        <system-out>
+    <testcase classname="working on DESTINATION DEALS" name="Book a Roundtrip flight with a promotion code" time="65.388">
+        <failure message="Unable to locate element: //a[@class='react-datepicker__navigation react-datepicker__navigation--previous']&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 26424, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: d1c3c7aa-5af2-438f-a677-d20f58c11219&#10;*** Element info: {Using=xpath, value=//a[@class='react-datepicker__navigation react-datepicker__navigation--previous']}" type="org.openqa.selenium.NoSuchElementException">
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
 When I clicked on Flights to Orlando link...................................passed
 Then I should land to a new windows tab with bread cramp end with  "Flights to Orlando".passed
 When I enter a departure city and destination city..........................passed
-And I selected the departure and return dates...............................passed
-And I selected travel info class of travel and number of travelers..........passed
-And I click on the Search Flights button....................................passed
-Then I should land on a page displays a text "We could not process your request. Please see the message below and make revisions.".passed
+And I selected the departure and return dates...............................failed
+And I selected travel info class of travel and number of travelers..........skipped
+When I entered the promotion code "1239865721"..............................skipped
+And I click on the Search Flights button....................................skipped
+Then I should see a text "We could not process your request. Please see the message below and make revisions.".skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@class='react-datepicker__navigation react-datepicker__navigation--previous']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 26424, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d1c3c7aa-5af2-438f-a677-d20f58c11219
+*** Element info: {Using=xpath, value=//a[@class='react-datepicker__navigation react-datepicker__navigation--previous']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at common.WebAPI.clickByXpath(WebAPI.java:337)
+	at homepage.DestinationDealsHom.selectDepartureDate(DestinationDealsHom.java:105)
+	at stepDefinitions.UADestinationStepDefinition.i_selected_the_departure_and_return_dates(UADestinationStepDefinition.java:127)
+	at ✽.I selected the departure and return dates(file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:54)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Book a Roundtrip flight with a mile and no promotion code" time="0.016">
-        <system-out>
+    <testcase classname="working on DESTINATION DEALS" name="Book a Roundtrip flight without a promotion code" time="64.221">
+        <failure message="Unable to locate element: //a[@class='react-datepicker__navigation react-datepicker__navigation--previous']&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 30304, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 3e89e731-573f-4792-8132-9312b1d55cfc&#10;*** Element info: {Using=xpath, value=//a[@class='react-datepicker__navigation react-datepicker__navigation--previous']}" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given I am on United Airlines Home page.....................................passed
+And I click on the DEALS option.............................................passed
+When I clicked on Flights to Orlando link...................................passed
+Then I should land to a new windows tab with bread cramp end with  "Flights to Orlando".passed
+When I enter a departure city and destination city..........................passed
+And I selected the departure and return dates...............................failed
+And I selected travel info class of travel and number of travelers..........skipped
+And I click on the Search Flights button....................................skipped
+Then I should land on a page displays a text "We could not process your request. Please see the message below and make revisions.".skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@class='react-datepicker__navigation react-datepicker__navigation--previous']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 30304, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3e89e731-573f-4792-8132-9312b1d55cfc
+*** Element info: {Using=xpath, value=//a[@class='react-datepicker__navigation react-datepicker__navigation--previous']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at common.WebAPI.clickByXpath(WebAPI.java:337)
+	at homepage.DestinationDealsHom.selectDepartureDate(DestinationDealsHom.java:105)
+	at stepDefinitions.UADestinationStepDefinition.i_selected_the_departure_and_return_dates(UADestinationStepDefinition.java:127)
+	at ✽.I selected the departure and return dates(file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:67)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="working on DESTINATION DEALS" name="Book a Roundtrip flight with a mile and no promotion code" time="64.621">
+        <failure message="Unable to locate element: //a[@class='react-datepicker__navigation react-datepicker__navigation--previous']&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 34692, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 0d17e625-d27d-40ca-a3f5-24078ecf6da2&#10;*** Element info: {Using=xpath, value=//a[@class='react-datepicker__navigation react-datepicker__navigation--previous']}" type="org.openqa.selenium.NoSuchElementException">
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
 When I clicked on Flights to popular destinations...........................passed
 Then I should land on a new tab "United Cheap Flights to 300+ Destinations Worldwide | United Airlines".passed
 When I clicked on Book with miles checklist.................................passed
 And I enter a departure city and destination city...........................passed
-And I selected the departure and return dates...............................passed
-And I selected travel info class of travel and number of travelers..........passed
-And I click on the Search Flights button....................................passed
-Then I should expect to see the text "Sign in to your MileagePlus account to show the best award availability".passed
+And I selected the departure and return dates...............................failed
+And I selected travel info class of travel and number of travelers..........skipped
+And I click on the Search Flights button....................................skipped
+Then I should expect to see the text "Sign in to your MileagePlus account to show the best award availability".skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@class='react-datepicker__navigation react-datepicker__navigation--previous']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 34692, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0d17e625-d27d-40ca-a3f5-24078ecf6da2
+*** Element info: {Using=xpath, value=//a[@class='react-datepicker__navigation react-datepicker__navigation--previous']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at common.WebAPI.clickByXpath(WebAPI.java:337)
+	at homepage.DestinationDealsHom.selectDepartureDate(DestinationDealsHom.java:105)
+	at stepDefinitions.UADestinationStepDefinition.i_selected_the_departure_and_return_dates(UADestinationStepDefinition.java:127)
+	at ✽.I selected the departure and return dates(file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:80)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Changed bag rules" time="0.012">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+    <testcase classname="working on DESTINATION DEALS" name="Changed bag rules" time="46.769">
+        <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
 When I clicked on Flights to popular destinations...........................passed
 Then I should land on a new tab "United Cheap Flights to 300+ Destinations Worldwide | United Airlines".passed
 And clicked on Changed bag rules Link.......................................passed
 Then I should have a new page with a text "Changed bag rules and optional services".passed
-And test....................................................................undefined
 ]]>
-        </failure>
+        </system-out>
     </testcase>
-    <testcase classname="Test United Airlines deals features on https://www.united.com/en/us/" name="Current offers and promos" time="0.006">
+    <testcase classname="Test United Airlines deals features on https://www.united.com/en/us/" name="Current offers and promos" time="20.635">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -136,7 +219,7 @@ Then I should see the OFFERS option.........................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Current offers and promos" time="0.011">
+    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Current offers and promos" time="30.892">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -145,7 +228,7 @@ Then I should see Deals & offers on the front page..........................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Working on United Airlines OFFERS section under Deals" name="MileagePlus news and offers" time="0.005">
+    <testcase classname="Working on United Airlines OFFERS section under Deals" name="MileagePlus news and offers" time="30.958">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -154,7 +237,7 @@ Then I should see MileagePlus deals & offers on the front page..............pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Discounts for 18 to 22 year olds" time="0.007">
+    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Discounts for 18 to 22 year olds" time="24.059">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -163,7 +246,7 @@ Then I should see Discounts for 18 to 22 year olds on the front page........pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Veterans Advantage discount" time="0.003">
+    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Veterans Advantage discount" time="28.145">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -172,7 +255,7 @@ Then I should see Veterans Advantage discount on the front page.............pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Redeem eCertificate" time="0.004">
+    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Redeem eCertificate" time="34.99">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -181,7 +264,7 @@ Then I should see Redeem eCertificate displayed on the front page...........pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Getting Electronic travel certificate Under Redeem eCert" time="0.015">
+    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Getting Electronic travel certificate Under Redeem eCert" time="36.803">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed

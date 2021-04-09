@@ -5,32 +5,32 @@
       {
         "name": "I am navigated to tripadvisor Home page",
         "aggregatedDurations": {
-          "median": 8.6822227,
-          "average": 8.809296083
+          "median": 8.6600795,
+          "average": 8.852153866
         },
         "durations": [
           {
-            "duration": 9.6654351,
+            "duration": 10.1712301,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:4"
           },
           {
-            "duration": 8.6468904,
+            "duration": 8.5596423,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:4"
           },
           {
-            "duration": 8.6930573,
+            "duration": 8.6618808,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:4"
           },
           {
-            "duration": 8.4710298,
+            "duration": 8.3884979,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:4"
           },
           {
-            "duration": 8.7079758,
+            "duration": 8.6733939,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:4"
           },
           {
-            "duration": 8.6713881,
+            "duration": 8.6582782,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:4"
           }
         ]
@@ -43,32 +43,32 @@
       {
         "name": "click on the More tab from the Header",
         "aggregatedDurations": {
-          "median": 0.28960655,
-          "average": 0.2910018
+          "median": 0.28140495,
+          "average": 0.287999666
         },
         "durations": [
           {
-            "duration": 0.2650915,
+            "duration": 0.2608297,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:5"
           },
           {
-            "duration": 0.3074879,
+            "duration": 0.2790379,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:5"
           },
           {
-            "duration": 0.2717146,
+            "duration": 0.2655146,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:5"
           },
           {
-            "duration": 0.2819187,
+            "duration": 0.283772,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:5"
           },
           {
-            "duration": 0.3225037,
+            "duration": 0.319258,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:5"
           },
           {
-            "duration": 0.2972944,
+            "duration": 0.3195858,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:5"
           }
         ]
@@ -81,12 +81,12 @@
       {
         "name": "I clicked on Add a Place",
         "aggregatedDurations": {
-          "median": 1.6418935,
-          "average": 1.6418935
+          "median": 1.7458774,
+          "average": 1.7458774
         },
         "durations": [
           {
-            "duration": 1.6418935,
+            "duration": 1.7458774,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:9"
           }
         ]
@@ -99,12 +99,12 @@
       {
         "name": "I should have seen a text \"Add a place to Tripadvisor\"",
         "aggregatedDurations": {
-          "median": 0.0804724,
-          "average": 0.0804724
+          "median": 0.0967123,
+          "average": 0.0967123
         },
         "durations": [
           {
-            "duration": 0.0804724,
+            "duration": 0.0967123,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:10"
           }
         ]
@@ -117,12 +117,12 @@
       {
         "name": "I clicked on Airlines link",
         "aggregatedDurations": {
-          "median": 1.7256468,
-          "average": 1.7256468
+          "median": 1.8196111,
+          "average": 1.8196111
         },
         "durations": [
           {
-            "duration": 1.7256468,
+            "duration": 1.8196111,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:14"
           }
         ]
@@ -135,12 +135,12 @@
       {
         "name": "I should have a new Airlines page with a text \"Airlines\"",
         "aggregatedDurations": {
-          "median": 0.0498653,
-          "average": 0.0498653
+          "median": 0.0603343,
+          "average": 0.0603343
         },
         "durations": [
           {
-            "duration": 0.0498653,
+            "duration": 0.0603343,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:15"
           }
         ]
@@ -153,12 +153,12 @@
       {
         "name": "I clicked on Cruises link",
         "aggregatedDurations": {
-          "median": 2.9291855,
-          "average": 2.9291855
+          "median": 2.8456405,
+          "average": 2.8456405
         },
         "durations": [
           {
-            "duration": 2.9291855,
+            "duration": 2.8456405,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:19"
           }
         ]
@@ -171,12 +171,12 @@
       {
         "name": "I should have a new Cruises page with a text \"Cruises - Cruise Vacations: 2021 Destinations \u0026 Ports | CHEAP Cruises - Tripadvisor\"",
         "aggregatedDurations": {
-          "median": 0.0084878,
-          "average": 0.0084878
+          "median": 0.0099746,
+          "average": 0.0099746
         },
         "durations": [
           {
-            "duration": 0.0084878,
+            "duration": 0.0099746,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:20"
           }
         ]
@@ -189,12 +189,12 @@
       {
         "name": "I clicked on Flights link",
         "aggregatedDurations": {
-          "median": 2.1723126,
-          "average": 2.1723126
+          "median": 2.1533267,
+          "average": 2.1533267
         },
         "durations": [
           {
-            "duration": 2.1723126,
+            "duration": 2.1533267,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:24"
           }
         ]
@@ -207,12 +207,12 @@
       {
         "name": "I clicked on Rental Cars link",
         "aggregatedDurations": {
-          "median": 0.3076405,
-          "average": 0.3076405
+          "median": 0.2491844,
+          "average": 0.2491844
         },
         "durations": [
           {
-            "duration": 0.3076405,
+            "duration": 0.2491844,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:29"
           }
         ]
@@ -225,12 +225,12 @@
       {
         "name": "I clicked on Hire a Trip Designer link",
         "aggregatedDurations": {
-          "median": 2.7873967,
-          "average": 2.7873967
+          "median": 3.1311568,
+          "average": 3.1311568
         },
         "durations": [
           {
-            "duration": 2.7873967,
+            "duration": 3.1311568,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:34"
           }
         ]
@@ -243,12 +243,12 @@
       {
         "name": "I should have a new Hire a Trip Designer page with a text \"Reco Trip Designers | A new kind of travel agent experience from Tripadvisor\"",
         "aggregatedDurations": {
-          "median": 0.0129634,
-          "average": 0.0129634
+          "median": 0.0119649,
+          "average": 0.0119649
         },
         "durations": [
           {
-            "duration": 0.0129634,
+            "duration": 0.0119649,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/TripAdvisor/src/test/java/features/MoreTab.feature:35"
           }
         ]

@@ -1,5 +1,202 @@
 
-@rund
+@run
+Scenario: Log in to your member website -- this is a dummy trial       # src/test/java/features/AccountManagement.feature:10
+  Given I am on Aetna's home page                                      # stepDefinitions.MemberSupportAccountManagement.i_am_on_aetna_s_home_page()
+  When I click on the  Member support Menu bar link                    # stepDefinitions.MemberSupportAccountManagement.i_click_on_the_member_support_menu_bar_link()
+  Then I should get a drop down option for further slection            # stepDefinitions.MemberSupportAccountManagement.i_should_get_a_drop_down_option_for_further_slection()
+  And I hover over on account management Link                          # stepDefinitions.MemberSupportAccountManagement.i_hover_over_on_account_management_Link()
+  When I click on Log in to your member website link                   # stepDefinitions.MemberSupportAccountManagement.i_click_on_log_in_to_your_member_website_link()
+  Then I should have land on a page with a text "Secure Member Log-in" # stepDefinitions.MemberSupportAccountManagement.i_should_have_land_on_a_page_with_a_text(java.lang.String)
+      java.lang.AssertionError: Test failed. Actual: Secure Member Log-in
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failEquals(Assert.java:187)
+	at org.junit.Assert.assertNotEquals(Assert.java:163)
+	at homepage.HomePage.verifyLoginPage(HomePage.java:20)
+	at stepDefinitions.MemberSupportAccountManagement.i_should_have_land_on_a_page_with_a_text(MemberSupportAccountManagement.java:82)
+	at ✽.I should have land on a page with a text "Secure Member Log-in"(file:///D:/Automation/BDDAutomationFramework_Team2/Aetna/src/test/java/features/AccountManagement.feature:12)
+
+
+    Embedding demo1 [image/png 21795 bytes]
+
+
+@run
+Scenario: Find a doctor  -->                                                                # src/test/java/features/AccountManagement.feature:15
+  Given I am on Aetna's home page                                                           # stepDefinitions.MemberSupportAccountManagement.i_am_on_aetna_s_home_page()
+  When I click on the  Member support Menu bar link                                         # stepDefinitions.MemberSupportAccountManagement.i_click_on_the_member_support_menu_bar_link()
+  Then I should get a drop down option for further slection                                 # stepDefinitions.MemberSupportAccountManagement.i_should_get_a_drop_down_option_for_further_slection()
+  And I hover over on account management Link                                               # stepDefinitions.MemberSupportAccountManagement.i_hover_over_on_account_management_Link()
+  When I click on Find a doctor link                                                        # stepDefinitions.MemberSupportAccountManagement.i_click_on_find_a_doctor_link()
+  Then I should have land on a Find a doctor with a text "Find Doctor, Dentist or Hospital" # stepDefinitions.MemberSupportAccountManagement.i_should_have_land_on_a_find_a_doctor_with_a_text(java.lang.String)
+
+@run
+Scenario: Find a pharmacy under the Find doctor link section                   # src/test/java/features/AccountManagement.feature:20
+  Given I am on Aetna's home page                                              # stepDefinitions.MemberSupportAccountManagement.i_am_on_aetna_s_home_page()
+  When I click on the  Member support Menu bar link                            # stepDefinitions.MemberSupportAccountManagement.i_click_on_the_member_support_menu_bar_link()
+  Then I should get a drop down option for further slection                    # stepDefinitions.MemberSupportAccountManagement.i_should_get_a_drop_down_option_for_further_slection()
+  And I hover over on account management Link                                  # stepDefinitions.MemberSupportAccountManagement.i_hover_over_on_account_management_Link()
+  When I click on Find a doctor link                                           # stepDefinitions.MemberSupportAccountManagement.i_click_on_find_a_doctor_link()
+  And I click on a Find a pharmacy link                                        # stepDefinitions.MemberSupportAccountManagement.i_click_on_a_find_a_pharmacy_link()
+  Then I should have land on a Pharmacy Home with a text "Aetna Pharmacy Home" # stepDefinitions.MemberSupportAccountManagement.i_should_have_land_on_a_pharmacy_home_with_a_text(java.lang.String)
+
+@run
+Scenario: Search Pharmacy by Location ZIP                   # src/test/java/features/AccountManagement.feature:26
+  Given I am on Aetna's home page                           # stepDefinitions.MemberSupportAccountManagement.i_am_on_aetna_s_home_page()
+  When I click on the  Member support Menu bar link         # stepDefinitions.MemberSupportAccountManagement.i_click_on_the_member_support_menu_bar_link()
+  Then I should get a drop down option for further slection # stepDefinitions.MemberSupportAccountManagement.i_should_get_a_drop_down_option_for_further_slection()
+  And I hover over on account management Link               # stepDefinitions.MemberSupportAccountManagement.i_hover_over_on_account_management_Link()
+  When I click on Find a doctor link                        # stepDefinitions.MemberSupportAccountManagement.i_click_on_find_a_doctor_link()
+  And I click on a Find a pharmacy link                     # stepDefinitions.MemberSupportAccountManagement.i_click_on_a_find_a_pharmacy_link()
+  And I select Retail Pharmacy Locations                    # stepDefinitions.MemberSupportAccountManagement.i_select_retail_pharmacy_locations()
+  And I click on a Radio button named ZIP CODE              # stepDefinitions.MemberSupportAccountManagement.i_click_on_a_radio_button_named_zip_code()
+  And I entered a zip cod "10001"                           # stepDefinitions.MemberSupportAccountManagement.i_entered_a_zip_cod(java.lang.String)
+  And I select Distance 20 miles                            # stepDefinitions.MemberSupportAccountManagement.i_select_distance_miles()
+  And I select a Plan Aetna Rx Value Network                # stepDefinitions.MemberSupportAccountManagement.i_select_a_plan_aetna_rx_value_network()
+  When I click on the search box                            # stepDefinitions.MemberSupportAccountManagement.i_click_on_the_search_box()
+  Then I should find a text "Aetna Rx Value Network"        # stepDefinitions.MemberSupportAccountManagement.i_should_find_a_text(java.lang.String)
+
+@run
+Scenario: Search Pharmacy by Location City                  # src/test/java/features/AccountManagement.feature:38
+  Given I am on Aetna's home page                           # stepDefinitions.MemberSupportAccountManagement.i_am_on_aetna_s_home_page()
+  When I click on the  Member support Menu bar link         # stepDefinitions.MemberSupportAccountManagement.i_click_on_the_member_support_menu_bar_link()
+  Then I should get a drop down option for further slection # stepDefinitions.MemberSupportAccountManagement.i_should_get_a_drop_down_option_for_further_slection()
+  And I hover over on account management Link               # stepDefinitions.MemberSupportAccountManagement.i_hover_over_on_account_management_Link()
+  When I click on Find a doctor link                        # stepDefinitions.MemberSupportAccountManagement.i_click_on_find_a_doctor_link()
+  And I click on a Find a pharmacy link                     # stepDefinitions.MemberSupportAccountManagement.i_click_on_a_find_a_pharmacy_link()
+  And I select Retail Pharmacy Locations                    # stepDefinitions.MemberSupportAccountManagement.i_select_retail_pharmacy_locations()
+  And I click on a Radio button named CITY CODE             # stepDefinitions.MemberSupportAccountManagement.i_click_on_a_radio_button_named_city_code()
+  And I entered a City "Alexandria"                         # stepDefinitions.MemberSupportAccountManagement.i_entered_a_city(java.lang.String)
+  And I select State                                        # stepDefinitions.MemberSupportAccountManagement.i_select_state()
+  And I select a Plan Aetna Rx Value Network                # stepDefinitions.MemberSupportAccountManagement.i_select_a_plan_aetna_rx_value_network()
+  When I click on the search box                            # stepDefinitions.MemberSupportAccountManagement.i_click_on_the_search_box()
+  Then I should find a text "Aetna Rx Value Network"        # stepDefinitions.MemberSupportAccountManagement.i_should_find_a_text(java.lang.String)
+
+@run
+Scenario: Search by Name using a ZIP Code                                            # src/test/java/features/AccountManagement.feature:50
+  Given I am on Aetna's home page                                                    # stepDefinitions.MemberSupportAccountManagement.i_am_on_aetna_s_home_page()
+  When I click on the  Member support Menu bar link                                  # stepDefinitions.MemberSupportAccountManagement.i_click_on_the_member_support_menu_bar_link()
+  Then I should get a drop down option for further slection                          # stepDefinitions.MemberSupportAccountManagement.i_should_get_a_drop_down_option_for_further_slection()
+  And I hover over on account management Link                                        # stepDefinitions.MemberSupportAccountManagement.i_hover_over_on_account_management_Link()
+  When I click on Find a doctor link                                                 # stepDefinitions.MemberSupportAccountManagement.i_click_on_find_a_doctor_link()
+  And I click on a Find a pharmacy link                                              # stepDefinitions.MemberSupportAccountManagement.i_click_on_a_find_a_pharmacy_link()
+  And I click on a Search by Name tab                                                # stepDefinitions.MemberSupportAccountManagement.i_click_on_a_search_by_name_tab()
+  And I enter the Pharmacy Name "CVS"                                                # stepDefinitions.MemberSupportAccountManagement.i_enter_the_pharmacy_name(java.lang.String)
+  And I verify ZIP Code is selected                                                  # stepDefinitions.MemberSupportAccountManagement.i_verify_zip_code_is_selected()
+  And I entered a zip cod "10001"                                                    # stepDefinitions.MemberSupportAccountManagement.i_entered_a_zip_cod(java.lang.String)
+  And I select Distance 30 miles                                                     # stepDefinitions.MemberSupportAccountManagement.i_select_distance_Away_Inmiles()
+  And I select a Plan Aetna Rx Value Network                                         # stepDefinitions.MemberSupportAccountManagement.i_select_a_plan_aetna_rx_value_network()
+  When I click on the search box of Search By Name tab                               # stepDefinitions.MemberSupportAccountManagement.i_click_on_the_search_box_of_SearchByName_tab()
+  Then I should find Search by Name ends with a page that has a text"Pharmacy Name:" # stepDefinitions.MemberSupportAccountManagement.i_should_find_Search_by_Name_text_as(java.lang.String)
+
+@run
+Scenario: Search by Name using a City                                                # src/test/java/features/AccountManagement.feature:63
+  Given I am on Aetna's home page                                                    # stepDefinitions.MemberSupportAccountManagement.i_am_on_aetna_s_home_page()
+  When I click on the  Member support Menu bar link                                  # stepDefinitions.MemberSupportAccountManagement.i_click_on_the_member_support_menu_bar_link()
+  Then I should get a drop down option for further slection                          # stepDefinitions.MemberSupportAccountManagement.i_should_get_a_drop_down_option_for_further_slection()
+  And I hover over on account management Link                                        # stepDefinitions.MemberSupportAccountManagement.i_hover_over_on_account_management_Link()
+  When I click on Find a doctor link                                                 # stepDefinitions.MemberSupportAccountManagement.i_click_on_find_a_doctor_link()
+  And I click on a Find a pharmacy link                                              # stepDefinitions.MemberSupportAccountManagement.i_click_on_a_find_a_pharmacy_link()
+  And I click on a Search by Name tab                                                # stepDefinitions.MemberSupportAccountManagement.i_click_on_a_search_by_name_tab()
+  And I enter the Pharmacy Name "cvs"                                                # stepDefinitions.MemberSupportAccountManagement.i_enter_the_pharmacy_name(java.lang.String)
+  And I click on a Radio button named CITY CODE                                      # stepDefinitions.MemberSupportAccountManagement.i_click_on_a_radio_button_named_city_code()
+  And I entered a City "Alexandria"                                                  # stepDefinitions.MemberSupportAccountManagement.i_entered_a_city(java.lang.String)
+  And I select State                                                                 # stepDefinitions.MemberSupportAccountManagement.i_select_state()
+  And I select a Plan Aetna Rx Value Network                                         # stepDefinitions.MemberSupportAccountManagement.i_select_a_plan_aetna_rx_value_network()
+  When I click on the search box of Search By Name tab                               # stepDefinitions.MemberSupportAccountManagement.i_click_on_the_search_box_of_SearchByName_tab()
+  Then I should find Search by Name ends with a page that has a text"Pharmacy Name:" # stepDefinitions.MemberSupportAccountManagement.i_should_find_Search_by_Name_text_as(java.lang.String)
+
+@run
+Scenario: Advance Search using a ZIP Code                    # src/test/java/features/AccountManagement.feature:76
+  Given I am on Aetna's home page                            # stepDefinitions.MemberSupportAccountManagement.i_am_on_aetna_s_home_page()
+  When I click on the  Member support Menu bar link          # stepDefinitions.MemberSupportAccountManagement.i_click_on_the_member_support_menu_bar_link()
+  Then I should get a drop down option for further slection  # stepDefinitions.MemberSupportAccountManagement.i_should_get_a_drop_down_option_for_further_slection()
+  And I hover over on account management Link                # stepDefinitions.MemberSupportAccountManagement.i_hover_over_on_account_management_Link()
+  When I click on Find a doctor link                         # stepDefinitions.MemberSupportAccountManagement.i_click_on_find_a_doctor_link()
+  And I click on a Find a pharmacy link                      # stepDefinitions.MemberSupportAccountManagement.i_click_on_a_find_a_pharmacy_link()
+  And I click on a Advance Search tab                        # stepDefinitions.MemberSupportAccountManagement.and_I_click_on_a_Advance_Search_tab()
+  And I select Retail Pharmacy Locations                     # stepDefinitions.MemberSupportAccountManagement.i_select_retail_pharmacy_locations()
+  And I select a Plan Aetna Rx Value Network                 # stepDefinitions.MemberSupportAccountManagement.i_select_a_plan_aetna_rx_value_network()
+  And I click on a Radio button named ZIP CODE               # stepDefinitions.MemberSupportAccountManagement.i_click_on_a_radio_button_named_zip_code()
+  And I entered a zip cod "10001"                            # stepDefinitions.MemberSupportAccountManagement.i_entered_a_zip_cod(java.lang.String)
+  And I select Distance 20 miles                             # stepDefinitions.MemberSupportAccountManagement.i_select_distance_miles()
+  And I enter the Pharmacy Name "CVS"                        # stepDefinitions.MemberSupportAccountManagement.i_enter_the_pharmacy_name(java.lang.String)
+  When I click on the search box of Search By Name tab       # stepDefinitions.MemberSupportAccountManagement.i_click_on_the_search_box_of_SearchByName_tab()
+  Then I should land on a page with a text "Search Settings" # stepDefinitions.MemberSupportAccountManagement.i_should_land_On_a_with_text(java.lang.String)
+
+@run
+Scenario: Advance Search using a City                        # src/test/java/features/AccountManagement.feature:90
+  Given I am on Aetna's home page                            # stepDefinitions.MemberSupportAccountManagement.i_am_on_aetna_s_home_page()
+  When I click on the  Member support Menu bar link          # stepDefinitions.MemberSupportAccountManagement.i_click_on_the_member_support_menu_bar_link()
+  Then I should get a drop down option for further slection  # stepDefinitions.MemberSupportAccountManagement.i_should_get_a_drop_down_option_for_further_slection()
+  And I hover over on account management Link                # stepDefinitions.MemberSupportAccountManagement.i_hover_over_on_account_management_Link()
+  When I click on Find a doctor link                         # stepDefinitions.MemberSupportAccountManagement.i_click_on_find_a_doctor_link()
+  And I click on a Find a pharmacy link                      # stepDefinitions.MemberSupportAccountManagement.i_click_on_a_find_a_pharmacy_link()
+  And I click on a Advance Search tab                        # stepDefinitions.MemberSupportAccountManagement.and_I_click_on_a_Advance_Search_tab()
+  And I select Retail Pharmacy Locations                     # stepDefinitions.MemberSupportAccountManagement.i_select_retail_pharmacy_locations()
+  And I select a Plan Aetna Rx Value Network                 # stepDefinitions.MemberSupportAccountManagement.i_select_a_plan_aetna_rx_value_network()
+  And I click on a Radio button named CITY CODE              # stepDefinitions.MemberSupportAccountManagement.i_click_on_a_radio_button_named_city_code()
+  And I entered a City "Alexandria"                          # stepDefinitions.MemberSupportAccountManagement.i_entered_a_city(java.lang.String)
+  And I select State                                         # stepDefinitions.MemberSupportAccountManagement.i_select_state()
+  And I enter the Pharmacy Name "CVS"                        # stepDefinitions.MemberSupportAccountManagement.i_enter_the_pharmacy_name(java.lang.String)
+  When I click on the search box of Search By Name tab       # stepDefinitions.MemberSupportAccountManagement.i_click_on_the_search_box_of_SearchByName_tab()
+  Then I should land on a page with a text "Search Settings" # stepDefinitions.MemberSupportAccountManagement.i_should_land_On_a_with_text(java.lang.String)
+
+@run
+Scenario: Verify Find Medicine and Costs Link                                                                          # src/test/java/features/FindMedicinCoste.feature:9
+  Given I am on Aetna's home page                                                                                      # stepDefinitions.MemberSupportAccountManagement.i_am_on_aetna_s_home_page()
+  When I click on the  Member support Menu bar link                                                                    # stepDefinitions.MemberSupportAccountManagement.i_click_on_the_member_support_menu_bar_link()
+  Then I should get a drop down option for further slection                                                            # stepDefinitions.MemberSupportAccountManagement.i_should_get_a_drop_down_option_for_further_slection()
+  When I click on find Medicine and costs link                                                                         # stepDefinitions.FindMedicineCostsStepDefinition.i_click_on_find_medicine_and_costs_link()
+  Then I should have land to a page "Prescription Drug List (Formulary), Coverage & Costs - Aetna | Find a Medication" # stepDefinitions.FindMedicineCostsStepDefinition.i_should_have_land_to_a_page(java.lang.String)
+
+@run
+Scenario: verify medicare option plan in Prescription Drug List ... | Find a Medication page # src/test/java/features/FindMedicinCoste.feature:14
+  Given I am on Aetna's home page                                                            # stepDefinitions.MemberSupportAccountManagement.i_am_on_aetna_s_home_page()
+  When I click on the  Member support Menu bar link                                          # stepDefinitions.MemberSupportAccountManagement.i_click_on_the_member_support_menu_bar_link()
+  Then I should get a drop down option for further slection                                  # stepDefinitions.MemberSupportAccountManagement.i_should_get_a_drop_down_option_for_further_slection()
+  When I click on find Medicine and costs link                                               # stepDefinitions.FindMedicineCostsStepDefinition.i_click_on_find_medicine_and_costs_link()
+  And I click on explore medicare option button                                              # stepDefinitions.FindMedicineCostsStepDefinition.i_click_on_explore_medicare_option_button()
+  Then I should have get medicare Aetna logo page                                            # stepDefinitions.FindMedicineCostsStepDefinition.i_should_have_get_medicare_aetna_logo_page()
+
+@run
+Scenario Outline: Email subscription                                                         # src/test/java/features/FindMedicinCoste.feature:28
+  Given I am on Aetna's home page                                                            # stepDefinitions.MemberSupportAccountManagement.i_am_on_aetna_s_home_page()
+  When I click on the  Member support Menu bar link                                          # stepDefinitions.MemberSupportAccountManagement.i_click_on_the_member_support_menu_bar_link()
+  Then I should get a drop down option for further slection                                  # stepDefinitions.MemberSupportAccountManagement.i_should_get_a_drop_down_option_for_further_slection()
+  When I click on find Medicine and costs link                                               # stepDefinitions.FindMedicineCostsStepDefinition.i_click_on_find_medicine_and_costs_link()
+  And I click on explore medicare option button                                              # stepDefinitions.FindMedicineCostsStepDefinition.i_click_on_explore_medicare_option_button()
+  When I enter "Maria" "Bolton" and "ma@aetna.com"                                           # stepDefinitions.FindMedicineCostsStepDefinition.i_enter_and(java.lang.String,java.lang.String,java.lang.String)
+  And I click on a signUp button                                                             # stepDefinitions.FindMedicineCostsStepDefinition.i_click_on_a_sign_up_botton()
+  Then I should have a text response of "Thanks! Be sure to check your email for periodic u" # stepDefinitions.FindMedicineCostsStepDefinition.i_should_have_a_text_response_of(java.lang.String)
+
+@run
+Scenario Outline: Email subscription                                                         # src/test/java/features/FindMedicinCoste.feature:29
+  Given I am on Aetna's home page                                                            # stepDefinitions.MemberSupportAccountManagement.i_am_on_aetna_s_home_page()
+  When I click on the  Member support Menu bar link                                          # stepDefinitions.MemberSupportAccountManagement.i_click_on_the_member_support_menu_bar_link()
+  Then I should get a drop down option for further slection                                  # stepDefinitions.MemberSupportAccountManagement.i_should_get_a_drop_down_option_for_further_slection()
+  When I click on find Medicine and costs link                                               # stepDefinitions.FindMedicineCostsStepDefinition.i_click_on_find_medicine_and_costs_link()
+  And I click on explore medicare option button                                              # stepDefinitions.FindMedicineCostsStepDefinition.i_click_on_explore_medicare_option_button()
+  When I enter "Martha" "Daniel" and "tha@aetna.com"                                         # stepDefinitions.FindMedicineCostsStepDefinition.i_enter_and(java.lang.String,java.lang.String,java.lang.String)
+  And I click on a signUp button                                                             # stepDefinitions.FindMedicineCostsStepDefinition.i_click_on_a_sign_up_botton()
+  Then I should have a text response of "Thanks! Be sure to check your email for periodic u" # stepDefinitions.FindMedicineCostsStepDefinition.i_should_have_a_text_response_of(java.lang.String)
+
+@run
+Scenario Outline: Email subscription                                                         # src/test/java/features/FindMedicinCoste.feature:30
+  Given I am on Aetna's home page                                                            # stepDefinitions.MemberSupportAccountManagement.i_am_on_aetna_s_home_page()
+  When I click on the  Member support Menu bar link                                          # stepDefinitions.MemberSupportAccountManagement.i_click_on_the_member_support_menu_bar_link()
+  Then I should get a drop down option for further slection                                  # stepDefinitions.MemberSupportAccountManagement.i_should_get_a_drop_down_option_for_further_slection()
+  When I click on find Medicine and costs link                                               # stepDefinitions.FindMedicineCostsStepDefinition.i_click_on_find_medicine_and_costs_link()
+  And I click on explore medicare option button                                              # stepDefinitions.FindMedicineCostsStepDefinition.i_click_on_explore_medicare_option_button()
+  When I enter "Caleb" "John" and "ca@aetna.com"                                             # stepDefinitions.FindMedicineCostsStepDefinition.i_enter_and(java.lang.String,java.lang.String,java.lang.String)
+  And I click on a signUp button                                                             # stepDefinitions.FindMedicineCostsStepDefinition.i_click_on_a_sign_up_botton()
+  Then I should have a text response of "Thanks! Be sure to check your email for periodic u" # stepDefinitions.FindMedicineCostsStepDefinition.i_should_have_a_text_response_of(java.lang.String)
+
+@run
+Scenario: Member support Home page                          # src/test/java/features/MemberSupportHome.feature:4
+  Given I am on Aetna's home page                           # stepDefinitions.MemberSupportAccountManagement.i_am_on_aetna_s_home_page()
+  When I click on the  Member support Menu bar link         # stepDefinitions.MemberSupportAccountManagement.i_click_on_the_member_support_menu_bar_link()
+  Then I should get a drop down option for further slection # stepDefinitions.MemberSupportAccountManagement.i_should_get_a_drop_down_option_for_further_slection()
+
+@run
 Scenario: To verify the All health resources  Link                             # src/test/java/features/TheHealthGuide.feature:8
   Given I am on Aetna's home page                                              # stepDefinitions.MemberSupportAccountManagement.i_am_on_aetna_s_home_page()
   When I click on the  Member support Menu bar link                            # stepDefinitions.MemberSupportAccountManagement.i_click_on_the_member_support_menu_bar_link()
@@ -7,7 +204,7 @@ Scenario: To verify the All health resources  Link                             #
   And I hover on The Health Guide Option and click on All health resources     # stepDefinitions.MultiPackStepDefinition.i_hover_on_the_health_guide_option_and_click_on_all_health_resources()
   Then I should land on a new page with a Title "Your good health starts here" # stepDefinitions.MultiPackStepDefinition.i_should_land_on_a_new_page_with_a_title(java.lang.String)
 
-@rund
+@run
 Scenario: verify HMO vs POS and more is selected                            # src/test/java/features/TheHealthGuide.feature:12
   Given I am on Aetna's home page                                           # stepDefinitions.MemberSupportAccountManagement.i_am_on_aetna_s_home_page()
   When I click on the  Member support Menu bar link                         # stepDefinitions.MemberSupportAccountManagement.i_click_on_the_member_support_menu_bar_link()
@@ -16,7 +213,7 @@ Scenario: verify HMO vs POS and more is selected                            # sr
   And I click on HMO vs POS and more                                        # stepDefinitions.MultiPackStepDefinition.i_click_on_HMO_vs_POS()
   Then I should see the corresponding "HMO, POS, PPO, HDHP: Explained"      # stepDefinitions.MultiPackStepDefinition.i_should_see_the_corresponding(java.lang.String)
 
-@rund
+@run
 Scenario: verify Helping families is selected                                           # src/test/java/features/TheHealthGuide.feature:17
   Given I am on Aetna's home page                                                       # stepDefinitions.MemberSupportAccountManagement.i_am_on_aetna_s_home_page()
   When I click on the  Member support Menu bar link                                     # stepDefinitions.MemberSupportAccountManagement.i_click_on_the_member_support_menu_bar_link()
@@ -24,3 +221,12 @@ Scenario: verify Helping families is selected                                   
   When I hover on The Health Guide Option and click on All health resources             # stepDefinitions.MultiPackStepDefinition.i_hover_on_the_health_guide_option_and_click_on_all_health_resources()
   And I click on Helping families                                                       # stepDefinitions.MultiPackStepDefinition.i_click_on_Helping_families()
   Then I should see the corresponding helping families text "Neighborhood health story" # stepDefinitions.MultiPackStepDefinition.i_should_see_corresponding_helping_families(java.lang.String)
+
+@run
+Scenario: verify Healthy school year is selected                                                  # src/test/java/features/TheHealthGuide.feature:23
+  Given I am on Aetna's home page                                                                 # stepDefinitions.MemberSupportAccountManagement.i_am_on_aetna_s_home_page()
+  When I click on the  Member support Menu bar link                                               # stepDefinitions.MemberSupportAccountManagement.i_click_on_the_member_support_menu_bar_link()
+  Then I should get a drop down option for further slection                                       # stepDefinitions.MemberSupportAccountManagement.i_should_get_a_drop_down_option_for_further_slection()
+  When I hover on The Health Guide Option and click on All health resources                       # stepDefinitions.MultiPackStepDefinition.i_hover_on_the_health_guide_option_and_click_on_all_health_resources()
+  And I click on Healthy school year                                                              # stepDefinitions.MultiPackStepDefinition.i_click_on_healthy_school_year()
+  Then I should see the corresponding Healthy school year text "5 tips for a healthy school year" # stepDefinitions.MultiPackStepDefinition.i_should_see_the_corresponding_healthy_school_year_text(java.lang.String)

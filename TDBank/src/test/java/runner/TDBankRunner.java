@@ -20,7 +20,7 @@ import org.junit.runner.RunWith;
         monochrome = true,
         dryRun = false,
         publish = true
-//        ,tags = "(@ran) and (not @pending)"
+        ,tags = "(@run) and (not @pending)"
 
 
 )

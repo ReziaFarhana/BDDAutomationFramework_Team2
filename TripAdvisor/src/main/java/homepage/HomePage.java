@@ -29,6 +29,23 @@ public class HomePage extends WebAPI {
         Assert.assertEquals("Test failed", expected, actual);
     }
 
+    public void verifyTripProtectionPage() {
+        boolean actual = isElementDisplayed(locatorOfTripProtection);
+        Assert.assertEquals("Test failed", true, actual);
+    }
+
+    public void verifySingleInsurance(String expected){
+        String actual = getTextByCss(toVerifySingleInsurancerlocator);
+        Assert.assertEquals("Test failed",expected,actual);
+    }
+
+
+
+
+
+
+
+
     public void bootStrap(String loc, String val) {
         List<WebElement> list = driver.findElements(By.xpath(loc));
         System.out.println(list.size());
