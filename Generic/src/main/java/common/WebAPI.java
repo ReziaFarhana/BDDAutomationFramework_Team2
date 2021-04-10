@@ -349,6 +349,12 @@ public class WebAPI {
         driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
     }
 
+    public void typeByXpathNEnter(String locator, String value) {
+        driver.findElement(By.xpath(locator)).sendKeys(value, Keys.ENTER);
+    }
+
+
+
     public void typeByXpath(String locator, String value) {
         driver.findElement(By.xpath(locator)).sendKeys(value);
     }
@@ -463,7 +469,21 @@ public class WebAPI {
 
     public void selectOptionByVisibleText(WebElement element, String value) {
         Select select = new Select(element);
-        select.selectByVisibleText(value);
+        try {
+            select.selectByVisibleText(value);
+        }catch (Exception e1){
+            try {
+                select.selectByValue(value);
+            }catch (Exception e2){
+                try {
+                    select.equals(value);
+                }catch (Exception e3){
+                    System.out.println("Unable to identify ");
+                }
+            }
+        }
+
+
     }
 
     public void selectOptionByVisibleText(String loc, String value) {

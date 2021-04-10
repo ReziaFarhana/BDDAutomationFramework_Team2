@@ -39,6 +39,46 @@ public class HomePage extends WebAPI {
         Assert.assertEquals("Test failed",expected,actual);
     }
 
+    public void verifyAccessMyPlan(String expected){
+        String actual = getTextByCss(locatorToVerifyAccessMyPlan);
+        Assert.assertEquals("Test failed",expected,actual);
+    }
+
+    @FindBy(css = locatorToSelectState)
+    public WebElement selectState;
+
+    @FindBy(css = locatorToSelectDestination)
+    public WebElement destination;
+
+
+    public void toSelectStateResidence(){
+        scrollTO(locatorToLocateQoute);
+        selectState.click();
+        selectOptionByVisibleText(selectState,"VA");
+    }
+
+     public void toSelectStateDestiantin(){
+        selectOptionByVisibleText(destination,"Africa - Other");
+    }
+
+    public void verifyInsuranceQoute(String expected){
+        String actual = getTextByCss(locatorToVirifyQoute);
+        Assert.assertEquals("Test failed",expected,actual);
+
+    }
+
+    public void verifyAirlinesSearch(String airliensInfo){
+        String actual = getTextByCss(locatorToClickOnAirlinesSearch);
+        Assert.assertEquals("Test failed",airliensInfo,actual);
+    }
+
+    public void verifyClickOnFlightsLink(String text){
+        String actual = getTextByXpath(locatorToVerifyClickOnFlightsLink);
+        Assert.assertEquals("Test failed",text,actual);
+    }
+
+
+
 
 
 
