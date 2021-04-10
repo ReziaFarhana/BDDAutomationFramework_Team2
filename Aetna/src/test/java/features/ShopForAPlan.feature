@@ -8,7 +8,7 @@ Feature: Verify Aetna Shop for a Plan Functionality
     And I enter the Zip Code
     When  I click View 2021 Plans
 
-  @Test1 #----done
+  @Test #----done
   Scenario: Verify Aetna Medicare Plans
     Then I Verify the plans Available "Aetna Medicare - Plan List" Title
 
@@ -17,14 +17,14 @@ Feature: Verify Aetna Shop for a Plan Functionality
 #        When  I Select Plan Premium(Low to High)
 #        Then I verify the result set is in Ascending Order
 
-  @Test3  #  sortDD--> add to cart-- done
+  @Test  #  sortDD--> add to cart-- done
   Scenario: Verify Aetna Medicare Plan Add to Cart functionality
     And I click the Sort Drop Down
     And  I Select Plan Premium(Low to High)
     When I click Add To Cart
     Then I Verify the "My cart" Text
 
-  @Test4
+  @Test
   Scenario:Verify Aetna  Checkout functionality
     And I click the Sort Drop Down
     And I Select Plan Premium(Low to High)
@@ -34,7 +34,7 @@ Feature: Verify Aetna Shop for a Plan Functionality
     When  I Click the Proceed to Checkout button
     Then I verify "Personal Information" Text
 
-  @Test5 #--verifying personal info page title--
+  @Test #--verifying personal info page title--
   Scenario: Verify the Aetna Medicare Enrollment Form Title
     And I click the Sort Drop Down
     And I Select Plan Premium(Low to High)
@@ -44,7 +44,7 @@ Feature: Verify Aetna Shop for a Plan Functionality
     When I Click the Proceed to Checkout button
     Then I verify the Personal Information "Aetna Medicare - Enrollment Form" Title
 
-  @Test6 #--verify personal Info text----Done
+  @Test #--verify personal Info text----Done
   Scenario: Verify the Aetna Medicare Enrollment Form Functionality
     And I click the Sort Drop Down
     And I Select Plan Premium(Low to High)
@@ -54,7 +54,7 @@ Feature: Verify Aetna Shop for a Plan Functionality
     When I Click the Proceed to Checkout button
     Then I verify the Personal Information "Personal Information" Text
 
-    @Test7  #-----done
+    @Test  #-----done
   Scenario Outline: Verify Personal Information Form Functionality
     And I click the Sort Drop Down
     And I Select Plan Premium(Low to High)

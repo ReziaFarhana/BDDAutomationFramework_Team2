@@ -1,6 +1,6 @@
 Feature: TDBank Search Box Functionality
 
-#********************HELP
+@Test    #******************HELP
   Scenario Outline: TDBank Check SearchBox Function With Valid Services
     Given I am on TDBank HomePage
     And I click on TDBank SearchBox
