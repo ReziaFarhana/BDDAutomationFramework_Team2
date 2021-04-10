@@ -24,7 +24,7 @@ import org.junit.runner.RunWith;
         // to check the mapping is proper between feature file and step definition file
         dryRun = false,
         publish = true,
-        tags = "(@mahmud) and (not @pending)"
+        tags = "(@yasmina) and (not @pending)"
 //         tags = "(@smokeTest or @RegressionTest or @IntegrationTest ) and (not @pending)"
 
 
@@ -32,7 +32,7 @@ import org.junit.runner.RunWith;
 )
 
 
-public class AmazonTestRunner {
+public class TripAdvisorRunner {
 
 
 }

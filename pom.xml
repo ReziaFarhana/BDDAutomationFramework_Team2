@@ -14,10 +14,7 @@
         <module>TripAdvisor</module>
         <module>UnitedAirlines</module>
         <module>TDBank</module>
-        <module>Verizon</module>
-        <module>BBC</module>
-        <module>WalMart</module>
-        <module>Geico</module>
+
     </modules>
 
     <properties>

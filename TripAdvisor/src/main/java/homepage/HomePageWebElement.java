@@ -1,23 +1,22 @@
 package homepage;
 
 public class HomePageWebElement {
-    // WebElement class for Locators only and some other properties
 
-    public static final String productName="Mask";
-    public static final String searchBoxLocator="twotabsearchtextbox";
-    public static final String searchButtonLocator="nav-search-submit-button";
-    public static final String helloSignInLocator="//*[@id=\"nav-link-accountList-nav-line-1\"]";
-    public static final String emailPhoneForSignInLocator="//*[@id=\"ap_email\"]";
-    public static final String continueForSignInLocator="//*[@id=\"continue\"]";
-    public static final String passwordForSignInLocator="//*[@id=\"ap_password\"]";
-    public static final String signInSubmitLocator="//*[@id=\"signInSubmit\"]";
-    public static final String helloUserLocator="//*[@id=\"nav-link-accountList-nav-line-1\"]";
-    public static final String errorMessageLocator="//*[text()='There was a problem']";
-    public static final String customerNameLocator="//*[@id=\"ap_customer_name\"]";
-    public static final String createYourAmazonAccountLocator="//*[@id=\"createAccountSubmit\"]";
-    public static final String searchTextLocator="//*[@id=\"search\"]/span/div/span/h1/div/div[1]/div/div/span[3]";
-
-
+    public static final String where = "//input[@name='q']";
+    public static final String hotels = "//*[@id=\"lithium-root\"]/main/div[1]/div[2]/div/div/div[1]/a/span/span[1]";
+    public static final String whereto = "//body/div[2]/div[1]/form[1]/input[1]";
+    public static final String More = "//*[@id=\"lithium-root\"]/main/div[1]/div[2]/div/div/div[18]/div/button";
+    public static final String addAPlace = "//ul[@class='_1xRf1n6u']//a[.='Add a Place']";
+    public static final String Airline = "//ul[@class='_1xRf1n6u']/li[2]//span[@class='DrjyGw-P _2AAjjcx8']";
+    public static final String Flights = "//body/div[@id='lithium-root']/main[1]/div[1]/div[2]/div[1]/div[1]/div[18]/div[1]/div[1]/ul[1]/li[4]/a[1]/span[1]";
+    public static final String Cruises = "//ul[@class='_1xRf1n6u']/li[3]//span[@class='DrjyGw-P _2AAjjcx8']";
+    public static final String HireATripDesigner = "//ul[@class='_1xRf1n6u']/li[6]//span[@class='DrjyGw-P _2AAjjcx8']";
+    public static final String insurance = "//ul[@class='_1xRf1n6u']/li[7]//span[@class='DrjyGw-P _2AAjjcx8']";
+    public static final String rentalCars = "//ul[@class='_1xRf1n6u']/li[8]//span[@class='DrjyGw-P _2AAjjcx8']";
+    public static final String roadTrip = "//*[@id=\"menu-item-8\"]";
+    public static final String travlersChoice = "//a[@id='menu-item-8']";
+    public static final String vacationPackages = "//span[@class='DrjyGw-P _2AAjjcx8'][normalize-space()='Vacation Packages']";
+    public static final String Aboutus = "//a[.='About Us']";
 
 
 

@@ -1,0 +1,92 @@
+[
+  {
+    "source": "I m on Aetna homePage",
+    "steps": [
+      {
+        "name": "I m on Aetna homePage",
+        "aggregatedDurations": {
+          "median": 10.0180574,
+          "average": 10.0180574
+        },
+        "durations": [
+          {
+            "duration": 10.0180574,
+            "location": "file:///C:/Users/yasmi/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/HomePage_Header_ShopForPlan_Medicare.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on shop for plan",
+    "steps": [
+      {
+        "name": "I click on shop for plan",
+        "aggregatedDurations": {
+          "median": 0.1541317,
+          "average": 0.1541317
+        },
+        "durations": [
+          {
+            "duration": 0.1541317,
+            "location": "file:///C:/Users/yasmi/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/HomePage_Header_ShopForPlan_Medicare.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I hover on medicare",
+    "steps": [
+      {
+        "name": "I hover on medicare",
+        "aggregatedDurations": {
+          "median": 0.3372621,
+          "average": 0.3372621
+        },
+        "durations": [
+          {
+            "duration": 0.3372621,
+            "location": "file:///C:/Users/yasmi/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/HomePage_Header_ShopForPlan_Medicare.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on Find a plan to meet your needs",
+    "steps": [
+      {
+        "name": "I click on Find a plan to meet your needs",
+        "aggregatedDurations": {
+          "median": 3.7480868,
+          "average": 3.7480868
+        },
+        "durations": [
+          {
+            "duration": 3.7480868,
+            "location": "file:///C:/Users/yasmi/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/HomePage_Header_ShopForPlan_Medicare.feature:32"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I verify {string} as Title",
+    "steps": [
+      {
+        "name": "I verify \"Right Medicare Plan for You | Aetna Medicare\" as Title",
+        "aggregatedDurations": {
+          "median": 0.0193737,
+          "average": 0.0193737
+        },
+        "durations": [
+          {
+            "duration": 0.0193737,
+            "location": "file:///C:/Users/yasmi/IdeaProjects/BDDAutomationFramework_Team2/Aetna/src/test/java/features/HomePage_Header_ShopForPlan_Medicare.feature:33"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+
+@yasmina
+Scenario: Medicare check functionality (Find a plan to meet your needs  ) # src/test/java/features/HomePage_Header_ShopForPlan_Medicare.feature:31
+  Given I m on Aetna homePage                                             # stepDefinitions.HomePageStepDefinition.user_is_on_explore_aetna_sites()
+  And I click on shop for plan                                            # stepDefinitions.HomePageStepDefinition.iClickOnShopForPlan()
+  And I hover on medicare                                                 # stepDefinitions.HomePageStepDefinition.iHoverOnMedicare()
+  When I click on Find a plan to meet your needs                          # stepDefinitions.HomePageStepDefinition.iClickOnFindAPlanToMeetYourNeeds()
+  Then I verify "Right Medicare Plan for You | Aetna Medicare" as Title   # stepDefinitions.HomePageStepDefinition.iVerifyAsTitle(java.lang.String)

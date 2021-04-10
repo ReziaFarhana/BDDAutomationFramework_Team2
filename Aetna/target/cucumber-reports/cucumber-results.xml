@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="15.736">
+    <testcase classname="Check shop for plan functionality(Medicare)" name="Medicare check functionality (Find a plan to meet your needs  )" time="15.23">
+        <system-out>
+            <![CDATA[Given I m on Aetna homePage.................................................passed
+And I click on shop for plan................................................passed
+And I hover on medicare.....................................................passed
+When I click on Find a plan to meet your needs..............................passed
+Then I verify "Right Medicare Plan for You | Aetna Medicare" as Title.......passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

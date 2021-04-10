@@ -1,0 +1,223 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10018057400,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 45482300,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.HomePageStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "I m on Aetna homePage",
+            "match": {
+              "location": "stepDefinitions.HomePageStepDefinition.user_is_on_explore_aetna_sites()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 5656500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.HomePageStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 154131700,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2336300,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.HomePageStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "I click on shop for plan",
+            "match": {
+              "location": "stepDefinitions.HomePageStepDefinition.iClickOnShopForPlan()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1010100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.HomePageStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 337262100,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 510800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.HomePageStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "I hover on medicare",
+            "match": {
+              "location": "stepDefinitions.HomePageStepDefinition.iHoverOnMedicare()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.HomePageStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-09T06:23:46.051Z",
+        "line": 31,
+        "name": "Medicare check functionality (Find a plan to meet your needs  )",
+        "description": "",
+        "id": "check-shop-for-plan-functionality(medicare);medicare-check-functionality-(find-a-plan-to-meet-your-needs--)",
+        "after": [
+          {
+            "result": {
+              "duration": 749380200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.HomePageStepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3748086800,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.HomePageStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 32,
+            "name": "I click on Find a plan to meet your needs",
+            "match": {
+              "location": "stepDefinitions.HomePageStepDefinition.iClickOnFindAPlanToMeetYourNeeds()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 591400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.HomePageStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 19373700,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1406700,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.HomePageStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 33,
+            "name": "I verify \"Right Medicare Plan for You | Aetna Medicare\" as Title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Right Medicare Plan for You | Aetna Medicare\"",
+                  "offset": 9
+                }
+              ],
+              "location": "stepDefinitions.HomePageStepDefinition.iVerifyAsTitle(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1095300,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.HomePageStepDefinition.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@yasmina"
+          }
+        ]
+      }
+    ],
+    "name": "Check shop for plan functionality(Medicare)",
+    "description": "",
+    "id": "check-shop-for-plan-functionality(medicare)",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/HomePage_Header_ShopForPlan_Medicare.feature",
+    "tags": []
+  }
+]
