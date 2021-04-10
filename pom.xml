@@ -270,7 +270,10 @@
                         <testFailureIgnore>true</testFailureIgnore>
                         <!--Test Runner Files-->
                         <includes>
-
+                                <include>**/UnitedTestRunner.java</include>
+                                <include>**/TDBankTestRunner.java</include>
+                                <include>**/AetnaTestRunner.java</include>
+                                <include>**/TripAdvisorTestRunner.java</include>
                         </includes>
                         <suiteXmlFiles>
 
