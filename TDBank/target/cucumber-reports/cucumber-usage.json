@@ -1,0 +1,100 @@
+[
+  {
+    "source": "I am on TDBank homepage",
+    "steps": [
+      {
+        "name": "I am on TDBank homepage",
+        "aggregatedDurations": {
+          "median": 6.9687872,
+          "average": 6.9687872
+        },
+        "durations": [
+          {
+            "duration": 6.6599519,
+            "location": "file:///C:/Puniya/Workspace/Intellij/BDDAutomationFramework_Team2/TDBank/src/test/java/features/Career.feature:5"
+          },
+          {
+            "duration": 7.2776225,
+            "location": "file:///C:/Puniya/Workspace/Intellij/BDDAutomationFramework_Team2/TDBank/src/test/java/features/Career.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on the Career tab",
+    "steps": [
+      {
+        "name": "I click on the Career tab",
+        "aggregatedDurations": {
+          "median": 6.77664325,
+          "average": 6.77664325
+        },
+        "durations": [
+          {
+            "duration": 6.815755,
+            "location": "file:///C:/Puniya/Workspace/Intellij/BDDAutomationFramework_Team2/TDBank/src/test/java/features/Career.feature:6"
+          },
+          {
+            "duration": 6.7375315,
+            "location": "file:///C:/Puniya/Workspace/Intellij/BDDAutomationFramework_Team2/TDBank/src/test/java/features/Career.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I enter {string} keyword in Job SearchBox",
+    "steps": [
+      {
+        "name": "I enter \"Quality Assurance\" keyword in Job SearchBox",
+        "aggregatedDurations": {
+          "median": 0.1255078,
+          "average": 0.1255078
+        },
+        "durations": [
+          {
+            "duration": 0.1255078,
+            "location": "file:///C:/Puniya/Workspace/Intellij/BDDAutomationFramework_Team2/TDBank/src/test/java/features/Career.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I enter {string} in the location SearchBox",
+    "steps": [
+      {
+        "name": "I enter \"New York\" in the location SearchBox",
+        "aggregatedDurations": {
+          "median": 0.0626038,
+          "average": 0.0626038
+        },
+        "durations": [
+          {
+            "duration": 0.0626038,
+            "location": "file:///C:/Puniya/Workspace/Intellij/BDDAutomationFramework_Team2/TDBank/src/test/java/features/Career.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on search Button",
+    "steps": [
+      {
+        "name": "I click on search Button",
+        "aggregatedDurations": {
+          "median": 6.3808068,
+          "average": 6.3808068
+        },
+        "durations": [
+          {
+            "duration": 6.3808068,
+            "location": "file:///C:/Puniya/Workspace/Intellij/BDDAutomationFramework_Team2/TDBank/src/test/java/features/Career.feature:13"
+          }
+        ]
+      }
+    ]
+  }
+]

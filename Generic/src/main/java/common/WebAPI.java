@@ -249,6 +249,9 @@ public class WebAPI {
             locator.sendKeys(value);
         }
     }
+    public void typeOnElementAndEnterbyXpath(String locator, String value){
+        driver.findElement(By.xpath(locator)).sendKeys(value, Keys.ENTER);
+    }
 
     public static void typeOnElementNEnter(String locator, String value) {
         try {
@@ -318,6 +321,7 @@ public class WebAPI {
     }
 
     public void clickByXpath(String locator) {
+
         driver.findElement(By.xpath(locator)).click();
     }
 
@@ -550,6 +554,10 @@ public class WebAPI {
             System.out.println("CSS locator didn't work");
         }
     }
+    public void typeOnInputBoxByXpath(String locator, String value) {
+        driver.findElement(By.xpath(locator)).sendKeys(value, Keys.ENTER);
+    }
+
 
 
     // Customer Made Helper Methods for Amex.com
@@ -758,6 +766,105 @@ public class WebAPI {
         String url = driver.getCurrentUrl();
         return url;
     }
+
+    public void scrollDown(String height){
+
+        JavascriptExecutor js2 = (JavascriptExecutor) driver;
+        js2.executeScript("window.scrollBy(0,)");
+    }
+
+    public void scrollDown2(String locator){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        //Find element by link text and store in variable "Element"
+        WebElement Element = driver.findElement(By.linkText(locator));
+
+        //This will scroll the page till the element is found
+        js.executeScript("arguments[0].scrollIntoView();", Element);
+    }
+    //HoverOver
+    public void hoverOverElement(String locator1, String locator2) throws InterruptedException {
+
+        WebElement web =driver.findElement(By.xpath(locator1));
+        WebElement element=driver.findElement(By.xpath(locator2));
+        Actions actions = new Actions(driver);
+        actions.moveToElement(web).click().build().perform();
+        actions.moveToElement(element).build().perform();
+    }
+
+
+    // public void dropDown(String locator, String value)
+
+    //checkbox
+    public void tryCheckBox(String idLocator){
+        WebElement checkbox=driver.findElement(By.id(idLocator));
+        checkbox.click();
+    }
+
+    public void tryCheckBoxXpath(String xpathLocator){
+        WebElement checkbox=driver.findElement(By.xpath(xpathLocator));
+        checkbox.click();
+    }
+
+    public void scrollByID(String locator){
+        JavascriptExecutor executor=(JavascriptExecutor) driver;
+        WebElement element=driver.findElement(By.id(locator));
+        executor.executeScript("arguments[0].scrollIntoView(true);",element);
+        element.click();
+    }
+    public void scrollByXPATH(String locator){
+        JavascriptExecutor executor=(JavascriptExecutor) driver;
+        WebElement element=driver.findElement(By.xpath(locator));
+        executor.executeScript("arguments[0].scrollIntoView(true);",element);
+        element.click();
+    }
+    public void scrollbyCSS(String locator){
+        JavascriptExecutor executor=(JavascriptExecutor) driver;
+        WebElement element=driver.findElement(By.cssSelector(locator));
+        executor.executeScript("arguments[0].scrollIntoView(true);",element);
+        element.click();
+    }
+    public void scrollbyClass(String locator){
+        JavascriptExecutor executor=(JavascriptExecutor) driver;
+        WebElement element=driver.findElement(By.className(locator));
+                executor.executeScript("arguments[0].scrollIntoView(true);",element);
+        element.click();
+    }
+
+
+
+    //new window handle
+    public void windowHandle() {
+        String parentHandle = driver.getWindowHandle();
+        for (String winHandle : driver.getWindowHandles()) {
+            driver.switchTo().window(winHandle); // switch focus of WebDriver to the next found window handle (that's your newly opened window)
+        }
+    }
+//clicking images using cssSelector- by easha
+        public void getImage (String cssLocator, String pgTitle){
+            driver.findElement(By.cssSelector(cssLocator)).click();
+            if (driver.getTitle().equals(pgTitle)) {
+                System.out.println("We are on image page");
+            } else {
+                System.out.println("We are not on image page");
+            }
+        }
+
+    public void hoverOverElement2(String locator1, String locator2) throws InterruptedException {
+
+        WebElement web =driver.findElement(By.xpath(locator1));
+        WebElement element=driver.findElement(By.xpath(locator2));
+        Actions actions = new Actions(driver);
+        actions.moveToElement(web).build().perform();
+        actions.moveToElement(element).click().build().perform();
+    }
+
+//    public void hoverOverElementAndSelectElementandCLick(WebElement locater1, String locater2) throws InterruptedException {
+//        sleepFor(5);
+//        Actions actions=new Actions(driver);
+//        actions.moveToElement(locater1).perform();
+//        clickByXpath(locater2);
+//    }
 
 
 }

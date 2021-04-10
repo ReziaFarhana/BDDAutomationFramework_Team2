@@ -1,7 +1,7 @@
 package stepDefinitions;
 
 import common.WebAPI;
-import homepage.HomePage;
+import unitedAirlines.HomePage;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.BeforeStep;
