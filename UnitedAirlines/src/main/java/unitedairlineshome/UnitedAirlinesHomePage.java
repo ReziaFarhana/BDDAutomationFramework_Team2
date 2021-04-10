@@ -10,72 +10,42 @@ import static unitedairlineshome.UnitedAirlinesHomeWebElement.*;
 
 public class UnitedAirlinesHomePage extends WebAPI {
 
-    @FindBy(how = How.XPATH, using = bookButtonWebElement)
-    public WebElement bookButton;
-    @FindBy(how = How.XPATH, using = hotelsButtonWebElement)
-    public WebElement hotelsButton;
-    @FindBy(how = How.XPATH, using = whereToSearchBoxWebElement)
-    public WebElement whereToSearch1;
-    @FindBy(how = How.XPATH, using = bookHotelsValidationText)
-    public WebElement bookHotelsText;
-    @FindBy(xpath = flightStatusLocator)
-    WebElement flightStatus;
-    @FindBy(xpath = fromFieldLocator)
-    WebElement fromField;
-    @FindBy(xpath = toFieldLocator)
-    WebElement toField;
-    @FindBy(xpath = flightNumberBtnLocator)
-    WebElement flightNumber;
-    @FindBy(xpath = dropDownBtnLocator)
-    WebElement dropDownBtn;
-    @FindBy(xpath = selectDateLocator)
-    WebElement selectedDate;
-    @FindBy(xpath = searchBtnLocator)
-    WebElement searchButton;
-    @FindBy(xpath = textLocator)
-    WebElement validateText;
-    @FindBy(xpath = checkInLocator)
-    WebElement checkIn;
-    @FindBy(xpath = ticketNumberLocator)
-    WebElement ticketNumber;
-    @FindBy(xpath = lastNameLocator)
-    WebElement lastName;//
-    @FindBy(xpath = SearchBtnLocator)
-    WebElement searchBtn; //
-    @FindBy(xpath = checkInTextLocator)
-    WebElement checkInText;
-    @FindBy(xpath = myTripsLocator)
-    WebElement myTrips;
-    @FindBy(xpath = myTripConfirmationsLocator)
-    WebElement myTripConfirmation;
-    @FindBy(xpath = myTripLastNameLocator)
-    WebElement myTripLastName;
-    @FindBy(xpath = myTripSearchBoxLocator)
-    WebElement myTripSearchBox;
-    @FindBy(xpath = myTripValidateLocator)
-    WebElement myTripValidate;
-    @FindBy(xpath = searchIconLocator)
-    WebElement searchIcon;
-    @FindBy(xpath = coronaVirusUpdateLocator)
-    WebElement coronavirusUpdateClick;
-    @FindBy(xpath = requestRefundLocator)
-    WebElement requestRefundClick;
-    @FindBy(xpath = searchButtonTextLocator)
-    WebElement searchBtnText;
-    @FindBy(xpath = flightReceiptLocator)
-    WebElement flightReceipt;
-    @FindBy(xpath = radioBtnLocator)
-    WebElement radioBtn;
-    @FindBy(xpath = travelerFirstNameLocator)
-    WebElement travelerFistName;
-    @FindBy(xpath = travelerLastNameLocator)
-    WebElement travelerLastName;
-    @FindBy(xpath = cardNumberLocator)
-    WebElement cardNumber;
-    @FindBy(xpath = travelerSearchBtnLocator)
-    WebElement travelerSearchBtn;
-    @FindBy(xpath = travelerTextLocator)
-    WebElement validateTravelerText;
+    @FindBy(how = How.XPATH, using = bookButtonWebElement) public WebElement bookButton;
+    @FindBy(how = How.XPATH, using = hotelsButtonWebElement) public WebElement hotelsButton;
+    @FindBy(how = How.XPATH, using = whereToSearchBoxWebElement) public WebElement whereToSearch1;
+    @FindBy(how = How.XPATH, using = bookHotelsValidationText) public WebElement bookHotelsText;
+    @FindBy(xpath = flightStatusLocator) public WebElement flightStatus;
+    @FindBy(xpath = fromFieldLocator) public WebElement fromField;
+    @FindBy(xpath = toFieldLocator) public WebElement toField;
+    @FindBy(xpath = flightNumberBtnLocator) public WebElement flightNumber;
+    @FindBy(xpath = dropDownBtnLocator) public WebElement dropDownBtn;
+    @FindBy(xpath = selectDateLocator) public WebElement selectedDate;
+    @FindBy(xpath = searchBtnLocator) public WebElement searchButton;
+    @FindBy(xpath = textLocator) public WebElement validateText;
+    @FindBy(xpath = checkInLocator) public WebElement checkIn;
+    @FindBy(xpath = ticketNumberLocator) public WebElement ticketNumber;
+    @FindBy(xpath = lastNameLocator) public WebElement lastName;//
+    @FindBy(xpath = SearchBtnLocator) public WebElement searchBtn; //
+    @FindBy(xpath = checkInTextLocator) public WebElement checkInText;
+    @FindBy(xpath = myTripsLocator) public WebElement myTrips;
+    @FindBy(xpath = myTripConfirmationsLocator) public WebElement myTripConfirmation;
+    @FindBy(xpath = myTripLastNameLocator) public WebElement myTripLastName;
+    @FindBy(xpath = myTripSearchBoxLocator) public WebElement myTripSearchBox;
+    @FindBy(xpath = myTripValidateLocator) public WebElement myTripValidate;
+    @FindBy(xpath = searchIconLocator) public WebElement searchIcon;
+    @FindBy(xpath = coronaVirusUpdateLocator) public WebElement coronavirusUpdateClick;
+    @FindBy(xpath = requestRefundLocator) public WebElement requestRefundClick;
+    @FindBy(xpath = searchButtonTextLocator) public WebElement searchBtnText;
+    @FindBy(xpath = flightReceiptLocator) public WebElement flightReceipt;
+    @FindBy(xpath = radioBtnLocator) public WebElement radioBtn;
+    @FindBy(xpath = travelerFirstNameLocator) public WebElement travelerFistName;
+    @FindBy(xpath = travelerLastNameLocator) public WebElement travelerLastName;
+    @FindBy(xpath = cardNumberLocator) public WebElement cardNumber;
+    @FindBy(xpath = travelerSearchBtnLocator) public WebElement travelerSearchBtn;
+    @FindBy(xpath = travelerTextLocator) public WebElement validateTravelerText;
+
+
+
 
     public void flightStatusTab() {
         flightStatus.click();
@@ -101,8 +71,8 @@ public class UnitedAirlinesHomePage extends WebAPI {
     }
 
     public void validateFlightStatus() {
-        String actualResult = "DEPARTURE";
-        String expectedResult = validateText.getText();
+        String expectedResult = "DEPARTURE";
+        String actualResult = validateText.getText();
         Assert.assertEquals(expectedResult, actualResult);
 
     }
@@ -189,7 +159,7 @@ public class UnitedAirlinesHomePage extends WebAPI {
     }
 
     public void enterCardNumber() {
-        cardNumber.sendKeys("1234");
+        cardNumber.sendKeys("12345678");
     }
 
     public void searchButtonCheck() {
@@ -224,7 +194,15 @@ public class UnitedAirlinesHomePage extends WebAPI {
     public void validateLandedPageText() throws InterruptedException {
         String expectedText = "Miami Beach, Florida, United States of America";
         String actualText = bookHotelsText.getText();
-        Assert.assertEquals("Text does not match", expectedText, actualText);
+        Assert.assertEquals("Text doesn't match", expectedText, actualText);
         Thread.sleep(3000);
+    }
+    /**
+     * verify Page URL
+     */
+
+    public void verifyPageURL(String expectedText){
+        String actualText = driver.getCurrentUrl();
+        Assert.assertEquals("Title doesn't match", expectedText, actualText);
     }
 }

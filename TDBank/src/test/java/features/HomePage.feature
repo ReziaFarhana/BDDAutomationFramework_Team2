@@ -26,7 +26,7 @@ Feature: Online Banking Page features
 
     When I hover over the services button and I click Online Banking option
     And I scroll down and I click on Enroll now
-    And I cancel the Ads Choices & Personalization popUp
+    And I cancel the questions On Stimulus Payments Pop up
     Then I verify "Online Banking Enrollment" window pop up
 # passed-4
   @Farhana
@@ -34,44 +34,53 @@ Feature: Online Banking Page features
 
     When I hover over the services button and I select Student Banking option
     Then I verify "Smart and simple student banking" is displayed
-#  test-5
-  Scenario: TD Bank Find us Box functionality check
-    When I click FindUs Icon
-    And I enter "10463" and click on searchIcon
-    Then I validate TD bank locations appeared
-#test-6
-  @Test
-  Scenario: Get Direction Button check
-    When I take necessary steps and landed on locations page
-    And I click on Get Direction Button
-    Then I validate google map page Title
+#  test-5 passed
+  @Farhana
+  Scenario: TD Bank find us Box check
+  When I click Find Us icon
+  And I enter "10463" and I click on search icon
+  Then I validate TD Bank locations appeared
 
 
-#test-7
+##test-6
+#  @Test
+#  Scenario: Get Direction Button check
+#    When I take necessary steps and landed on locations page
+#    And I click on Get Direction Button
+#    Then I validate google map page Title
+#
+#
+##test-7
   @Test
   Scenario: TD Bank signUp functionality check
-    When I click on signUp button
+    When I click on Sign Up button
+    And I cancel the questions On Stimulus Payments Pop up
     And I do necessary steps to land on User info page
     And I select account type
     And I enter user information
-      | firstName | lastName | email                  | atmNumber         | SSN        | accountNumber  | userName     | reEnterUserName | password   | reEnterPassword  |
-      | Rezia      | Farhana  | 30294NY_fk@gmail.com  | 3334567890876543  | 553456789  | 3334526273848  | 30294NY_fk   | 30294NY_fk      | test@30294 | test@30294       |
+      | firstName | lastName | email         | atmNumber         | SSN        | accountNumber  | userName     | reEnterUserName | password   | reEnterPassword  |
+      | Rezia     | Farhana  | fk@gmail.com  | 3334567890876543  | 553456789  | 3334526273848  | fk_30294     | fk_30294        | test@30294 | test@30294       |
+    And I check Yes From Bill Pay Option
+    And I select Paper less Option
     And I click on continue button
-    Then I validate signUp message
+    Then I should see "The information you gave doesn't match our records. Please review and make any updates before proceeding." is properly appear
 #test-8
     @test
     Scenario Outline: TD Bank login functionality check with invalid credentials
       When I click on logIn button in homePage
+      And I click not now on the questions on Stimulus Payments Pop up
       And I enter "<userName>" and "<password>"
       And I click on login
-      Then I validate the error message
+      Then I validate "error" message
       Examples:
-        | userName   | password  |
+        | userName   | password   |
         | 30294NY_fk | test@30294 |
+#        | 30021NY_RF | pxyz@1234  |
+#        | 12345NY_HC | trump@2020 |
 
-#      test-9
-      When I click on product
-      And I click on checking
-
+##      test-9
+#      When I click on product
+#      And I click on checking
+#
 
 

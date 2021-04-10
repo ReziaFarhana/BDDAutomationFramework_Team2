@@ -5,6 +5,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -17,6 +18,7 @@ import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import org.testng.annotations.Optional;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 
@@ -30,10 +32,7 @@ import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class WebAPI {
@@ -398,6 +397,16 @@ public class WebAPI {
         list = driver.findElements(By.xpath(locator));
         return list;
     }
+        public List<WebElement> getListofWebElementsbyTag(String tagName){
+            List<WebElement> list = new ArrayList<WebElement>();
+            list = driver.findElements(By.tagName(tagName));//list of webelements
+
+            //iterating and printing each link
+            for(WebElement eachLink: list){
+                System.out.println(eachLink.getAttribute("textContent"));
+            }
+            return list;
+        }
 
     public String getCurrentPageUrl() {
         String url = driver.getCurrentUrl();
@@ -508,9 +517,9 @@ public class WebAPI {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    public void waitUntilSelectable(By locator) {
+    public void waitUntilSelectable(String locator) {
         WebDriverWait wait = new WebDriverWait(driver, 10);
-        boolean element = wait.until(ExpectedConditions.elementToBeSelected(locator));
+        boolean element = wait.until(ExpectedConditions.elementToBeSelected(By.id(locator)));
     }
 
     public void upLoadFile(String locator, String path) {
@@ -761,16 +770,6 @@ public class WebAPI {
         jscript.executeScript("window.scrollTo(0, document.body.scrollHeight);");
     }
 
-    public void windowsFullPageScrollUp() {
-        jscript = (JavascriptExecutor) driver;
-        jscript.executeScript("window.scrollTo(0, -document.body.scrollHeight);");
-    }
-
-    public void windowsFullPageScrollSideBar(WebElement element) {
-        jscript = (JavascriptExecutor) driver;
-        jscript.executeScript("arguments[0].scrollIntoView(true);", element);
-    }
-
     public void windowsPageScrollToLocator(By locator) {
         jscript = (JavascriptExecutor) driver;
         jscript.executeScript("arguments[0].scrollIntoView(true);", locator);
@@ -814,9 +813,8 @@ public class WebAPI {
         for (String winHandle : driver.getWindowHandles()) {
             driver.switchTo().window(winHandle); // switch focus of WebDriver to the next found window handle (that's your newly opened window)
         }
-
-
     }
+
     //clicking images using cssSelector-
     public void getImage(String cssLocator, String pgTitle) {
         driver.findElement(By.cssSelector(cssLocator)).click();
@@ -824,6 +822,39 @@ public class WebAPI {
             System.out.println("We are on image page");
         } else {
             System.out.println("We are not on image page");
+        }
+    }
+
+    public void openMultipleTabsAtOnce(String locator) throws InterruptedException {
+        //first bring element to view(if its not already, if it is skip)
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        WebElement openTabs = driver.findElement(By.xpath(locator));
+        executor.executeScript("arguments[0].scrollIntoView(true);", openTabs);
+
+        //to get size of each element in that locator using anchor tag
+        openTabs.findElements(By.tagName("a")).size();
+        System.out.println(openTabs.findElements(By.tagName("a")).size());
+
+        //loop through each element and open in a new tab
+        for (int i = 1; i < openTabs.findElements(By.tagName("a")).size(); i++) {
+            String openTabsAgain = Keys.chord(Keys.CONTROL, Keys.ENTER);
+            openTabs.findElements(By.tagName("a")).get(i).sendKeys(openTabsAgain);
+        }
+    }
+
+    public void getTitlesOfMultipleTabs() throws InterruptedException {
+        //iterator through
+        Set<String> handleTitles = driver.getWindowHandles();
+        Iterator<String>iterate = handleTitles.iterator();
+
+        //switching to each tab
+        while(iterate.hasNext()) {
+            driver.switchTo().window(iterate.next());
+
+            //printing it to view
+            System.out.println(driver.getTitle());
+            sleepFor(4);
+
         }
     }
 

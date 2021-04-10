@@ -21,16 +21,16 @@ public class UnitedAirRegistrationPage extends WebAPI {
     WebElement middleNameBox;
     @FindBy(xpath = "//input[@id='LastName']")
     WebElement lastNameBox;
-    @FindBy(xpath = "//*[@id=\"DOB_BirthMonth\"]")
+    @FindBy(xpath = "//*[@id='DOB_BirthMonth']")
     WebElement monthBox;
-    @FindBy(xpath = "//*[@id=\"DOB_BirthDay\"]")
+    @FindBy(xpath = "//*[@id='DOB_BirthDay']")
     WebElement dateBox;
-    @FindBy(xpath = "//*[@id=\"DOB_BirthYear\"]")
+    @FindBy(xpath = "//*[@id='DOB_BirthYear']")
     WebElement yearBox;
-    @FindBy(xpath = "//*[@id=\"Gender2\"]")
+    @FindBy(xpath = "//*[@id='Gender2']")
     WebElement selectGenderBox;
-    @FindBy(xpath = "//*[@id=\"divEnroll\"]/h2[2]")
-    WebElement validateSignUpText;
+    @FindBy(xpath = "//h2[.='Contact information']")
+    WebElement ContactInfoText;
 
     @FindBy(xpath = "//*[@id=\"AddressLine1\"]")
     WebElement streetField;
@@ -40,8 +40,8 @@ public class UnitedAirRegistrationPage extends WebAPI {
     WebElement stateField;
     @FindBy(xpath = "//*[@id=\"PostalCodeRequired\"]")
     WebElement zipCodeField;
-    @FindBy(xpath = "//*[@id=\"divEnroll\"]/h3[1]")
-    WebElement validateContactText;
+    @FindBy(xpath = "//h3[.='Phone number']")
+    WebElement PhoneNoText;
 
     @FindBy(xpath = "//*[@id=\"PhoneNumber_Input\"]")
     WebElement mobileNumber;
@@ -55,47 +55,47 @@ public class UnitedAirRegistrationPage extends WebAPI {
     WebElement extensionBusiness;
     @FindBy(xpath = "//*[@id=\"HomeAirport\"]")
     WebElement airportName;
-    @FindBy(xpath = "//*[@id=\"divEnroll\"]/h3[2]")
-    WebElement validatePhoneText;
+    @FindBy(xpath = "//h3[.='Email information']")
+    WebElement EmailText;
 
-    @FindBy(xpath = "//*[@id=\"EmailAddress\"]")
+    @FindBy(xpath = "//*[@id='EmailAddress']")
     WebElement emailAddressField;
-    @FindBy(xpath = "//*[@id=\"EmailAddressConfirm\"]")
+    @FindBy(xpath = "//*[@id='EmailAddressConfirm']")
     WebElement verifyEmailId;
-    @FindBy(xpath = "//*[@id=\"IsSaveEmailDayOfTravelContact\"]")
+    @FindBy(xpath = "//*[@id='IsSaveEmailDayOfTravelContact']")
     WebElement notifyCheckBox;
-    @FindBy(xpath = "//*[@id=\"IsSaveMarketingEmails\"]")
+    @FindBy(xpath = "//*[@id='IsSaveMarketingEmails']")
     WebElement boxUnCheck;
-    @FindBy(xpath = "//*[@id=\"NewPassword\"]")
+    @FindBy(xpath = "//*[@id='NewPassword']")
     WebElement passwordField;
-    @FindBy(xpath = "//*[@id=\"NewPasswordConfirm\"]")
+    @FindBy(xpath = "//*[@id='NewPasswordConfirm']")
     WebElement reEnterPassword;
-    @FindBy(xpath = "//*[@id=\"NewPasswordConfirmShowHideLink\"]")
+    @FindBy(xpath = "//*[@id='NewPasswordConfirmShowHideLink']")
     WebElement clickShowButton;
-    @FindBy(xpath = "//*[@id=\"enrollProfileForm\"]/h3[2]")
-    WebElement validateEmailField;
+    @FindBy(xpath = "//h3[.='Security questions']")
+    WebElement SecurityQuesText;
 
-    @FindBy(xpath = "//*[@id=\"Questions_0__QuestionKey\"]")
+    @FindBy(xpath = "//*[@id='Questions_0__QuestionKey']")
     WebElement question1; //What is your favorite sport?
-    @FindBy(xpath = "//*[@id=\"Questions_0__AnswerKey\"]")
+    @FindBy(xpath = "//*[@id='Questions_0__AnswerKey']")
     WebElement answer1;
-    @FindBy(xpath = "//*[@id=\"Questions_1__QuestionKey\"]")
+    @FindBy(xpath = "//*[@id='Questions_1__QuestionKey']")
     WebElement question2;
-    @FindBy(xpath = "//*[@id=\"Questions_1__AnswerKey\"]")
+    @FindBy(xpath = "//*[@id='Questions_1__AnswerKey']")
     WebElement answer2;
-    @FindBy(xpath = "//*[@id=\"Questions_2__QuestionKey\"]")
+    @FindBy(xpath = "//*[@id='Questions_2__QuestionKey']")
     WebElement question3;
-    @FindBy(xpath = "//*[@id=\"Questions_2__AnswerKey\"]")
+    @FindBy(xpath = "//*[@id='Questions_2__AnswerKey']")
     WebElement answer3;
-    @FindBy(xpath = "//*[@id=\"Questions_3__QuestionKey\"]")
+    @FindBy(xpath = "//*[@id='Questions_3__QuestionKey']")
     WebElement question4;
-    @FindBy(xpath = "//*[@id=\"Questions_3__AnswerKey\"]")
+    @FindBy(xpath = "//*[@id='Questions_3__AnswerKey']")
     WebElement answer4;
-    @FindBy(xpath = "//*[@id=\"Questions_4__QuestionKey\"]")
+    @FindBy(xpath = "//*[@id='Questions_4__QuestionKey']")
     WebElement question5;
-    @FindBy(xpath = "//*[@id=\"Questions_4__AnswerKey\"]")
+    @FindBy(xpath = "//*[@id='Questions_4__AnswerKey']")
     WebElement answer5;
-    @FindBy(xpath = "//*[@id=\"btnEnroll\"]")
+    @FindBy(xpath = "//*[@id='btnEnroll']")
     WebElement acceptAndEnrollButton;
 
     /**
@@ -108,7 +108,7 @@ public class UnitedAirRegistrationPage extends WebAPI {
 
     public void joinNowButton() throws InterruptedException {
         joinNowBtn.click();
-        selectOptionByVisibleText(titleArrow, "Mr.");
+        selectOptionByVisibleText(titleArrow, "Mrs.");
         sleepFor(5);
     }
 
@@ -138,14 +138,13 @@ public class UnitedAirRegistrationPage extends WebAPI {
         sleepFor(3);
         selectOptionByVisibleText(monthBox, "01 - January");
         sleepFor(5);
-        selectOptionByVisibleText(selectGenderBox, "Male (M)");
+        selectOptionByVisibleText(selectGenderBox, "Female (F)");
         sleepFor(4);
     }
 
-    public void setValidateSignUp() {
-        String expectedResult = "Contact information";
-        String actualResult = validateSignUpText.getText();
-        Assert.assertEquals(expectedResult, actualResult);
+    public void validateContactInfoText() {
+        boolean b= ContactInfoText.isDisplayed();
+        Assert.assertTrue(b);
     }
 
     /**
@@ -171,10 +170,9 @@ public class UnitedAirRegistrationPage extends WebAPI {
         sleepFor(4);
     }
 
-    public void ValidateContactInformation(String phone) {
-        String expectedResult = phone;
-        String actualResult = validateContactText.getText();
-        Assert.assertEquals(expectedResult, actualResult);
+    public void validatePhoneNoText() {
+       boolean b= PhoneNoText.isDisplayed();
+        Assert.assertTrue(b);
     }
 
     /**
@@ -205,10 +203,9 @@ public class UnitedAirRegistrationPage extends WebAPI {
         checkBox.click();
     }
 
-    public void ValidatePhoneNumber(String email) {
-        String expectedResult = email;
-        String actualResult = validatePhoneText.getText();
-        Assert.assertEquals(expectedResult, actualResult);
+    public void ValidateEmailText() {
+       boolean b=EmailText.isDisplayed();
+        Assert.assertTrue(b);
     }
 
     /**
@@ -239,28 +236,27 @@ public class UnitedAirRegistrationPage extends WebAPI {
 
     public void showButton() throws InterruptedException {
         clickShowButton.click();
-        sleepFor(3);
+        sleepFor(5);
     }
 
-    public void ValidateEmailField(String text) {
-        String expectedResult = text;
-        String actualResult = validateEmailField.getText();
-        Assert.assertEquals(expectedResult, actualResult);
+    public void ValidateSecurityQuesText() {
+        boolean b=SecurityQuesText.isDisplayed();
+        Assert.assertTrue(b);
     }
 
     /**
      * Security questions check
      */
     public void questionAndAnswer1(String ans1) throws InterruptedException {
-        sleepFor(3);
-        selectOptionByVisibleText(question1, "What is your favorite sport?");
+        sleepFor(4);
+        selectOptionByVisibleText(question1, "What is your favorite flavor of ice cream?");
         sleepFor(5);
         answer1.sendKeys(ans1);
         sleepFor(4);
     }
 
     public void questionAndAnswer2(String ans2) throws InterruptedException {
-        sleepFor(3);
+        sleepFor(4);
         selectOptionByVisibleText(question2, "What is your favorite type of reading?");
         sleepFor(5);
         answer2.sendKeys(ans2);
@@ -268,7 +264,7 @@ public class UnitedAirRegistrationPage extends WebAPI {
     }
 
     public void questionAndAnswer3(String ans3) throws InterruptedException {
-        sleepFor(3);
+        sleepFor(4);
         selectOptionByVisibleText(question3, "What is your favorite type of movie?");
         sleepFor(5);
         answer3.sendKeys(ans3);
@@ -276,23 +272,23 @@ public class UnitedAirRegistrationPage extends WebAPI {
     }
 
     public void questionAndAnswer4(String ans4) throws InterruptedException {
-        sleepFor(3);
-        selectOptionByVisibleText(question4, "What is your favorite type of vacation?");
+        sleepFor(4);
+        selectOptionByVisibleText(question4, "What was the first major city that you visited?");
         sleepFor(5);
         answer4.sendKeys(ans4);
         sleepFor(4);
     }
 
     public void questionAndAnswer5(String ans5) throws InterruptedException {
-        sleepFor(3);
-        selectOptionByVisibleText(question5, "What is your favorite pizza topping?");
+        sleepFor(4);
+        selectOptionByVisibleText(question5, "In what month is your best friend's birthday?");
         sleepFor(5);
         answer5.sendKeys(ans5);
         sleepFor(4);
     }
-
-    public void acceptAndEnrollBtn() {
-        acceptAndEnrollButton.click();
+    public void validateAcceptAndEnrollBtn() {
+       boolean b= acceptAndEnrollButton.isEnabled();
+        Assert.assertTrue(b);
     }
 
 }

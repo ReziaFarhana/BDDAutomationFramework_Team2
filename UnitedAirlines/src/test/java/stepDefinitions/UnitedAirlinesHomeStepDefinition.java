@@ -15,7 +15,7 @@ import unitedairlineshome.UnitedAirlinesHomePage;
 
 import java.io.IOException;
 
-public class UnitedAirStepDefinition extends WebAPI {
+public class UnitedAirlinesHomeStepDefinition extends WebAPI {
 
     static UnitedAirlinesHomePage unitedAirlinesHomePage;
 
@@ -44,13 +44,13 @@ public class UnitedAirStepDefinition extends WebAPI {
         unitedAirlinesHomePage.flightStatusTab();
     }
 
-    @And("I enter city name in from field and To field")
-    public void i_enter_city_name_in_from_field_and_to_field() throws InterruptedException {
+    @And("I enter {string} from field and {string} To field field")
+    public void iEnterFromFieldAndToFieldField(String From, String To) throws InterruptedException {
         unitedAirlinesHomePage.fromAndToField();
     }
 
-    @And("I enter flight number and date")
-    public void i_enter_flight_number_and_date() {
+    @And("I enter I enter {string} in Flight number and {string} in date field")
+    public void iEnterIEnterInFlightNumberAndInDateField(String FlightNo, String Date) {
         unitedAirlinesHomePage.flightNumberAndDateField();
     }
 
@@ -58,13 +58,10 @@ public class UnitedAirStepDefinition extends WebAPI {
     public void i_click_search_button() {
         unitedAirlinesHomePage.searchBtnCheck();
     }
-
-    @Then("I validate DEPARTURE is appeared properly")
-    public void i_validate_departure_is_appeared_properly() {
-        unitedAirlinesHomePage.validateFlightStatus();
-    }
-
-    // Check In
+    @Then("I verify DEPARTURE is properly appeared")
+    public void iVerifyDEPARTUREIsProperlyAppeared() {
+        unitedAirlinesHomePage.validateFlightStatus(); }
+    // Check In....................................................................
     @When("I click on CheckIn tab")
     public void i_click_on_check_in_tab() {
         unitedAirlinesHomePage.checkInTab();
@@ -85,18 +82,19 @@ public class UnitedAirStepDefinition extends WebAPI {
         unitedAirlinesHomePage.searchButtonClick();
     }
 
-    @Then("I validate We couldn't find a reservation with the provided information. is appeared properly")
-    public void i_validate_we_couldn_t_find_a_reservation_with_the_provided_information_is_appeared_properly() {
+    @Then("I verify {string} appear")
+    public void i_validate_is_appear() {
         unitedAirlinesHomePage.validateCheckInfield();
     }
 
+    //My Trips .......................................
     @When("I click on My trips tab")
     public void i_click_on_my_trips_tab() {
         unitedAirlinesHomePage.myTripTab();
     }
 
-    @When("I enter confirmation number in confirmation field")
-    public void i_enter_confirmation_number_in_confirmation_field() {
+    @And("I enter invalid {string} in confirmation field")
+    public void iEnterInvalidInConfirmationField(String arg0) {
         unitedAirlinesHomePage.confirmationNumberField();
     }
 
@@ -110,8 +108,14 @@ public class UnitedAirStepDefinition extends WebAPI {
         unitedAirlinesHomePage.myTripSearchButtonClick();
     }
 
-    @Then("I validate Your confirmation number, a {int} character alphanumeric code, and\\/or last name is not valid. is appeared properly")
-    public void i_validate_your_confirmation_number_a_character_alphanumeric_code_and_or_last_name_is_not_valid_is_appeared_properly() {
+//    @Then("I should see Your confirmation number, a {int} character alphanumeric code, and\\/or last name is not valid. is appeared properly")
+//    public void i_validate_your_confirmation_number_a_character_alphanumeric_code_and_or_last_name_is_not_valid_is_appeared_properly() {
+//        unitedAirlinesHomePage.validateMyTripfield();
+//    }
+
+    //...................................................
+    @Then("I verify search button is not enabled")
+    public void iVerifySearchButtonIsNotEnabled() {
         unitedAirlinesHomePage.validateMyTripfield();
     }
 
@@ -121,8 +125,8 @@ public class UnitedAirStepDefinition extends WebAPI {
         unitedAirlinesHomePage.searchIconCheck();
     }
 
-    @When("I click on covid-{int} update")
-    public void i_click_on_covid_update(Integer int1) throws InterruptedException {
+    @When("I click on {string} update")
+    public void i_click_on_update(Integer int1) throws InterruptedException {
         unitedAirlinesHomePage.coronavirusUpdate();
     }
 
@@ -194,5 +198,10 @@ public class UnitedAirStepDefinition extends WebAPI {
 
 
 }
+
+
+
+
+
 
 
