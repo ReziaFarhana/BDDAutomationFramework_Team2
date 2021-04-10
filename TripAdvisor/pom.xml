@@ -45,7 +45,10 @@
                     <testFailureIgnore>true</testFailureIgnore>
                     <!--Test Runner Files-->
                     <includes>
-                        <!--                            <include>**/AmazonTestRunner.java</include>-->
+                                                   <include>**/TDBankRunner.java</include>
+                                                   <include>**/HomepageRunner.java</include>
+                                                   <include>**/AetnaRunner.java</include>
+
                     </includes>
                     <suiteXmlFiles>
                         <!--                            <suiteXmlFile>target/test-classes/AmazonTestRunner.xml</suiteXmlFile>-->
