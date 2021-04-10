@@ -43,5 +43,18 @@ public class HomePageStepDefinition extends WebAPI {
     }
 
 
+    @And("user clicks on the searchbox")
+    public void userClicksOnTheSearchbox() {
+        home.clickOnSearchBox();
+    }
 
+    @When("user types data into search box from excel")
+    public void userTypesDataIntoSearchBoxFromExcel() throws IOException {
+        home.enterDataInSearchBoxFromExcel();
+    }
+
+    @Then("user verifies {string} is displayed properly")
+    public void userVerifiesIsDisplayedProperly(String expectedText) {
+        home.verifySearchResult(expectedText);
+    }
 }

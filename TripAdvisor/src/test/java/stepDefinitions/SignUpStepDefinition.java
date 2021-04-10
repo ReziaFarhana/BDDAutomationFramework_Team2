@@ -50,7 +50,7 @@ public class SignUpStepDefinition extends WebAPI {
     @When("I enter user information from the table")
     public void i_enter_user_information_from_the_table(List<List<String>> table) {
         Map<String, String> map = TableDictionaryConverter(table);
-        sign.enterUserDetail(map.get("Email"),map.get("CreateAPassword"));
+        sign.enterUserDetail(map.get("Email"),map.get("Password"));
     }
     @Then("I click on the join button")
     public void i_click_on_the_join_button() {
