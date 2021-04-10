@@ -269,6 +269,9 @@
                               <include>**/FindMedicineCostsStepDefinition.java</include>
                               <include>**/MemberSupportAccountManagement.java</include>
                               <include>**/MultiPackStepDefinition.java</include>
+                              <include>**/UA_runner.java</include>
+                              <include>**/tripadvisorRunner.java</include>
+                              <include>**/TDBankRunner.java</include>
                         </includes>
                         <suiteXmlFiles>
                             <!--                            <suiteXmlFile>target/test-classes/AmazonTestRunner.xml</suiteXmlFile>-->
