@@ -45,9 +45,9 @@
                     <testFailureIgnore>true</testFailureIgnore>
                     <!--Test Runner Files-->
                     <includes>
-                                                   <include>**/TDBankRunner.java</include>
-                                                   <include>**/HomepageRunner.java</include>
-                                                   <include>**/AetnaRunner.java</include>
+<!--                                                   <include>**/TDBankRunner.java</include>-->
+<!--                                                   <include>**/HomepageRunner.java</include>-->
+<!--                                                   <include>**/AetnaRunner.java</include>-->
 
                     </includes>
                     <suiteXmlFiles>
