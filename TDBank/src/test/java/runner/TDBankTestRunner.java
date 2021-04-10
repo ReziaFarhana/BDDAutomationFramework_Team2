@@ -11,10 +11,10 @@ import org.junit.runner.RunWith;
         features = {"src/test/java/features"},
         // the path of the step definition files
         //  glue = "src/test/java/stepDefinitions",
-        glue = "stepDefinitions",
+        glue = "stepDefinition",
         /// to generate different type of reporting
         plugin = {"pretty","json:target/cucumber-reports/cucumber.json", "html:target/cucumber-reports/index.html",
-        "pretty:target/cucumber-reports/cucumber-pretty.txt","usage:target/cucumber-reports/cucumber-usage.json",
+                "pretty:target/cucumber-reports/cucumber-pretty.txt","usage:target/cucumber-reports/cucumber-usage.json",
                 "junit:target/cucumber-reports/cucumber-results.xml"
         },
         // it will check if any step is not defined in step definition file
@@ -24,15 +24,11 @@ import org.junit.runner.RunWith;
         // to check the mapping is proper between feature file and step definition file
         dryRun = false,
         publish = true,
-        tags = "(@mahmud) and (not @pending)"
-//         tags = "(@smokeTest or @RegressionTest or @IntegrationTest ) and (not @pending)"
+        tags = "(@test)")
 
 
 
-)
 
 
-public class AmazonTestRunner {
-
-
+public class TDBankTestRunner {
 }

@@ -5,10 +5,12 @@ import com.relevantcodes.extentreports.LogStatus;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -17,6 +19,7 @@ import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import org.testng.annotations.Optional;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 
@@ -30,13 +33,224 @@ import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class WebAPI {
+    public JavascriptExecutor jscript;
+
+    public void windowsFullPageScrollDown() {
+        jscript = (JavascriptExecutor) driver;
+        jscript.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+    }
+
+    public void windowsFullPageScrollUp() {
+        jscript = (JavascriptExecutor) driver;
+        jscript.executeScript("window.scrollTo(0, -document.body.scrollHeight);");
+    }
+
+    public void windowsFullPageScrollSideBar(WebElement element) {
+        jscript = (JavascriptExecutor) driver;
+        jscript.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+    public void windowsPageScrollToLocator(By locator) {
+        jscript = (JavascriptExecutor) driver;
+        jscript.executeScript("arguments[0].scrollIntoView(true);", locator);
+    }
+
+    public void windowTwoThirdPageScroll() {
+        jscript = (JavascriptExecutor) driver;
+        jscript.executeScript("window.scrollBy(0,950)", "");
+    }
+
+    public void windowHalfPageScroll() {
+        jscript = (JavascriptExecutor) driver;
+        jscript.executeScript("window.scrollBy(0,350)", "");
+
+    }
+
+    public void windowHalfPageScrollUp() {
+        jscript = (JavascriptExecutor) driver;
+        jscript.executeScript("window.scrollBy(0,-350)", "");
+    }
+
+    //backspace
+    public void backSpaceById(String locator, Integer characterlength){
+        for (int i = 0; i < characterlength; i++) {
+            driver.findElement(By.id(locator)).sendKeys(Keys.BACK_SPACE);
+            driver.findElement(By.id(locator)).clear();
+        }
+    }
+
+    //action methods
+
+    public void doubleClick(WebElement element) {
+        Actions action = new Actions(driver);
+        action.doubleClick(element).perform();
+    }
+
+    //right click and open new tab
+    public void rightClickandOpenNewTabUsingXP(String locator) {
+        Actions act = new Actions(driver);
+        WebElement linkpath = driver.findElement(By.xpath(locator));
+        act.contextClick(linkpath).perform();  // right click
+        String openTabs = Keys.chord(Keys.CONTROL, Keys.ENTER);
+        act.sendKeys(openTabs).perform(); // click on new tab
+    }
+
+    public void rightClickandOpenTabXPATH(String locator) {
+
+        WebElement element = driver.findElement(By.xpath(locator)); //get your element
+
+        //perform keyboard functions using actions class
+        Actions actions = new Actions(driver);
+        actions.keyDown(Keys.LEFT_CONTROL)
+                .click(element)
+                .keyUp(Keys.LEFT_CONTROL)
+                .build()
+                .perform();
+
+        //switch to new tab
+        ArrayList<String> tab = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tab.get(1));
+
+    }
+
+    //
+    public boolean verifyIfACheckboxIsCheckedOrNotByXpath(String locator) throws InterruptedException {
+        WebElement checkBox = driver.findElement(By.xpath(locator));
+        sleepFor(5);
+        boolean isSelected = checkBox.isSelected();
+//performing click operation if element is not checked
+        if (!isSelected) {
+            System.out.println("CheckBox is not selected");
+        }
+        return isSelected;
+    }
+
+    //rightclick
+    public void rightCLickById(String locator) {
+        Actions action = new Actions(driver);
+        WebElement link = driver.findElement(By.id(locator));
+        action.contextClick(link).perform();
+    }
+
+    public void rightCLickByXpath(String locator) {
+        Actions action = new Actions(driver);
+        WebElement link = driver.findElement(By.xpath(locator));
+        action.contextClick(link).perform();
+    }
+
+    public void rightCLick(String locator) {
+        Actions action = new Actions(driver);
+        WebElement element = driver.findElement(By.xpath(locator));
+        action.contextClick(element).sendKeys(Keys.ARROW_DOWN)
+                .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER)
+                .build().perform();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        String windowHandler = driver.getWindowHandle();
+        ArrayList tab2 = new ArrayList(driver.getWindowHandles());
+        driver.switchTo().window((String) tab2.get(0));
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        //String link = driver.findElement(By.xpath(locator));
+//
+//    Set<String> winid = driver.getWindowHandles();
+//    Iterator<String> iter = winid.iterator();
+//    iter.next();
+//    String tab = iter.next();
+//    driver.switchTo().window(tab);
+    }
+
+    //slider method
+    public void slideByXpath(String locator, Integer xOffset, Integer yOffset) {
+        WebElement slider = driver.findElement(By.xpath(locator));
+        Actions action = new Actions(driver);
+//        action.clickAndHold(slider);
+//        action .moveByOffset(xOffset,yOffset).build().perform();
+        action.dragAndDropBy(slider, xOffset, yOffset).build().perform();
+    }
+    public void hoverOver(WebDriver drive, WebElement elementHover) throws InterruptedException {
+        Actions selectToHover = new Actions(drive);
+        selectToHover.moveToElement(elementHover).build().perform();
+        Thread.sleep(3000);
+    }
+
+    public void hoverAndClick(WebElement elementHover, WebElement elementClick) {
+        Actions selecrMenu = new Actions(driver);
+        selecrMenu.moveToElement(elementHover).click(elementClick).build().perform();
+    }
+
+    public static synchronized Map<String, String> TableDictionaryConverter(List<List<String>> data) {
+        Map<String, String> mapTable = new HashMap<>();
+        for (List<String> rows : data) {
+            mapTable.put(rows.get(0), rows.get(1));
+        }
+        return mapTable;
+    }
+
+    //new window handle
+    public void windowHandle() {
+        String parentHandle = driver.getWindowHandle();
+        for (String winHandle : driver.getWindowHandles()) {
+            driver.switchTo().window(winHandle); // switch focus of WebDriver to the next found window handle (that's your newly opened window)
+        }
+    }
+
+    public void changeToOldWindow() {
+        //Store the current window handle
+        String winHandleBefore = driver.getWindowHandle();
+// Perform the click operation that opens new window
+        // Switch to new window opened
+        for (String winHandle : driver.getWindowHandles()) {
+            driver.switchTo().window(winHandle);
+        }
+        // Close the new window, if that window no more required\
+        driver.close();
+// Switch back to original browser (first window)
+        driver.switchTo().window(winHandleBefore);
+        // Continue with original browser (first window)
+    }
+
+    public void closeTheOldWindow() {
+        String winHandleBefore = driver.getWindowHandle();
+        driver.switchTo().window(winHandleBefore);
+        driver.close();
+        for (String winHandle : driver.getWindowHandles()) {
+            driver.switchTo().window(winHandle);
+        }
+    }
+
+
+    public void typeOnElementNew(String locator, String value) {
+        driver.findElement(By.id(locator)).sendKeys(value);
+    }
+
+    public void typeOnElementByIdNTab(String locator, String value) {
+        driver.findElement(By.id(locator)).sendKeys(value, Keys.TAB);
+    }
+
+    public void typeOnElementByLinkTextNTab(String locator, String value) {
+        driver.findElement(By.linkText(locator)).sendKeys(value, Keys.TAB);
+    }
+
+    public void typeOnElementByIdNEnter(String locator, String value) {
+        driver.findElement(By.id(locator)).sendKeys(value, Keys.ENTER);
+    }
+
+    public void typeOnElementByXpathNTab(String locator, String value) {
+        driver.findElement(By.xpath(locator)).sendKeys(value, Keys.TAB);
+    }
+
+    public void typeOnElementByXpathNEnter(String locator, String value) {
+        driver.findElement(By.xpath(locator)).sendKeys(value, Keys.ENTER);
+    }
+
+    public void typeOnElementByXpath(String locator, String value) {
+        driver.findElement(By.xpath(locator)).sendKeys(value);
+    }
+
+
     // Config class :
 
     //ExtentReport
@@ -125,7 +339,7 @@ public class WebAPI {
     public static String sauceLabs_accessKey = "";
 
     public void openBrowser(String url) throws IOException {
-        setUp(false,"browserStack","windows","10","chrome","89",url);
+        setUp(false, "browserStack", "windows", "10", "firefox", "87", url);
     }
 
 
@@ -203,7 +417,7 @@ public class WebAPI {
         return driver;
     }
 
-//    @AfterMethod(alwaysRun = true)
+    //    @AfterMethod(alwaysRun = true)
     public void cleanUp() {
         //driver.close();
         driver.quit();
@@ -288,8 +502,13 @@ public class WebAPI {
         }
     }
 
-    public void clearField(String locator) {
+
+    public void clearFieldById(String locator) {
         driver.findElement(By.id(locator)).clear();
+    }
+
+    public void clearFieldByXpath(String locator) {
+        driver.findElement(By.xpath(locator)).clear();
     }
 
     public void navigateBack() {
@@ -321,6 +540,10 @@ public class WebAPI {
         driver.findElement(By.xpath(locator)).click();
     }
 
+    public void enterByXpath(String locator) {
+        driver.findElement(By.xpath(locator)).submit();
+    }
+
     public void typeByCss(String locator, String value) {
         driver.findElement(By.cssSelector(locator)).sendKeys(value);
     }
@@ -347,7 +570,7 @@ public class WebAPI {
         return list;
     }
 
-    public static List<String> getTextFromWebElements(String locator) {
+    public static List<String> getTextFromWebElementsByCss(String locator) {
         List<WebElement> element = new ArrayList<WebElement>();
         List<String> text = new ArrayList<String>();
         element = driver.findElements(By.cssSelector(locator));
@@ -355,6 +578,51 @@ public class WebAPI {
             String st = web.getText();
             text.add(st);
         }
+        return text;
+    }
+
+    public static List<String> getTextFromWebElementsByXpath(String locator) {
+        List<WebElement> element = new ArrayList<WebElement>();
+        List<String> text = new ArrayList<String>();
+        element = driver.findElements(By.xpath(locator));
+        for (WebElement web : element) {
+            String st = web.getText();
+            text.add(st);
+        }
+        System.out.println(text);
+        return text;
+    }
+    //
+    public static List<String> checkWebElementsByXpath(String locator) {
+        List<WebElement> element = new ArrayList<WebElement>();
+        List<String> text = new ArrayList<String>();
+        element = driver.findElements(By.xpath(locator));
+        for (WebElement web : element) {
+            String st = web.getText();
+            web.click();
+            text.add(st);
+        }
+        System.out.println(text);
+        return text;
+    }
+    //
+    public List<WebElement> checkListOfWebElementsByXpath(String locator) {
+        List<WebElement> list = new ArrayList<WebElement>();
+        list = driver.findElements(By.xpath(locator));
+        for (WebElement web : list) {
+            web.click();
+        }
+        return list;
+    }
+    public static List<String> getTextFromWebElementsById(String locator) {
+        List<WebElement> element = new ArrayList<WebElement>();
+        List<String> text = new ArrayList<String>();
+        element = driver.findElements(By.id(locator));
+        for (WebElement web : element) {
+            String st = web.getText();
+            text.add(st);
+        }
+        System.out.println(text);
         return text;
     }
 
@@ -386,7 +654,6 @@ public class WebAPI {
         list = driver.findElements(By.xpath(locator));
         return list;
     }
-
 
 
     public String getCurrentPageUrl() {
@@ -563,7 +830,7 @@ public class WebAPI {
         //Step:2-->Iterate linksList: exclude all links/images which does not have any href attribute
         List<WebElement> activeLinks = new ArrayList<WebElement>();
         for (int i = 0; i < linksList.size(); i++) {
-           // System.out.println(linksList.get(i).getAttribute("href"));
+            // System.out.println(linksList.get(i).getAttribute("href"));
             if (linksList.get(i).getAttribute("href") != null && (!linksList.get(i).getAttribute("href").contains("javascript") && (!linksList.get(i).getAttribute("href").contains("mailto")))) {
                 activeLinks.add(linksList.get(i));
             }
@@ -644,9 +911,15 @@ public class WebAPI {
     public void assertEqualByXpath(String loc, String expValue) {
         String act = driver.findElement(By.xpath(loc)).getText();
         // act is coming from Domain -- the one developer build and release
-        String exp = expValue; // exp is coming from Requirement or Mock-up
-        Assert.assertEquals(act, exp);
+        Assert.assertEquals(act, expValue);
     }
+
+    public void assertNotEqualByXpath(String loc, String expValue) {
+        String act = driver.findElement(By.xpath(loc)).getText();
+        // act is coming from Domain -- the one developer build and release
+        Assert.assertNotEquals(act, expValue);
+    }
+
 
     // Slider Handlaing
     // https://stackoverflow.com/questions/15171745/how-to-slidemove-slider-in-selenium-webdriver
