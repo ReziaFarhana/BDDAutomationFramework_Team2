@@ -68,8 +68,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 26424, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d1c3c7aa-5af2-438f-a677-d20f58c11219
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 58220, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 74b8260f-68f5-4c48-ad4b-d5c09f6d5d88
 *** Element info: {Using=xpath, value=//a[@class='react-datepicker__navigation react-datepicker__navigation--previous']}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -85,19 +85,19 @@ Session ID: d1c3c7aa-5af2-438f-a677-d20f58c11219
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at common.WebAPI.clickByXpath(WebAPI.java:337)
+	at common.WebAPI.clickByXpath(WebAPI.java:341)
 	at homepage.DestinationDealsHom.selectDepartureDate(DestinationDealsHom.java:105)
 	at stepDefinitions.UADestinationStepDefinition.i_selected_the_departure_and_return_dates(UADestinationStepDefinition.java:127)
 	at ✽.I selected the departure and return dates(file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:54)
 
 
-    Embedding demo1 [image/png 343023 bytes]
+    Embedding demo1 [image/png 446520 bytes]
 
 
-    Embedding demo1 [image/png 343003 bytes]
+    Embedding demo1 [image/png 446520 bytes]
 
 
-    Embedding demo1 [image/png 342943 bytes]
+    Embedding demo1 [image/png 446520 bytes]
 
   And I selected travel info class of travel and number of travelers                                             # stepDefinitions.UADestinationStepDefinition.i_selected_travel_info_class_of_travel_and_number_of_travelers()
   When I entered the promotion code "1239865721"                                                                 # stepDefinitions.UADestinationStepDefinition.i_entered_the_promotion_code(java.lang.String)
@@ -117,8 +117,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 30304, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3e89e731-573f-4792-8132-9312b1d55cfc
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 34980, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b31aba8d-005c-444a-bd45-931ac4bdae70
 *** Element info: {Using=xpath, value=//a[@class='react-datepicker__navigation react-datepicker__navigation--previous']}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -134,19 +134,19 @@ Session ID: 3e89e731-573f-4792-8132-9312b1d55cfc
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at common.WebAPI.clickByXpath(WebAPI.java:337)
+	at common.WebAPI.clickByXpath(WebAPI.java:341)
 	at homepage.DestinationDealsHom.selectDepartureDate(DestinationDealsHom.java:105)
 	at stepDefinitions.UADestinationStepDefinition.i_selected_the_departure_and_return_dates(UADestinationStepDefinition.java:127)
 	at ✽.I selected the departure and return dates(file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:67)
 
 
-    Embedding demo1 [image/png 343003 bytes]
+    Embedding demo1 [image/png 446520 bytes]
 
 
-    Embedding demo1 [image/png 343014 bytes]
+    Embedding demo1 [image/png 446520 bytes]
 
 
-    Embedding demo1 [image/png 343014 bytes]
+    Embedding demo1 [image/png 446520 bytes]
 
   And I selected travel info class of travel and number of travelers                                                                 # stepDefinitions.UADestinationStepDefinition.i_selected_travel_info_class_of_travel_and_number_of_travelers()
   And I click on the Search Flights button                                                                                           # stepDefinitions.UADestinationStepDefinition.i_Click_On_The_Search_Flights_Button()
@@ -166,8 +166,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 34692, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0d17e625-d27d-40ca-a3f5-24078ecf6da2
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 19648, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 84446b24-08b3-43b4-83b4-6dc5844cb9e7
 *** Element info: {Using=xpath, value=//a[@class='react-datepicker__navigation react-datepicker__navigation--previous']}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -183,19 +183,19 @@ Session ID: 0d17e625-d27d-40ca-a3f5-24078ecf6da2
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at common.WebAPI.clickByXpath(WebAPI.java:337)
+	at common.WebAPI.clickByXpath(WebAPI.java:341)
 	at homepage.DestinationDealsHom.selectDepartureDate(DestinationDealsHom.java:105)
 	at stepDefinitions.UADestinationStepDefinition.i_selected_the_departure_and_return_dates(UADestinationStepDefinition.java:127)
 	at ✽.I selected the departure and return dates(file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:80)
 
 
-    Embedding demo1 [image/png 367971 bytes]
+    Embedding demo1 [image/png 368200 bytes]
 
 
-    Embedding demo1 [image/png 367855 bytes]
+    Embedding demo1 [image/png 368200 bytes]
 
 
-    Embedding demo1 [image/png 367980 bytes]
+    Embedding demo1 [image/png 368200 bytes]
 
   And I selected travel info class of travel and number of travelers                                             # stepDefinitions.UADestinationStepDefinition.i_selected_travel_info_class_of_travel_and_number_of_travelers()
   And I click on the Search Flights button                                                                       # stepDefinitions.UADestinationStepDefinition.i_Click_On_The_Search_Flights_Button()
@@ -209,6 +209,53 @@ Scenario: Changed bag rules                                                     
   Then I should land on a new tab "United Cheap Flights to 300+ Destinations Worldwide | United Airlines" # stepDefinitions.UADestinationStepDefinition.i_should_land_on_a_new_tab(java.lang.String)
   And clicked on Changed bag rules Link                                                                   # stepDefinitions.UADestinationStepDefinition.clicked_on_changed_bag_rules_link()
   Then I should have a new page with a text "Changed bag rules and optional services"                     # stepDefinitions.UADestinationStepDefinition.i_should_have_a_new_page_with_a_text(java.lang.String)
+
+@run
+Scenario: How much will it cost to check my bag?                                                          # src/test/java/features/Destinations.feature:93
+  Given I am on United Airlines Home page                                                                 # stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()
+  And I click on the DEALS option                                                                         # stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()
+  When I clicked on Flights to popular destinations                                                       # stepDefinitions.UADestinationStepDefinition.i_clicked_on_flights_to_popular_destinations()
+  Then I should land on a new tab "United Cheap Flights to 300+ Destinations Worldwide | United Airlines" # stepDefinitions.UADestinationStepDefinition.i_should_land_on_a_new_tab(java.lang.String)
+  And clicked on Changed bag rules Link                                                                   # stepDefinitions.UADestinationStepDefinition.clicked_on_changed_bag_rules_link()
+  Then I should have a new page with a text "Changed bag rules and optional services"                     # stepDefinitions.UADestinationStepDefinition.i_should_have_a_new_page_with_a_text(java.lang.String)
+  And I clicked on Any Flights Tab                                                                        # stepDefinitions.UADestinationStepDefinition.i_clicked_on_any_flights_tab()
+  And Update the From and To box with cities                                                              # stepDefinitions.UADestinationStepDefinition.update_the_from_and_to_box_with_cities(java.util.List<java.util.List<java.lang.String>>)
+      org.openqa.selenium.InvalidSelectorException: Given css selector expression "//input[@aria-autocomplete='list']" is invalid: InvalidSelectorError: Document.querySelector: '//input[@aria-autocomplete='list']' is not a valid selector: "//input[@aria-autocomplete='list']"
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 42332, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f7b7ff54-218c-4bd1-96c1-07f4a5c7ee1c
+*** Element info: {Using=css selector, value=//input[@aria-autocomplete='list']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at homepage.DestinationDealsHom.toUpdateOnFrom(DestinationDealsHom.java:191)
+	at stepDefinitions.UADestinationStepDefinition.update_the_from_and_to_box_with_cities(UADestinationStepDefinition.java:232)
+	at ✽.Update the From and To box with cities(file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:99)
+
+
+    Embedding demo1 [image/png 56207 bytes]
+
+
+    Embedding demo1 [image/png 56207 bytes]
+
+
+    Embedding demo1 [image/png 56207 bytes]
+
+  Then I should have same page updated and a text "Standard checked bag price" will be displayed          # stepDefinitions.UADestinationStepDefinition.i_should_have_same_page_updated_and_a_text_will_be_displayed(java.lang.String)
 
 @run
 Scenario: Current offers and promos       # src/test/java/features/UADealsLink.feature:3
@@ -262,3 +309,27 @@ Scenario: Getting Electronic travel certificate Under Redeem eCert              
   And enter "Selam" in the last name field                                           # stepDefinitions.UAOffersSectionStepDefinition.enter_in_the_last_name_field(java.lang.String)
   When I clicked on confirm button                                                   # stepDefinitions.UAOffersSectionStepDefinition.i_clicked_on_confirm_button()
   Then I should have get "Please make sure you entered valid information." in return # stepDefinitions.UAOffersSectionStepDefinition.i_should_have_get_in_return(java.lang.String)
+
+@run
+Scenario: Electronic travel certificate Look up                                       # src/test/java/features/UAOffersSection.feature:43
+  Given I am on United Airlines Home page                                             # stepDefinitions.UADealsStepDefinition.i_am_on_united_airlines_home_page()
+  And I click on the DEALS option                                                     # stepDefinitions.UADealsStepDefinition.i_click_on_the_deals_option()
+  And I clicked On Redeem eCertificate link                                           # stepDefinitions.UAOffersSectionStepDefinition.i_clicked_on_redeem_e_certificate_link()
+  And I Selected the Year issued "2019"                                               # stepDefinitions.UAOffersSectionStepDefinition.i_selected_the_year_issued(java.lang.String)
+  And I entered the an invalid Pin "2356987542"                                       # stepDefinitions.UAOffersSectionStepDefinition.i_entered_the_an_invalid_pin_digits(java.lang.String)
+  And I entered unanimous  Recipient's last name "David"                              # stepDefinitions.UAOffersSectionStepDefinition.i_entered_unanimous_recipient_s_last_name(java.lang.String)
+  When I clicked on the confirm button                                                # stepDefinitions.UAOffersSectionStepDefinition.i_clicked_on_the_confirm_button()
+  Then I should have get a response "Please make sure you entered valid information." # stepDefinitions.UAOffersSectionStepDefinition.i_should_have_get_a_response_entered_valid_information(java.lang.String)
+      java.lang.NullPointerException
+	at stepDefinitions.UAOffersSectionStepDefinition.i_should_have_get_a_response_entered_valid_information(UAOffersSectionStepDefinition.java:129)
+	at ✽.I should have get a response "Please make sure you entered valid information."(file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:49)
+
+
+    Embedding demo1 [image/png 52019 bytes]
+
+
+    Embedding demo1 [image/png 52019 bytes]
+
+
+    Embedding demo1 [image/png 52019 bytes]
+

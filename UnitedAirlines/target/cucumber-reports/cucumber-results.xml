@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="19" time="739.956">
-    <testcase classname="working on DESTINATION DEALS" name="Flights to popular destinations" time="46.982">
+<testsuite errors="0" failures="5" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="21" time="642.789">
+    <testcase classname="working on DESTINATION DEALS" name="Flights to popular destinations" time="32.709">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -9,7 +9,7 @@ Then I should land on a new tab "United Cheap Flights to 300+ Destinations World
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Flights to national parks" time="33.427">
+    <testcase classname="working on DESTINATION DEALS" name="Flights to national parks" time="27.244">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -18,7 +18,7 @@ Then I should land on a new page with "Flights to USA National Parks - Find the 
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Flights to San Francisco" time="36.425">
+    <testcase classname="working on DESTINATION DEALS" name="Flights to San Francisco" time="28.144">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -27,7 +27,7 @@ Then I should have a new windows tab with a title "Flights to San Francisco".pas
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Flights to New York Newark" time="34.219">
+    <testcase classname="working on DESTINATION DEALS" name="Flights to New York Newark" time="26.746">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -36,7 +36,7 @@ Then I should be found a new page with a bread cramp end with "Flights to New Yo
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Flights to Houston" time="34.557">
+    <testcase classname="working on DESTINATION DEALS" name="Flights to Houston" time="28.408">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -45,7 +45,7 @@ Then I should land to a new windows tab with bread cramp end with  "Flights to H
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Flights to Chicago" time="36.127">
+    <testcase classname="working on DESTINATION DEALS" name="Flights to Chicago" time="27.784">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -54,7 +54,7 @@ Then I should land to a new windows tab with bread cramp end with  "Flights to C
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Flights to Los Angeles" time="35.959">
+    <testcase classname="working on DESTINATION DEALS" name="Flights to Los Angeles" time="27.969">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -63,7 +63,7 @@ Then I should land to a new windows tab with bread cramp end with  "Flights to L
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Flights to Orlando" time="33.551">
+    <testcase classname="working on DESTINATION DEALS" name="Flights to Orlando" time="26.732">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -72,8 +72,8 @@ Then I should land to a new windows tab with bread cramp end with  "Flights to O
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Book a Roundtrip flight with a promotion code" time="65.388">
-        <failure message="Unable to locate element: //a[@class='react-datepicker__navigation react-datepicker__navigation--previous']&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 26424, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: d1c3c7aa-5af2-438f-a677-d20f58c11219&#10;*** Element info: {Using=xpath, value=//a[@class='react-datepicker__navigation react-datepicker__navigation--previous']}" type="org.openqa.selenium.NoSuchElementException">
+    <testcase classname="working on DESTINATION DEALS" name="Book a Roundtrip flight with a promotion code" time="51.81">
+        <failure message="Unable to locate element: //a[@class='react-datepicker__navigation react-datepicker__navigation--previous']&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 58220, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 74b8260f-68f5-4c48-ad4b-d5c09f6d5d88&#10;*** Element info: {Using=xpath, value=//a[@class='react-datepicker__navigation react-datepicker__navigation--previous']}" type="org.openqa.selenium.NoSuchElementException">
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
 When I clicked on Flights to Orlando link...................................passed
@@ -91,8 +91,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 26424, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d1c3c7aa-5af2-438f-a677-d20f58c11219
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 58220, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 74b8260f-68f5-4c48-ad4b-d5c09f6d5d88
 *** Element info: {Using=xpath, value=//a[@class='react-datepicker__navigation react-datepicker__navigation--previous']}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -108,15 +108,15 @@ Session ID: d1c3c7aa-5af2-438f-a677-d20f58c11219
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at common.WebAPI.clickByXpath(WebAPI.java:337)
+	at common.WebAPI.clickByXpath(WebAPI.java:341)
 	at homepage.DestinationDealsHom.selectDepartureDate(DestinationDealsHom.java:105)
 	at stepDefinitions.UADestinationStepDefinition.i_selected_the_departure_and_return_dates(UADestinationStepDefinition.java:127)
 	at ✽.I selected the departure and return dates(file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:54)
 ]]>
         </failure>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Book a Roundtrip flight without a promotion code" time="64.221">
-        <failure message="Unable to locate element: //a[@class='react-datepicker__navigation react-datepicker__navigation--previous']&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 30304, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 3e89e731-573f-4792-8132-9312b1d55cfc&#10;*** Element info: {Using=xpath, value=//a[@class='react-datepicker__navigation react-datepicker__navigation--previous']}" type="org.openqa.selenium.NoSuchElementException">
+    <testcase classname="working on DESTINATION DEALS" name="Book a Roundtrip flight without a promotion code" time="51.525">
+        <failure message="Unable to locate element: //a[@class='react-datepicker__navigation react-datepicker__navigation--previous']&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 34980, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: b31aba8d-005c-444a-bd45-931ac4bdae70&#10;*** Element info: {Using=xpath, value=//a[@class='react-datepicker__navigation react-datepicker__navigation--previous']}" type="org.openqa.selenium.NoSuchElementException">
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
 When I clicked on Flights to Orlando link...................................passed
@@ -133,8 +133,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 30304, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3e89e731-573f-4792-8132-9312b1d55cfc
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 34980, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b31aba8d-005c-444a-bd45-931ac4bdae70
 *** Element info: {Using=xpath, value=//a[@class='react-datepicker__navigation react-datepicker__navigation--previous']}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -150,15 +150,15 @@ Session ID: 3e89e731-573f-4792-8132-9312b1d55cfc
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at common.WebAPI.clickByXpath(WebAPI.java:337)
+	at common.WebAPI.clickByXpath(WebAPI.java:341)
 	at homepage.DestinationDealsHom.selectDepartureDate(DestinationDealsHom.java:105)
 	at stepDefinitions.UADestinationStepDefinition.i_selected_the_departure_and_return_dates(UADestinationStepDefinition.java:127)
 	at ✽.I selected the departure and return dates(file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:67)
 ]]>
         </failure>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Book a Roundtrip flight with a mile and no promotion code" time="64.621">
-        <failure message="Unable to locate element: //a[@class='react-datepicker__navigation react-datepicker__navigation--previous']&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 34692, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 0d17e625-d27d-40ca-a3f5-24078ecf6da2&#10;*** Element info: {Using=xpath, value=//a[@class='react-datepicker__navigation react-datepicker__navigation--previous']}" type="org.openqa.selenium.NoSuchElementException">
+    <testcase classname="working on DESTINATION DEALS" name="Book a Roundtrip flight with a mile and no promotion code" time="56.974">
+        <failure message="Unable to locate element: //a[@class='react-datepicker__navigation react-datepicker__navigation--previous']&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 19648, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 84446b24-08b3-43b4-83b4-6dc5844cb9e7&#10;*** Element info: {Using=xpath, value=//a[@class='react-datepicker__navigation react-datepicker__navigation--previous']}" type="org.openqa.selenium.NoSuchElementException">
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
 When I clicked on Flights to popular destinations...........................passed
@@ -176,8 +176,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 34692, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0d17e625-d27d-40ca-a3f5-24078ecf6da2
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 19648, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 84446b24-08b3-43b4-83b4-6dc5844cb9e7
 *** Element info: {Using=xpath, value=//a[@class='react-datepicker__navigation react-datepicker__navigation--previous']}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -193,14 +193,14 @@ Session ID: 0d17e625-d27d-40ca-a3f5-24078ecf6da2
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at common.WebAPI.clickByXpath(WebAPI.java:337)
+	at common.WebAPI.clickByXpath(WebAPI.java:341)
 	at homepage.DestinationDealsHom.selectDepartureDate(DestinationDealsHom.java:105)
 	at stepDefinitions.UADestinationStepDefinition.i_selected_the_departure_and_return_dates(UADestinationStepDefinition.java:127)
 	at ✽.I selected the departure and return dates(file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:80)
 ]]>
         </failure>
     </testcase>
-    <testcase classname="working on DESTINATION DEALS" name="Changed bag rules" time="46.769">
+    <testcase classname="working on DESTINATION DEALS" name="Changed bag rules" time="38.137">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -211,7 +211,48 @@ Then I should have a new page with a text "Changed bag rules and optional servic
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Test United Airlines deals features on https://www.united.com/en/us/" name="Current offers and promos" time="20.635">
+    <testcase classname="working on DESTINATION DEALS" name="How much will it cost to check my bag?" time="38.404">
+        <failure message="Given css selector expression &quot;//input[@aria-autocomplete='list']&quot; is invalid: InvalidSelectorError: Document.querySelector: '//input[@aria-autocomplete='list']' is not a valid selector: &quot;//input[@aria-autocomplete='list']&quot;&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 42332, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: f7b7ff54-218c-4bd1-96c1-07f4a5c7ee1c&#10;*** Element info: {Using=css selector, value=//input[@aria-autocomplete='list']}" type="org.openqa.selenium.InvalidSelectorException">
+            <![CDATA[Given I am on United Airlines Home page.....................................passed
+And I click on the DEALS option.............................................passed
+When I clicked on Flights to popular destinations...........................passed
+Then I should land on a new tab "United Cheap Flights to 300+ Destinations Worldwide | United Airlines".passed
+And clicked on Changed bag rules Link.......................................passed
+Then I should have a new page with a text "Changed bag rules and optional services".passed
+And I clicked on Any Flights Tab............................................passed
+And Update the From and To box with cities..................................failed
+Then I should have same page updated and a text "Standard checked bag price" will be displayed.skipped
+
+StackTrace:
+org.openqa.selenium.InvalidSelectorException: Given css selector expression "//input[@aria-autocomplete='list']" is invalid: InvalidSelectorError: Document.querySelector: '//input[@aria-autocomplete='list']' is not a valid selector: "//input[@aria-autocomplete='list']"
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 42332, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f7b7ff54-218c-4bd1-96c1-07f4a5c7ee1c
+*** Element info: {Using=css selector, value=//input[@aria-autocomplete='list']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at homepage.DestinationDealsHom.toUpdateOnFrom(DestinationDealsHom.java:191)
+	at stepDefinitions.UADestinationStepDefinition.update_the_from_and_to_box_with_cities(UADestinationStepDefinition.java:232)
+	at ✽.Update the From and To box with cities(file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:99)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Test United Airlines deals features on https://www.united.com/en/us/" name="Current offers and promos" time="17.195">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -219,7 +260,7 @@ Then I should see the OFFERS option.........................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Current offers and promos" time="30.892">
+    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Current offers and promos" time="19.933">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -228,7 +269,7 @@ Then I should see Deals & offers on the front page..........................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Working on United Airlines OFFERS section under Deals" name="MileagePlus news and offers" time="30.958">
+    <testcase classname="Working on United Airlines OFFERS section under Deals" name="MileagePlus news and offers" time="21.422">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -237,7 +278,7 @@ Then I should see MileagePlus deals & offers on the front page..............pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Discounts for 18 to 22 year olds" time="24.059">
+    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Discounts for 18 to 22 year olds" time="19.685">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -246,7 +287,7 @@ Then I should see Discounts for 18 to 22 year olds on the front page........pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Veterans Advantage discount" time="28.145">
+    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Veterans Advantage discount" time="20.775">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -255,7 +296,7 @@ Then I should see Veterans Advantage discount on the front page.............pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Redeem eCertificate" time="34.99">
+    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Redeem eCertificate" time="25.313">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -264,7 +305,7 @@ Then I should see Redeem eCertificate displayed on the front page...........pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Getting Electronic travel certificate Under Redeem eCert" time="36.803">
+    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Getting Electronic travel certificate Under Redeem eCert" time="25.564">
         <system-out>
             <![CDATA[Given I am on United Airlines Home page.....................................passed
 And I click on the DEALS option.............................................passed
@@ -277,5 +318,23 @@ When I clicked on confirm button............................................pass
 Then I should have get "Please make sure you entered valid information." in return.passed
 ]]>
         </system-out>
+    </testcase>
+    <testcase classname="Working on United Airlines OFFERS section under Deals" name="Electronic travel certificate Look up" time="29.436">
+        <failure message="" type="java.lang.NullPointerException">
+            <![CDATA[Given I am on United Airlines Home page.....................................passed
+And I click on the DEALS option.............................................passed
+And I clicked On Redeem eCertificate link...................................passed
+And I Selected the Year issued "2019".......................................passed
+And I entered the an invalid Pin "2356987542"...............................passed
+And I entered unanimous  Recipient's last name "David"......................passed
+When I clicked on the confirm button........................................passed
+Then I should have get a response "Please make sure you entered valid information.".failed
+
+StackTrace:
+java.lang.NullPointerException
+	at stepDefinitions.UAOffersSectionStepDefinition.i_should_have_get_a_response_entered_valid_information(UAOffersSectionStepDefinition.java:129)
+	at ✽.I should have get a response "Please make sure you entered valid information."(file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:49)
+]]>
+        </failure>
     </testcase>
 </testsuite>

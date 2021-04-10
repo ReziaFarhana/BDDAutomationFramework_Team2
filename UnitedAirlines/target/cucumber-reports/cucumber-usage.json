@@ -5,84 +5,92 @@
       {
         "name": "I am on United Airlines Home page",
         "aggregatedDurations": {
-          "median": 15.1305516,
-          "average": 15.751283947
+          "median": 12.4516089,
+          "average": 12.568264876
         },
         "durations": [
           {
-            "duration": 22.6047502,
+            "duration": 13.5495096,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:4"
           },
           {
-            "duration": 14.8591499,
+            "duration": 12.2941509,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:4"
           },
           {
-            "duration": 17.4012031,
+            "duration": 12.9401724,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:4"
           },
           {
-            "duration": 15.040068,
+            "duration": 11.793028,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:4"
           },
           {
-            "duration": 15.6046154,
+            "duration": 13.2070207,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:4"
           },
           {
-            "duration": 16.0354151,
+            "duration": 12.6649944,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:4"
           },
           {
-            "duration": 17.0952859,
+            "duration": 12.8104707,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:4"
           },
           {
-            "duration": 14.3993259,
+            "duration": 11.83261,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:4"
           },
           {
-            "duration": 17.5449772,
+            "duration": 11.5880829,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:4"
           },
           {
-            "duration": 16.3133936,
+            "duration": 11.3455853,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:4"
           },
           {
-            "duration": 14.181325,
+            "duration": 13.291798,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:4"
           },
           {
-            "duration": 14.7776873,
+            "duration": 14.0295042,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:4"
           },
           {
-            "duration": 15.3777226,
+            "duration": 12.4516089,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:4"
+          },
+          {
+            "duration": 13.2340909,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UADealsLink.feature:4"
           },
           {
-            "duration": 17.2679328,
+            "duration": 12.8168345,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:4"
           },
           {
-            "duration": 13.742083,
+            "duration": 12.2614237,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:4"
           },
           {
-            "duration": 12.5696628,
+            "duration": 12.2866381,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:4"
           },
           {
-            "duration": 14.7661084,
+            "duration": 12.2122852,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:4"
           },
           {
-            "duration": 15.1305516,
+            "duration": 12.3498515,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:4"
           },
           {
-            "duration": 14.5631372,
+            "duration": 12.1683146,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:4"
+          },
+          {
+            "duration": 12.8055879,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:4"
           }
         ]
@@ -95,84 +103,92 @@
       {
         "name": "I click on the DEALS option",
         "aggregatedDurations": {
-          "median": 2.4460481,
-          "average": 2.438485694
+          "median": 2.3159069,
+          "average": 2.321486114
         },
         "durations": [
           {
-            "duration": 2.3873726,
+            "duration": 2.3167577,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:5"
           },
           {
-            "duration": 2.4726321,
+            "duration": 2.3135322,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:5"
           },
           {
-            "duration": 2.4975495,
+            "duration": 2.3275291,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:5"
           },
           {
-            "duration": 2.3481716,
+            "duration": 2.3125587,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:5"
           },
           {
-            "duration": 2.4583876,
+            "duration": 2.3239827,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:5"
           },
           {
-            "duration": 2.4484181,
+            "duration": 2.3279474,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:5"
           },
           {
-            "duration": 2.405171,
+            "duration": 2.3159069,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:5"
           },
           {
-            "duration": 2.4686919,
+            "duration": 2.3401225,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:5"
           },
           {
-            "duration": 2.4268294,
+            "duration": 2.3239926,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:5"
           },
           {
-            "duration": 2.4907677,
+            "duration": 2.3153805,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:5"
           },
           {
-            "duration": 2.4543878,
+            "duration": 2.3127238,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:5"
           },
           {
-            "duration": 2.4565813,
+            "duration": 2.3151625,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:5"
           },
           {
-            "duration": 2.4460481,
+            "duration": 2.3695221,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:5"
+          },
+          {
+            "duration": 2.3044995,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UADealsLink.feature:5"
           },
           {
-            "duration": 2.5019622,
+            "duration": 2.3275893,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:5"
           },
           {
-            "duration": 2.4208233,
+            "duration": 2.2967585,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:5"
           },
           {
-            "duration": 2.4059344,
+            "duration": 2.3508332,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:5"
           },
           {
-            "duration": 2.4457845,
+            "duration": 2.340498,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:5"
           },
           {
-            "duration": 2.3976504,
+            "duration": 2.3089732,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:5"
           },
           {
-            "duration": 2.3980647,
+            "duration": 2.2974427,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:5"
+          },
+          {
+            "duration": 2.3094953,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:5"
           }
         ]
@@ -185,21 +201,25 @@
       {
         "name": "I clicked on Flights to popular destinations",
         "aggregatedDurations": {
-          "median": 7.6282159,
-          "average": 7.631571266
+          "median": 7.4290807,
+          "average": 7.42848485
         },
         "durations": [
           {
-            "duration": 7.6486995,
+            "duration": 7.4815068,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:9"
           },
           {
-            "duration": 7.6282159,
+            "duration": 7.3742712,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:74"
           },
           {
-            "duration": 7.6177984,
+            "duration": 7.4331873,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:87"
+          },
+          {
+            "duration": 7.4249741,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:94"
           }
         ]
       }
@@ -211,21 +231,25 @@
       {
         "name": "I should land on a new tab \"United Cheap Flights to 300+ Destinations Worldwide | United Airlines\"",
         "aggregatedDurations": {
-          "median": 7.0764275,
-          "average": 7.0750934
+          "median": 7.0524855,
+          "average": 7.05487345
         },
         "durations": [
           {
-            "duration": 7.0764275,
+            "duration": 7.0825522,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:10"
           },
           {
-            "duration": 7.0585279,
+            "duration": 7.044857,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:75"
           },
           {
-            "duration": 7.0903248,
+            "duration": 7.0319706,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:88"
+          },
+          {
+            "duration": 7.060114,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:95"
           }
         ]
       }
@@ -237,12 +261,12 @@
       {
         "name": "I click on national parks",
         "aggregatedDurations": {
-          "median": 5.5967839,
-          "average": 5.5967839
+          "median": 5.4079408,
+          "average": 5.4079408
         },
         "durations": [
           {
-            "duration": 5.5967839,
+            "duration": 5.4079408,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:14"
           }
         ]
@@ -255,12 +279,12 @@
       {
         "name": "I should land on a new page with \"Flights to USA National Parks - Find the Best Fare for Your Next Trip - United Airlines\"",
         "aggregatedDurations": {
-          "median": 5.0388187,
-          "average": 5.0388187
+          "median": 5.0344686,
+          "average": 5.0344686
         },
         "durations": [
           {
-            "duration": 5.0388187,
+            "duration": 5.0344686,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:15"
           }
         ]
@@ -273,12 +297,12 @@
       {
         "name": "I clicked on Flights to San Francisco link",
         "aggregatedDurations": {
-          "median": 5.4834903,
-          "average": 5.4834903
+          "median": 5.4833512,
+          "average": 5.4833512
         },
         "durations": [
           {
-            "duration": 5.4834903,
+            "duration": 5.4833512,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:19"
           }
         ]
@@ -291,12 +315,12 @@
       {
         "name": "I should have a new windows tab with a title \"Flights to San Francisco\"",
         "aggregatedDurations": {
-          "median": 5.1566616,
-          "average": 5.1566616
+          "median": 5.128972,
+          "average": 5.128972
         },
         "durations": [
           {
-            "duration": 5.1566616,
+            "duration": 5.128972,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:20"
           }
         ]
@@ -309,12 +333,12 @@
       {
         "name": "I clicked on the Flights to New York Newark link",
         "aggregatedDurations": {
-          "median": 5.5276074,
-          "average": 5.5276074
+          "median": 5.4082238,
+          "average": 5.4082238
         },
         "durations": [
           {
-            "duration": 5.5276074,
+            "duration": 5.4082238,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:24"
           }
         ]
@@ -327,12 +351,12 @@
       {
         "name": "I should be found a new page with a bread cramp end with \"Flights to New York/Newark\"",
         "aggregatedDurations": {
-          "median": 5.1256574,
-          "average": 5.1256574
+          "median": 5.111668,
+          "average": 5.111668
         },
         "durations": [
           {
-            "duration": 5.1256574,
+            "duration": 5.111668,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:25"
           }
         ]
@@ -345,12 +369,12 @@
       {
         "name": "I clicked on the link on Flights to Houston",
         "aggregatedDurations": {
-          "median": 5.5329209,
-          "average": 5.5329209
+          "median": 5.4264586,
+          "average": 5.4264586
         },
         "durations": [
           {
-            "duration": 5.5329209,
+            "duration": 5.4264586,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:29"
           }
         ]
@@ -363,12 +387,12 @@
       {
         "name": "I should land to a new windows tab with bread cramp end with  \"Flights to Houston\"",
         "aggregatedDurations": {
-          "median": 5.2072163,
-          "average": 5.2072163
+          "median": 5.1218015,
+          "average": 5.1218015
         },
         "durations": [
           {
-            "duration": 5.2072163,
+            "duration": 5.1218015,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:30"
           }
         ]
@@ -376,12 +400,12 @@
       {
         "name": "I should land to a new windows tab with bread cramp end with  \"Flights to Chicago\"",
         "aggregatedDurations": {
-          "median": 5.46014,
-          "average": 5.46014
+          "median": 5.1140426,
+          "average": 5.1140426
         },
         "durations": [
           {
-            "duration": 5.46014,
+            "duration": 5.1140426,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:35"
           }
         ]
@@ -389,12 +413,12 @@
       {
         "name": "I should land to a new windows tab with bread cramp end with  \"Flights to Los Angeles\"",
         "aggregatedDurations": {
-          "median": 5.1548998,
-          "average": 5.1548998
+          "median": 5.0918392,
+          "average": 5.0918392
         },
         "durations": [
           {
-            "duration": 5.1548998,
+            "duration": 5.0918392,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:40"
           }
         ]
@@ -402,20 +426,20 @@
       {
         "name": "I should land to a new windows tab with bread cramp end with  \"Flights to Orlando\"",
         "aggregatedDurations": {
-          "median": 5.1899283,
-          "average": 5.181885466
+          "median": 5.0720304,
+          "average": 5.075624933
         },
         "durations": [
           {
-            "duration": 5.1569374,
+            "duration": 5.0720304,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:45"
           },
           {
-            "duration": 5.1987907,
+            "duration": 5.0868381,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:50"
           },
           {
-            "duration": 5.1899283,
+            "duration": 5.0680063,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:63"
           }
         ]
@@ -428,12 +452,12 @@
       {
         "name": "I clicked on Flights to Chicago link",
         "aggregatedDurations": {
-          "median": 5.5687489,
-          "average": 5.5687489
+          "median": 5.5171278,
+          "average": 5.5171278
         },
         "durations": [
           {
-            "duration": 5.5687489,
+            "duration": 5.5171278,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:34"
           }
         ]
@@ -446,12 +470,12 @@
       {
         "name": "I clicked on Flights to Los Angeles link",
         "aggregatedDurations": {
-          "median": 5.5339858,
-          "average": 5.5339858
+          "median": 5.4061763,
+          "average": 5.4061763
         },
         "durations": [
           {
-            "duration": 5.5339858,
+            "duration": 5.4061763,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:39"
           }
         ]
@@ -464,20 +488,20 @@
       {
         "name": "I clicked on Flights to Orlando link",
         "aggregatedDurations": {
-          "median": 5.6249236,
-          "average": 5.6367194
+          "median": 5.4275391,
+          "average": 5.417627533
         },
         "durations": [
           {
-            "duration": 5.8002962,
+            "duration": 5.4275391,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:44"
           },
           {
-            "duration": 5.6249236,
+            "duration": 5.4313995,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:49"
           },
           {
-            "duration": 5.4849384,
+            "duration": 5.393944,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:62"
           }
         ]
@@ -490,20 +514,20 @@
       {
         "name": "I enter a departure city and destination city",
         "aggregatedDurations": {
-          "median": 6.0766019,
-          "average": 5.805997866
+          "median": 3.9829503,
+          "average": 3.844638533
         },
         "durations": [
           {
-            "duration": 6.3240579,
+            "duration": 3.9829503,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:51"
           },
           {
-            "duration": 6.0766019,
+            "duration": 3.9965377,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:64"
           },
           {
-            "duration": 5.0173338,
+            "duration": 3.5544276,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:77"
           }
         ]
@@ -516,12 +540,12 @@
       {
         "name": "I clicked on Book with miles checklist",
         "aggregatedDurations": {
-          "median": 0.578078,
-          "average": 0.578078
+          "median": 0.3422648,
+          "average": 0.3422648
         },
         "durations": [
           {
-            "duration": 0.578078,
+            "duration": 0.3422648,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:76"
           }
         ]
@@ -534,13 +558,17 @@
       {
         "name": "clicked on Changed bag rules Link",
         "aggregatedDurations": {
-          "median": 8.4706231,
-          "average": 8.4706231
+          "median": 5.29886205,
+          "average": 5.29886205
         },
         "durations": [
           {
-            "duration": 8.4706231,
+            "duration": 4.8467662,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:89"
+          },
+          {
+            "duration": 5.7509579,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:96"
           }
         ]
       }
@@ -552,13 +580,35 @@
       {
         "name": "I should have a new page with a text \"Changed bag rules and optional services\"",
         "aggregatedDurations": {
-          "median": 0.1274024,
-          "average": 0.1274024
+          "median": 0.04836715,
+          "average": 0.04836715
         },
         "durations": [
           {
-            "duration": 0.1274024,
+            "duration": 0.0638279,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:90"
+          },
+          {
+            "duration": 0.0329064,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:97"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I clicked on Any Flights Tab",
+    "steps": [
+      {
+        "name": "I clicked on Any Flights Tab",
+        "aggregatedDurations": {
+          "median": 0.451451,
+          "average": 0.451451
+        },
+        "durations": [
+          {
+            "duration": 0.451451,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/Destinations.feature:98"
           }
         ]
       }
@@ -570,12 +620,12 @@
       {
         "name": "I should see the OFFERS option",
         "aggregatedDurations": {
-          "median": 0.0636754,
-          "average": 0.0636754
+          "median": 0.0518603,
+          "average": 0.0518603
         },
         "durations": [
           {
-            "duration": 0.0636754,
+            "duration": 0.0518603,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UADealsLink.feature:6"
           }
         ]
@@ -588,12 +638,12 @@
       {
         "name": "I click on the Current offers and promos link",
         "aggregatedDurations": {
-          "median": 6.648806,
-          "average": 6.648806
+          "median": 2.9565325,
+          "average": 2.9565325
         },
         "durations": [
           {
-            "duration": 6.648806,
+            "duration": 2.9565325,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:9"
           }
         ]
@@ -606,12 +656,12 @@
       {
         "name": "I should see Deals \u0026 offers on the front page",
         "aggregatedDurations": {
-          "median": 0.0608264,
-          "average": 0.0608264
+          "median": 0.0538557,
+          "average": 0.0538557
         },
         "durations": [
           {
-            "duration": 0.0608264,
+            "duration": 0.0538557,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:10"
           }
         ]
@@ -624,12 +674,12 @@
       {
         "name": "I click on MileagePlus news and offers link",
         "aggregatedDurations": {
-          "median": 7.9913612,
-          "average": 7.9913612
+          "median": 4.3117246,
+          "average": 4.3117246
         },
         "durations": [
           {
-            "duration": 7.9913612,
+            "duration": 4.3117246,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:14"
           }
         ]
@@ -642,12 +692,12 @@
       {
         "name": "I should see MileagePlus deals \u0026 offers on the front page",
         "aggregatedDurations": {
-          "median": 1.4782622,
-          "average": 1.4782622
+          "median": 0.5954072,
+          "average": 0.5954072
         },
         "durations": [
           {
-            "duration": 1.4782622,
+            "duration": 0.5954072,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:15"
           }
         ]
@@ -660,12 +710,12 @@
       {
         "name": "I click on Discounts for 18 to 22 year olds link",
         "aggregatedDurations": {
-          "median": 5.8715239,
-          "average": 5.8715239
+          "median": 3.0972874,
+          "average": 3.0972874
         },
         "durations": [
           {
-            "duration": 5.8715239,
+            "duration": 3.0972874,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:19"
           }
         ]
@@ -678,12 +728,12 @@
       {
         "name": "I should see Discounts for 18 to 22 year olds on the front page",
         "aggregatedDurations": {
-          "median": 0.0787741,
-          "average": 0.0787741
+          "median": 0.0578442,
+          "average": 0.0578442
         },
         "durations": [
           {
-            "duration": 0.0787741,
+            "duration": 0.0578442,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:20"
           }
         ]
@@ -696,12 +746,12 @@
       {
         "name": "I click on Veterans Advantage discount link",
         "aggregatedDurations": {
-          "median": 6.4101545,
-          "average": 6.4101545
+          "median": 4.3745833,
+          "average": 4.3745833
         },
         "durations": [
           {
-            "duration": 6.4101545,
+            "duration": 4.3745833,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:24"
           }
         ]
@@ -714,12 +764,12 @@
       {
         "name": "I should see Veterans Advantage discount on the front page",
         "aggregatedDurations": {
-          "median": 0.1127325,
-          "average": 0.1127325
+          "median": 0.0558503,
+          "average": 0.0558503
         },
         "durations": [
           {
-            "duration": 0.1127325,
+            "duration": 0.0558503,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:25"
           }
         ]
@@ -732,17 +782,21 @@
       {
         "name": "I clicked On Redeem eCertificate link",
         "aggregatedDurations": {
-          "median": 11.5900165,
-          "average": 11.5900165
+          "median": 7.9042668,
+          "average": 7.520086966
         },
         "durations": [
           {
-            "duration": 12.1006079,
+            "duration": 8.6784359,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:29"
           },
           {
-            "duration": 11.0794251,
+            "duration": 7.9042668,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:34"
+          },
+          {
+            "duration": 5.9775582,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:44"
           }
         ]
       }
@@ -754,12 +808,12 @@
       {
         "name": "I should see Redeem eCertificate displayed on the front page",
         "aggregatedDurations": {
-          "median": 0.0980442,
-          "average": 0.0980442
+          "median": 0.1006374,
+          "average": 0.1006374
         },
         "durations": [
           {
-            "duration": 0.0980442,
+            "duration": 0.1006374,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:30"
           }
         ]
@@ -772,12 +826,12 @@
       {
         "name": "scroll to Electronic travel certificate Section",
         "aggregatedDurations": {
-          "median": 0.0574513,
-          "average": 0.0574513
+          "median": 0.0277941,
+          "average": 0.0277941
         },
         "durations": [
           {
-            "duration": 0.0574513,
+            "duration": 0.0277941,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:35"
           }
         ]
@@ -790,12 +844,12 @@
       {
         "name": "Select Year \"2019\" Under Year Issued",
         "aggregatedDurations": {
-          "median": 0.3849863,
-          "average": 0.3849863
+          "median": 0.1059562,
+          "average": 0.1059562
         },
         "durations": [
           {
-            "duration": 0.3849863,
+            "duration": 0.1059562,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:36"
           }
         ]
@@ -808,12 +862,12 @@
       {
         "name": "entered \"1234567891\" in PIN Options",
         "aggregatedDurations": {
-          "median": 1.3878651,
-          "average": 1.3878651
+          "median": 0.4054498,
+          "average": 0.4054498
         },
         "durations": [
           {
-            "duration": 1.3878651,
+            "duration": 0.4054498,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:37"
           }
         ]
@@ -826,12 +880,12 @@
       {
         "name": "enter \"Selam\" in the last name field",
         "aggregatedDurations": {
-          "median": 0.8555272,
-          "average": 0.8555272
+          "median": 0.2193848,
+          "average": 0.2193848
         },
         "durations": [
           {
-            "duration": 0.8555272,
+            "duration": 0.2193848,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:38"
           }
         ]
@@ -844,12 +898,12 @@
       {
         "name": "I clicked on confirm button",
         "aggregatedDurations": {
-          "median": 1.0011718,
-          "average": 1.0011718
+          "median": 0.3263715,
+          "average": 0.3263715
         },
         "durations": [
           {
-            "duration": 1.0011718,
+            "duration": 0.3263715,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:39"
           }
         ]
@@ -862,13 +916,85 @@
       {
         "name": "I should have get \"Please make sure you entered valid information.\" in return",
         "aggregatedDurations": {
-          "median": 0.5379449,
-          "average": 0.5379449
+          "median": 0.0983558,
+          "average": 0.0983558
         },
         "durations": [
           {
-            "duration": 0.5379449,
+            "duration": 0.0983558,
             "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:40"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I Selected the Year issued {string}",
+    "steps": [
+      {
+        "name": "I Selected the Year issued \"2019\"",
+        "aggregatedDurations": {
+          "median": 0.3381172,
+          "average": 0.3381172
+        },
+        "durations": [
+          {
+            "duration": 0.3381172,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:45"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I entered the an invalid Pin {string}",
+    "steps": [
+      {
+        "name": "I entered the an invalid Pin \"2356987542\"",
+        "aggregatedDurations": {
+          "median": 0.4036291,
+          "average": 0.4036291
+        },
+        "durations": [
+          {
+            "duration": 0.4036291,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:46"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I entered unanimous  Recipient\u0027s last name {string}",
+    "steps": [
+      {
+        "name": "I entered unanimous  Recipient\u0027s last name \"David\"",
+        "aggregatedDurations": {
+          "median": 0.2034782,
+          "average": 0.2034782
+        },
+        "durations": [
+          {
+            "duration": 0.2034782,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:47"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I clicked on the confirm button",
+    "steps": [
+      {
+        "name": "I clicked on the confirm button",
+        "aggregatedDurations": {
+          "median": 5.2962506,
+          "average": 5.2962506
+        },
+        "durations": [
+          {
+            "duration": 5.2962506,
+            "location": "file:///D:/Automation/BDDAutomationFramework_Team2/UnitedAirlines/src/test/java/features/UAOffersSection.feature:48"
           }
         ]
       }
