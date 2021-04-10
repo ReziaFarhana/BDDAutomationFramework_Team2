@@ -270,6 +270,7 @@
                                                        <include>**/AetnaTestRunner.java</include>
                                                        <include>**/TDBankTestRunner.java</include>
                                                        <include>**/TripAdvisorTestRunner.java</include>
+                                                       <include>**/UnitedTestRunner.java</include>
                         </includes>
                         <suiteXmlFiles>
                             <!--                            <suiteXmlFile>target/test-classes/AmazonTestRunner.xml</suiteXmlFile>-->
