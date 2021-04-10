@@ -1,4 +1,4 @@
-Feature: working on multi login approach
+#Feature: working on multi login approach
 
 #  Scenario Outline:
 #    Given I Have "<url>" "<browserName>" and "<browserVersion>" to login

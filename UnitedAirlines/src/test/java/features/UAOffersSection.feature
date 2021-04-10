@@ -39,6 +39,7 @@ Feature: Working on United Airlines OFFERS section under Deals
     When I clicked on confirm button
     Then I should have get "Please make sure you entered valid information." in return
 
+    @run
     Scenario: Electronic travel certificate Look up
       And I clicked On Redeem eCertificate link
       And I Selected the Year issued "2019"

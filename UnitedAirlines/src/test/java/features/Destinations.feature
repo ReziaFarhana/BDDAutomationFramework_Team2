@@ -89,7 +89,7 @@ Feature: working on DESTINATION DEALS
     And clicked on Changed bag rules Link
     Then I should have a new page with a text "Changed bag rules and optional services"
 
-  @pending
+  @run  # need to check
   Scenario: How much will it cost to check my bag?
     When I clicked on Flights to popular destinations
     Then I should land on a new tab "United Cheap Flights to 300+ Destinations Worldwide | United Airlines"

@@ -266,9 +266,10 @@
                         <testFailureIgnore>true</testFailureIgnore>
                         <!--Test Runner Files-->
                         <includes>
-                              <include>**/FindMedicineCostsStepDefinition.java</include>
-                              <include>**/MemberSupportAccountManagement.java</include>
-                              <include>**/MultiPackStepDefinition.java</include>
+<!--                              <include>**/FindMedicineCostsStepDefinition.java</include>-->
+<!--                              <include>**/MemberSupportAccountManagement.java</include>-->
+<!--                              <include>**/MultiPackStepDefinition.java</include>-->
+                              <include>**/AetnaTestRunner.java</include>
                               <include>**/UA_runner.java</include>
                               <include>**/tripadvisorRunner.java</include>
                               <include>**/TDBankRunner.java</include>
