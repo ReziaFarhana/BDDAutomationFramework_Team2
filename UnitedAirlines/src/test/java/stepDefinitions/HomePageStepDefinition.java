@@ -62,22 +62,17 @@ public class HomePageStepDefinition extends WebAPI {
 
     @Then("I should see {string} is properly displaying")
     public void i_should_see_is_properly_displaying(String expectedText) {
-        homePage.verifySearchResult("\"" + expectedText + "\"");
+        homePage.Search();
 
     }
-
-    @Then("I should not see {string} is appear")
-    public void i_should_not_see_is_appear(String expectedText) {
-        homePage.verifySearchResultNotMatch("\"" + expectedText + "\"");
-    }
-
 
     @Then("I verify {string} in product title")
-    public void i_verify_in_product_title(String string) {
+    public void i_verify_in_product_title(String expectedResult) {
+        homePage.CheckTitle(expectedResult);
 
     }
 
-
+//**********************************************************************************************
     @Given("I click on Travel Info TAb")
     public void i_click_on_travel_info_t_ab() {
         homePage.travelInfo();
@@ -148,5 +143,50 @@ public class HomePageStepDefinition extends WebAPI {
     @Then("I verify the page title as Search United.Com - Find Pages on Our Website & FAQs")
     public void i_verify_the_page_title_as_search_united_com_find_pages_on_our_website_fa_qs() throws InterruptedException {
         homePage.contactusSearchBoxText();
+    }
+
+
+//*****************************************************************************************************************
+
+
+
+    @Given("I click on Account & Lists")
+    public void i_click_on_account_lists() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
+    @Given("MileagePlus number*")
+    public void mileage_plus_number(io.cucumber.datatable.DataTable dataTable) {
+        // Write code here that turns the phrase above into concrete actions
+        // For automatic transformation, change DataTable to one of
+        // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+        // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+        // Double, Byte, Short, Long, BigInteger or BigDecimal.
+        //
+        // For other transformations you can register a DataTableType.
+        throw new io.cucumber.java.PendingException();
+    }
+
+    @Given("I enter password")
+    public void i_enter_password(io.cucumber.datatable.DataTable dataTable) {
+        // Write code here that turns the phrase above into concrete actions
+        // For automatic transformation, change DataTable to one of
+        // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+        // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+        // Double, Byte, Short, Long, BigInteger or BigDecimal.
+        //
+        // For other transformations you can register a DataTableType.
+        throw new io.cucumber.java.PendingException();
+    }
+
+    @Given("I click on signIn Button")
+    public void i_click_on_sign_in_button() {
+
+    }
+
+    @Then("I should see {string}")
+    public void i_should_see(String string) {
+
     }
 }

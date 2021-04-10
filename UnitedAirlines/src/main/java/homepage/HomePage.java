@@ -8,15 +8,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 import static homepage.HomePageWebElement.*;
-
-
 public class HomePage extends WebAPI {
 
 // Action Method class
-
     // Find By Annotation: First Approach
 
-    @FindBy(how = How.XPATH, using = searchButton)
+   @FindBy(how = How.XPATH, using = searchButton)
     public WebElement searchButton1;
     @FindBy(how = How.XPATH, using = searchBoxLocator)
     public WebElement searchBoxLocator1;
@@ -38,9 +35,7 @@ public class HomePage extends WebAPI {
 
     public void searchButton() {
         searchButton1.click();
-
     }
-
     public void setSearchBoxLocator() {
         searchBoxLocator1.sendKeys("covid 19 information ");
 
@@ -57,10 +52,13 @@ public class HomePage extends WebAPI {
         Assert.assertEquals("Product does not match", expectedText, actualText);
     }
 
-    public void verifySearchResultNotMatch(String expectedText) {
-        String actualText = covid19getText1.getText();
-        Assert.assertNotEquals("Product does not match", expectedText, actualText);
+    public void CheckTitle(String expectedResult) {
+        String actualText = driver.getTitle();
+        Assert.assertNotEquals("Product does not match",expectedResult, actualText);
     }
+    //*****************************************************************************************
+
+
 
     public void travelInfo() {
         travelInfo1.click();
@@ -82,13 +80,11 @@ public class HomePage extends WebAPI {
 
     public void contactusSearchBox() throws InterruptedException {
         contactus();
-        typeByXpath(customerSupport, baggage);
+       // typeByXpath(customerSupport, baggage);
         sleepFor(10);
         searchBox1.click();
 
     }
-
-
     public void contactusSearchBoxText() throws InterruptedException {
         contactusSearchBox();
         String exResult = "Search united.com";

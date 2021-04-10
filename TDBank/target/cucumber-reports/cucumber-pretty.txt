@@ -1,7 +1,235 @@
 
 @maria
-Scenario: TD Bank personal Tab Working                      # src/test/java/features/HomePage.feature:4
+Scenario: TDBank personal tab is displaying required information     # src/test/java/features/HomePage_Header_Product.feature:28
+  Given I am on  TDBank homePage                                     # stepDefinitions.HomePageStepDefinition.i_am_on_td_bank_home_page()
+  When I hover on Product                                            # stepDefinitions.HomePageStepDefinition.iHoverOnProduct()
+  And I click on more about personal online banking                  # stepDefinitions.HomePageStepDefinition.i_click_on_more_about_personal_online_banking()
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(.,'Enroll now')]"}
+  (Session info: chrome=89.0.4389.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-S6FB7KD0', ip: '192.168.255.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\maria\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55709}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c0b6a50ec0044e957dc6114704d58163
+*** Element info: {Using=xpath, value=//button[contains(.,'Enroll now')]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.click(Unknown Source)
+	at homepage.HomePage.LearnAboutHSDefinition(HomePage.java:70)
+	at stepDefinitions.HomePageStepDefinition.i_click_on_more_about_personal_online_banking(HomePageStepDefinition.java:97)
+	at ✽.I click on more about personal online banking(file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:29)
+
+
+    Embedding demo1 [image/png 415505 bytes]
+
+  When I click on enroll now                                         # stepDefinitions.HomePageStepDefinition.i_click_on_enroll_now()
+  Then I verify page title as "TD Bank Online Banking" is displaying # stepDefinitions.HomePageStepDefinition.i_verify_page_title_as_is_displaying(java.lang.String)
+
+@maria
+Scenario: TD Bank personal Tab displaying                   # src/test/java/features/HomePage_Header_Product.feature:34
   Given I am on  TDBank homePage                            # stepDefinitions.HomePageStepDefinition.i_am_on_td_bank_home_page()
-  When I click on personal tab                              # stepDefinitions.HomePageStepDefinition.i_click_on_personal_tab()
+  When I hover on Product                                   # stepDefinitions.HomePageStepDefinition.iHoverOnProduct()
+  When I click on personal tab                              # stepDefinitions.HomePageStepDefinition.i_click_on_personal_tab1()
   Then I should see we are here to help you                 # stepDefinitions.HomePageStepDefinition.i_should_see_we_are_here_to_help_you()
   And I verify "TDBank.com : personal tab" is a working tab # stepDefinitions.HomePageStepDefinition.i_verify_is_a_working_tab(java.lang.String)
+
+@maria
+Scenario: TD Bank personal tab is displaying                       # src/test/java/features/HomePage_Header_Product.feature:40
+  Given I am on  TDBank homePage                                   # stepDefinitions.HomePageStepDefinition.i_am_on_td_bank_home_page()
+  When I hover on Product                                          # stepDefinitions.HomePageStepDefinition.iHoverOnProduct()
+  And I click on  personal tab                                     # stepDefinitions.HomePageStepDefinition.i_click_on_personal_tab()
+  And I click on checking account tab                              # stepDefinitions.HomePageStepDefinition.i_click_on_checking_account_tab()
+  Then I verify " Checking & Savings Account Offers" is displaying # stepDefinitions.HomePageStepDefinition.i_verify_is_displaying(java.lang.String)
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Get offer']"}
+  (Session info: chrome=89.0.4389.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-S6FB7KD0', ip: '192.168.255.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\maria\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55921}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 88c861bca50d01490701c40ed31ee407
+*** Element info: {Using=xpath, value=//a[normalize-space()='Get offer']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.click(Unknown Source)
+	at homepage.HomePage.Checkingaccount(HomePage.java:48)
+	at homepage.HomePage.CheckingAccountGetTitle(HomePage.java:62)
+	at stepDefinitions.HomePageStepDefinition.i_verify_is_displaying(HomePageStepDefinition.java:89)
+	at ✽.I verify " Checking & Savings Account Offers" is displaying(file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:43)
+
+
+    Embedding demo1 [image/png 101467 bytes]
+
+
+@maria
+Scenario: TD Bank personal checking account is working properly    # src/test/java/features/HomePage_Header_Product.feature:46
+  Given I am on  TDBank homePage                                   # stepDefinitions.HomePageStepDefinition.i_am_on_td_bank_home_page()
+  When I hover on Product                                          # stepDefinitions.HomePageStepDefinition.iHoverOnProduct()
+  And I click on  personal tab                                     # stepDefinitions.HomePageStepDefinition.i_click_on_personal_tab()
+  And I click on checking account tab                              # stepDefinitions.HomePageStepDefinition.i_click_on_checking_account_tab()
+  Then I verify " Checking & Savings Account Offers" is displaying # stepDefinitions.HomePageStepDefinition.i_verify_is_displaying(java.lang.String)
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Get offer']"}
+  (Session info: chrome=89.0.4389.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-S6FB7KD0', ip: '192.168.255.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\maria\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56083}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c1bf248d704e6c6220544708bf42678b
+*** Element info: {Using=xpath, value=//a[normalize-space()='Get offer']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.click(Unknown Source)
+	at homepage.HomePage.Checkingaccount(HomePage.java:48)
+	at homepage.HomePage.CheckingAccountGetTitle(HomePage.java:62)
+	at stepDefinitions.HomePageStepDefinition.i_verify_is_displaying(HomePageStepDefinition.java:89)
+	at ✽.I verify " Checking & Savings Account Offers" is displaying(file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:49)
+
+
+    Embedding demo1 [image/png 101467 bytes]
+
+
+@maria
+Scenario: TDBank small business tab is displaying required information # src/test/java/features/HomePage_Header_Product.feature:52
+  Given I am on  TDBank homePage                                       # stepDefinitions.HomePageStepDefinition.i_am_on_td_bank_home_page()
+  When I hover on Product                                              # stepDefinitions.HomePageStepDefinition.iHoverOnProduct()
+  And I click on more about personal online banking                    # stepDefinitions.HomePageStepDefinition.i_click_on_more_about_personal_online_banking()
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(.,'Enroll now')]"}
+  (Session info: chrome=89.0.4389.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-S6FB7KD0', ip: '192.168.255.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\maria\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56237}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2211cfeacb6b196c5b97724b53e10dce
+*** Element info: {Using=xpath, value=//button[contains(.,'Enroll now')]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.click(Unknown Source)
+	at homepage.HomePage.LearnAboutHSDefinition(HomePage.java:70)
+	at stepDefinitions.HomePageStepDefinition.i_click_on_more_about_personal_online_banking(HomePageStepDefinition.java:97)
+	at ✽.I click on more about personal online banking(file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:53)
+
+
+    Embedding demo1 [image/png 437596 bytes]
+
+  When I click on enroll now                                           # stepDefinitions.HomePageStepDefinition.i_click_on_enroll_now()
+  Then I verify page title as "TD Bank Online Banking" is displaying   # stepDefinitions.HomePageStepDefinition.i_verify_page_title_as_is_displaying(java.lang.String)
+
+@maria
+Scenario: Small business tab is working properly                            # src/test/java/features/HomePage_Header_Product.feature:58
+  Given I am on  TDBank homePage                                            # stepDefinitions.HomePageStepDefinition.i_am_on_td_bank_home_page()
+  When I hover on Product                                                   # stepDefinitions.HomePageStepDefinition.iHoverOnProduct()
+  And I click on small business                                             # stepDefinitions.HomePageStepDefinition.i_click_on_small_business()
+  And I click on  watch the video                                           # stepDefinitions.HomePageStepDefinition.i_click_on_watch_the_video()
+  Then I verify " Small Business Banking by TD Bank" is displaying properly # stepDefinitions.HomePageStepDefinition.i_verify_is_displaying_properly(java.lang.String)
+      java.lang.AssertionError: Small Business Banking by TD Bank expected [ Small Business Banking by TD Bank] but found [Text Does not Match]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at homepage.HomePage.CheckTitle(HomePage.java:100)
+	at stepDefinitions.HomePageStepDefinition.i_verify_is_displaying_properly(HomePageStepDefinition.java:124)
+	at ✽.I verify " Small Business Banking by TD Bank" is displaying properly(file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:61)
+
+
+    Embedding demo1 [image/png 453214 bytes]
+
+
+@maria
+Scenario: Commercial tab is working properly                                                 # src/test/java/features/HomePage_Header_Product.feature:65
+  Given I am on  TDBank homePage                                                             # stepDefinitions.HomePageStepDefinition.i_am_on_td_bank_home_page()
+  When I hover on Product                                                                    # stepDefinitions.HomePageStepDefinition.iHoverOnProduct()
+  And I click on  Commercial                                                                 # stepDefinitions.HomePageStepDefinition.i_click_on_commercial()
+  And I click on  learn more                                                                 # stepDefinitions.HomePageStepDefinition.i_click_on_learn_more()
+  Then I verify " TD Bank Commercial Fraud Prevention & Control Systems" is opening properly # stepDefinitions.HomePageStepDefinition.i_verify_is_opening_properly(java.lang.String)
+      java.lang.AssertionError: TD Commercial Business Banking expected [ TD Bank Commercial Fraud Prevention & Control Systems] but found [Text Does not Match]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at homepage.HomePage.CheckTitle1(HomePage.java:117)
+	at stepDefinitions.HomePageStepDefinition.i_verify_is_opening_properly(HomePageStepDefinition.java:141)
+	at ✽.I verify " TD Bank Commercial Fraud Prevention & Control Systems" is opening properly(file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:68)
+
+
+    Embedding demo1 [image/png 219522 bytes]
+
+
+@maria
+Scenario: Investing and Wealth tab is working properly                                                  # src/test/java/features/HomePage_Header_Product.feature:71
+  Given I am on  TDBank homePage                                                                        # stepDefinitions.HomePageStepDefinition.i_am_on_td_bank_home_page()
+  When I hover on Product                                                                               # stepDefinitions.HomePageStepDefinition.iHoverOnProduct()
+  And I click on  Investing and Wealth                                                                  # stepDefinitions.HomePageStepDefinition.i_click_on_investing_and_wealth()
+  And I click on Individuals and Families                                                               # stepDefinitions.HomePageStepDefinition.i_click_on_individuals_and_families()
+  And I click Retirement Planning                                                                       # stepDefinitions.HomePageStepDefinition.i_click_retirement_planning()
+  Then I verify " Retirement Investment Planning & Account Management | TD Wealth" is  properly opening # stepDefinitions.HomePageStepDefinition.i_verify_is_properly_opening(java.lang.String)
+      java.lang.AssertionError: Retirement Investment Planning & Account Management | TD Wealth expected [ Retirement Investment Planning & Account Management | TD Wealth] but found [Text Does not Match]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at homepage.HomePage.CheckTitle2(HomePage.java:140)
+	at stepDefinitions.HomePageStepDefinition.i_verify_is_properly_opening(HomePageStepDefinition.java:164)
+	at ✽.I verify " Retirement Investment Planning & Account Management | TD Wealth" is  properly opening(file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:75)
+
+
+    Embedding demo1 [image/png 319381 bytes]
+

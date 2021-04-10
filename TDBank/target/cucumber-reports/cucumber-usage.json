@@ -5,13 +5,87 @@
       {
         "name": "I am on  TDBank homePage",
         "aggregatedDurations": {
-          "median": 6.301912,
-          "average": 6.301912
+          "median": 4.67548155,
+          "average": 4.739197925
         },
         "durations": [
           {
-            "duration": 6.301912,
-            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage.feature:5"
+            "duration": 4.7323794,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:4"
+          },
+          {
+            "duration": 4.5271722,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:4"
+          },
+          {
+            "duration": 4.6185837,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:4"
+          },
+          {
+            "duration": 5.3974612,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:4"
+          },
+          {
+            "duration": 4.4800936,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:4"
+          },
+          {
+            "duration": 4.867324,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:4"
+          },
+          {
+            "duration": 4.8046898,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:4"
+          },
+          {
+            "duration": 4.4858795,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I hover on Product",
+    "steps": [
+      {
+        "name": "I hover on Product",
+        "aggregatedDurations": {
+          "median": 0.199558,
+          "average": 0.209279962
+        },
+        "durations": [
+          {
+            "duration": 0.2684545,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:5"
+          },
+          {
+            "duration": 0.2226074,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:5"
+          },
+          {
+            "duration": 0.1381876,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:5"
+          },
+          {
+            "duration": 0.1423912,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:5"
+          },
+          {
+            "duration": 0.1765086,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:5"
+          },
+          {
+            "duration": 0.2879808,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:5"
+          },
+          {
+            "duration": 0.149008,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:5"
+          },
+          {
+            "duration": 0.2891016,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:5"
           }
         ]
       }
@@ -23,13 +97,13 @@
       {
         "name": "I click on personal tab",
         "aggregatedDurations": {
-          "median": 7.3640241,
-          "average": 7.3640241
+          "median": 4.7904631,
+          "average": 4.7904631
         },
         "durations": [
           {
-            "duration": 7.3640241,
-            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage.feature:6"
+            "duration": 4.7904631,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:35"
           }
         ]
       }
@@ -41,13 +115,13 @@
       {
         "name": "I should see we are here to help you",
         "aggregatedDurations": {
-          "median": 0.0469887,
-          "average": 0.0469887
+          "median": 0.0669985,
+          "average": 0.0669985
         },
         "durations": [
           {
-            "duration": 0.0469887,
-            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage.feature:7"
+            "duration": 0.0669985,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:36"
           }
         ]
       }
@@ -59,13 +133,183 @@
       {
         "name": "I verify \"TDBank.com : personal tab\" is a working tab",
         "aggregatedDurations": {
-          "median": 0.0010054,
-          "average": 0.0010054
+          "median": 9.992E-4,
+          "average": 9.992E-4
         },
         "durations": [
           {
-            "duration": 0.0010054,
-            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage.feature:8"
+            "duration": 9.992E-4,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:37"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on  personal tab",
+    "steps": [
+      {
+        "name": "I click on  personal tab",
+        "aggregatedDurations": {
+          "median": 6.9472536,
+          "average": 6.9472536
+        },
+        "durations": [
+          {
+            "duration": 8.6310515,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:41"
+          },
+          {
+            "duration": 5.2634557,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:47"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on checking account tab",
+    "steps": [
+      {
+        "name": "I click on checking account tab",
+        "aggregatedDurations": {
+          "median": 7.6601111,
+          "average": 7.6601111
+        },
+        "durations": [
+          {
+            "duration": 7.9025831,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:42"
+          },
+          {
+            "duration": 7.4176391,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:48"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on small business",
+    "steps": [
+      {
+        "name": "I click on small business",
+        "aggregatedDurations": {
+          "median": 4.5980592,
+          "average": 4.5980592
+        },
+        "durations": [
+          {
+            "duration": 4.5980592,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:59"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on  watch the video",
+    "steps": [
+      {
+        "name": "I click on  watch the video",
+        "aggregatedDurations": {
+          "median": 10.1481011,
+          "average": 10.1481011
+        },
+        "durations": [
+          {
+            "duration": 10.1481011,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:60"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on  Commercial",
+    "steps": [
+      {
+        "name": "I click on  Commercial",
+        "aggregatedDurations": {
+          "median": 14.5157936,
+          "average": 14.5157936
+        },
+        "durations": [
+          {
+            "duration": 14.5157936,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:66"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on  learn more",
+    "steps": [
+      {
+        "name": "I click on  learn more",
+        "aggregatedDurations": {
+          "median": 10.0786975,
+          "average": 10.0786975
+        },
+        "durations": [
+          {
+            "duration": 10.0786975,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:67"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on  Investing and Wealth",
+    "steps": [
+      {
+        "name": "I click on  Investing and Wealth",
+        "aggregatedDurations": {
+          "median": 10.1961677,
+          "average": 10.1961677
+        },
+        "durations": [
+          {
+            "duration": 10.1961677,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:72"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on Individuals and Families",
+    "steps": [
+      {
+        "name": "I click on Individuals and Families",
+        "aggregatedDurations": {
+          "median": 11.0969436,
+          "average": 11.0969436
+        },
+        "durations": [
+          {
+            "duration": 11.0969436,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:73"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click Retirement Planning",
+    "steps": [
+      {
+        "name": "I click Retirement Planning",
+        "aggregatedDurations": {
+          "median": 10.9807353,
+          "average": 10.9807353
+        },
+        "durations": [
+          {
+            "duration": 10.9807353,
+            "location": "file:///C:/Users/maria/IdeaProjects/BDDAutomationFramework_Team2/TDBank/src/test/java/features/HomePage_Header_Product.feature:74"
           }
         ]
       }

@@ -5,7 +5,7 @@ public class HomePageWebElement {
 
     public static final String searchButton = "//span[@class='app-components-GlobalHeader-globalHeader__searchLink--1lBsg']//span[contains(text(),'Search')]";
     public static final String searchBoxLocator = "//input[@id='inputAutosuggestModel']";
-    public static final String search = "//a[normalize-space()='Important travel notices | United Airlines']";
+    public static final String search = "//button[@class='atm-c-btn app-components-WebsiteSearch-LandingForm-styles__c-web-search-search__btn--1L9iN']";
     public static final String covid19getText = "//a[normalize-space()='Important travel notices | United Airlines']";
     public static final String travelInfo = "//div[@role='dialog']";
     public static final String contactUs = "//span[normalize-space()='Contact us']";
@@ -13,9 +13,7 @@ public class HomePageWebElement {
     public static final String customerSupport = "//input[@id='inputAutosuggestModel']";
     public static final String searchBox = "//button[@type='submit']";
     public static final String baggage = "baggage fees";
- public static final String searchUnited = "//label[normalize-space()='Search united.com']";
-
-
+    public static final String searchUnited = "//label[normalize-space()='Search united.com']";
 
 
 }

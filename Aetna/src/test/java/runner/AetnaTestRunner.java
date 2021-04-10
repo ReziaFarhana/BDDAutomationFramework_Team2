@@ -24,12 +24,12 @@ import org.junit.runner.RunWith;
         // to check the mapping is proper between feature file and step definition file
         dryRun = false,
         publish = true,
-        tags = "(@maria) and (not @pending)"
+       tags = "(@maria ) and (not @pending)"
 //         tags = "(@smokeTest or @RegressionTest or @IntegrationTest ) and (not @pending)"
 
 
-
 )
+
 
 
 public class AetnaTestRunner {
