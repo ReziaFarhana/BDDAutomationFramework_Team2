@@ -15,7 +15,10 @@ import java.util.List;
 import static homepageheader_book.BookWebElement.*;
 
 public class ExploreDestinationsUsingInteractiveMap extends WebAPI {
-
+    @FindBy(how = How.XPATH, using = SEARCH_TYPE)
+    public WebElement search_type;
+    @FindBy(how = How.XPATH, using = SEARCH_CONFIRM)
+    public WebElement search_confirm;
     @FindBy(how = How.XPATH, using = searchButton)
     public WebElement search;
     @FindBy(how = How.ID, using = searchType)
@@ -58,11 +61,13 @@ public class ExploreDestinationsUsingInteractiveMap extends WebAPI {
     }
 
     public void searchTypeButton() throws InterruptedException {
-        clickById(searchType);
-        sleepFor(5);
-        hoverAndClick(searchtype, specificDates);
-        // mouseHoverByXpath(specificDatesLocator);
-        //searchtype.sendKeys(Keys.ARROW_DOWN);
+//        clickById(searchType);
+//        sleepFor(5);
+//
+        searchtype.sendKeys(Keys.ARROW_DOWN);
+        sleepFor(3);
+        search_type.sendKeys(Keys.ENTER);
+
         //clickByXpath(specificDatesLocator);
 
 //        List<WebElement> opt = driver.findElements(By.id(searchType));
@@ -75,6 +80,18 @@ public class ExploreDestinationsUsingInteractiveMap extends WebAPI {
 //                break;
 //            }
         //}
+
+
+
+
+//   search_type.click();
+//   sleepFor(5);
+//   search_confirm.click();
+
+
+
+
+
     }
 
     public void filteredDepartDate(String departDate) {

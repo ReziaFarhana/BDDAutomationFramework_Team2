@@ -8,6 +8,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.testng.Assert;
 
+import java.util.List;
+
 import static homepageheader_book.BookWebElement.*;
 
 public class BookRoundTrip extends WebAPI {
@@ -53,6 +55,15 @@ public class BookRoundTrip extends WebAPI {
         clickByXpath(arrowButtonToNextMonth);
         sleepFor(3);
         clickByXpath(departDateSelect);
+//    List<WebElement> departDate = getListOfWebElementsByXpath(departDatePicker);
+//    int total_node = departDate.size();
+//    for(int i = 0; i<total_node;i++){
+//        String date = departDate.get(i).getText();
+//        if(date.equals("15")){
+//            departDate.get(i).click();
+//            break;
+//        }
+//    }
     }
 
     public void returnDate() {

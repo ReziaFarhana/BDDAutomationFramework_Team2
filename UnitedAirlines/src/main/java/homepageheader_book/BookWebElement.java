@@ -34,6 +34,9 @@ public class BookWebElement {
     public static final String applyFiltersButton = "//span[normalize-space()='Apply filters']";
     public static final String filterByInterestAmount= "//span[normalize-space()='Filter by interest (4)']";
     public static final String filterByInterestButton= "//button[@class='atm-c-btn atm-c-btn--block']";
+    public static final String SEARCH_TYPE = "//li[contains(text(),'Specific dates')]";
+    public static final String SEARCH_CONFIRM = "//*[@id='searchDateType']/div";
+    public static final String departDatePicker = "//div[@role='application']//div[@role='region']//div//div[2]//div[1]//table[1]//tr";
 
 
 
