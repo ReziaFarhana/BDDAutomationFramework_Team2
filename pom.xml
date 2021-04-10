@@ -266,7 +266,9 @@
                         <testFailureIgnore>true</testFailureIgnore>
                         <!--Test Runner Files-->
                         <includes>
-<!--                              <include>**/AmazonTestRunner.java</include>-->
+                              <include>**/FindMedicineCostsStepDefinition.java</include>
+                              <include>**/MemberSupportAccountManagement.java</include>
+                              <include>**/MultiPackStepDefinition.java</include>
                         </includes>
                         <suiteXmlFiles>
                             <!--                            <suiteXmlFile>target/test-classes/AmazonTestRunner.xml</suiteXmlFile>-->
