@@ -1,0 +1,3 @@
+runner\TDBankTestRunner.class
+stepDefinitions\HomePageStepDefinition.class
+stepDefinitions\OnlineBankingStepDefinition.class

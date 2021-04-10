@@ -3,7 +3,7 @@ Feature: United Airlines home page signIn functionality test
   Background:
     Given I am in United Airlines home page
     When I click on signIn button
-
+# passed-10
   @Farhana
   Scenario: United Airlines SignIn functionality test
     And I click on join now and use title
@@ -12,6 +12,7 @@ Feature: United Airlines home page signIn functionality test
       | Rezia     | Farhana    | Khan     | 01    | 2000 |
     And month and gender field is selected
     Then I verify "contact information" is displayed
+    # passed-11
   @Farhana
   Scenario: United Airlines contact information test
     And I click on join now and use title
@@ -19,7 +20,7 @@ Feature: United Airlines home page signIn functionality test
       | street               | city       | state    | zipCode |
       | Henry Hudson Parkway | Bronx      | New York | 10463   |
     Then I validate "Phone number" appear properly
-
+# passed-12
   @Farhana
   Scenario: United Airlines contact information test
 
@@ -31,7 +32,7 @@ Feature: United Airlines home page signIn functionality test
 
     And I click on check box field
     Then I verify "Email information" appear properly
-
+# passed-13
   @Test
   Scenario: United Airlines contact information test
     And I click on join now and use title
@@ -46,7 +47,7 @@ Feature: United Airlines home page signIn functionality test
 
     And I click on Show button
     Then I verify "Security questions" display properly
-
+# passed-14
   @Test
   Scenario: United Airlines Security Question test
     And I click on join now and use title
@@ -59,7 +60,7 @@ Feature: United Airlines home page signIn functionality test
       | June                |
 
     Then I verify Accept and enroll button is enabled
-
+# passed-15
 @Test @Farhana
 Scenario: United Airlines MileagePlus enrollment functionality test
   And I click on join now and use title

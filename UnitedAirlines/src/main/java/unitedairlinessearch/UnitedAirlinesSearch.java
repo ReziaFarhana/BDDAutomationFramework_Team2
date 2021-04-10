@@ -24,7 +24,7 @@ public class UnitedAirlinesSearch extends WebAPI {
     public void clickOnSearchBox(){ searchBtnInHomePage.click(); }
     public void enterDataInSearchBoxFromExcel() throws IOException {
         List<String> dataFromExcel = DataTest.getDataFromExcel();
-        String item = dataFromExcel.get(4);
+        String item = dataFromExcel.get(1);
         searchBox.sendKeys(item);
         searchBoxButton.click();
     }
@@ -39,7 +39,7 @@ public class UnitedAirlinesSearch extends WebAPI {
     public void searchDataFromDB() throws Exception {
         DataTest.insertToDB();
         List<String> dataFromDB = DataTest.getDataFromDB();
-        String item = dataFromDB.get(3);
+        String item = dataFromDB.get(1);
         searchBox.sendKeys(item);
         searchBoxButton.click();
     }

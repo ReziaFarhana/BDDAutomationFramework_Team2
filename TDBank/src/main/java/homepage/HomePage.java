@@ -332,7 +332,6 @@ public class HomePage extends WebAPI {
         Assert.assertEquals("Text don't match", actualText, expectedText);
     }
 
-
     /**
      * TD Bank-9 product dropDown list check
      */

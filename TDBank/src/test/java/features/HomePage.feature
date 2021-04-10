@@ -5,7 +5,7 @@ Feature: Online Banking Page features
     When I close the Ads Choices & Personalization popUp
 
 #  passed-1
-  @Test @Farhana
+  @Test @Farhana @Ignore
 
   Scenario: Verify TD Bank Online Banking page
 
@@ -13,7 +13,7 @@ Feature: Online Banking Page features
     Then I can see the Online Banking Log In page is displayed
 
 #   passed-2
-  @Test @Farhana
+  @Test @Farhana @Ignore
   Scenario: Verify Small Business Online Banking
 
     When I hover over the services button and I click Online Banking option
@@ -21,7 +21,7 @@ Feature: Online Banking Page features
     Then I verify "Small Business Online Banking" is appeared
 
 #  passed-3
-  @Test @Farhana
+  @Test @Farhana @Ignore
   Scenario: Verify Enroll in Online Banking
 
     When I hover over the services button and I click Online Banking option
@@ -29,29 +29,28 @@ Feature: Online Banking Page features
     And I cancel the questions On Stimulus Payments Pop up
     Then I verify "Online Banking Enrollment" window pop up
 # passed-4
-  @Farhana
+  @Farhana @Ignore
   Scenario: Verify the Student Banking page
 
     When I hover over the services button and I select Student Banking option
     Then I verify "Smart and simple student banking" is displayed
-#  test-5 passed
-  @Farhana
+
+#  passed-3
+  @Farhana @Ignore
   Scenario: TD Bank find us Box check
   When I click Find Us icon
   And I enter "10463" and I click on search icon
   Then I validate TD Bank locations appeared
 
+#  passed-4
+  @Test @Ignore
+  Scenario: Get Direction Button check
+    When I take necessary steps and landed on locations page
+    And I click on Get Direction Button
+    Then I validate google map page Title
 
-##test-6
-#  @Test
-#  Scenario: Get Direction Button check
-#    When I take necessary steps and landed on locations page
-#    And I click on Get Direction Button
-#    Then I validate google map page Title
-#
-#
-##test-7
-  @Test
+#  passed-5
+  @Test @Ignore
   Scenario: TD Bank signUp functionality check
     When I click on Sign Up button
     And I cancel the questions On Stimulus Payments Pop up
@@ -64,8 +63,8 @@ Feature: Online Banking Page features
     And I select Paper less Option
     And I click on continue button
     Then I should see "The information you gave doesn't match our records. Please review and make any updates before proceeding." is properly appear
-#test-8
-    @test
+#  passed-6
+    @test @Ignore
     Scenario Outline: TD Bank login functionality check with invalid credentials
       When I click on logIn button in homePage
       And I click not now on the questions on Stimulus Payments Pop up
@@ -75,12 +74,13 @@ Feature: Online Banking Page features
       Examples:
         | userName   | password   |
         | 30294NY_fk | test@30294 |
-#        | 30021NY_RF | pxyz@1234  |
-#        | 12345NY_HC | trump@2020 |
+        | 30021NY_RF | pxyz@1234  |
+        | 12345NY_HC | trump@2020 |
 
-##      test-9
-#      When I click on product
-#      And I click on checking
-#
+#  passed-7
+      When I click on product
+      And I click on checking
+      Then I validate "Checking comes jam-packed with perks — and a bonus" displayed
+
 
 

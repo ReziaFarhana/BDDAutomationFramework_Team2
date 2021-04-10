@@ -1,1 +1,2 @@
-runner\AmazonTestRunner.class
+runner\AetnaTestRunner.class
+stepDefinitions\HomePageStepDefinition.class

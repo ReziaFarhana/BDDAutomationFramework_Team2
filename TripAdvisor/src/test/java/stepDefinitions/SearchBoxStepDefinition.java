@@ -45,7 +45,6 @@ public class SearchBoxStepDefinition extends WebAPI {
 
     @And("I enter {string} in searchBox")
     public void i_enter_in_search_box(String countryName) {
-        // Action method
         sb.enterCountryName(countryName);
     }
 
@@ -54,42 +53,44 @@ public class SearchBoxStepDefinition extends WebAPI {
         sb.clickOnSearchButton();
     }
 
-    @Then("I should see {string} is properly appear")
-    public void i_should_see_is_properly_appear(String expectedText) {
-        sb.verifySearchResult("\""+expectedText+"\"");
-    }
-
-    @Then("I verify {string} in product title")
-    public void i_verify_in_product_title(String expectedText) {
-        // Amazon.com : hand sanitizer
-        sb.verifyPageTitle(expectedText);
+    @Then("I should see country name{string} appeared")
+    public void iShouldSeeCountryNameAppeared(String expectedCountry){
+        sb.verifySearchResult(expectedCountry);
     }
 
     @Then("I verify {string} in page title")
-    public void i_verify_in_page_title(String verifyTitle) {
-        sb.verifyPageURL(verifyTitle);
-
+    public void i_verify_in_page_title(String verifyTitle) throws InterruptedException {
+        sb.verifyPageTitle(verifyTitle);
     }
 
     /**
-     * get url
+     * Test-2 get url
      */
-    @When("I clicks on things to do")
-    public void i_clicks_on_things_to_do() {
-        sb.verifyThingsToDo();
+
+    @When("I enters {string} in searchbox")
+    public void I_enter_in_searchbox(String City) throws InterruptedException {
+       sb.enterCityName(City);
     }
 
-//    @When("I enters {string} in searchbox")
-//    public void I_enter_in_searchbox(String searchData) throws InterruptedException {
-//       sb.enterDataIntoSearchBox(searchData);
-//
+    @When("I click on things to do")
+    public void iClickOnThingsToDo() {
+       sb.verifyThingsToDo();
+    }
+
+    @And("I enter {string}city name in searchBox")
+    public void iEnterCityNameInSearchbox(String City) {
+        sb.enterCityName(City);
+    }
+
+//    @When("I click on search Btn")
+//    public void iClickOnSearchBtn() {
+//        sb.clickOnSearchBton();
 //    }
 
-    @Then("I verifies {string} appears properly")
-    public void I_verifies_appears_properly(String pageURL) {
-       sb.verifyPageURL(pageURL);
+    @Then("I verify {string} in page url")
+    public void iVerifyInPageUrl(String pageURL) throws InterruptedException {
+        sb.verifyPageURL(pageURL);
     }
 
-
-
 }
+

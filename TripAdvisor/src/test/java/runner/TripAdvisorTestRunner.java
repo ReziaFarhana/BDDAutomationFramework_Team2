@@ -25,7 +25,7 @@ import org.junit.runner.RunWith;
         dryRun = false,
         publish = true,
         tags = "(@Farhana or @Test) and (not @pending)"
-//         tags = "(@smokeTest or @RegressionTest or @IntegrationTest ) and (not @pending)"
+//
 )
 
 public class TripAdvisorTestRunner {

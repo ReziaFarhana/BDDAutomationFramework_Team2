@@ -198,16 +198,16 @@ public class HomePageStepDefinition extends WebAPI {
     }
 
 
-//    @And("I click on Online Banking Enrollment continue button")
-//    public void i_click_on_online_banking_enrollment_continue_button() {
-//        hp.verifyClickOnOnlineBankingEnrollmentContinue();
-//    }
-//
-//    @And("I accept eSignatureAgreement and click on continue button")
-//    public void i_accept_esignatureagreement_and_click_on_continue_button(){
-//        hp.verifyESignatureAgreementAndContinueBtn();
-//
-//    }
+    @And("I click on Online Banking Enrollment continue button")
+    public void i_click_on_online_banking_enrollment_continue_button() {
+        hp.verifyClickOnOnlineBankingEnrollmentContinue();
+    }
+
+    @And("I accept eSignatureAgreement and click on continue button")
+    public void i_accept_esignatureagreement_and_click_on_continue_button(){
+        hp.verifyESignatureAgreementAndContinueBtn();
+
+    }
 
 
 //    test-8.Login functionality test with invalid credentials......................
@@ -245,8 +245,10 @@ public class HomePageStepDefinition extends WebAPI {
         hp.clickOnProductBtn();
     }
 
-
-
+    @Then("I validate {string} displayed")
+    public void iValidateDisplayed(String expectedResult) {
+        hp.validateProductText(expectedResult);
+    }
 }
 
 

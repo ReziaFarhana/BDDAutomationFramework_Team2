@@ -72,6 +72,7 @@ public class HomePageWebElement {
     public static final String goPaperLessBtnLocator ="span[id='labelWrap_3840'] li:nth-child(1)";//css
     public static final String finaSubmitBtnLocator ="[type='submit']";//css
     public static final String signUpErrorMessageLocator ="//div[@class='td-infobar-content']/div[1]";//xpath
+    public static final String checkingMessageLocator ="//div[@class='td-banner-header']";//xpath
 
 
 }

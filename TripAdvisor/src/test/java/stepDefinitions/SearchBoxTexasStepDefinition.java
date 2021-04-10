@@ -58,11 +58,11 @@ public class SearchBoxTexasStepDefinition extends WebAPI {
     public void i_click_on_hotels_tab() {
         sbt.hotelButtonClick();
     }
-
-    @Then("I verify {string} is appeared properly")
-    public void i_verify_is_appeared_properly(String expectedText) {
+    @Then("I verify {string} properly appeared")
+    public void iVerifyProperlyAppeared(String expectedText) {
         sbt.validateDestinationTexas(expectedText);//validateWhereToSearchBox()
     }
+
     //    Test-2.Passed....Texas Vacation Rentals...................
 
     @And("I click on vacation rentals tab")
@@ -70,9 +70,8 @@ public class SearchBoxTexasStepDefinition extends WebAPI {
         sbt.vacationRentalsTabCheck();
     }
 
-    @Then("I verify {string} appeared properly")
-    public void i_verify_appeared_properly(String expectedText) {
-
+    @Then("I verify {string} appeared")
+    public void i_verify_appeared(String expectedText) {
         sbt.validateTexasHotelVacationRentals(expectedText);
     }
 
@@ -91,7 +90,6 @@ public class SearchBoxTexasStepDefinition extends WebAPI {
     public void i_click_on_takeout_check_box() throws InterruptedException {
         sbt.texasDallasRestaurantFeatureCheckBox();
     }
-
     @When("I click on launch checkBox")
     public void i_click_on_launch_check_box() throws InterruptedException {
         sbt.texasDallasRestaurantMealsCheckBox();
@@ -102,8 +100,8 @@ public class SearchBoxTexasStepDefinition extends WebAPI {
         sbt.DallasMapleLeafClick();
     }
 
-    @Then("I verify restaurant images appeared properly")
-    public void i_verify_restaurant_images_appeared_properly() {
+    @Then("I verify restaurant images is displayed")
+    public void i_verify_restaurant_images_is_displayed() {
         sbt.verifyMapleLeafImageIsDisplayed();
     }
 
@@ -112,10 +110,12 @@ public class SearchBoxTexasStepDefinition extends WebAPI {
         sbt.mapleLeafAllPhotosIsClickable();
     }
 
-    @Then("I verify photo gallery appeared properly")
-    public void i_verify_photo_gallery_appeared_properly() {
+    @Then("I validate photo gallery visible")
+    public void i_validate_photo_gallery_visible() {
         sbt.validatePhotoGalleryIsDisplayed();
     }
+
+
 }
 
 

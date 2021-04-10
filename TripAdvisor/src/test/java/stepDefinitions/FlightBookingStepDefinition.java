@@ -70,7 +70,7 @@ public class FlightBookingStepDefinition extends WebAPI {
 
     }
 
-    @Then("I verify {string} is displayed")
+    @Then("I verify {string} is displayed properly")
     public void i_verify_is_displayed(String expectedText) {
             fb.validateTravelForum(expectedText);
     }
@@ -100,8 +100,8 @@ public class FlightBookingStepDefinition extends WebAPI {
 //    public void i_click_on_gallery() throws InterruptedException {
 //            fb.verifyPhotoGalleryIsClickable();
 //........................................................................
-    @Then("I verify {string} is visible")
-    public void i_verify_is_visible(String title) {
+    @Then("I verify {string} visible")
+    public void i_verify_visible(String title) {
         fb.validateThingsToDo();
     }
 
@@ -111,13 +111,13 @@ public class FlightBookingStepDefinition extends WebAPI {
     }
 
 //    ................................................
-     @When("user right clicks and opens all Browse Destination links")
-        public void userRightClicksAndOpensAllBrowseDestinationLinks() throws InterruptedException {
+     @When("I right clicks and opens all Browse Destination links")
+        public void iRightClicksAndOpensAllBrowseDestinationLinks() throws InterruptedException {
        fb.rightClickandOpenBrowseDestinationLinks();
 }
 
-    @Then("user verifies all Page Title prints")
-        public void userVerifiesAllPageTitlePrints() throws InterruptedException {
+    @Then("I verifies all Page Title prints")
+        public void iVerifiesAllPageTitlePrints() throws InterruptedException {
         fb.verifyAllTitles();
     }
 
@@ -140,10 +140,12 @@ public class FlightBookingStepDefinition extends WebAPI {
         fb.findFlightBox2();
     }
 
-    @Then("I verify {string} as page Title")
+    @Then("I validate {string} as page Title")
     public void i_verify_as_page_title(String title) {
 
     }
+
+
 }
 
 

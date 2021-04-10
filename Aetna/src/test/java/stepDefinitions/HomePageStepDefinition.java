@@ -16,6 +16,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.io.IOException;
 
+import static homepage.HomePageWebElement.actualMyCartText;
+
 public class HomePageStepDefinition extends WebAPI {
     static HomePage homePage;
 
@@ -46,7 +48,7 @@ public class HomePageStepDefinition extends WebAPI {
 
     @When("I click shop for a plan")
     public void i_click_shop_for_a_plan() {
-        homePage.verifyShopForAPlan();
+        homePage.shopForPlan();
     }
 
     @And("I go Health coverage")
@@ -61,7 +63,7 @@ public class HomePageStepDefinition extends WebAPI {
 
     @Then("I validate {string} is appeared properly")
     public void i_validate_is_appeared_properly(String expectedText) {
-       homePage.validateHealthCoverage(expectedText);
+        homePage.validateHealthCoverage(expectedText);
     }
 
     /**
@@ -122,8 +124,8 @@ public class HomePageStepDefinition extends WebAPI {
 
     @Then("I validate Legal notices is appeared properly")
     public void i_validate_legal_notices_is_appeared_properly() {
-            homePage.validatePlansThroughEmployer("Legal notices");
-        }
+        homePage.validatePlansThroughEmployer("Legal notices");
+    }
 
     /**
      * Test-6...........................
@@ -138,6 +140,7 @@ public class HomePageStepDefinition extends WebAPI {
     public void i_validate_appeared_properly() {
         homePage.validateFindADentistCheck("You Can:");
     }
+
     /**
      * Test-7... Vision Plans.........................................
      */
@@ -175,6 +178,7 @@ public class HomePageStepDefinition extends WebAPI {
     public void i_click_on_request_call() {
         homePage.requestCall();
     }
+
     @Then("I validate A new plan is appeared properly")
     public void i_validate_a_new_plan_is_appeared_properly() {
         homePage.validateANewPlan();
@@ -185,8 +189,9 @@ public class HomePageStepDefinition extends WebAPI {
      */
     @When("I click on Find a doctor")
     public void i_click_on_find_a_doctor() throws InterruptedException {
-        homePage.findADoctor() ;
+        homePage.findADoctor();
     }
+
     @When("I click on Plan from an employer")
     public void i_click_on_plan_from_an_employer() {
         homePage.planFromAnEmployer();
@@ -204,18 +209,22 @@ public class HomePageStepDefinition extends WebAPI {
     public void i_click_on_for_providers() throws InterruptedException {
         homePage.forProviders();
     }
+
     @When("I click on Join the Aetna network")
-    public void i_click_on_join_the_aetna_network(){
+    public void i_click_on_join_the_aetna_network() {
         homePage.joinTheAetnaNetwork();
     }
+
     @When("I click on Welcome")
     public void i_click_on_welcome() {
         homePage.welcome();
     }
+
     @Then("I validate {string} is appeared")
     public void i_validate_is_appeared(String expectedText) {
         homePage.validateForProviders(expectedText);
     }
+
     /**
      * Aetna Medical Functionality Checking
      */
@@ -224,6 +233,7 @@ public class HomePageStepDefinition extends WebAPI {
     public void i_click_on_medical() throws InterruptedException {
         homePage.medical();
     }
+
     @Then("I validate Medical Request for Participation is appeared properly")
     public void i_validate_medical_request_for_participation_is_appeared_properly() {
         homePage.validateMedical();
@@ -241,6 +251,7 @@ public class HomePageStepDefinition extends WebAPI {
     public void i_validate_is_displayed(String expectedText) {
         homePage.validateDentalTextCheck(expectedText);
     }
+
     /**
      * Aetna Behavioral Health Functionality Checking
      */
@@ -248,10 +259,12 @@ public class HomePageStepDefinition extends WebAPI {
     public void i_click_on_behavioral_health() {
         homePage.behavioralHealth();
     }
+
     @Then("I validate Behavioral Health Request for Participation is appeared properly")
     public void i_validate_behavioral_health_request_for_participation_is_appeared_properly() {
         homePage.validateBehavioralHealth();
     }
+
     /**
      * Aetna Facility Request for Participation Functionality Checking
      */
@@ -259,10 +272,12 @@ public class HomePageStepDefinition extends WebAPI {
     public void i_click_on_facility() throws InterruptedException {
         homePage.facility();
     }
+
     @Then("I validate Facility Request for Participation is appeared properly")
     public void i_validate_facility_request_for_participation_is_appeared_properly() {
         homePage.validateFacility();
     }
+
     /**
      * Aetna Others Functionality Checking
      */
@@ -270,10 +285,12 @@ public class HomePageStepDefinition extends WebAPI {
     public void i_click_on_others() throws InterruptedException {
         homePage.others();
     }
+
     @Then("I validate Other networks you can join is appeared properly")
     public void i_validate_other_networks_you_can_join_is_appeared_properly() {
         homePage.validateOthers();
     }
+
     /**
      * Aetna Find a doctor or hospital Functionality Checking
      */
@@ -281,14 +298,17 @@ public class HomePageStepDefinition extends WebAPI {
     public void i_click_on_precertification() {
         homePage.precertification();
     }
+
     @When("I click on Find a doctor or hospital")
     public void i_click_on_find_a_doctor_or_hospital() {
         homePage.findADoctorOrHospital();
     }
+
     @Then("I validate Directory is appeared properly")
     public void i_validate_directory_is_appeared_properly() {
         homePage.validatePrecertification();
     }
+
     /**
      * Aetna Disputes & Appeals Overview
      */
@@ -297,12 +317,141 @@ public class HomePageStepDefinition extends WebAPI {
     public void i_took_necessary_steps_to_land_on_aetna_disputes_appeals_overview() throws InterruptedException {
         homePage.necessaryStepsAetnaDispute();
     }
+
     @Then("I validate Clinical Policy Bulletins is appeared properly")
     public void i_validate_clinical_policy_bulletins_is_appeared_properly() {
         homePage.validateAetnaDisputesAppeals("Medicare Information for Health Care Providers | Aetna");
-}
+    }
+
+    @And("I click on Shop for a Plan")
+    public void i_click_on_shop_for_a_plan() {
+        homePage.shopForPlan();
+
+    }
+
+    @And("I click on Medicare and I click on Browse Aetna Medicare Plans")
+    public void i_click_on_medicare_and_i_click_on_browse_aetna_medicare_plans() {
+        homePage.medicareAndBrowsePlans();
+
+    }
+
+    @And("I click on Medicare Advantage Plans")
+    public void i_click_on_medicare_advantage_plans() {
+        homePage.medicareAdvantage();
+
+    }
+
+    @And("I enter the Zip Code")
+    public void i_enter_the_zip_code() {
+        homePage.zipCode();
+    }
+
+    @And("I click View 2021 Plans")
+    public void i_click_view_2021_plans() throws InterruptedException {
+        homePage.view2021Plans();
+    }
+
+    @Then("I Verify the plans Available {string} Title")
+    public void iVerifyThePlansAvailableTitle(String expectedTitle) {
+        homePage.verifyPlanListTitlePage(expectedTitle);
+    }
+
+    @And("I click the Sort Drop Down")
+    public void iClickTheSortDropDown() {
+        homePage.sortDD();
+    }
+
+    @And("I Select Plan Premium\\(Low to High)")
+    public void iSelectPlanPremiumLowToHigh() {
+        homePage.planLowToHigh();
+    }
+
+    @When("I click Add To Cart")
+    public void iClickAddToCart() throws InterruptedException {
+        homePage.addToCart();
+    }
+
+    @Then("I Verify the {string} Text")
+    public void iVerifytheText(String expectedText) {
+        homePage.verifyMyCartText(expectedText);
+    }
+
+    @And("I click the Existing Aetna or SilverScript member option radio button")
+    public void iClickTheExistingAetnaOrSilverScriptMemberOptionRadioButton() {
+        homePage.existingMemberRadioButton();
+    }
+
+    @And("I click Dental and Vision add button")
+    public void iClickDentalAndVisionAddButton(){
+        homePage.dentalAndVisionAddButton();
+    }
+    @When("I Click the Proceed to Checkout button")
+    public void iClickTheProceedToCheckoutButton() throws InterruptedException {
+        homePage.proceedToCheckout();
+    }
+
+    @Then("I verify the Personal Information {string} Text")
+    public void iVerifyThePersonalInformationText(String expectedText) {
+        homePage.verifyPersonalInfoPage("Personal Information");
+    }
+
+    @Then("I verify the Personal Information {string} Title")
+    public void iVerifyThePersonalInformationTitle(String arg0) {
+        homePage.verifyPersonalInfoTitle("Aetna Medicare - Enrollment Form");
+    }
+
+    @And("I Click the Special Enrollment CheckBox")
+    public void iClickTheSpecialEnrollmentCheckBox() {
+        homePage.specialEnrollmentCheckBoc();
+    }
 
 
+    @And("I enter the First Name {string} in the Text Box")
+    public void iEnterTheFirstNameInTheTextBox(String firstName) {
+        homePage.firstNameInput(firstName);
+    }
 
+    @And("I enter the Middle Initial {string} in the Text Box")
+    public void iEnterTheMiddleInitialInTheTextBox(String middleName) {
+        homePage.middelInitialInput(middleName);
+    }
+
+    @And("I enter the Last Name {string} in the Text Box")
+    public void iEnterTheLastNameInTheTextBox(String lastname) {
+        homePage.lastNameInput(lastname);
+    }
+
+    @And("I enter the Date of Birth {string} in the Text Box")
+    public void iEnterTheDateOfBirthInTheTextBox(String dob) {
+        homePage.dateOfBirthInput(dob);
+    }
+
+    @And("I enter the Primary Phone Number {string} in the Text Box")
+    public void iEnterThePrimaryPhoneNumberInTheTextBox(String phNum) {
+        homePage.primaryPhoneNumber(phNum);
+    }
+
+    @And("I enter the Email Address {string} in the Text Box")
+    public void iEnterTheEmailAddressInTheTextBox(String email) {
+        homePage.emailAddressInput(email);
+    }
+
+    @And("I Click the Gender RadioButton")
+    public void iClickTheGenderRadioButton() {
+        homePage.clickOngenderBtn();
+    }
+    @And("I enter the Address {string} in the Text Box")
+    public void iEnterTheAddressInTheTextBox(String Address) {
+        homePage.TypeAddress(Address);
+    }
+
+    @And("I click female as Gender")
+    public void iClickFemaleAsGender() {
+        homePage.clickFemaleGenderBtn();
+    }
+
+    @Then("I verify Mailing Address selection is optional")
+    public void iVerifyMailingAddressSelectionIsOptional() {
+    }
 }
 

@@ -6,18 +6,18 @@ Feature: SearchBox Functionality check
     When I click on search button
     When I click on Hotels tab
 
-  #    test-1-passed
+  #    test-8-passed
   @Farhana
   Scenario: Trip Advisor searchBox functionality check
 
-    Then I verify "Texas Hotels" is appeared properly
-#test-2-passed
+    Then I verify "Texas Hotels" properly appeared
+#test-9-passed
   Scenario: Trip Advisor vacation test
 
   And I click on vacation rentals tab
-  Then I verify "Texas Vacation Rentals" appeared properly
+  Then I verify "Texas Vacation Rentals" appeared
 
-#    Test-3-passed
+#    Test-10-passed
     @Farhana
   Scenario: Trip Advisor restaurant test
 
@@ -26,9 +26,9 @@ Feature: SearchBox Functionality check
     And I click on takeout checkBox
     And I click on launch checkBox
     And I click on Maple Leaf Diner tab and navigate to new window
-    Then I verify restaurant images appeared properly
+    Then I verify restaurant images is displayed
 
-#Test-4 Passed
+#Test-11 Passed
   Scenario: check Maple Leaf Diner photo gallery
     When I click on Restaurants Tab
     And I click on Dallas Restaurant and navigate to new window
@@ -36,7 +36,7 @@ Feature: SearchBox Functionality check
     And I click on launch checkBox
     And I click on Maple Leaf Diner tab and navigate to new window
     And I click on all photos
-    Then I verify photo gallery appeared properly
+    Then I validate photo gallery visible
 
 
 

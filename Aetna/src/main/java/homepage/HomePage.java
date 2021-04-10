@@ -106,13 +106,15 @@ public class HomePage extends WebAPI {
     WebElement behavioralHealthRequestForParticipationText;
     @FindBy(xpath = "//span[@class='link__tab'][contains(text(),'Facility')]")
     WebElement facility;
-    @FindBy(xpath = "//span[contains(text(),'Facility Request for Participation')]")
-    WebElement facilityRequestForParticipationText;
+    @FindBy(xpath = "//span[contains(text(),'Facility Request for Participation')]") WebElement facilityRequestForParticipationText;
+    @FindBy(xpath = AddressLocator) WebElement address;
 
     /**
      * test-1-Student Health
      */
-    public void verifyShopForAPlan() { shopPlan.click(); }
+    public void shopForPlan() {
+        clickByXpath(shopForAPlan);
+    }
 
 //    public void verifyStudentPlansUnderHealthCoverage() throws InterruptedException {
 //        sleepFor(2);
@@ -248,9 +250,6 @@ public class HomePage extends WebAPI {
         Assert.assertEquals(expectedResult,actualResult);
     }
 
-
-
-
     /**
      * Test-11 For Providers
      */
@@ -282,8 +281,6 @@ public class HomePage extends WebAPI {
         String actualResult = medicalRequestForParticipationText.getText();
         Assert.assertEquals(expectedResult,actualResult);
     }
-
-
     /**
      * Test-13 Dental
      */
@@ -295,7 +292,6 @@ public class HomePage extends WebAPI {
         String actualResult = dentalRequestForParticipationText.getText();
         Assert.assertEquals(expectedResult,actualResult);
     }
-
     /**
      * Test-14 BehavioralHealth
      */
@@ -307,8 +303,6 @@ public class HomePage extends WebAPI {
         String actualResult = behavioralHealthRequestForParticipationText.getText();
         Assert.assertEquals(expectedResult,actualResult);
     }
-
-
     /**
      * Test-15 Facility
      */
@@ -321,8 +315,6 @@ public class HomePage extends WebAPI {
         String actualResult = facilityRequestForParticipationText.getText();
         Assert.assertEquals(expectedResult,actualResult);
     }
-
-
     /**
      * Test-16 Others
      */
@@ -331,7 +323,7 @@ public class HomePage extends WebAPI {
         others.click();
     }
     public void validateOthers(){
-        String expectedResult = "      Other networks you can join";
+        String expectedResult = "Other networks you can join";
         String actualResult = otherNetworksYouCanJoinText.getText();
         Assert.assertEquals(expectedResult,actualResult);
     }
@@ -349,5 +341,117 @@ public class HomePage extends WebAPI {
         String expectedResult = "Provider Referral Directory";
         String actualResult = directoryText.getText();
         Assert.assertEquals(expectedResult,actualResult);
+    }
+
+    /**
+     * Test-18 Precertification
+     */
+    public void medicareAndBrowsePlans() {
+        clickByXpath(medicare);
+        clickByXpath(browseAetnaMedicarePlan);
+    }
+
+    public void medicareAdvantage() {
+        clickByXpath(medicareAdvantagePlans);
+    }
+
+    public void zipCode() {
+        typeOnElement(zipCodeForMedicareAdvantage, "10463");
+    }
+
+    public void view2021Plans() throws InterruptedException {
+        clickByXpath(view2021Plans);
+        sleepFor(3);
+        windowHandle();
+        sleepFor(3);
+    }
+
+    public void verifyPlanListTitlePage(String expectedTitle) {
+        String actualTitle = driver.getTitle();
+        Assert.assertEquals(actualTitle, expectedTitle, "Title did not match");
+    }
+
+    public void sortDD() {
+        clickByXpath(sortEstimatedCostDD);
+    }
+
+    public void planLowToHigh() {
+        clickByXpath(planPremiumLowToHighDD);
+
+    }
+    public void addToCart() throws InterruptedException {
+        clickByXpath(addToCartMedicarePlan);
+        sleepFor(3);
+        windowHandle();
+        sleepFor(3);
+    }
+
+    public void verifyMyCartText(String expectedText) {
+        String actualText = getTextByXpath(actualMyCartText);
+        Assert.assertEquals("Text didn't match", expectedText, actualText);
+    }
+
+       public void existingMemberRadioButton() {
+
+        clickByXpath(newAetnaRadioButton);
+    }
+
+    public void proceedToCheckout() throws InterruptedException {
+        clickByXpath(proceedToCheckoutMedicarePlan);
+        sleepFor(3);
+        windowHandle();
+        sleepFor(3);
+    }
+
+    public void verifyPersonalInfoPage(String expectedText) {
+        String actualText = getTextByXpath(verifyPersonalInfoTextLocator);
+        Assert.assertEquals("Text did not match", expectedText, actualText);
+    }
+
+    public void verifyPersonalInfoTitle(String expectedTitle) {
+        String actualTitle = driver.getTitle();
+        Assert.assertEquals("Title does not match",expectedTitle, actualTitle);
+    }
+
+    public void specialEnrollmentCheckBoc() {
+        clickByXpath(specialEnrollmentPeriodCheckBox);
+    }
+
+    public void firstNameInput(String firstName){
+        typeOnElement(firstNamePersonalForm,firstName);
+
+    }
+    public void middelInitialInput(String middleName ){
+        typeOnElement(middleInitalPersonalForm,middleName);
+
+    }
+    public void lastNameInput(String lastName){
+        typeOnElement(lastNamePersonalForm,lastName);
+
+    }
+    public void dateOfBirthInput(String dob){
+        typeOnElement(birthdatePersonalForm,dob);
+
+    }
+    public void primaryPhoneNumber(String primPhoneNum){
+        typeOnElement(primaryPhoneNumPersonalForm,primPhoneNum);
+    }
+    public void emailAddressInput(String email){
+        typeOnElement(emailAddPersonalForm,email);
+    }
+    public void TypeAddress(String Address) {
+        typeOnElement(AddressLocator,Address);
+
+    }
+
+    public void clickFemaleGenderBtn() {
+        clickByXpath(genderFemaleSelectLocator);
+    }
+
+    public void dentalAndVisionAddButton() {
+        clickByXpath(optionalAddOnDentalAndVision);
+    }
+
+    public void clickOngenderBtn() {
     }
 }

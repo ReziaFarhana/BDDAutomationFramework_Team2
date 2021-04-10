@@ -25,6 +25,7 @@ public class DataTest {
         itemsList.add("Refund");
         itemsList.add("Boarding Pass");
         itemsList.add("Baggage");
+        itemsList.add("Book a flight");
         return itemsList;
     }
 
